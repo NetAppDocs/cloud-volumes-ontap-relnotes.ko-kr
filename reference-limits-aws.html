@@ -1,0 +1,1704 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head class="at-element-marker">
+  <title>AWS에서의 스토리지 제한 | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="AWS에서의 스토리지 제한 | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-aws.html" />
+	<meta property="og:description" content="Cloud Volumes ONTAP는 AWS에서 스토리지 구성을 제한하여 안정적인 운영 기능을 제공합니다. 최상의 성능을 위해 시스템을 최대 값으로 구성하지 마십시오." />
+  <meta property="og:image" content="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Volumes ONTAP는 AWS에서 스토리지 구성을 제한하여 안정적인 운영 기능을 제공합니다. 최상의 성능을 위해 시스템을 최대 값으로 구성하지 마십시오.">
+  <meta name="keywords" content=" limits, maximum, storage, aggregates, disks, volumes, capacity, luns, size, storage virtual machine, SVM, ebs"><!-- Icons -->
+  <link rel="icon" href="/ko-kr/cloud-volumes-ontap-relnotes/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ko-kr/cloud-volumes-ontap-relnotes/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/cloud-volumes-ontap-relnotes/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-relnotes/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/cloud-volumes-ontap-relnotes/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/ko-kr/cloud-volumes-ontap-relnotes/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/ko-kr/cloud-volumes-ontap-relnotes/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-relnotes/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-relnotes/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-relnotes/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/ko-kr/cloud-volumes-ontap-relnotes/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/ko-kr/cloud-volumes-ontap-relnotes/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/cloud-volumes-ontap-relnotes/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/cloud-volumes-ontap-relnotes/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-relnotes/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ko-kr/cloud-volumes-ontap-relnotes/css/tabbed-blocks.css" type="text/css">
+  <link rel='stylesheet' href='/ko-kr/cloud-volumes-ontap-relnotes/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><link rel="stylesheet" href='/ko-kr/cloud-volumes-ontap-relnotes/css/product-family.css' type="text/css">
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/product-family.js'></script><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ko-kr/cloud-volumes-ontap-relnotes/js/na-search.js'></script><script src='/ko-kr/cloud-volumes-ontap-relnotes/js/na-pagenav.js'></script><link rel='stylesheet' href='/ko-kr/cloud-volumes-ontap-relnotes/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/ko-kr/cloud-volumes-ontap-relnotes/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/na-utility.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/toc.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/version-dropdown.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/FileSaver.min.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/jszip-utils.min.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/jszip.min.js'></script>
+  <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"><div id="version-dropdown-ie-i18n">
+  <div id="version-dropdown-ie-i18n-menu">
+    <span class="ie-i18n-lang"><span class="version-title">Cloud Volumes ONTAP </span><span class="version">9.10.1</span></span>
+    <span class="version-dropdown-caret"></span>
+  </div>
+  <div id="version-dropdown-n-property-navigation-bar__menu--language-selector" class="n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+    <div class="n-language-selector-menu">
+      <ul class="n-menu__list">
+        <li class="n-menu__list-column">
+          <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-aws.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.10.1</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-9100-relnotes/reference-limits-aws.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.10.0</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-991-relnotes/reference-limits-aws.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.9.1</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-990-relnotes/reference-limits-aws.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.9.0</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-98-relnotes/reference-limits-aws.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.8</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-97-relnotes/reference-limits-aws.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.7</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-96-relnotes/reference-limits-aws.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.6</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-95-relnotes/reference-limits-aws.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.5</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-94-relnotes/reference-limits-aws.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>Cloud Volumes ONTAP</span><span class="version"> 9.4</span></span>
+              </a></li><li class="n-menu__list-item n-menu__list-item--level-1"><a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-93-relnotes/reference-limits-aws.html" class="n-menu__header-text" target="_self">
+                <span translate="no" class="notranslate"><span>ONTAP 클라우드</span><span class="version"> 9.3</span></span>
+              </a></li></ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-relnotes/issues/new?body=Page%3A%20[AWS에서의 스토리지 제한](https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-aws.html)" class="page-nav-contribute-link" role="button"><img src="/ko-kr/cloud-volumes-ontap-relnotes/images/discuss-sm.svg" class="github-icon" />문서 변경 요청</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-volumes-ontap-relnotes/blob/main/reference-limits-aws.adoc" class="page-nav-contribute-link" role="button"><img src="/ko-kr/cloud-volumes-ontap-relnotes/images/edit-sm.svg" class="github-icon" />이 페이지 편집</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ko-kr/cloud-volumes-ontap-relnotes/images/article-sm.svg" class="github-icon" />기여하는 방법 자세히 알아보기</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">이 페이지의 내용</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">제품 및 솔루션</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">지원 및 교육</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">커뮤니티</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">블로그</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">고객 성공 사례</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">연락처</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">연락처</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ko-kr/cloud-volumes-ontap-relnotes/search.html"
+          data-type="widget" 
+          data-placeholder="설명서 검색" 
+          data-no-results-found="{query}에 대한 결과를 찾을 수 없음" 
+          data-did-you-mean="{suggestion}을(를) 검색해보십시오." 
+          data-no-results-found-did-you-mean="{query}에 대한 결과를 찾을 수 없습니다. {suggestion}을(를) 검색하려 하셨습니까?" 
+          data-results-found="{hitCount}개의 결과를 찾음"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">한국어</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-aws.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-limits-aws.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/cloud-volumes-ontap-relnotes/reference-limits-aws.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/cloud-volumes-ontap-relnotes/reference-limits-aws.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <!-- Start Documentation Content -->
+<div class="ie-main">
+  <!-- Sidebar Column -->
+  
+  <div class="col-md-3" id="sidebar-height">
+      <div class="n-pdf-header">
+  <a id="toggleButtonPdf" class="n-pdf-button" type="button">
+    <img src="/ko-kr/cloud-volumes-ontap-relnotes/images/pdf.png" width="16" height="16"/>사용 가능한 PDF<span>
+    </span>
+  </a>
+</div>
+<div class="n-pdf-body-container">
+  <ul id="toggleContainerPdf" class="n-pdf-body" style="display:none;"><li class="pdf-ux-container">
+        <a target="_blank" href="/ko-kr/cloud-volumes-ontap-relnotes/pdfs/fullsite-sidebar/Cloud_Volumes_ONTAP_9_10_1_릴리스_정보.pdf" >
+          <img src="/ko-kr/cloud-volumes-ontap-relnotes/images/pdf.png" width="16" height="16"/>이 문서 사이트의 PDF</a>
+
+
+
+
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/cloud-volumes-ontap-relnotes/pdfs/sidebar/지원되는_구성.pdf" 
+            
+          >
+            <img src="/ko-kr/cloud-volumes-ontap-relnotes/images/pdf.png" width="16" height="16"/>
+            지원되는 구성
+          </a>
+          
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/cloud-volumes-ontap-relnotes/pdfs/sidebar/보관_제한.pdf" 
+            
+          >
+            <img src="/ko-kr/cloud-volumes-ontap-relnotes/images/pdf.png" width="16" height="16"/>
+            보관 제한
+          </a>
+          
+    <ul class="subfolders" style="display:none;"><li class="active pdf-hide">
+  <a target="_blank" href="/ko-kr/cloud-volumes-ontap-relnotes/pdfs/pages/reference-limits-aws.pdf" >
+    <img src="/ko-kr/cloud-volumes-ontap-relnotes/images/pdf.png" width="16" height="16"/>
+    PDF of this page
+  </a>
+</li>
+
+</ul>
+  
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+    
+      <ul class="subfolders" style="display:none;">
+        <li class="pdf-ux-container">
+          <a target="_blank" 
+            
+              href="/ko-kr/cloud-volumes-ontap-relnotes/pdfs/sidebar/알려진_제한_사항.pdf" 
+            
+          >
+            <img src="/ko-kr/cloud-volumes-ontap-relnotes/images/pdf.png" width="16" height="16"/>
+            알려진 제한 사항
+          </a>
+          
+
+
+
+
+
+
+
+
+
+          
+        </li>
+      </ul>
+    
+
+  
+
+
+
+
+
+
+</li></ul>
+  <div class="zip-pdf-link-container" style="display: none;">   
+    <a href="#" id="zipPdf">
+      <img src="/ko-kr/cloud-volumes-ontap-relnotes/images/pdf-zip.png" width="16" height="16"/>
+      <pre>별도의 PDF 문서 모음<span class="zip-size"></span></pre>
+    </a><div id="zip-link-popup" class="hide">
+    <div class="inner-modal">
+        <div class="downloading-progress">
+            <div class="spinner"></div>
+            <h1>Creating your file...</h1>
+            <div>This may take a few minutes. Thanks for your patience.</div>
+            <button class="cancel-download-btn" type="button">Cancel</button>
+        </div>
+        <div class="download-complete hide">
+            <div class="done-icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M20.285 2l-11.285 11.567-5.286-5.011-3.714 3.716 9 8.728 15-15.285z"/></svg>
+            </div>
+            <div>Your file is ready</div>
+            <button class="cancel-download-btn" type="button">OK</button>
+        </div>
+    </div>
+</div>
+<script>
+    $(".cancel-download-btn").click(function(){
+        $("#zip-link-popup").addClass("hide");
+        $("#zip-link-popup .downloading-progress").removeClass("hide");
+        $("#zip-link-popup .download-complete").addClass("hide");
+    });
+</script></div>
+</div>
+<script>
+  $("#toggleContainerPdf li.active:last-child").parents('ul.subfolders').toggle('display');
+  $("#toggleButtonPdf").click(function () {
+    $("#toggleContainerPdf").toggle('display');
+    $(".n-pdf-body-container .zip-pdf-link-container").toggle('display');
+  });
+</script><div class="sidebar-nav-container">
+  <ul id="mysidebar" class="nav"><li class=" "><a class="na-navbar-padding" href="https://docs.netapp.com/us-en/cloud-manager-family">
+        모든 Cloud Manager 설명서
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/index.html">
+        릴리스 노트 홈
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-new.html">
+        새로운 소식
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/concept-licensing.html">
+        라이센스 개요
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 지원되는 구성</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-configs-aws.html">
+        설치하고
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-configs-azure.html">
+        Azure를 지원합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-configs-gcp.html">
+        Google 클라우드
+      </a></li></ul></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 보관 제한</div>
+      </a>
+      <ul><li class="  active "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-aws.html">
+        설치하고
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-azure.html">
+        Azure를 지원합니다
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-limits-gcp.html">
+        Google 클라우드
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-issues.html">
+        알려진 문제
+      </a></li><li class="subfolders "><a href="#">
+        <div class="na-navbar-padding"> 알려진 제한 사항</div>
+      </a>
+      <ul><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-limitations.html">
+        일반적인 제한 사항
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-limitations-aws.html">
+        AWS의 제한
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-limitations-azure.html">
+        Azure의 제한
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-limitations-gcp.html">
+        Google Cloud의 제한 사항
+      </a></li></ul></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/reference-provider-integrations.html">
+        클라우드 공급자 통합
+      </a></li><li class=" "><a class="na-navbar-padding" href="/ko-kr/cloud-volumes-ontap-relnotes/legal-notices.html">
+        법적 고지
+      </a></li></ul>
+</div>
+<script>
+  window.onscroll = () => {
+    const value = -40 - (document.body.scrollHeight - (window.innerHeight + document.scrollingElement.scrollTop));
+    
+    document.getElementById("sidebar-height").style.bottom = Math.max(0,value) + "px";
+};
+</script>
+<!-- this highlights the active parent class in the navgoco sidebar. this is critical so that the parent expands when you're viewing a page. This must appear below the sidebar code above. Otherwise, if placed inside customscripts.js, the script runs before the sidebar code runs and the class never gets inserted.-->
+<script>$("li.active").parents('li').toggleClass("active");</script>
+
+  </div>
+  
+
+  <div class="ie-content-pane n-doc__component-detail-content n-doc__component-detail-content--show-code">
+    <!-- Begin of page container --><article class="page-content">
+      <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/ko-kr/cloud/">클라우드 문서</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/ko-kr/cloud-volumes-ontap-relnotes/">Cloud&nbsp;Volumes&nbsp;ONTAP&nbsp;9.11.0&nbsp;release&nbsp;notes</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+      <div class="ie-nmt-disclaimer">
+  <span>
+    <div class="ie-nmt-disclaimer-container">
+      <div class="ie-nmt-disclaimer-icon">
+        <svg class="luci-icon" aria-hidden="true">
+          <use xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#circle-info">
+        </svg>
+      </div>
+      <div class="ie-nmt-disclaimer-content">
+        <span> 본 한국어 번역은 사용자 편의를 위해 제공되는 기계 번역입니다. 영어 버전과 한국어 버전이 서로 어긋나는 경우에는 언제나 영어 버전이 우선합니다. </span>
+      </div>
+      <div style="clear:both;"></div>
+    </div>
+  </span>
+</div><div class="n-doc__component-detail-heading-wrap">
+  <h1 class="n-doc__component-detail-heading">AWS에서의 스토리지 제한</h1>
+</div>
+
+
+<p class="page-details">
+  
+    
+    <time datetime="2022-04-04 02:23:23 +0000">04/04/2022</time>
+    
+  
+
+
+</p>
+
+<div id="preamble">
+<div class="sectionbody">
+<div class="paragraph lead">
+<p>Cloud Volumes ONTAP는 안정적인 운영을 제공하기 위해 스토리지 구성에 제한이 있습니다. 최상의 성능을 위해 시스템을 최대 값으로 구성하지 마십시오.</p>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="라이센스별-최대-시스템-용량">라이센스별 최대 시스템 용량</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP 시스템의 최대 시스템 용량은 라이센스에 따라 결정됩니다. 최대 시스템 용량에는 디스크 기반 스토리지와 데이터 계층화에 사용되는 오브젝트 스토리지가 포함됩니다.</p>
+</div>
+<div class="paragraph">
+<p>NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 부여된 용량 제한에 도달하면 Cloud Manager에서 작업 필요 메시지를 표시하고 더 이상 디스크를 추가할 수 없습니다.</p>
+</div>
+<div class="paragraph">
+<p>일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"비활성 데이터를 오브젝트 스토리지로 계층화"</a>. 자세한 내용은 아래의 용량 및 디스크 제한을 참조하십시오.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 25%;">
+<col style="width: 75%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">라이센스</th>
+<th class="tableblock halign-left valign-top">최대 시스템 용량(디스크 + 오브젝트 스토리지)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">프리모늄</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500GiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PAYGO 탐색</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2TiB(데이터 계층화는 Explore에서 지원되지 않음)</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PAYGO 표준</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10TiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">PAYGO 프리미엄</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">노드 기반 라이센스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">라이센스당 368TiB입니다</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">용량 기반 라이센스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 PiB</p></td>
+</tr>
+</tbody>
+</table>
+<div class="sect4">
+<h5 id="ha의-경우-노드당-또는-전체-ha-쌍의-라이센스-용량-제한이-있습니까">HA의 경우 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</h5>
+<div class="paragraph">
+<p>용량 제한은 전체 HA 쌍에 대한 것입니다. 노드 단위로 표시되지 않습니다. 예를 들어, Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TiB의 용량을 가질 수 있습니다.</p>
+</div>
+</div>
+<div class="sect4">
+<h5 id="aws의-ha-시스템에서-미러링된-데이터는-용량-제한에-따라-계산됩니까">AWS의 HA 시스템에서 미러링된 데이터는 용량 제한에 따라 계산됩니까?</h5>
+<div class="paragraph">
+<p>아니요, 그렇지 않습니다. AWS HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 장애 발생 시 데이터를 사용할 수 있습니다. 예를 들어, 노드 A에서 8TiB 디스크를 구매하는 경우 Cloud Manager는 미러링된 데이터에 사용되는 노드 B에도 8TiB 디스크를 할당합니다. 16TiB의 용량을 프로비저닝한 경우 라이센스 제한에서 8TiB만 가능합니다.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="ec2-인스턴스별로-디스크-및-계층화가-제한됩니다">EC2 인스턴스별로 디스크 및 계층화가 제한됩니다</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하며 최대 디스크 크기는 16TiB입니다. 아래 섹션에는 EC2 인스턴스 유형 중 많은 수의 디스크 제한이 서로 다르기 때문에 EC2 인스턴스 제품군별 디스크 및 계층화 제한이 나와 있습니다. 또한 디스크 제한은 단일 노드 시스템과 HA 쌍 간에 다릅니다.</p>
+</div>
+<div class="paragraph">
+<p>다음 사항에 유의하십시오.</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>C4, M4 및 R4 인스턴스 유형은 새로운 Cloud Volumes ONTAP 9.10.0 시스템에서 지원되지 않습니다. 그러나 이러한 인스턴스 유형 중 하나에서 실행할 때 시스템을 9.10.0 릴리즈로 업그레이드할 수 있으므로 이러한 인스턴스 유형에 대한 디스크 제한은 계속 표시됩니다.</p>
+</li>
+<li>
+<p>아래의 디스크 제한은 사용자 데이터를 포함하는 디스크에만 적용됩니다. 이 제한에는 부팅 디스크 및 루트 디스크가 포함되지 않습니다.</p>
+</li>
+<li>
+<p>이제 Cloud Volumes ONTAP BYOL 시스템에 여러 노드 기반 라이센스를 구입하여 368TiB 이상의 용량을 할당할 수 있습니다. 단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html" target="_blank" rel="noopener">"비활성 데이터를 오브젝트 스토리지로 계층화"</a>. <a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html" target="_blank" rel="noopener">"Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"</a>.</p>
+</li>
+</ul>
+</div>
+<div class="sect2">
+<h3 id="프리미엄-라이센스가-있는-단일-노드">프리미엄 라이센스가 있는 단일 노드</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 18%;">
+<col style="width: 32%;">
+<col style="width: 32%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">인스턴스</th>
+<th class="tableblock halign-left valign-top">노드당 최대 디스크 수입니다</th>
+<th class="tableblock halign-left valign-top">디스크만 사용할 경우 최대 시스템 용량</th>
+<th class="tableblock halign-left valign-top">디스크 및 데이터 계층화를 통한 최대 시스템 용량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5 인스턴스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21<sup>1</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">336TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19<sup>2</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">304TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4 인스턴스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">34</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>21개의 데이터 디스크는 Cloud Volumes ONTAP의 _new_deDeployments에 대한 제한입니다. 9.7 이하 버전으로 생성된 시스템을 업그레이드하면 시스템에서 22개의 디스크를 계속 지원합니다. 9.8 릴리즈부터 시작되는 코어 디스크가 추가되었기 때문에 이러한 인스턴스 유형을 사용하는 새 시스템에서는 데이터 디스크가 1개 적게 지원됩니다.</p>
+</li>
+<li>
+<p>이 인스턴스 유형은 다른 인스턴스 유형보다 더 많은 로컬 NVMe 디스크를 가지고 있으므로 더 적은 수의 데이터 디스크가 지원됩니다.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="노드-기반-라이센스가-있는-단일-노드">노드 기반 라이센스가 있는 단일 노드</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 18%;">
+<col style="width: 16%;">
+<col style="width: 16%;">
+<col style="width: 16%;">
+<col style="width: 16%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">인스턴스</th>
+<th class="tableblock halign-left valign-top">노드당 최대 디스크 수입니다</th>
+<th class="tableblock halign-left valign-top" colspan="2">하나의 라이센스로 최대 시스템 용량을 지원합니다</th>
+<th class="tableblock halign-left valign-top" colspan="2">여러 라이센스가 있는 최대 시스템 용량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 디스크만 사용 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 디스크 + 데이터 계층화 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 디스크만 사용 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 디스크 + 데이터 계층화 *</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5 인스턴스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21<sup>1</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">336TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">336TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB x 각 라이센스</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19<sup>2</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">304TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">304TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB x 각 라이센스</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4 인스턴스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">34</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">544TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB x 각 라이센스</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>21개의 데이터 디스크는 Cloud Volumes ONTAP의 _new_deDeployments에 대한 제한입니다. 9.7 이하 버전으로 생성된 시스템을 업그레이드하면 시스템에서 22개의 디스크를 계속 지원합니다. 9.8 릴리즈부터 시작되는 코어 디스크가 추가되었기 때문에 이러한 인스턴스 유형을 사용하는 새 시스템에서는 데이터 디스크가 1개 적게 지원됩니다.</p>
+</li>
+<li>
+<p>이 인스턴스 유형은 다른 인스턴스 유형보다 더 많은 로컬 NVMe 디스크를 가지고 있으므로 더 적은 수의 데이터 디스크가 지원됩니다.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="용량-기반-라이센스가-있는-단일-노드">용량 기반 라이센스가 있는 단일 노드</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 18%;">
+<col style="width: 32%;">
+<col style="width: 32%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">인스턴스</th>
+<th class="tableblock halign-left valign-top">노드당 최대 디스크 수입니다</th>
+<th class="tableblock halign-left valign-top">디스크만 사용할 경우 최대 시스템 용량</th>
+<th class="tableblock halign-left valign-top">디스크 및 데이터 계층화를 통한 최대 시스템 용량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5 인스턴스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">21</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">336TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 PiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">19<sup>1</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">304TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 PiB</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>이 인스턴스 유형은 다른 인스턴스 유형보다 더 많은 로컬 NVMe 디스크를 가지고 있으므로 더 적은 수의 데이터 디스크가 지원됩니다.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ha는-premium-라이센스와-페어링합니다">HA는 Premium 라이센스와 페어링합니다</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 18%;">
+<col style="width: 32%;">
+<col style="width: 32%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">인스턴스</th>
+<th class="tableblock halign-left valign-top">노드당 최대 디스크 수입니다</th>
+<th class="tableblock halign-left valign-top">디스크만 사용할 경우 최대 시스템 용량</th>
+<th class="tableblock halign-left valign-top">디스크 및 데이터 계층화를 통한 최대 시스템 용량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5 인스턴스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18<sup>1</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TiB 288</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16<sup>2</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4 인스턴스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Cloud Volumes ONTAP의 _new_de구축에는 18개의 데이터 디스크가 제한됩니다. 9.7 이전 버전으로 생성된 시스템을 업그레이드하면 시스템에서 계속 19개의 디스크를 지원합니다. 9.8 릴리즈부터 시작되는 코어 디스크가 추가되었기 때문에 이러한 인스턴스 유형을 사용하는 새 시스템에서는 데이터 디스크가 1개 적게 지원됩니다.</p>
+</li>
+<li>
+<p>이 인스턴스 유형은 다른 인스턴스 유형보다 더 많은 로컬 NVMe 디스크를 가지고 있으므로 더 적은 수의 데이터 디스크가 지원됩니다.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ha는-노드-기반-라이센스와-페어링합니다">HA는 노드 기반 라이센스와 페어링합니다</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 18%;">
+<col style="width: 16%;">
+<col style="width: 16%;">
+<col style="width: 16%;">
+<col style="width: 16%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">인스턴스</th>
+<th class="tableblock halign-left valign-top">노드당 최대 디스크 수입니다</th>
+<th class="tableblock halign-left valign-top" colspan="2">하나의 라이센스로 최대 시스템 용량을 지원합니다</th>
+<th class="tableblock halign-left valign-top" colspan="2">여러 라이센스가 있는 최대 시스템 용량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" colspan="2"></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 디스크만 사용 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 디스크 + 데이터 계층화 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 디스크만 사용 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 디스크 + 데이터 계층화 *</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5 인스턴스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18<sup>1</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TiB 288</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TiB 288</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB x 각 라이센스</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16<sup>2</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB x 각 라이센스</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4 인스턴스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">31</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4,96TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">368TiB x 각 라이센스</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>Cloud Volumes ONTAP의 _new_de구축에는 18개의 데이터 디스크가 제한됩니다. 9.7 이전 버전으로 생성된 시스템을 업그레이드하면 시스템에서 계속 19개의 디스크를 지원합니다. 9.8 릴리즈부터 시작되는 코어 디스크가 추가되었기 때문에 이러한 인스턴스 유형을 사용하는 새 시스템에서는 데이터 디스크가 1개 적게 지원됩니다.</p>
+</li>
+<li>
+<p>이 인스턴스 유형은 다른 인스턴스 유형보다 더 많은 로컬 NVMe 디스크를 가지고 있으므로 더 적은 수의 데이터 디스크가 지원됩니다.</p>
+</li>
+</ol>
+</div>
+</div>
+<div class="sect2">
+<h3 id="ha는-용량-기반-라이센스와-페어링합니다">HA는 용량 기반 라이센스와 페어링합니다</h3>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 18%;">
+<col style="width: 18%;">
+<col style="width: 32%;">
+<col style="width: 32%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">인스턴스</th>
+<th class="tableblock halign-left valign-top">노드당 최대 디스크 수입니다</th>
+<th class="tableblock halign-left valign-top">디스크만 사용할 경우 최대 시스템 용량</th>
+<th class="tableblock halign-left valign-top">디스크 및 데이터 계층화를 통한 최대 시스템 용량</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5 인스턴스</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">18</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">TiB 288</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 PiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">m5dn.24xlarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16<sup>1</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256TiB</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">2 PiB</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>이 인스턴스 유형은 다른 인스턴스 유형보다 더 많은 로컬 NVMe 디스크를 가지고 있으므로 더 적은 수의 데이터 디스크가 지원됩니다.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="애그리게이트-제한">애그리게이트 제한</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>Cloud Volumes ONTAP는 AWS 볼륨을 디스크로 사용하고 이를 _aggregate_로 그룹화합니다. Aggregate는 볼륨에 스토리지를 제공합니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 50%;">
+<col style="width: 50%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">매개 변수</th>
+<th class="tableblock halign-left valign-top">제한</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">최대 애그리게이트 수입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">단일 노드: 디스크 한계 HA 쌍과 동일: 노드 <sup>1</sup>에서 18</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">최대 애그리게이트 크기입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">96TiB 물리적 용량<sup>2</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">애그리게이트당 디스크 수</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1-6<sup>3</sup></p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">애그리게이트당 최대 RAID 그룹 수</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1</p></td>
+</tr>
+</tbody>
+</table>
+<div class="paragraph">
+<p>참고:</p>
+</div>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>HA 2노드에서 두 노드 모두에 18개의 애그리게이트를 생성할 수 없습니다. 그렇게 할 경우 데이터 디스크 제한이 초과되기 때문입니다.</p>
+</li>
+<li>
+<p>애그리게이트 용량 한도는 애그리게이트를 구성하는 디스크를 기준으로 합니다. 이 제한에는 데이터 계층화에 사용되는 오브젝트 스토리지가 포함되지 않습니다.</p>
+</li>
+<li>
+<p>Aggregate의 모든 디스크는 동일한 크기여야 합니다.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="스토리지-vm-제한">스토리지 VM 제한</h2>
+<div class="sectionbody">
+<div class="paragraph">
+<p>일부 구성을 사용하면 Cloud Volumes ONTAP용 SVM(스토리지 VM)을 추가로 생성할 수 있습니다.</p>
+</div>
+<div class="paragraph">
+<p><a href="https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html" target="_blank" rel="noopener">"추가 스토리지 VM을 생성하는 방법을 알아보십시오"</a>.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 26%;">
+<col style="width: 26%;">
+<col style="width: 48%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">사용권 유형</th>
+<th class="tableblock halign-left valign-top">인스턴스 패밀리</th>
+<th class="tableblock halign-left valign-top">스토리지 VM 제한</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">* PAYGO *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>1 데이터 제공용 스토리지 VM</p>
+</li>
+<li>
+<p>재해 복구용 스토리지 VM 1개</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>1 데이터 제공용 스토리지 VM</p>
+</li>
+<li>
+<p>재해 복구용 스토리지 VM 1개</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* Freemium *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>스토리지 VM 총 24개 <sup>1,2</sup></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 용량 기반 라이센스 * <sup>3</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>스토리지 VM 총 24개 <sup>1,2</sup></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">* 노드 기반 BYOL * <sup>4</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C4, M4 및 R4</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>1 데이터 제공용 스토리지 VM</p>
+</li>
+<li>
+<p>재해 복구용 스토리지 VM 1개</p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">C5, M5 및 R5</p></td>
+<td class="tableblock halign-left valign-top"><div class="content"><div class="ulist">
+<ul>
+<li>
+<p>스토리지 VM 총 24개 <sup>1,2</sup></p>
+</li>
+</ul>
+</div></div></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>사용하는 EC2 인스턴스 유형에 따라 이 제한을 줄일 수 있습니다. 인스턴스당 제한은 아래 섹션에 나와 있습니다.</p>
+</li>
+<li>
+<p>이러한 24개의 스토리지 VM은 데이터를 제공하거나 DR(재해 복구)용으로 구성할 수 있습니다.</p>
+</li>
+<li>
+<p>용량 기반 라이센스의 경우, 추가 스토리지 VM에 대한 추가 라이센스 비용이 없지만 스토리지 VM당 최소 용량 비용은 4TiB입니다. 예를 들어 스토리지 VM 2개를 생성하고 각 VM에 2TiB의 용량을 프로비저닝한 경우 총 8TiB가 충전됩니다.</p>
+</li>
+<li>
+<p>노드 기반 BYOL의 경우, Cloud Volumes ONTAP에서 기본적으로 제공되는 첫 번째 스토리지 VM 외에 각 additional_data-serving_storage VM에 애드온 라이센스가 필요합니다. 스토리지 VM 애드온 라이센스를 얻으려면 어카운트 팀에 문의하십시오.</p>
+<div class="paragraph">
+<p>DR(재해 복구)에 대해 구성하는 스토리지 VM에는 추가 라이센스(무료)가 필요하지 않지만 스토리지 VM 제한에 대해 카운트됩니다. 예를 들어, 데이터 서비스 스토리지 VM 12개와 재해 복구용 스토리지 VM 12개가 구성되어 있는 경우, 한계에 도달하여 추가 스토리지 VM을 생성할 수 없습니다.</p>
+</div>
+</li>
+</ol>
+</div>
+<div class="sect2">
+<h3 id="ec2-인스턴스-유형별-스토리지-vm-제한">EC2 인스턴스 유형별 스토리지 VM 제한</h3>
+<div class="paragraph">
+<p>추가 스토리지 VM을 생성할 때 e0a 포트에 전용 IP 주소를 할당해야 합니다. 아래 표에는 Cloud Volumes ONTAP 구축 후 포트 e0a에서 사용 가능한 IP 주소 수와 인터페이스당 프라이빗 IP의 최대 수가 나와 있습니다. 사용 가능한 IP 주소 수는 해당 구성에 대한 최대 스토리지 VM 수에 직접 영향을 줍니다.</p>
+</div>
+<div class="paragraph">
+<p>아래 나열된 인스턴스는 C5, M5 및 R5 인스턴스 제품군에 대한 것입니다.</p>
+</div>
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.6666%;">
+<col style="width: 16.667%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">구성</th>
+<th class="tableblock halign-left valign-top">인스턴스 유형</th>
+<th class="tableblock halign-left valign-top">인터페이스당 최대 사설 IP</th>
+<th class="tableblock halign-left valign-top">구축 후 IPS 잔여 <sup>1</sup></th>
+<th class="tableblock halign-left valign-top">관리 LIF가 없는 최대 스토리지 VM <sup>2,3</sup></th>
+<th class="tableblock halign-left valign-top">관리 LIF가 <sup>2,3</sup>인 최대 스토리지 VM</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="9"><p class="tableblock">* 단일 노드 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.2xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">9</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.4xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.8xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.9xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.12xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.16xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.18xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.24xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="9"><p class="tableblock">단일 AZ * 의 HA 쌍</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.2xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">10</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">11</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">5</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.4xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.8xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.9xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.12xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">25</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.16xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">45</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.18xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">45</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.24xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="9"><p class="tableblock">* 멀티 AZs * 의 HA 쌍</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.2xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">15</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">13</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.4xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.8xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.9xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.12xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">30</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">27</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.16xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">47</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.18xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">47</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">*.24xLarge</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">50</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">44</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">24</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">12</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>이 숫자는 Cloud Volumes ONTAP를 구축하고 설정한 후 포트 e0a에서 사용 가능한 _remaining_private IP 주소 수를 나타냅니다. 예를 들어, *.2xLarge 시스템은 네트워크 인터페이스당 최대 15개의 IP 주소를 지원합니다. HA 쌍이 단일 AZ에 배포되면 5개의 전용 IP 주소가 e0a 포트에 할당됩니다. 따라서 *.2xLarge 인스턴스 유형을 사용하는 HA 쌍에는 추가 스토리지 VM에 사용할 수 있는 10개의 전용 IP 주소가 남아 있습니다.</p>
+</li>
+<li>
+<p>이 열에 나열된 번호에는 Cloud Manager가 기본적으로 생성하는 초기 스토리지 VM이 포함됩니다. 예를 들어, 이 열에 24가 표시되면 총 24개의 스토리지 VM을 추가로 23개 생성할 수 있음을 의미합니다.</p>
+</li>
+<li>
+<p>스토리지 VM의 관리 LIF는 선택 사항입니다. 관리 LIF는 SnapCenter과 같은 관리 툴에 대한 연결을 제공합니다.</p>
+<div class="paragraph">
+<p>이 경우 전용 IP 주소가 필요하므로 생성할 수 있는 추가 스토리지 VM의 수가 제한됩니다. 단, 여러 AZs의 HA 쌍만 예외입니다. 이 경우 관리 LIF의 IP 주소는 _floating_ip 주소이므로 _private_ip 제한에 대해 계산되지 않습니다.</p>
+</div>
+</li>
+</ol>
+</div>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="파일-및-볼륨-제한">파일 및 볼륨 제한</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 22%;">
+<col style="width: 22%;">
+<col style="width: 56%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">논리적 스토리지</th>
+<th class="tableblock halign-left valign-top">매개 변수</th>
+<th class="tableblock halign-left valign-top">제한</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">* 파일 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">최대 크기</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16TiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">볼륨당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">볼륨 크기에 따라 다르며 최대 20억 개까지 가능합니다</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlexClone 볼륨 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">계층적 복제 깊이 <sup>1</sup></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">499</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="3"><p class="tableblock">* FlexVol 볼륨 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">노드당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">500입니다</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">최소 크기</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">20MB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">최대 크기</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">100TiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* qtree *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlexVol 볼륨당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">4,995</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Snapshot 복사본 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">FlexVol 볼륨당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,023</p></td>
+</tr>
+</tbody>
+</table>
+<div class="olist arabic">
+<ol class="arabic">
+<li>
+<p>계층적 클론 깊이는 단일 FlexVol 볼륨에서 생성할 수 있는 FlexClone 볼륨의 중첩 계층 구조의 최대 깊이입니다.</p>
+</li>
+</ol>
+</div>
+</div>
+</div>
+<div class="sect1">
+<h2 id="iscsi-스토리지-제한입니다">iSCSI 스토리지 제한입니다</h2>
+<div class="sectionbody">
+<table class="tableblock frame-all grid-all stretch">
+<colgroup>
+<col style="width: 33.3333%;">
+<col style="width: 33.3333%;">
+<col style="width: 33.3334%;">
+</colgroup>
+<thead>
+<tr>
+<th class="tableblock halign-left valign-top">iSCSI 스토리지</th>
+<th class="tableblock halign-left valign-top">매개 변수</th>
+<th class="tableblock halign-left valign-top">제한</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="4"><p class="tableblock">LUN *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">노드당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">최대 LUN 매핑 수입니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">최대 크기</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">16TiB</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">볼륨당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">512</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">Igroup * 을 선택합니다</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">노드당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">* 이니시에이터 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">노드당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">512</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">igroup당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">128</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* iSCSI 세션 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">노드당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">1,024</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top" rowspan="2"><p class="tableblock">LIF *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">포트당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">최대 Per 포트셋</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">32</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">* 포트 세트 *</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">노드당 최대</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">256</p></td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+
+    </article>
+    <!-- Page Container -->
+  </div>
+
+  <div style="clear: both"></div><!-- Main needs to have height --></div>
+
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ko-kr/cloud-volumes-ontap-relnotes/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">웹 사이트에 대한 피드백이 있으십니까?<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">의견을 공유해 주십시오</a>
+  <a href="https://docs.netapp.com/ko-kr/announcements/" class="n-footer__copyright">공지 사항</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ko-kr/cloud-volumes-ontap-relnotes/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ko-kr/cloud-volumes-ontap-relnotes/js/prism.js'></script>
+      <script type="text/javascript" src='/ko-kr/cloud-volumes-ontap-relnotes/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/www-ntap.js'></script>
+    <script src='/ko-kr/cloud-volumes-ontap-relnotes/js/tabbed-blocks.js'></script>
+  </body></html>
