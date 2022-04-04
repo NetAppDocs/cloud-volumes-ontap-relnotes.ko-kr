@@ -1,0 +1,153 @@
+---
+sidebar: sidebar 
+permalink: reference-new.html 
+keywords: 'what"s new, new, features, release notes, enhancements' 
+summary: Cloud Volumes ONTAP 9.10.1 에는 여러 가지 새로운 기능과 향상된 기능이 포함되어 있습니다. 
+---
+= Cloud Volumes ONTAP 9.10.1의 새로운 기능
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Cloud Volumes ONTAP 9.10.1 에는 여러 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.
+
+최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["Cloud Manager 릴리즈 노트"^] 를 참조하십시오.
+
+
+
+== 라이센스 업데이트(2022년 2월 9일)
+
+Cloud Volumes ONTAP는 다음과 같은 시장 변화를 발표했습니다.
+
+* 이제 Essentials 패키지와 Professional 패키지를 AWS 및 Google Cloud 마켓플레이스에서 사용할 수 있습니다.
++
+이러한 용량을 기준으로 비용을 지불할 수 있으며, 연간 계약을 클라우드 공급자로부터 직접 구매할 수 있습니다. NetApp에서 직접 용량 라이센스를 구매할 수 있습니다.
+
++
+클라우드 마켓플레이스에 기존 구독이 있는 경우 이러한 새로운 오퍼링을 자동으로 구독할 수 있습니다. 새로운 Cloud Volumes ONTAP 작업 환경을 구축할 때 용량 충전을 선택할 수 있습니다.
+
++
+신규 고객인 경우 새 작업 환경을 생성할 때 Cloud Manager에서 구독을 신청하라는 메시지가 표시됩니다.
+
+* AWS 및 Google Cloud 마켓플레이스를 통한 노드 라이센싱은 더 이상 사용되지 않으며 새 가입자에게 제공되지 않습니다. 여기에는 연간 계약 및 시간별 가입(탐색, 표준, 프리미엄)이 포함됩니다.
++
+이 충전 방법은 활성 서브스크립션을 보유한 기존 고객에게도 계속 사용할 수 있습니다.
+
+
+
+link:concept-licensing.html["Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오"].
+
+
+
+== 9.10.1 GA(2022년 1월 31일)
+
+Cloud Volumes ONTAP 9.10.1의 GA(General Availability) 릴리스가 출시되었습니다. GA 릴리스에는 버그 수정이 포함되어 있습니다.
+
+Cloud Manager에서 9.10.1 RC1, 9.10.0 또는 9.9.1의 버전을 실행 중인 기존 시스템을 업그레이드하라는 메시지가 표시됩니다.
+
+
+
+== 더 많은 VM 유형 지원(2021년 1월 2일)
+
+Cloud Manager 3.9.14 릴리스의 일부로 Cloud Volumes ONTAP는 이제 Microsoft Azure에서 9.10.1 릴리스부터 다음 VM 유형에서 지원됩니다.
+
+* E4ds_v4
+* E8ds_v4
+* E32ds_v4
+* E48ds_v4
+
+
+로 이동합니다 link:reference-configs-azure.html["지원되는 구성 페이지"^] 를 참조하십시오.
+
+
+
+== 9.10.1 RC1(2021년 11월 28일)
+
+Cloud Volumes ONTAP 9.10.1 출시 후보 1은 현재 AWS, Azure 및 Google 클라우드에서 제공됩니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.
+
+
+
+=== Microsoft Azure의 HA 기능 향상
+
+* Microsoft Azure에서 실행되는 Cloud Volumes ONTAP HA 쌍의 계획되지 않은 페일오버 시간을 줄였습니다.
+* 이제 NFSv4가 지원됩니다.
+
+
+Cloud Volumes ONTAP에서 이러한 향상된 기능을 사용하려면 Azure 구독에서 기능을 활성화해야 합니다. "소유자" 권한이 있는 Azure 사용자는 Azure CLI에서 이 기능을 활성화할 수 있습니다.
+
+[source, azurecli]
+----
+az account set -s AZURE_SUBSCRIPTION_NAME_OR_ID
+az feature register --name EnableHighAvailabilityMode --namespace Microsoft.Network
+az provider register -n Microsoft.Network
+----
+Azure 구독에서 이 기능을 활성화해야 하는 Cloud Volumes ONTAP 9.10.1 시스템의 경우 클라우드 관리자가 이러한 세부 정보를 작업 필요 메시지에 표시합니다.
+
+다음 사항에 유의하십시오.
+
+* Cloud Volumes ONTAP HA 쌍의 고가용성에는 문제가 없습니다. 이 Azure 기능은 ONTAP와 함께 작동하여 계획되지 않은 페일오버 이벤트로 인해 NFS 프로토콜에 대해 클라이언트에서 관측된 애플리케이션 중단 시간을 줄입니다.
+* 이 기능을 사용하도록 설정하는 것은 Cloud Volumes ONTAP HA 쌍의 무중단 기능입니다.
+* Azure 구독에서 이 기능을 활성화해도 다른 VM에 문제가 발생하지 않습니다.
+
+
+
+
+=== 보안 강화
+
+ONTAP 이미지 생성 및 Cloud Volumes ONTAP 부팅 디스크의 보안 기능이 향상되었습니다.
+
+
+
+=== Keystone Flex 구독 지원
+
+Cloud Manager 3.9.13 릴리즈의 일부로써 Cloud Volumes ONTAP HA pair로 Keystone 유연한 구독을 사용할 수 있습니다. Keystone Flex Subscription은 종량제 구독 기반 서비스로, OpEx 소비 모델을 선호하는 사용자에게 원활한 하이브리드 클라우드 경험을 제공하여 자본 지출 또는 임대를 지원합니다.
+
+Keystone 유연한 가입은 Cloud Manager에서 구축할 수 있는 모든 새로운 버전의 Cloud Volumes ONTAP에서 지원됩니다.
+
+
+
+=== 암호화 키 관리
+
+ONTAP 9.10.1 릴리스에는 ONTAP 암호화 키를 보호하기 위해 AKV(Azure Key Vault) 또는 Google 클라우드 키 관리 서비스를 사용할 수 있는 향상된 기능이 포함되어 있습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-security.html["Cloud Volumes ONTAP 암호화 지원에 대해 자세히 알아보십시오"^].
+
+
+
+== Cloud Manager Connector의 필수 버전입니다
+
+새로운 Cloud Volumes ONTAP 9.10.1 시스템을 배포하고 기존 시스템을 9.10.1로 업그레이드하려면 Cloud Manager Connector가 버전 3.9.13 이상을 실행해야 합니다.
+
+
+TIP: Connector의 자동 업그레이드는 기본적으로 활성화되어 있으므로 최신 버전을 실행해야 합니다.
+
+
+
+== 노트 업그레이드
+
+* Cloud Volumes ONTAP 업그레이드는 Cloud Manager에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
+* 9.10.0 릴리스 및 9.9.1 릴리스에서 Cloud Volumes ONTAP 9.10.1로 업그레이드할 수 있습니다. Cloud Manager에서 적합한 Cloud Volumes ONTAP 시스템을 9.10.1 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
++
+http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["Cloud Manager에서 알림을 받을 때 업그레이드하는 방법에 대해 알아보십시오"^].
+
+* 단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.
+* HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.
+
+
+
+
+=== C4, M4 및 R4 인스턴스 유형
+
+9.8 릴리스, C4, M4 및 R4 인스턴스 유형부터 새로운 Cloud Volumes ONTAP 시스템에서는 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 Cloud Volumes ONTAP 시스템이 있는 경우에도 이 릴리즈로 업그레이드할 수 있습니다.
+
+C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경하는 것이 좋습니다.
+
+
+
+=== DS3_v2
+
+9.9.1 릴리즈부터 DS3_v2 VM 유형은 더 이상 신규 및 기존 Cloud Volumes ONTAP 시스템에서 지원되지 않습니다. 이 VM 유형에서 실행 중인 기존 시스템이 있는 경우 9.10.1로 업그레이드하기 전에 VM 유형을 변경해야 합니다.

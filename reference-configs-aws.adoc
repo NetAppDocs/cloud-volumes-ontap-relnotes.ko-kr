@@ -1,0 +1,197 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-aws.html 
+keywords: ec2, instance, type, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, sizes, disks, networking, bandwidth, professional package 
+summary: AWS에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다. 
+---
+= AWS에서 지원되는 구성
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+AWS에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.
+
+
+
+== 지원되는 노드 수입니다
+
+Cloud Volumes ONTAP는 AWS에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 지원하는 고가용성(HA) 노드 쌍으로 제공됩니다.
+
+단일 노드 시스템을 HA 쌍으로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 쌍 간에 전환하려면 새 시스템을 구축하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.
+
+
+
+== 지원되는 스토리지
+
+Cloud Volumes ONTAP은 여러 유형의 EBS 디스크와 데이터 계층화를 위한 S3 오브젝트 스토리지를 지원합니다. 최대 스토리지 용량은 선택한 라이센스에 따라 결정됩니다.
+
+
+
+=== 라이센스별 스토리지 지원
+
+각 라이센스는 다른 최대 시스템 용량을 지원합니다. 최대 시스템 용량에는 디스크 기반 스토리지와 데이터 계층화에 사용되는 오브젝트 스토리지가 포함됩니다. NetApp은 이 제한을 초과하지 않습니다.
+
+[cols="h,d,d,d,d,d,d"]
+|===
+|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 라이센스 | 용량 기반 라이센스 
+
+
+| 최대 시스템 용량(디스크 + 객체 스토리지) ^1^ | 500GiB | 2TiB | 10TiB | 368TiB^2^ | 라이센스당 368TiB ^2^ | 2 PiB^2^ 
+
+
+| 지원되는 디스크 유형입니다  a| 
+* 범용 SSD(GP3 및 GP2)^3^
+* 프로비저닝된 IOPS SSD (i1)^3^
+* 처리량 최적화 HDD(st1)^4^
+
+
+
+
+| S3로 콜드 데이터 계층화 | 지원 | 지원되지 않습니다 4+| 지원 
+|===
+. HA 쌍의 경우 용량 한도는 전체 HA 쌍의 용량입니다. 노드 수에는 적용되지 않습니다. 예를 들어, Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TiB의 용량을 가질 수 있습니다.
+. 일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 link:reference-limits-aws.html["보관 제한"].
+. PAYGO Explore를 제외한 모든 Cloud Volumes ONTAP 구성에서 SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.
+. 처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.
+
+
+
+
+=== 지원되는 디스크 크기입니다
+
+AWS에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 6개까지 포함할 수 있습니다.
+
+[cols="3*"]
+|===
+| 범용 SSD(GP3 및 GP2) | 프로비저닝된 IOPS SSD(iio1) | 처리량 최적화 HDD(st1) 
+
+
+ a| 
+* 100GiB
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 6TiB
+* 8TiB
+* 16TiB
+
+ a| 
+* 100GiB
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 6TiB
+* 8TiB
+* 16TiB
+
+ a| 
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 6TiB
+* 8TiB
+* 16TiB
+
+
+|===
+
+
+== 지원되는 EC2 컴퓨팅
+
+각 Cloud Volumes ONTAP 라이센스는 서로 다른 EC2 인스턴스 유형을 지원합니다. 아래 표에는 지원되는 각 인스턴스 유형에 대한 vCPU, RAM 및 대역폭이 나와 있습니다. https://aws.amazon.com/ec2/instance-types/["EC2 인스턴스 유형에 대한 최신 세부 정보는 AWS를 참조하십시오"^].
+
+아래 표에 표시된 대역폭 은 각 인스턴스 유형에 대해 문서화된 AWS 제한과 일치합니다. 이러한 제한은 Cloud Volumes ONTAP이 제공할 수 있는 것과 완전히 일치하지는 않습니다. 예상 성능은 을 참조하십시오 https://www.netapp.com/us/media/tr-4383.pdf["NetApp 기술 보고서 4383: 애플리케이션 워크로드를 포함한 Amazon Web Services의 Cloud Volumes ONTAP 성능 특성"^].
+
+[cols="8*"]
+|===
+| 라이센스 | 지원되는 인스턴스 | vCPU | RAM | Flash Cache ^1^ | 네트워크 대역폭(Gbps) | EBS 대역폭(Mbps) | 빠른 쓰기 속도 ^2^ 
+
+
+| * 기타 라이센스 * 를 탐색하십시오 | m5.xlarge | 4 | 16 | 지원되지 않습니다 | 최대 10개까지 가능합니다 | 최대 4,750 | 지원(단일 노드만 해당) 
+
+
+.3+| * 표준 또는 기타 라이센스 * | R5.xLarge | 4 | 32 | 지원되지 않습니다 | 최대 10개까지 가능합니다 | 최대 4,750 | 지원(단일 노드만 해당) 
+
+
+| m5a.2xLarge | 8 | 32 | 지원되지 않습니다 | 최대 10개까지 가능합니다 | 최대 2,880 | 지원 
+
+
+| m5.2xLarge | 8 | 32 | 지원되지 않습니다 | 최대 10개까지 가능합니다 | 최대 4,750 | 지원 
+
+
+.19+| * Premium 또는 기타 라이센스 * | m5n.2xLarge | 8 | 32 | 지원되지 않습니다 | 최대 25 | 최대 4,750 | 지원 
+
+
+| r5.2xLarge | 8 | 64 | 지원되지 않습니다 | 최대 10개까지 가능합니다 | 최대 4,750 | 지원 
+
+
+| r5d.2xLarge | 8 | 64 | 지원 | 최대 10개까지 가능합니다 | 최대 4,750 | 지원 
+
+
+| c5d.4xLarge | 16 | 32 | 지원 | 최대 10개까지 가능합니다 | 4,570 | 지원 
+
+
+| m5.4xLarge | 16 | 64 | 지원되지 않습니다 | 최대 10개까지 가능합니다 | 4,750 | 지원 
+
+
+| m5d.8xLarge | 32 | 128 | 지원 | 10 | 6,800 | 지원 
+
+
+| r5.8xLarge | 32 | 256 | 지원되지 않습니다 | 10 | 6,800 | 지원 
+
+
+| c5.9xLarge | 36 | 72 | 지원되지 않습니다 | 10 | 9,500입니다 | 지원 
+
+
+| c5d.9xLarge | 36 | 72 | 지원 | 10 | 9,500입니다 | 지원 
+
+
+| c5n.9xLarge | 36 | 96 | 지원되지 않습니다 | 50 | 9,500입니다 | 지원 
+
+
+| C5A.12xLarge | 48^4^ | 96 | 지원되지 않습니다 | 12 | 4,750 | 지원 
+
+
+| c5.18xLarge | 48^4^ | 144 | 지원되지 않습니다 | 25 | 19,000명 | 지원 
+
+
+| c5d.18xLarge | 48^4^ | 144 | 지원 | 25 | 19,000명 | 지원 
+
+
+| m5d.12xLarge | 48 | 192 | 지원 | 12 | 9,500입니다 | 지원 
+
+
+| c5n.18xLarge | 48^4^ | 192 | 지원되지 않습니다 | 100 | 19,000명 | 지원 
+
+
+| m5a.16xLarge | 48^4^ | 256 | 지원되지 않습니다 | 12 | 9,500입니다 | 지원 
+
+
+| m5.16xLarge | 48^4^ | 256 | 지원되지 않습니다 | 20 | 13,600 | 지원 
+
+
+| r5.12xLarge^3^ | 48 | 384 | 지원되지 않습니다 | 10 | 9,500입니다 | 지원 
+
+
+| m5dn.24xlarge | 48^4^ | 384 | 지원 | 100 | 19,000명 | 지원 
+|===
+. 일부 인스턴스 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 있습니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["Flash Cache에 대해 자세히 알아보십시오"^].
+. Cloud Volumes ONTAP는 HA Pair를 사용할 경우 대부분의 인스턴스 유형에서 빠른 쓰기 속도를 지원합니다. 단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["쓰기 속도 선택에 대해 자세히 알아보세요"^].
+. r5.12xLarge 인스턴스 유형은 지원 가능성의 알려진 제한 사항이 있습니다. 패닉이 발생하여 노드가 예기치 않게 재부팅되는 경우 시스템에서 문제 해결에 사용되는 핵심 파일을 수집하지 못하고 문제의 근본 원인을 해결하지 못할 수 있습니다. 고객은 위험 및 제한된 지원 약관에 동의하며 이 조건이 발생할 경우 모든 지원 책임을 집니다. 이 제한은 새로 구축된 HA 쌍과 9.8에서 업그레이드된 HA 쌍에 영향을 미칩니다. 새로 구축된 단일 노드 시스템에는 이러한 제한이 적용되지 않습니다.
+. 이러한 EC2 인스턴스 유형은 48개 이상의 vCPU를 지원하지만 Cloud Volumes ONTAP는 최대 48개의 vCPU를 지원합니다.
+. EC2 인스턴스 유형을 선택하면 해당 인스턴스가 공유 인스턴스인지 전용 인스턴스인지 지정할 수 있습니다.
+. Cloud Volumes ONTAP는 예약된 EC2 인스턴스 또는 주문형 EC2 인스턴스에서 실행할 수 있습니다. 다른 인스턴스 유형을 사용하는 솔루션은 지원되지 않습니다.
+
+
+
+
+== 지원 지역
+
+AWS 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].

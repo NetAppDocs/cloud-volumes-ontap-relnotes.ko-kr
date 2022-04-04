@@ -1,0 +1,102 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-gcp.html 
+keywords: google, gcp, google cloud platform, explore, standard, premium, byol, paygo, disks, supported, capacity, machine types, sizes, HA, high availability, HA pairs 
+summary: Google Cloud에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다. 
+---
+= Google Cloud에서 지원되는 구성
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Google Cloud에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.
+
+
+
+== 라이센스에 의해 지원되는 구성
+
+Cloud Volumes ONTAP는 Google Cloud Platform에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 지원하는 고가용성(HA) 노드 쌍으로 지원됩니다.
+
+단일 노드 시스템을 HA 쌍으로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 쌍 간에 전환하려면 새 시스템을 구축하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.
+
+[cols="h,d,d,d,d,d,d"]
+|===
+|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 라이센스 | 용량 기반 라이센스 
+
+
+| 최대 시스템 용량(디스크 + 객체 스토리지) ^1^ | 500GB | 2TB^2^ | 10TB | 368TB | 라이센스당 368TB | 2 PiB 
+
+
+| 지원되는 시스템 유형 ^3^  a| 
+* N1-표준-8
+* N1-표준-32
+* N2-표준-4
+* N2 - 표준 - 8
+* N2-표준-32
+
+ a| 
+* N2-표준-4
+
+ a| 
+* N1-표준-8
+* N2 - 표준 - 8
+
+ a| 
+* N1-표준-32
+* N2-표준-32
+
+ a| 
+* N1-표준-8
+* N1-표준-32
+* N2-표준-4
+* N2 - 표준 - 8
+* N2-표준-32
+
+ a| 
+* N1-표준-8
+* N1-표준-32
+* N2-표준-4
+* N2 - 표준 - 8
+* N2-표준-32
+
+
+
+
+| 지원되는 디스크 유형 ^4^ 6+| 영역 영구 디스크(SSD, 균형 및 표준) 
+|===
+참고:
+
+. 디스크 제한을 사용하면 디스크만 사용하여 최대 시스템 용량 제한에 도달하지 못할 수 있습니다. 용량 제한에 도달할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^].
++
+link:reference-limits-gcp.html["Google Cloud의 디스크 제한에 대해 자세히 알아보십시오"].
+
+. PAYGO Explore에서는 Google Cloud Storage에 대한 데이터 계층화가 지원되지 않습니다.
+. CUSTOM-4-16384 시스템 유형은 새로운 Cloud Volumes ONTAP 시스템에서 더 이상 지원되지 않습니다.
++
+이 기계 유형에서 실행 중인 기존 시스템이 있는 경우 계속 사용할 수 있지만 n2-standard-4 기계 유형으로 전환하는 것이 좋습니다.
+
+. SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.
+. Cloud Manager 인터페이스는 Standard 및 BYOL:n1-highmem-4에 대한 추가 지원 시스템 유형을 보여 줍니다. 그러나 이 기계 유형은 생산 환경에 사용할 수 없습니다. 특정 연구소 환경에서만 사용할 수 있도록 만들었습니다.
+. Google Cloud Platform 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+. Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 VM 인스턴스 유형을 사용하는 솔루션은 지원되지 않습니다.
+
+
+
+
+== 지원되는 디스크 크기입니다
+
+Google Cloud에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 지원되는 디스크 크기는 다음과 같습니다.
+
+* 100GB
+* 500GB
+* 1TB
+* 2TB입니다
+* 4TB
+* 8TB
+* 16TB
+* 64TB
+

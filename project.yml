@@ -1,0 +1,124 @@
+---
+settings:
+  name: Cloud Volumes ONTAP 9.11.0 release notes
+  platform: cloud
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  versions:
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-relnotes"
+    version-number: 9.10.1
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-9100-relnotes"
+    version-number: 9.10.0
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-991-relnotes"
+    version-number: 9.9.1
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-990-relnotes"
+    version-number: 9.9.0
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-98-relnotes"
+    version-number: '9.8'
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-97-relnotes"
+    version-number: '9.7'
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-96-relnotes"
+    version-number: '9.6'
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-95-relnotes"
+    version-number: '9.5'
+  - name: Cloud Volumes ONTAP
+    url: "/cloud-volumes-ontap-94-relnotes"
+    version-number: '9.4'
+  - name: ONTAP 클라우드
+    url: "/cloud-volumes-ontap-93-relnotes"
+    version-number: '9.3'
+  langs: ko-kr,us-en,ja-jp,zh-cn
+sidebar:
+  entries:
+  - title: 모든 Cloud Manager 설명서
+    url: https://docs.netapp.com/us-en/cloud-manager-family
+  - title: 릴리스 노트 홈
+    url: "/index.html"
+  - title: 새로운 소식
+    url: "/reference-new.html"
+  - title: 라이센스 개요
+    url: "/concept-licensing.html"
+  - title: 지원되는 구성
+    entries:
+    - title: 설치하고
+      url: "/reference-configs-aws.html"
+    - title: Azure를 지원합니다
+      url: "/reference-configs-azure.html"
+    - title: Google 클라우드
+      url: "/reference-configs-gcp.html"
+  - title: 보관 제한
+    entries:
+    - title: 설치하고
+      url: "/reference-limits-aws.html"
+    - title: Azure를 지원합니다
+      url: "/reference-limits-azure.html"
+    - title: Google 클라우드
+      url: "/reference-limits-gcp.html"
+  - title: 알려진 문제
+    url: "/reference-issues.html"
+  - title: 알려진 제한 사항
+    entries:
+    - title: 일반적인 제한 사항
+      url: "/reference-limitations.html"
+    - title: AWS의 제한
+      url: "/reference-limitations-aws.html"
+    - title: Azure의 제한
+      url: "/reference-limitations-azure.html"
+    - title: Google Cloud의 제한 사항
+      url: "/reference-limitations-gcp.html"
+  - title: 클라우드 공급자 통합
+    url: "/reference-provider-integrations.html"
+  - title: 법적 고지
+    url: "/legal-notices.html"
+homepage:
+  tiles:
+  - title: 시작하십시오
+    links:
+    - title: 새로운 소식
+      url: reference-new.html
+    - title: 라이센스 개요
+      url: concept-licensing.html
+  - title: Amazon Web Services에서 직접 지원합니다
+    links:
+    - title: 지원되는 구성
+      url: reference-configs-aws.html
+    - title: 보관 제한
+      url: reference-limits-aws.html
+    - title: 제한 사항
+      url: reference-limitations-gcp.html
+  - title: Google 클라우드
+    links:
+    - title: 지원되는 구성
+      url: reference-configs-gcp.html
+    - title: 보관 제한
+      url: reference-limits-gcp.html
+    - title: 제한 사항
+      url: reference-limitations-gcp.html
+  - title: Microsoft Azure를 참조하십시오
+    links:
+    - title: 지원되는 구성
+      url: reference-configs-azure.html
+    - title: 보관 제한
+      url: reference-limits-azure.html
+    - title: 제한 사항
+      url: reference-limitations-azure.html
+  - title: 블로그 커뮤니티
+    links:
+    - title: NetApp 커뮤니티
+      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
+    - title: Cloud Central 블로그
+      url: https://cloud.netapp.com/blog
+    - title: 클라우드 웨비나
+      url: https://cloud.netapp.com/events
+product-family: {}

@@ -1,0 +1,277 @@
+---
+sidebar: sidebar 
+permalink: reference-configs-azure.html 
+keywords: vm, explore, standard, premium, byol, capacity, maximum, virtual machine, Cloud Volumes ONTAP, supported, configurations, disks, sizes 
+summary: Azure에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다. 
+---
+= Azure에서 지원되는 구성
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Azure에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.
+
+
+
+== 라이센스에 의해 지원되는 구성
+
+Cloud Volumes ONTAP는 Azure에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 지원하는 고가용성(HA) 노드 쌍으로 제공됩니다.
+
+단일 노드 시스템을 HA 쌍으로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 쌍 간에 전환하려면 새 시스템을 구축하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.
+
+
+
+=== 단일 노드 시스템
+
+Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 다음 구성 중에서 선택할 수 있습니다.
+
+[cols="h,d,d,d,d,d,d"]
+|===
+|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 라이센스 | 용량 기반 라이센스 
+
+
+| 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 500GiB | 2TiB^1^ | 10TiB | 368TiB | 라이센스당 368TiB입니다 | 2 PiB 
+
+
+| 지원되는 가상 머신 유형입니다  a| 
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+* DS15_v2
+* L8s_v2^2^
+* E4s_v3
+* E8s_v3
+* E32s_v3^3^
+* E48s_v3^3^
+* E64is_v3^3^
+* E4ds_v4^3^
+* E8ds_v4^3^
+* E32ds_v4^3^
+* E48ds_v4^3^
+* E80ids_v4^3^
+
+ a| 
+* E4s_v3
+* E4ds_v4^3^
+
+ a| 
+* DS4_v2
+* DS13_v2
+* E8s_v3
+* E8ds_v4^3^
+
+ a| 
+* DS5_v2
+* DS14_v2
+* DS15_v2
+* E32s_v3^3^
+* E48s_v3^3^
+* E64is_v3^3^
+* E32ds_v4^3^
+* E48ds_v4^3^
+* E80ids_v4^3^
+
+ a| 
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+* DS15_v2
+* L8s_v2^2^
+* E4s_v3
+* E8s_v3
+* E32s_v3^3^
+* E48s_v3^3^
+* E64is_v3^3^
+* E4ds_v4^3^
+* E8ds_v4^3^
+* E32ds_v4^3^
+* E48ds_v4^3^
+* E80ids_v4^3^
+
+ a| 
+* DS4_v2
+* DS5_v2
+* DS13_v2
+* DS14_v2
+* DS15_v2
+* L8s_v2^2^
+* E4s_v3
+* E8s_v3
+* E32s_v3^3^
+* E48s_v3^3^
+* E64is_v3^3^
+* E4ds_v4^3^
+* E8ds_v4^3^
+* E32ds_v4^3^
+* E48ds_v4^3^
+* E80ids_v4^3^
+
+
+
+
+| 지원되는 디스크 유형 ^4^ 6+| 표준 HDD 관리 디스크, 표준 SSD 관리 디스크 및 프리미엄 SSD 관리 디스크 
+|===
+참고:
+
+. PAYGO Explore에서는 Azure Blob 저장소에 대한 데이터 계층화가 지원되지 않습니다.
+. 이 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
+. 이러한 VM 유형은 을 사용합니다 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["울트라급 SSD"^] VNVRAM의 경우, 더 나은 쓰기 성능을 제공합니다.
++
+새 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형을 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 예를 들어, E8ds_v4에서 E8s_v3으로 변경할 수는 없지만 두 VM 유형 모두 Ultra SSD를 사용하므로 E8ds_v4에서 E32ds_v4로 변경할 수 있습니다.
+
++
+반대로 다른 VM 유형을 사용하여 Cloud Volumes ONTAP를 구축한 경우 VNVRAM용 Ultra SSD를 사용하는 VM 유형으로 변경할 수 없습니다. 예를 들어, E8s_v3에서 E8ds_v4로 변경할 수 없습니다.
+
+. SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.
+. Azure 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+. Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 VM 인스턴스 유형을 사용하는 솔루션은 지원되지 않습니다.
+
+
+
+
+=== HA 쌍
+
+Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 중에서 선택할 수 있습니다.
+
+[cols="h,d,d,d,d,d"]
+|===
+|  | 프리모늄 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 라이센스 | 용량 기반 라이센스 
+
+
+| 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 500GiB | 10TiB | 368TiB | 라이센스당 368TiB입니다 | 2 PiB 
+
+
+| 지원되는 가상 머신 유형입니다  a| 
+* DS4_v2
+* DS5_v2^1^
+* DS13_v2
+* DS14_v2^1^
+* DS15_v2^1^
+* E8s_v3
+* E48s_v3^1^
+* E8ds_v4^1^
+* E32ds_v4^1^
+* E48ds_v4^1^
+* E80ids_v4^2^
+
+ a| 
+* DS4_v2
+* DS13_v2
+* E8ds_v4^1^
+
+ a| 
+* DS5_v2^1^
+* DS14_v2^1^
+* DS15_v2^1^
+* E8s_v3
+* E48s_v3^1^
+* E32ds_v4^1^
+* E48ds_v4^1^
+* E80ids_v4^2^
+
+ a| 
+* DS4_v2
+* DS5_v2^1^
+* DS13_v2
+* DS14_v2^1^
+* DS15_v2^1^
+* E8s_v3
+* E48s_v3^1^
+* E8ds_v4^1^
+* E32ds_v4^1^
+* E48ds_v4^1^
+* E80ids_v4^2^
+
+ a| 
+* DS4_v2
+* DS5_v2^1^
+* DS13_v2
+* DS14_v2^1^
+* DS15_v2^1^
+* E8s_v3
+* E48s_v3^1^
+* E8ds_v4^1^
+* E32ds_v4^1^
+* E48ds_v4^1^
+* E80ids_v4^2^
+
+
+
+
+| 지원되는 디스크 유형입니다 5+| 프리미엄 페이지 Blob 
+|===
+참고:
+
+. Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-write-speed.html["쓰기 속도 선택에 대해 자세히 알아보세요"^].
+. 이 VM은 Azure 유지 관리 제어가 필요한 경우에만 권장됩니다. 더 높은 가격 책정으로 인해 다른 사용 사례에는 권장되지 않습니다.
+. PAYGO Explore는 Azure의 HA 쌍에서 지원되지 않습니다.
+. Azure 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+. Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 VM 인스턴스 유형을 사용하는 솔루션은 지원되지 않습니다.
+
+
+
+
+== 지원되는 디스크 크기입니다
+
+Azure에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 12개까지 포함할 수 있습니다.
+
+
+
+=== 단일 노드 시스템
+
+단일 노드 시스템은 Azure 관리 디스크를 사용합니다. 지원되는 디스크 크기는 다음과 같습니다.
+
+[cols="3*"]
+|===
+| Premium SSD를 사용합니다 | Standard SSD를 참조하십시오 | 표준 HDD 
+
+
+ a| 
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 8TiB
+* 16TiB
+* 32TiB
+
+ a| 
+* 100GiB
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 8TiB
+* 16TiB
+* 32TiB
+
+ a| 
+* 100GiB
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 8TiB
+* 16TiB
+* 32TiB
+
+
+|===
+
+
+=== HA 쌍
+
+HA 쌍에서는 프리미엄 페이지 Blob을 사용합니다. 지원되는 디스크 크기는 다음과 같습니다.
+
+* 500GiB
+* 1TiB
+* 2TiB
+* 4TiB
+* 8TiB
+

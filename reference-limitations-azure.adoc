@@ -1,0 +1,43 @@
+---
+sidebar: sidebar 
+permalink: reference-limitations-azure.html 
+keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, nfsv3 
+summary: 이러한 알려진 제한은 Microsoft Azure의 Cloud Volumes ONTAP에만 적용됩니다. 
+---
+= Azure의 알려진 제한 사항
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+
+[role="lead"]
+Microsoft Azure의 Cloud Volumes ONTAP에는 다음과 같은 알려진 제한 사항이 있습니다. 또한 반드시 검토하십시오 link:reference-limitations.html["모든 클라우드 공급자의 Cloud Volumes ONTAP 제한 사항"].
+
+
+
+== Flash Cache 제한
+
+Standard_L8s_v2 VM 유형에는 Cloud Volumes ONTAP이 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache에 대한 다음 제한 사항에 유의하십시오.
+
+* Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.
++
+Cloud Manager에서 볼륨을 생성할 때 스토리지 효율성을 선택하지 않거나, 볼륨을 생성한 후 생성할 수 있습니다 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["CLI를 사용하여 데이터 압축을 비활성화합니다"^].
+
+* 재부팅 후 캐시 재가기는 Cloud Volumes ONTAP에서 지원되지 않습니다.
+
+
+
+
+== HA 제한 사항
+
+일부 지역에서는 HA 쌍이 지원되지 않습니다.
+
+https://cloud.netapp.com/cloud-volumes-global-regions["지원되는 Azure 지역 목록을 봅니다"^].
+
+
+
+== CSP 파트너는 선불 종량제(Pay-as-you-go)을 사용할 수 없습니다
+
+Microsoft 클라우드 솔루션 공급자(CSP) 파트너인 경우 CSP 파트너는 선불 종량제 구독을 사용할 수 없으므로 Cloud Volumes ONTAP Explore, Standard 또는 Premium을 배포할 수 없습니다. 라이센스를 구입하고 Cloud Volumes ONTAP BYOL을 구축해야 합니다.
