@@ -481,7 +481,6 @@
   <block id="d302a39827e370146d2861389e98e60c" category="section-title">중국 지역 지원</block>
   <block id="da059bd73f7531380888607adbbd03aa" category="paragraph">Cloud Volumes ONTAP는 중국 지역에서 다음과 같이 지원됩니다.</block>
   <block id="cbf02fb0cb394b4b19fb0788f9b62554" category="list-text">Cloud Volumes ONTAP 9.6은 AWS 중국 지역에서 지원됩니다.</block>
-  <block id="a24849df7617212f16203f6f4b4bf5e2" category="list-text">Cloud Volumes ONTAP 9.9는 Azure 중국 지역에서 지원됩니다.</block>
   <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">단일 노드 시스템이 지원됩니다.</block>
   <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">NetApp에서 직접 구매한 라이센스가 지원됩니다.</block>
   <block id="a5a1e4029969159a5f8fdeddd3fb7e1b" category="paragraph">다른 모든 위치, 버전, 구성 및 라이센스는 지원되지 않습니다.</block>
@@ -701,7 +700,6 @@
   <block id="25827e83a178b9b140976a356e0ea48a" category="section-title">충전 관련 참고 사항</block>
   <block id="c1092325501599c6dcc90500081a2184" category="list-text">BYOL 용량을 초과하거나 라이센스가 만료된 경우, 마켓플레이스 가입을 기준으로 시간당 요금이 초과됩니다.</block>
   <block id="caa54273e5fb3b700fad994050e4dde4" category="list-text">각 패키지에는 최소 4TiB 용량 비용이 청구됩니다. 용량이 4TiB 미만인 Cloud Volumes ONTAP 인스턴스는 4TiB의 속도로 청구됩니다.</block>
-  <block id="c44f1d716d7612886617d980c0523196" category="list-text">SVM(스토리지 VM)을 지원하는 추가 데이터에 대한 추가 라이센스 비용은 없지만 SVM당 최소 용량 비용은 4TiB입니다.</block>
   <block id="55675f6a5328a3c661aa2daa971f7c76" category="list-text">HA 쌍의 경우 노드의 프로비저닝된 용량에 대해서만 비용이 청구됩니다. 파트너 노드에 동기식으로 미러링되는 데이터에 대해서는 비용이 청구되지 않습니다.</block>
   <block id="e61eacf9a2b260a46a8935478c8a063d" category="list-text">FlexClone 볼륨에 사용된 용량에 대해서는 비용이 청구되지 않습니다.</block>
   <block id="529bcec2b9675b3cb0a81186e626a92b" category="list-text">소스 및 타겟 FlexCache 볼륨은 프로비저닝된 공간에 따라 운영 데이터로 간주되고 충전됩니다.</block>
@@ -767,4 +765,6 @@
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP 클라우드</block>
+  <block id="ee095a2fd0990ba785c303c6524d8145" category="list-text">추가 SVM(Data-Serving Storage VM)에 대한 추가 라이센스 비용은 없지만, 데이터 서비스 SVM당 최소 용량 비용은 4TiB입니다.</block>
+  <block id="cc331a0f761602982769cdbb99e71272" category="list-text">재해 복구 SVM은 프로비저닝된 용량에 따라 충전됩니다.</block>
 </blocks>
