@@ -96,7 +96,7 @@ homepage:
     - title: 보관 제한
       url: reference-limits-aws.html
     - title: 제한 사항
-      url: reference-limitations-gcp.html
+      url: reference-limitations-aws.html
   - title: Google 클라우드
     links:
     - title: 지원되는 구성

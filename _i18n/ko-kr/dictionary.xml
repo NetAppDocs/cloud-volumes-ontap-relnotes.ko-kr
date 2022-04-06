@@ -720,7 +720,6 @@
   <block id="63573dab314c98e4e22e47653c15cf64" category="list-text">아직 구독이 없는 경우<block ref="49d6686f1a400348bbcff579d9d978a6" category="inline-link-rx"></block>.</block>
   <block id="697cc5090bb98ee57c1e28438084378b" category="list-text">mailto:ng-keystone-success@netapp.com [Contact NetApp]: 하나 이상의 Keystone Flex 구독으로 Cloud Manager 사용자 계정을 인증하십시오.</block>
   <block id="72aa254218c757aad3e3703bdaf90694" category="inline-link">Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 연결합니다</block>
-  <block id="f96e5580f13646b320535609852aaf80" category="list-text">NetApp이 사용자 계정을 승인한 후<block ref="b8a2932fb185e14a928f847d974c3942" category="inline-link-rx"></block>.</block>
   <block id="de4b56542275c5f0b46bea6fcc27b034" category="list-text">Cloud Volumes ONTAP 시스템을 생성할 때 Keystone 유연한 구독 충전 방법을 선택하십시오.</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">노드 기반 라이센스</block>
   <block id="361abfc2eaabdb045de49dafd20dbdf1" category="paragraph">노드 기반 라이센스는 이전 세대 라이센스 모델로, 노드별로 Cloud Volumes ONTAP에 대한 라이센스를 부여할 수 있도록 지원합니다. 이 라이센스 모델은 신규 고객에는 제공되지 않으며 무료 평가판을 사용할 수 없습니다. 노드별 충전은 위에서 설명한 용량 기준 충전 방법으로 대체되었습니다.</block>
@@ -767,4 +766,5 @@
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP 클라우드</block>
   <block id="ee095a2fd0990ba785c303c6524d8145" category="list-text">추가 SVM(Data-Serving Storage VM)에 대한 추가 라이센스 비용은 없지만, 데이터 서비스 SVM당 최소 용량 비용은 4TiB입니다.</block>
   <block id="cc331a0f761602982769cdbb99e71272" category="list-text">재해 복구 SVM은 프로비저닝된 용량에 따라 충전됩니다.</block>
+  <block id="48f0974a79de83d6884f04d71ab3a90a" category="list-text">NetApp이 사용자 계정을 승인한 후<block ref="691060edb0108ad45359b1773c59fa65" category="inline-link-rx"></block></block>
 </blocks>

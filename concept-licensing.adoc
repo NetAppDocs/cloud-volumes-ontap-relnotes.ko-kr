@@ -205,7 +205,7 @@ Keystone Flex 구독은 HA 쌍으로 지원됩니다. 현재 단일 노드 시�
 
 . 아직 구독이 없는 경우 https://www.netapp.com/forms/keystone-sales-contact/["NetApp에 문의하십시오"^].
 . mailto:ng-keystone-success@netapp.com [Contact NetApp]: 하나 이상의 Keystone Flex 구독으로 Cloud Manager 사용자 계정을 인증하십시오.
-. NetApp이 사용자 계정을 승인한 후 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 연결합니다"].
+. NetApp이 사용자 계정을 승인한 후 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-keystone.html#link-a-subscription["Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 연결합니다"^]
 . Cloud Volumes ONTAP 시스템을 생성할 때 Keystone 유연한 구독 충전 방법을 선택하십시오.
 +
 ** https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-aws.html["AWS에서 Cloud Volumes ONTAP 실행"^]
