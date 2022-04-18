@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP은 안정적인 운영을 제공하기 위해 Googl
 ---
 = Google Cloud의 스토리지 제한
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

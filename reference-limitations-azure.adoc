@@ -6,6 +6,7 @@ summary: 이러한 알려진 제한은 Microsoft Azure의 Cloud Volumes ONTAP에
 ---
 = Azure의 알려진 제한 사항
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

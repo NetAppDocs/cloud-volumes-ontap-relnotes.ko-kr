@@ -6,6 +6,7 @@ summary: 이 페이지에서는 NetApp이 클라우드 공급자와 협력하여
 ---
 = 클라우드 공급자 통합
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

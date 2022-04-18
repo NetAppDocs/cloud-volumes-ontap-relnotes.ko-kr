@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP 9.10.1 에는 여러 가지 새로운 기능과 향
 ---
 = Cloud Volumes ONTAP 9.10.1의 새로운 기능
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

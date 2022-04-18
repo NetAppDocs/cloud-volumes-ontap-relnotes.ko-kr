@@ -6,6 +6,7 @@ summary: 알려진 문제점은 이 제품 릴리스를 성공적으로 사용�
 ---
 = 알려진 문제
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

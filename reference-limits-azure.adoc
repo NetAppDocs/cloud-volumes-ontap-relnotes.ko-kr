@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP는 Azure에서 스토리지 구성 제한으로 안
 ---
 = Azure의 스토리지 제한
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 

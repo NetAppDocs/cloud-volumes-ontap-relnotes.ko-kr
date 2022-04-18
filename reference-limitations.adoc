@@ -6,6 +6,7 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 ---
 = 모든 클라우드 공급자의 제한
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
@@ -19,9 +20,21 @@ AWS, Azure, Google Cloud와 같은 모든 클라우드 공급자의 Cloud Volume
 
 
 
-== 최대 동시 복제 작업 수
+== Cloud Volumes ONTAP 배포는 클라우드 공급자의 콘솔에서 수정할 수 없습니다
 
-인스턴스 유형 또는 시스템 유형에 상관없이 Cloud Volumes ONTAP에 대한 최대 동시 SnapMirror 또는 SnapVault 전송 수는 노드당 100개입니다.
+클라우드 공급자의 콘솔에서 Cloud Volumes ONTAP 시스템의 구성을 변경하면 지원되지 않는 구성이 생성됩니다. Cloud Manager에서 생성 및 관리하는 Cloud Volumes ONTAP 리소스에 대한 모든 변경은 시스템 안정성과 Cloud Manager의 시스템 관리 기능에 영향을 줄 수 있습니다.
+
+
+
+== 디스크와 애그리게이트는 Cloud Manager에서 관리해야 합니다
+
+모든 디스크와 애그리게이트는 Cloud Manager에서 직접 생성 및 삭제해야 합니다. 다른 관리 도구에서 이러한 작업을 수행해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 주고 향후 디스크를 추가할 수 없도록 하며 중복 클라우드 공급자 비용을 생성할 수 있습니다.
+
+
+
+== Cloud Manager에서 소프트웨어 업데이트를 완료해야 합니다
+
+Cloud Volumes ONTAP 업그레이드는 Cloud Manager에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
 
 
 
@@ -33,6 +46,12 @@ https://docs.netapp.com/us-en/cloud-manager-backup-restore/concept-backup-to-clo
 
 
 NOTE: WAFL 파일 시스템의 ONTAP 정합성 보장 지점에서 데이터 정합성 보장 확인 WAFL만 ONTAP 파일 시스템을 정지하여 충돌 시에도 정합성이 보장되는 백업을 수행할 수 있습니다.
+
+
+
+== 자동 애플리케이션 리소스 관리 솔루션
+
+자동 애플리케이션 리소스 관리 솔루션은 Cloud Volumes ONTAP 시스템을 관리해서는 안 됩니다. 이렇게 하면 지원되지 않는 구성이 변경될 수 있습니다. 예를 들어, 솔루션은 Cloud Volumes ONTAP를 지원되지 않는 VM 인스턴스 유형으로 변경할 수 있습니다.
 
 
 
@@ -55,27 +74,9 @@ Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또�
 
 
 
-== 자동 애플리케이션 리소스 관리 솔루션을 사용해서는 안 됩니다
+== 최대 동시 복제 작업 수
 
-자동 애플리케이션 리소스 관리 솔루션은 Cloud Volumes ONTAP 시스템을 관리해서는 안 됩니다. 이렇게 하면 지원되지 않는 구성이 변경될 수 있습니다. 예를 들어, 솔루션은 Cloud Volumes ONTAP를 지원되지 않는 VM 인스턴스 유형으로 변경할 수 있습니다.
-
-
-
-== Cloud Manager에서 소프트웨어 업데이트를 완료해야 합니다
-
-Cloud Volumes ONTAP 업그레이드는 Cloud Manager에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
-
-
-
-== Cloud Volumes ONTAP 배포는 클라우드 공급자의 콘솔에서 수정할 수 없습니다
-
-클라우드 공급자의 콘솔에서 Cloud Volumes ONTAP 구성을 변경하면 지원되지 않는 구성이 발생합니다. Cloud Manager에서 생성 및 관리하는 Cloud Volumes ONTAP 리소스에 대한 모든 변경은 시스템 안정성과 Cloud Manager의 시스템 관리 기능에 영향을 줄 수 있습니다.
-
-
-
-== 디스크와 애그리게이트는 Cloud Manager에서 관리해야 합니다
-
-모든 디스크와 애그리게이트는 Cloud Manager에서 직접 생성 및 삭제해야 합니다. 다른 관리 도구에서 이러한 작업을 수행해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 주고 향후 디스크를 추가할 수 없도록 하며 중복 클라우드 공급자 비용을 생성할 수 있습니다.
+인스턴스 유형 또는 시스템 유형에 상관없이 Cloud Volumes ONTAP에 대한 최대 동시 SnapMirror 또는 SnapVault 전송 수는 노드당 100개입니다.
 
 
 

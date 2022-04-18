@@ -6,6 +6,7 @@ summary: Cloud Volumes ONTAP는 AWS에서 스토리지 구성을 제한하여 �
 ---
 = AWS에서의 스토리지 제한
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
