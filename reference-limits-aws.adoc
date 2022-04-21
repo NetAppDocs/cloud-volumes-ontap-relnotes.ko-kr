@@ -239,7 +239,19 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 | 사용권 유형 | 인스턴스 패밀리 | 스토리지 VM 제한 
 
 
-.2+| * PAYGO * | C4, M4 및 R4  a| 
+| * Freemium * | C5, M5 및 R5  a| 
+* 스토리지 VM 총 24개 ^1,2^
+
+
+
+
+| * 용량 기반 PAYGO 또는 BYOL *^3^ | C5, M5 및 R5  a| 
+* 스토리지 VM 총 24개 ^1,2^
+
+
+
+
+.2+| * 노드 기반 PAYGO * | C4, M4 및 R4  a| 
 * 1 데이터 제공용 스토리지 VM
 * 재해 복구용 스토리지 VM 1개
 
@@ -249,18 +261,6 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 | C5, M5 및 R5  a| 
 * 1 데이터 제공용 스토리지 VM
 * 재해 복구용 스토리지 VM 1개
-
-
-
-
-| * Freemium * | C5, M5 및 R5  a| 
-* 스토리지 VM 총 24개 ^1,2^
-
-
-
-
-| * 용량 기반 라이센스 * ^3^ | C5, M5 및 R5  a| 
-* 스토리지 VM 총 24개 ^1,2^
 
 
 

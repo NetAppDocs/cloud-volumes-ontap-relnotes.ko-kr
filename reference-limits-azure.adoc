@@ -381,25 +381,25 @@ https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-sv
 | 사용권 유형 | 스토리지 VM 제한 
 
 
-| * PAYGO *  a| 
-* 1 데이터 제공용 스토리지 VM
-* 재해 복구용 스토리지 VM 1개
-
-
-
-
 | * Freemium *  a| 
 스토리지 VM 총 24개 ^1,2^
 
 
 
-| * 용량 기반 라이센스 * ^3^  a| 
+| * 용량 기반 PAYGO 또는 BYOL *^3^  a| 
 스토리지 VM 총 24개 ^1,2^
 
 
 
 | * 노드 기반 BYOL * ^4^  a| 
 스토리지 VM 총 24개 ^1,2^
+
+
+
+| * 노드 기반 PAYGO *  a| 
+* 1 데이터 제공용 스토리지 VM
+* 재해 복구용 스토리지 VM 1개
+
 
 |===
 . 이러한 24개의 스토리지 VM은 데이터를 제공하거나 DR(재해 복구)용으로 구성할 수 있습니다.
