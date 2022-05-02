@@ -405,10 +405,6 @@
   <block id="fc248f74f5e36542f7f5627b8610e9a3" category="paragraph"><block ref="fc248f74f5e36542f7f5627b8610e9a3" category="inline-link-rx"></block></block>
   <block id="c0227cef6f07a8cd2ac72f2945b031aa" category="section-title">오픈 소스</block>
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
-  <block id="173e55c2b5204817987cc751a5b6e8ea" category="inline-link-macro">AWS의 Cloud Volumes ONTAP 9.10.1 중재자를 위한 고지 사항</block>
-  <block id="7dc48600717378e76d5b1da71cae7407" category="list-text"><block ref="7dc48600717378e76d5b1da71cae7407" category="inline-link-macro-rx"></block></block>
-  <block id="f35de09885a5c436c007570a3ef5d716" category="inline-link-macro">Google Cloud의 Cloud Volumes ONTAP 9.10.1 중재자를 위한 고지 사항</block>
-  <block id="4f359938c750ab15fcd5b8414bc561f7" category="list-text"><block ref="4f359938c750ab15fcd5b8414bc561f7" category="inline-link-macro-rx"></block></block>
   <block id="b889869e31827a33530d6fd02141fdb5" category="summary">Azure에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.</block>
   <block id="e4b60b51b40a0907e38b3293d36780e6" category="doc">Azure에서 지원되는 구성</block>
   <block id="c334038ed8a782403ae705a8de1f584b" category="section-title">라이센스에 의해 지원되는 구성</block>
@@ -505,61 +501,19 @@
   <block id="09ab988c99cc61af08cebf0d39a00ac5" category="list-text">인터페이스 그룹</block>
   <block id="ac140a63a61ac75e47b5b4ef17eec52d" category="list-text">intranode LIF 페일오버</block>
   <block id="1749d12df3df2319d3eee218a277ff83" category="list-text">MetroCluster</block>
-  <block id="3b17cc3288153f4fda78f32c760abf3e" category="list-text">AWS 및 Google Cloud의 ONTAP S3(S3 프로토콜이 Azure에서 지원됨)</block>
   <block id="951de4e4bdae5ad5598a048ed6a6f1e3" category="list-text">RAID4, RAID-DP, RAID-TEC(RAID0 지원)</block>
   <block id="0ec5130d573357ea4d244f018e39ae85" category="list-text">서비스 프로세서</block>
   <block id="9e13198f9131eed7b39e47425df55fdb" category="list-text">SnapLock 규정 준수 및 엔터프라이즈 모드(클라우드 WORM만 지원)</block>
   <block id="974658d7ac018cb945e78365b0a760fb" category="list-text">SnapMirror Synchronous</block>
   <block id="87495e311a3944910e3cc0c7bee3d754" category="list-text">VLAN</block>
-  <block id="fd4593d74277f81ee9e8804577a73cba" category="summary">Cloud Volumes ONTAP 9.10.1 에는 여러 가지 새로운 기능과 향상된 기능이 포함되어 있습니다.</block>
-  <block id="4d7262af7a10a07665457d001d4f8c1f" category="doc">Cloud Volumes ONTAP 9.10.1의 새로운 기능</block>
   <block id="f9d74313da16b2bb412c1d7c5efd0534" category="inline-link">Cloud Manager 릴리즈 노트</block>
   <block id="62703524dbb4d20326585184b2149d4d" category="paragraph">최신 버전의 Cloud Manager에는 추가 기능과 개선 사항도 포함되어 있습니다. 를 참조하십시오<block ref="b168941a5dc7eab411ef9dc2c7a220db" category="inline-link-rx"></block> 를 참조하십시오.</block>
-  <block id="e675a1bc790504a4867dc88102a50717" category="section-title">라이센스 업데이트(2022년 2월 9일)</block>
-  <block id="2de816b17ee9ae4a521784a41382a939" category="paragraph">Cloud Volumes ONTAP는 다음과 같은 시장 변화를 발표했습니다.</block>
-  <block id="376dea476fe87cb9b0aae288d191c1cc" category="list-text">이제 Essentials 패키지와 Professional 패키지를 AWS 및 Google Cloud 마켓플레이스에서 사용할 수 있습니다.</block>
-  <block id="8b5bbca61d06a4ab0106010904673191" category="paragraph">이러한 용량을 기준으로 비용을 지불할 수 있으며, 연간 계약을 클라우드 공급자로부터 직접 구매할 수 있습니다. NetApp에서 직접 용량 라이센스를 구매할 수 있습니다.</block>
-  <block id="110339077b8549e028924c27d4eee889" category="paragraph">클라우드 마켓플레이스에 기존 구독이 있는 경우 이러한 새로운 오퍼링을 자동으로 구독할 수 있습니다. 새로운 Cloud Volumes ONTAP 작업 환경을 구축할 때 용량 충전을 선택할 수 있습니다.</block>
-  <block id="941041b0490626a7d2a15321ebfea99b" category="paragraph">신규 고객인 경우 새 작업 환경을 생성할 때 Cloud Manager에서 구독을 신청하라는 메시지가 표시됩니다.</block>
-  <block id="0395ddea3013558664b640709c4005e0" category="list-text">AWS 및 Google Cloud 마켓플레이스를 통한 노드 라이센싱은 더 이상 사용되지 않으며 새 가입자에게 제공되지 않습니다. 여기에는 연간 계약 및 시간별 가입(탐색, 표준, 프리미엄)이 포함됩니다.</block>
-  <block id="b353203eeb0af0c192ef9706121d7227" category="paragraph">이 충전 방법은 활성 서브스크립션을 보유한 기존 고객에게도 계속 사용할 수 있습니다.</block>
-  <block id="ad66e158a2e414eee17bb2c5185f011a" category="inline-link-macro">Cloud Volumes ONTAP의 라이센스 옵션에 대해 자세히 알아보십시오</block>
-  <block id="3fcf12dcb6c72aec4434fa4f3789fc52" category="paragraph"><block ref="07995a3dc55aacf94321b688970cb4b0" category="inline-link-macro-rx"></block>.</block>
-  <block id="b9484773f069866761c1a46cba980b96" category="section-title">9.10.1 GA(2022년 1월 31일)</block>
-  <block id="100e601746af2f6d484f1389c42cf450" category="paragraph">Cloud Volumes ONTAP 9.10.1의 GA(General Availability) 릴리스가 출시되었습니다. GA 릴리스에는 버그 수정이 포함되어 있습니다.</block>
-  <block id="f7c558ce34d6067dc97b14ed7b3a87cf" category="paragraph">Cloud Manager에서 9.10.1 RC1, 9.10.0 또는 9.9.1의 버전을 실행 중인 기존 시스템을 업그레이드하라는 메시지가 표시됩니다.</block>
-  <block id="6cd05a49163b5aa6ee385dfc7347d079" category="section-title">더 많은 VM 유형 지원(2021년 1월 2일)</block>
-  <block id="26d82dd2fd724cf014cf26342bfc363f" category="paragraph">Cloud Manager 3.9.14 릴리스의 일부로 Cloud Volumes ONTAP는 이제 Microsoft Azure에서 9.10.1 릴리스부터 다음 VM 유형에서 지원됩니다.</block>
   <block id="aafab9b991240605f56b3df780360449" category="list-text">E4ds_v4</block>
   <block id="47518ea66849dbbe24f40b9d9b33f828" category="list-text">E8ds_v4</block>
   <block id="88a30f177822761a0b89ce7abd88a305" category="list-text">E32ds_v4</block>
   <block id="958e5e8b2dc959cc24ae1182052f1b03" category="list-text">E48ds_v4</block>
-  <block id="ea3f9d369707ab2f7c6d6103ba7fe825" category="inline-link-macro">지원되는 구성 페이지</block>
-  <block id="8e2f07872c91d982481d68ca5de27dc8" category="paragraph">로 이동합니다 <block ref="92a96891824d3c44d62ead0c718dae54" category="inline-link-macro-rx"></block> 를 참조하십시오.</block>
-  <block id="fbbb3f7e81b42e6927134feccd19e6ee" category="section-title">9.10.1 RC1(2021년 11월 28일)</block>
-  <block id="7b20bd46e1f2f32dede1cb90196e5f54" category="paragraph">Cloud Volumes ONTAP 9.10.1 출시 후보 1은 현재 AWS, Azure 및 Google 클라우드에서 제공됩니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.</block>
-  <block id="2f2e9f37c2d5c94707240e387020692b" category="section-title">Microsoft Azure의 HA 기능 향상</block>
-  <block id="958c6e45bc6a4858cf4786e749330e34" category="list-text">Microsoft Azure에서 실행되는 Cloud Volumes ONTAP HA 쌍의 계획되지 않은 페일오버 시간을 줄였습니다.</block>
-  <block id="ae279385bdbd95d3d4d0c40949a51548" category="list-text">이제 NFSv4가 지원됩니다.</block>
-  <block id="e05f85fda008e9ed4c4f090742f0a773" category="paragraph">Cloud Volumes ONTAP에서 이러한 향상된 기능을 사용하려면 Azure 구독에서 기능을 활성화해야 합니다. "소유자" 권한이 있는 Azure 사용자는 Azure CLI에서 이 기능을 활성화할 수 있습니다.</block>
-  <block id="da3502c908178000cd27f8ed329d92e8" category="paragraph">Azure 구독에서 이 기능을 활성화해야 하는 Cloud Volumes ONTAP 9.10.1 시스템의 경우 클라우드 관리자가 이러한 세부 정보를 작업 필요 메시지에 표시합니다.</block>
-  <block id="4b86a9bfe35da8d5b3e1175b8664656d" category="list-text">Cloud Volumes ONTAP HA 쌍의 고가용성에는 문제가 없습니다. 이 Azure 기능은 ONTAP와 함께 작동하여 계획되지 않은 페일오버 이벤트로 인해 NFS 프로토콜에 대해 클라이언트에서 관측된 애플리케이션 중단 시간을 줄입니다.</block>
-  <block id="74c86f2714a033254b4bc8058a066937" category="list-text">이 기능을 사용하도록 설정하는 것은 Cloud Volumes ONTAP HA 쌍의 무중단 기능입니다.</block>
-  <block id="7dbbac252a198b9c7c543b30ca9455a6" category="list-text">Azure 구독에서 이 기능을 활성화해도 다른 VM에 문제가 발생하지 않습니다.</block>
-  <block id="5f6c185eb38c56187fc699dfbe62654b" category="section-title">보안 강화</block>
-  <block id="3c9164723321f1f44cff4469dc5efc3b" category="paragraph">ONTAP 이미지 생성 및 Cloud Volumes ONTAP 부팅 디스크의 보안 기능이 향상되었습니다.</block>
-  <block id="695506f5b799e235f4492ce60b065e25" category="section-title">Keystone Flex 구독 지원</block>
-  <block id="26cc6717e7190c5855fa65a2ee33ab60" category="paragraph">Cloud Manager 3.9.13 릴리즈의 일부로써 Cloud Volumes ONTAP HA pair로 Keystone 유연한 구독을 사용할 수 있습니다. Keystone Flex Subscription은 종량제 구독 기반 서비스로, OpEx 소비 모델을 선호하는 사용자에게 원활한 하이브리드 클라우드 경험을 제공하여 자본 지출 또는 임대를 지원합니다.</block>
-  <block id="631442bea7b547a2d49f3db29739b6dd" category="paragraph">Keystone 유연한 가입은 Cloud Manager에서 구축할 수 있는 모든 새로운 버전의 Cloud Volumes ONTAP에서 지원됩니다.</block>
-  <block id="5241b66f6612f4892510b85c57722b06" category="section-title">암호화 키 관리</block>
-  <block id="6a78af9c8b3078dd0cda62677eede1dc" category="paragraph">ONTAP 9.10.1 릴리스에는 ONTAP 암호화 키를 보호하기 위해 AKV(Azure Key Vault) 또는 Google 클라우드 키 관리 서비스를 사용할 수 있는 향상된 기능이 포함되어 있습니다.</block>
-  <block id="8907d74e548e23b1e94ed347d11b73c7" category="inline-link">Cloud Volumes ONTAP 암호화 지원에 대해 자세히 알아보십시오</block>
-  <block id="7db2d5a0d9cf33552c832c23bcd00a7e" category="paragraph"><block ref="c3fa3413722cd4eb75878afb2fc1b45c" category="inline-link-rx"></block>.</block>
-  <block id="40a3c7b33b166dae48cfa8c02b36318a" category="section-title">Cloud Manager Connector의 필수 버전입니다</block>
-  <block id="07d37071b2c27624b2f4c9080885d2df" category="paragraph">새로운 Cloud Volumes ONTAP 9.10.1 시스템을 배포하고 기존 시스템을 9.10.1로 업그레이드하려면 Cloud Manager Connector가 버전 3.9.13 이상을 실행해야 합니다.</block>
   <block id="cc85911ae6bc3b2540142e310528310b" category="admonition">Connector의 자동 업그레이드는 기본적으로 활성화되어 있으므로 최신 버전을 실행해야 합니다.</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">노트 업그레이드</block>
-  <block id="1abe1e6f1ab26afe1a16323464d05d4b" category="list-text">9.10.0 릴리스 및 9.9.1 릴리스에서 Cloud Volumes ONTAP 9.10.1로 업그레이드할 수 있습니다. Cloud Manager에서 적합한 Cloud Volumes ONTAP 시스템을 9.10.1 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="1c58b0eb30a6dcb357eb70a5f2b7b763" category="inline-link">Cloud Manager에서 알림을 받을 때 업그레이드하는 방법에 대해 알아보십시오</block>
   <block id="803d45df8eb29c3872409cc750868adb" category="paragraph"><block ref="91157be1d04ccb789488c1869d33e63c" category="inline-link-rx"></block>.</block>
   <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.</block>
@@ -567,8 +521,6 @@
   <block id="0810d353d59682cc576139c85dde16ca" category="section-title">C4, M4 및 R4 인스턴스 유형</block>
   <block id="a1e5d1768da3a3100837f2ea13ebd32f" category="paragraph">9.8 릴리스, C4, M4 및 R4 인스턴스 유형부터 새로운 Cloud Volumes ONTAP 시스템에서는 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 Cloud Volumes ONTAP 시스템이 있는 경우에도 이 릴리즈로 업그레이드할 수 있습니다.</block>
   <block id="f84be4481dc8e8613c8c66fe2b277872" category="paragraph">C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경하는 것이 좋습니다.</block>
-  <block id="2be187f608e3ad4af24d83ba1557f439" category="section-title">DS3_v2</block>
-  <block id="65b0a9dbf9678f2f159ed56b9d03e3c6" category="paragraph">9.9.1 릴리즈부터 DS3_v2 VM 유형은 더 이상 신규 및 기존 Cloud Volumes ONTAP 시스템에서 지원되지 않습니다. 이 VM 유형에서 실행 중인 기존 시스템이 있는 경우 9.10.1로 업그레이드하기 전에 VM 유형을 변경해야 합니다.</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="doc">Google Cloud에서 지원되는 구성</block>
   <block id="0c11951245f2ef7895ea0fc514386d6e" category="paragraph">Cloud Volumes ONTAP는 Google Cloud Platform에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 지원하는 고가용성(HA) 노드 쌍으로 지원됩니다.</block>
@@ -671,9 +623,6 @@
   <block id="71cce048f3aa67d534f433fdfc00f486" category="list-text">Cloud Backup을 사용한 볼륨 백업 포함(이 라이센스에 대해 청구된 볼륨에만 해당)</block>
   <block id="26e0cffca193fe47b1c5c8f73ea3c3e1" category="section-title">소비 모델</block>
   <block id="3cc132ecf0523f86195d2baf263bfdba" category="paragraph">Essentials 및 Professional 패키지는 다음 소비 모델과 함께 제공됩니다.</block>
-  <block id="64e2a2e379eafbf4fdc21f4b5b6b9670" category="list-text">NetApp에서 구입한 라이센스(BYOL</block>
-  <block id="8c249f1fdb19ebb8a1c044b31e583443" category="list-text">클라우드 공급자 마켓플레이스로부터 연간 계약(AWS 및 Google Cloud만 해당)</block>
-  <block id="a8782b6bcad5f279f97575834558bfb3" category="list-text">클라우드 공급자 시장에서 시간별 구독(PAYGO</block>
   <block id="743cd9f94465042cc1367604dce1ec22" category="list-text">NetApp(BYOL)에서 라이센스를 구입하는 경우 클라우드 공급자 마켓플레이스의 PAYGO 오퍼링을 구독해야 합니다.</block>
   <block id="0956d25698d6ea6e452e1cd574ab1eea" category="paragraph">라이센스는 항상 먼저 부과되지만 다음과 같은 경우 마켓플레이스의 시간당 요율로 비용이 청구됩니다.</block>
   <block id="6246af80c9ea9c857c70d2c643fcb249" category="list-text">라이센스 용량을 초과하는 경우</block>
@@ -736,8 +685,6 @@
   <block id="514c35ac615c3426962d39f27b71014b" category="paragraph">이 릴리즈에는 Cloud Volumes ONTAP과 관련된 알려진 문제가 없습니다.</block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link">ONTAP 릴리즈 노트</block>
   <block id="398d7dd4fa02e30dc6322ad98eff7d2b" category="paragraph">ONTAP 소프트웨어에 대해 알려진 문제는 에서 찾을 수 있습니다<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
-  <block id="5e95654e1eacf29d1e5174606546ef45" category="summary">이 릴리즈 노트에서는 Cloud Volumes ONTAP 9.10.1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
-  <block id="9c839c500b23ff665a88087ed187b455" category="doc">Cloud Volumes ONTAP 9.10.1 릴리스 정보</block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
   <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">릴리스 노트 홈</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
@@ -763,8 +710,42 @@
   <block id="ee095a2fd0990ba785c303c6524d8145" category="list-text">추가 SVM(Data-Serving Storage VM)에 대한 추가 라이센스 비용은 없지만, 데이터 서비스 SVM당 최소 용량 비용은 4TiB입니다.</block>
   <block id="cc331a0f761602982769cdbb99e71272" category="list-text">재해 복구 SVM은 프로비저닝된 용량에 따라 충전됩니다.</block>
   <block id="48f0974a79de83d6884f04d71ab3a90a" category="list-text">NetApp이 사용자 계정을 승인한 후<block ref="691060edb0108ad45359b1773c59fa65" category="inline-link-rx"></block></block>
-  <block id="9baac3e3e045ecc1a8ffecb16253a5d1" category="paragraph">클라우드 공급자의 콘솔에서 Cloud Volumes ONTAP 시스템의 구성을 변경하면 지원되지 않는 구성이 생성됩니다. Cloud Manager에서 생성 및 관리하는 Cloud Volumes ONTAP 리소스에 대한 모든 변경은 시스템 안정성과 Cloud Manager의 시스템 관리 기능에 영향을 줄 수 있습니다.</block>
-  <block id="448cc0188a2bcc18119c0abf6d253d7a" category="section-title">자동 애플리케이션 리소스 관리 솔루션</block>
   <block id="84c132b976f487cccd3001ed2c7557f2" category="cell">* 용량 기반 PAYGO 또는 BYOL *^3^</block>
   <block id="15e276b5f20d3f04c4dde66ecf8a249c" category="cell">* 노드 기반 PAYGO *</block>
+  <block id="ee2c4874552f5697a0af1830ee27ae7f" category="summary">이 릴리즈 노트에서는 Cloud Volumes ONTAP 9.11.0의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
+  <block id="2f54a24e27032c204d405a8ab4727fa6" category="doc">Cloud Volumes ONTAP 9.11.0 릴리스 정보</block>
+  <block id="207289e471510410b8d11da3001f65d7" category="section-title">자동 애플리케이션 리소스 관리 솔루션을 사용해서는 안 됩니다</block>
+  <block id="5f706f3e7b360cd0d02bd068f4ba9afa" category="paragraph">클라우드 공급자의 콘솔에서 Cloud Volumes ONTAP 구성을 변경하면 지원되지 않는 구성이 발생합니다. Cloud Manager에서 생성 및 관리하는 Cloud Volumes ONTAP 리소스에 대한 모든 변경은 시스템 안정성과 Cloud Manager의 시스템 관리 기능에 영향을 줄 수 있습니다.</block>
+  <block id="8e85765bc3ce726509dc354633dff4d1" category="list-text">Google Cloud의 ONTAP S3(S3 프로토콜이 Azure 및 AWS에서 지원됨)</block>
+  <block id="f0c74524bf1dcc2586975c7d2fab30aa" category="list-text">NetApp에서 BYOL(라이센스)을 구매하여 모든 클라우드 공급자가 Cloud Volumes ONTAP를 구축할 수 있습니다.</block>
+  <block id="c603e0cd8afdb5636238d7d652481a08" category="paragraph">라이센스는 단일 클라우드 공급자에 제한되지 않습니다.</block>
+  <block id="f28f2c679b3208af9d5fe292ad6356b8" category="list-text">클라우드 공급자 시장에서 시간별 구독(PAYGO)</block>
+  <block id="612b1fa388e719e990cb953520986784" category="list-text">클라우드 공급자 마켓플레이스로부터 연간 계약을 체결합니다.</block>
+  <block id="7012cf86c42fb3eec6343900832f1d08" category="list-text">AWS에서는 AWS 마켓플레이스의 퍼블릭 오퍼에서 연간 계약을 이용할 수 있습니다. Cloud Volumes ONTAP 작업 환경을 구축할 때 Cloud Manager에서 구독을 신청하라는 메시지를 표시합니다.</block>
+  <block id="1ce7e5f92b8c11b96a7b6fea0435803d" category="list-text">Azure에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Azure 마켓플레이스에서 프라이빗 오퍼로 제공됩니다.</block>
+  <block id="51606c7b614cdc7ab9e0489981838dfa" category="paragraph">NetApp이 프라이빗 오퍼를 공유하면 작업 환경을 생성하는 동안 Azure 마켓플레이스에서 구독할 때 연간 계획을 선택할 수 있습니다.</block>
+  <block id="d3ef010be2a71bc188b8cf2beb05ac32" category="list-text">Google Cloud에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Google Cloud Marketplace에서 프라이빗 오퍼로 제공됩니다.</block>
+  <block id="f96723ecb29e40ca9b9fb042ab6ff4ef" category="paragraph">NetApp이 프라이빗 오퍼를 공유하면 근무 환경을 생성하는 동안 Google Cloud Marketplace에서 가입할 때 연간 계획을 선택할 수 있습니다.</block>
+  <block id="7a84427a5e5e82250a397a979b4a23d9" category="inline-link-macro">AWS의 Cloud Volumes ONTAP 9.11.0 중재자를 위한 고지 사항</block>
+  <block id="1b0f71ebd48e9699818ac954485ecd65" category="list-text"><block ref="1b0f71ebd48e9699818ac954485ecd65" category="inline-link-macro-rx"></block></block>
+  <block id="083726d342ebf9fc4e92168f0e8f0440" category="inline-link-macro">Google Cloud의 Cloud Volumes ONTAP 9.11.0 중재자를 위한 고지 사항</block>
+  <block id="6cee01dc91f9e923f46b91312e8b7929" category="list-text"><block ref="6cee01dc91f9e923f46b91312e8b7929" category="inline-link-macro-rx"></block></block>
+  <block id="c5d699450790178e60948a45fcba6733" category="summary">Cloud Volumes ONTAP 9.11.0에는 새로운 개선 사항이 포함되어 있습니다.</block>
+  <block id="f747db0e9b603a98fe752d35abb43555" category="doc">Cloud Volumes ONTAP 9.11.0의 새로운 기능</block>
+  <block id="21c41da3d84aadd8771c9d5e1db4032e" category="section-title">9.11.0 P1(2022년 5월 2일)</block>
+  <block id="31516c7a0e8dbe8987a899eaa2622897" category="paragraph">Cloud Volumes ONTAP 9.11.0 P1 릴리스는 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. 이 릴리스에는 다음과 같은 향상된 기능이 포함되어 있습니다.</block>
+  <block id="1684c84d61e6741870d756c9a01c5f62" category="section-title">AWS에서 ONTAP S3 지원</block>
+  <block id="8d467a7942b40322f0cf058b3e0cb13c" category="paragraph">이제 AWS의 Cloud Volumes ONTAP에서 S3 오브젝트 스토리지를 제공할 수 있습니다(Microsoft Azure는 이미 지원됩니다). Cloud Volumes ONTAP은 NFS 및 SMB와 같은 기존의 파일 기반 프로토콜 외에도 스케일아웃 스토리지 옵션으로 S3를 지원합니다.</block>
+  <block id="5e02c0dddf5ca2c2a77a3cacc5cfea9b" category="list-text">Cloud Volumes ONTAP를 사용하는 ONTAP S3의 주요 사용 사례는 범용 오브젝트 저장소입니다.</block>
+  <block id="5252476cb34632463947449f62af599b" category="list-text">현재 S3 프로토콜은 Google Cloud의 Cloud Volumes ONTAP에서 지원되지 않습니다.</block>
+  <block id="c5444b69e0d4a498ada01a16f84ab46d" category="list-text">Cloud Manager는 ONTAP S3 기능에 대한 관리 기능을 제공하지 않습니다.</block>
+  <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오</block>
+  <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>.</block>
+  <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">이 릴리스 업그레이드에 대한 자세한 내용은 이 노트를 참조하십시오.</block>
+  <block id="b78b1188c7979365981f7c88049f9366" category="section-title">업그레이드 방법</block>
+  <block id="c4d6a904ef528003bf03bc2e65cffd26" category="section-title">지원되는 업그레이드 경로입니다</block>
+  <block id="26317bf7459e73707ee916570832e5d0" category="paragraph">9.10.1 릴리스에서 Cloud Volumes ONTAP 9.11.0으로 업그레이드할 수 있습니다. Cloud Manager에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="402e8d971886b1604e4de74c0058dc71" category="section-title">커넥터의 필수 버전입니다</block>
+  <block id="089931e7f88b7a409ed7ad2ba44d8100" category="paragraph">기존 시스템을 9.11.0으로 업그레이드하려면 Cloud Manager Connector에서 버전 3.9.18 이상을 실행해야 합니다.</block>
+  <block id="75026846c1403e202a52bdb027762fbb" category="section-title">알아 보십시오</block>
 </blocks>

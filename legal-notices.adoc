@@ -50,6 +50,6 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.
 
-* link:media/notice_cloud_volumes_ontap_9.10.1_aws.pdf["AWS의 Cloud Volumes ONTAP 9.10.1 중재자를 위한 고지 사항"^]
-* link:media/notice_cloud_volumes_ontap_9.10.1_google.pdf["Google Cloud의 Cloud Volumes ONTAP 9.10.1 중재자를 위한 고지 사항"^]
+* link:media/notice-aws.pdf["AWS의 Cloud Volumes ONTAP 9.11.0 중재자를 위한 고지 사항"^]
+* link:media/notice-google-cloud.pdf["Google Cloud의 Cloud Volumes ONTAP 9.11.0 중재자를 위한 고지 사항"^]
 
