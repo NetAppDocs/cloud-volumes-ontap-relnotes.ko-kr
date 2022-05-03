@@ -41,7 +41,7 @@ settings:
   - name: ONTAP 클라우드
     url: "/cloud-volumes-ontap-93-relnotes"
     version-number: '9.3'
-  langs: ko-kr,us-en,ja-jp,zh-cn
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw
 sidebar:
   entries:
   - title: 모든 Cloud Manager 설명서
