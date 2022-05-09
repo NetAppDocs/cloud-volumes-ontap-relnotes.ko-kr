@@ -632,11 +632,6 @@
   <block id="49fc376ed35249f3841846ede4dab884" category="inline-link">NetApp Cloud Central에서</block>
   <block id="48ad756d03abbc6e0fe01e9831a6e964" category="paragraph">가격에 대한 자세한 내용은 를 참조하십시오<block ref="073c3927129b02897890200010eee524" category="inline-link-rx"></block>.</block>
   <block id="25b035aed2fdd6599b8102a76363fdec" category="section-title">무료 평가판</block>
-  <block id="33d5706170e3b14a39e3a949fb3d1ea4" category="paragraph">클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판은 Cloud Volumes ONTAP 및 클라우드 백업을 포함하며 시장 목록에 등록할 때 시작됩니다.</block>
-  <block id="2f6de72cbf1a20ae28f0ecb7f67442cc" category="paragraph">인스턴스에 대해 시간별 소프트웨어 라이센스 비용이 발생하지 않지만, 클라우드 공급자의 인프라 비용은 계속 적용됩니다.</block>
-  <block id="b699152a7dc0147566cf5d4a54e7af89" category="paragraph">무료 평가판은 만료 시 유료 시간별 구독으로 자동 변환됩니다. 시간 제한 내에 인스턴스를 종료하는 경우, 배포한 다음 인스턴스가 무료 평가판의 일부가 아닙니다(30일 이내에 배포된 경우에도).</block>
-  <block id="fce1a93d81ea8b79481e4dea03cf7dee" category="paragraph">지급인 계정에 첫 번째 Cloud Volumes ONTAP 시스템을 만들어 Cloud Manager에서 Cloud Volumes ONTAP 30일 무료 평가판을 시작할 수 있습니다.</block>
-  <block id="cd48c2333fa4df56febc08e8e277024b" category="paragraph">클라우드 공급자를 통해 선불 종량제 평가판을 받을 수 있으며 어떤 방법으로도 확장할 수 없습니다.</block>
   <block id="1f0b82560627b660c6c6958a1df834b8" category="section-title">지원되는 구성</block>
   <block id="4e4c431843fe55f93c074808800bf7d0" category="paragraph">용량 기반 라이센스 패키지는 Cloud Volumes ONTAP 9.7 이상에서 사용할 수 있습니다.</block>
   <block id="37040d43404231d8205705e4353af733" category="section-title">용량 제한</block>
@@ -748,4 +743,7 @@
   <block id="402e8d971886b1604e4de74c0058dc71" category="section-title">커넥터의 필수 버전입니다</block>
   <block id="089931e7f88b7a409ed7ad2ba44d8100" category="paragraph">기존 시스템을 9.11.0으로 업그레이드하려면 Cloud Manager Connector에서 버전 3.9.18 이상을 실행해야 합니다.</block>
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">알아 보십시오</block>
+  <block id="656d282ec4da3b613132f8e29d6cb90e" category="paragraph">클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판에 Cloud Volumes ONTAP 및 클라우드 백업이 포함되어 있습니다. 이 평가판은 사용자가 마켓플레이스의 서비스에 가입할 때 시작됩니다.</block>
+  <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">인스턴스 또는 용량 제한은 없습니다. 원하는 만큼 Cloud Volumes ONTAP 시스템을 구축하고 30일 동안 무료로 필요한 용량을 할당할 수 있습니다. 무료 평가판은 30일 후에 자동으로 유료 시간별 구독으로 변환됩니다.</block>
+  <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">Cloud Volumes ONTAP에는 시간당 소프트웨어 라이센스 비용이 부과되지 않지만, 클라우드 공급자의 인프라 비용이 여전히 적용됩니다.</block>
 </blocks>
