@@ -37,6 +37,7 @@ Cloud Volumes ONTAP는 Google Cloud Platform에서 단일 노드 시스템으로
 * N1-표준-32
 * N2-표준-4
 * N2 - 표준 - 8
+* N2-표준-16
 * N2-표준-32
 
  a| 
@@ -48,6 +49,7 @@ Cloud Volumes ONTAP는 Google Cloud Platform에서 단일 노드 시스템으로
 
  a| 
 * N1-표준-32
+* N2-표준-16
 * N2-표준-32
 
  a| 
@@ -55,6 +57,7 @@ Cloud Volumes ONTAP는 Google Cloud Platform에서 단일 노드 시스템으로
 * N1-표준-32
 * N2-표준-4
 * N2 - 표준 - 8
+* N2-표준-16
 * N2-표준-32
 
  a| 
@@ -62,6 +65,7 @@ Cloud Volumes ONTAP는 Google Cloud Platform에서 단일 노드 시스템으로
 * N1-표준-32
 * N2-표준-4
 * N2 - 표준 - 8
+* N2-표준-16
 * N2-표준-32
 
 
