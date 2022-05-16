@@ -604,13 +604,6 @@
   <block id="78bd6ae14d58c0754e9678cbf2ebad05" category="list-text">NetApp 계정당 프리미엄 제공 기능을 통해 최대 10개의 Cloud Volumes ONTAP 시스템을 사용할 수 있습니다.</block>
   <block id="922e54a2e69b279fbb6ab93d4f189181" category="list-text">Cloud Volumes ONTAP 시스템에 대해 프로비저닝된 용량이 500GiB를 초과하면 Cloud Manager가 시스템을 Essentials 패키지(용량 기반 라이센스)로 변환합니다.</block>
   <block id="2b5b1f6feb7719bc282a3518f33b1784" category="paragraph">프로비저닝된 용량이 500GiB 미만인 다른 모든 시스템은 Freemium에 그대로 유지됩니다(Freemium 제품을 사용하여 구축한 경우).</block>
-  <block id="9911a1f4ee7b400064d4cd20d4db15cb" category="paragraph">Freemium 제품을 시작하려면 새로운 Cloud Volumes ONTAP 작업 환경을 만들고 충전 방법을 선택하라는 메시지가 나타나면 * Freemium * 을 선택합니다.</block>
-  <block id="6602afb860a6cca23c3b75bf601365eb" category="inline-link">AWS에서 Cloud Volumes ONTAP 실행</block>
-  <block id="3e33b81f05bb640dee79c5aa4e351c91" category="list-text"><block ref="3e33b81f05bb640dee79c5aa4e351c91" category="inline-link-rx"></block></block>
-  <block id="7ca1af679f0ba86814f2ad58a578cb7c" category="inline-link">Azure에서 Cloud Volumes ONTAP 실행</block>
-  <block id="0be0836bc69799b792b188dfc8c7fe7e" category="list-text"><block ref="0be0836bc69799b792b188dfc8c7fe7e" category="inline-link-rx"></block></block>
-  <block id="254d5c87d5ab437395f866390ea49cd0" category="inline-link">Google Cloud에서 Cloud Volumes ONTAP 실행</block>
-  <block id="22113986c035dbadc96db01d006caa97" category="list-text"><block ref="22113986c035dbadc96db01d006caa97" category="inline-link-rx"></block></block>
   <block id="19bcaffbe8361f9d452beabc8065f223" category="section-title">용량 기반 라이센스 패키지</block>
   <block id="e7cf94fb6f7d5441689859c52b410a98" category="paragraph">용량 기반 라이센스를 통해 Cloud Volumes ONTAP 1TiB 용량 단위로 비용을 지불할 수 있습니다. 라이센스는 NetApp 계정에 연결되며, 라이센스를 통해 사용할 수 있는 용량이 충분한 경우 라이센스에 대해 여러 시스템을 청구할 수 있습니다.</block>
   <block id="68935a38790e91889cd56742a47079f3" category="paragraph">예를 들어, 20TiB 라이센스 1개를 구입하고 Cloud Volumes ONTAP 시스템 4개를 배포한 다음 각 시스템에 5TiB 볼륨을 할당하여 총 20TiB를 할당할 수 있습니다. 용량은 해당 계정에 구축된 각 Cloud Volumes ONTAP 시스템의 볼륨에 사용할 수 있습니다.</block>
@@ -644,11 +637,6 @@
   <block id="e61eacf9a2b260a46a8935478c8a063d" category="list-text">FlexClone 볼륨에 사용된 용량에 대해서는 비용이 청구되지 않습니다.</block>
   <block id="529bcec2b9675b3cb0a81186e626a92b" category="list-text">소스 및 타겟 FlexCache 볼륨은 프로비저닝된 공간에 따라 운영 데이터로 간주되고 충전됩니다.</block>
   <block id="07e1d66babe77070cc76a4e637c9f26d" category="section-title">시작하는 방법</block>
-  <block id="e8e4b0657c553a7e676cdc5f933acb44" category="inline-link">라이센스를 획득하려면 NetApp 세일즈 팀에 문의하십시오</block>
-  <block id="72b3374c901e61bb6433b0f7f23d1b5a" category="list-text"><block ref="9740246e7721e1c54946ab07fff5f1b1" category="inline-link-rx"></block>.</block>
-  <block id="362ed31bbc07a795001d3f4ea80581f9" category="inline-link">Cloud Manager에 라이센스를 추가합니다</block>
-  <block id="7d0b1a626ee22c4c467fa2d44b30a070" category="list-text"><block ref="9ea887e49a883a1f1c871be3c00cc1d4" category="inline-link-rx"></block>.</block>
-  <block id="27c4782d97cee4ee21e258777f0f3167" category="list-text">Cloud Volumes ONTAP 시스템을 생성할 때 용량 기반 BYOL 충전 방법을 선택하십시오.</block>
   <block id="69c3857459c8cf827b42c61c1b02fdd2" category="paragraph">OpEx 소비 모델을 선호하는 투자자들에게 원활한 하이브리드 클라우드 경험을 제공하여 선불 CapEx 또는 임대를 지불하는 종량제 구독 기반 서비스입니다.</block>
   <block id="c2d000408838a6b2031536d54c067fd9" category="paragraph">충전은 Keystone 유연한 구독에서 하나 이상의 Cloud Volumes ONTAP HA 쌍에 대한 확정된 용량 크기를 기준으로 합니다.</block>
   <block id="892e0a2b50821daaef1eddd0b5cfa034" category="paragraph">각 볼륨에 대해 프로비저닝된 용량이 Keystone Flex 구독의 확정된 용량과 주기적으로 집계되며, Keystone Flex 구독에 대한 급증으로 초과 요금이 부과됩니다.</block>
@@ -656,11 +644,6 @@
   <block id="fc05a23e35af50e1b5d94bf324daab38" category="paragraph"><block ref="29cce53a470361b575f0254c84bcbedb" category="inline-link-rx"></block>.</block>
   <block id="6f4c790c1d9416682af57e0872022ec6" category="paragraph">Keystone Flex 구독은 HA 쌍으로 지원됩니다. 현재 단일 노드 시스템에서는 이 라이센스 옵션이 지원되지 않습니다.</block>
   <block id="aad2b08c0103cffcbb5efae0a56ee747" category="paragraph">각 개별 Cloud Volumes ONTAP 시스템은 디스크를 통해 최대 2개의 PiB 용량을 지원하고 오브젝트 스토리지로 계층화합니다.</block>
-  <block id="b2e75bbfb9933bc21b7f875e8676641d" category="inline-link">NetApp에 문의하십시오</block>
-  <block id="63573dab314c98e4e22e47653c15cf64" category="list-text">아직 구독이 없는 경우<block ref="49d6686f1a400348bbcff579d9d978a6" category="inline-link-rx"></block>.</block>
-  <block id="697cc5090bb98ee57c1e28438084378b" category="list-text">mailto:ng-keystone-success@netapp.com [Contact NetApp]: 하나 이상의 Keystone Flex 구독으로 Cloud Manager 사용자 계정을 인증하십시오.</block>
-  <block id="72aa254218c757aad3e3703bdaf90694" category="inline-link">Cloud Volumes ONTAP에서 사용할 수 있도록 구독을 연결합니다</block>
-  <block id="de4b56542275c5f0b46bea6fcc27b034" category="list-text">Cloud Volumes ONTAP 시스템을 생성할 때 Keystone 유연한 구독 충전 방법을 선택하십시오.</block>
   <block id="a2f6a3e98ea1849ed1ab07d821bf6a18" category="section-title">노드 기반 라이센스</block>
   <block id="361abfc2eaabdb045de49dafd20dbdf1" category="paragraph">노드 기반 라이센스는 이전 세대 라이센스 모델로, 노드별로 Cloud Volumes ONTAP에 대한 라이센스를 부여할 수 있도록 지원합니다. 이 라이센스 모델은 신규 고객에는 제공되지 않으며 무료 평가판을 사용할 수 없습니다. 노드별 충전은 위에서 설명한 용량 기준 충전 방법으로 대체되었습니다.</block>
   <block id="749b4d71be76e8fee5fe7895ae5ff71d" category="paragraph">기존 고객은 노드 기반 라이센스를 계속 사용할 수 있습니다.</block>
@@ -704,7 +687,6 @@
   <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP 클라우드</block>
   <block id="ee095a2fd0990ba785c303c6524d8145" category="list-text">추가 SVM(Data-Serving Storage VM)에 대한 추가 라이센스 비용은 없지만, 데이터 서비스 SVM당 최소 용량 비용은 4TiB입니다.</block>
   <block id="cc331a0f761602982769cdbb99e71272" category="list-text">재해 복구 SVM은 프로비저닝된 용량에 따라 충전됩니다.</block>
-  <block id="48f0974a79de83d6884f04d71ab3a90a" category="list-text">NetApp이 사용자 계정을 승인한 후<block ref="691060edb0108ad45359b1773c59fa65" category="inline-link-rx"></block></block>
   <block id="84c132b976f487cccd3001ed2c7557f2" category="cell">* 용량 기반 PAYGO 또는 BYOL *^3^</block>
   <block id="15e276b5f20d3f04c4dde66ecf8a249c" category="cell">* 노드 기반 PAYGO *</block>
   <block id="ee2c4874552f5697a0af1830ee27ae7f" category="summary">이 릴리즈 노트에서는 Cloud Volumes ONTAP 9.11.0의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
@@ -747,4 +729,15 @@
   <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">인스턴스 또는 용량 제한은 없습니다. 원하는 만큼 Cloud Volumes ONTAP 시스템을 구축하고 30일 동안 무료로 필요한 용량을 할당할 수 있습니다. 무료 평가판은 30일 후에 자동으로 유료 시간별 구독으로 변환됩니다.</block>
   <block id="631556a144b10d5d5f19603b18176e32" category="paragraph">Cloud Volumes ONTAP에는 시간당 소프트웨어 라이센스 비용이 부과되지 않지만, 클라우드 공급자의 인프라 비용이 여전히 적용됩니다.</block>
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">N2-표준-16</block>
+  <block id="e83e6938f82d96149155f11617a3f4b6" category="paragraph">Freemium 제품을 시작하는 방법을 알아보십시오.</block>
+  <block id="050c120c7155ccd2f0ee729008e2ff37" category="inline-link">AWS에서 Cloud Volumes ONTAP에 대한 라이센스 설정</block>
+  <block id="c7d4e4151a6a2ec8774f6f1eaef692ca" category="list-text"><block ref="c7d4e4151a6a2ec8774f6f1eaef692ca" category="inline-link-rx"></block></block>
+  <block id="0cce9e09385c0d8e677ff5d9518dc514" category="inline-link">Azure에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다</block>
+  <block id="9717c5625f2395e947c8a8c77b525384" category="list-text"><block ref="9717c5625f2395e947c8a8c77b525384" category="inline-link-rx"></block></block>
+  <block id="8f0a98314b48214c48339998c2fc4f5a" category="inline-link">Google Cloud에서 Cloud Volumes ONTAP에 대한 라이센스를 설정합니다</block>
+  <block id="75a8cf4b193e2d19db02d027cadf7073" category="list-text"><block ref="75a8cf4b193e2d19db02d027cadf7073" category="inline-link-rx"></block></block>
+  <block id="a24ad69dba38b7a2ce7bc133c0c71859" category="inline-image-macro">무료 평가판이 7일 남았을 뿐이라는 Cloud Manager 인터페이스의 알림 스크린샷</block>
+  <block id="fed5c8246ca485a22abc959eb3025a8c" category="admonition">무료 평가판이 시작될 때, 7일 남았습니다. 1일이 남았을 때, Cloud Manager에서 알림을 받게 됩니다. 예를 들면 다음과 같습니다.<block ref="4c1747a7ecb096dffecedae45404dae8" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="451e7fc5df78c19113abdb3f6a0dc54e" category="paragraph">용량 기반 라이센스를 시작하는 방법에 대해 알아보십시오.</block>
+  <block id="fdb736034a6801c8a5010a511211a4a7" category="paragraph">Keystone 유연한 구독 시작 방법 알아보기:</block>
 </blocks>
