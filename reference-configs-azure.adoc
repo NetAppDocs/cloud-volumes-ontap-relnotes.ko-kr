@@ -32,7 +32,7 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 
 [cols="h,d,d,d,d,d,d"]
 |===
-|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 라이센스 | 용량 기반 라이센스 
+|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 BYOL | 용량 기반 라이센스 
 
 
 | 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 500GiB | 2TiB^1^ | 10TiB | 368TiB | 라이센스당 368TiB입니다 | 2 PiB 
@@ -142,7 +142,7 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 
 [cols="h,d,d,d,d,d"]
 |===
-|  | 프리모늄 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 라이센스 | 용량 기반 라이센스 
+|  | 프리모늄 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 BYOL | 용량 기반 라이센스 
 
 
 | 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 500GiB | 10TiB | 368TiB | 라이센스당 368TiB입니다 | 2 PiB 

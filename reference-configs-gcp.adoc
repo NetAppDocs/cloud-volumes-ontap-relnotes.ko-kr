@@ -26,7 +26,7 @@ Cloud Volumes ONTAP는 Google Cloud Platform에서 단일 노드 시스템으로
 
 [cols="h,d,d,d,d,d,d"]
 |===
-|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 라이센스 | 용량 기반 라이센스 
+|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 BYOL | 용량 기반 라이센스 
 
 
 | 최대 시스템 용량(디스크 + 객체 스토리지) ^1^ | 500GB | 2TB^2^ | 10TB | 368TB | 라이센스당 368TB | 2 PiB 

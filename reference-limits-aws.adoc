@@ -201,7 +201,7 @@ Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하며 최대 디스크 
 
 == 애그리게이트 제한
 
-Cloud Volumes ONTAP는 AWS 볼륨을 디스크로 사용하고 이를 _aggregate_로 그룹화합니다. Aggregate는 볼륨에 스토리지를 제공합니다.
+Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하고 이들을 _aggregate_로 그룹화합니다. Aggregate는 볼륨에 스토리지를 제공합니다.
 
 [cols="2*"]
 |===
@@ -211,10 +211,18 @@ Cloud Volumes ONTAP는 AWS 볼륨을 디스크로 사용하고 이를 _aggregate
 | 최대 애그리게이트 수입니다 | 단일 노드: 디스크 한계 HA 쌍과 동일: 노드 ^1^에서 18 
 
 
-| 최대 애그리게이트 크기입니다 | 96TiB 물리적 용량^2^ 
+| 최대 애그리게이트 크기 ^2^  a| 
+* 96TiB의 물리적 용량
+* Elastic Volumes^3^에 128TiB의 물리적 용량
 
 
-| 애그리게이트당 디스크 수 | 1-6^3^ 
+
+
+| 애그리게이트당 디스크 ^4^  a| 
+* 1-6
+* 1-8 탄성 볼륨 ^3^
+
+
 
 
 | 애그리게이트당 최대 RAID 그룹 수 | 1 
@@ -222,7 +230,8 @@ Cloud Volumes ONTAP는 AWS 볼륨을 디스크로 사용하고 이를 _aggregate
 참고:
 
 . HA 2노드에서 두 노드 모두에 18개의 애그리게이트를 생성할 수 없습니다. 그렇게 할 경우 데이터 디스크 제한이 초과되기 때문입니다.
-. 애그리게이트 용량 한도는 애그리게이트를 구성하는 디스크를 기준으로 합니다. 이 제한에는 데이터 계층화에 사용되는 오브젝트 스토리지가 포함되지 않습니다.
+. 최대 애그리게이트 크기는 애그리게이트를 구성하는 디스크를 기반으로 합니다. 이 제한에는 데이터 계층화에 사용되는 오브젝트 스토리지가 포함되지 않습니다.
+. Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우, 애그리게이트에 최대 8개의 디스크를 포함할 수 있어 최대 128TiB의 용량을 제공합니다. GP3 또는 io1 디스크를 사용하는 경우 Amazon EBS Elastic Volumes 기능은 기본적으로 ON_NEW_Cloud Volumes ONTAP 9.11.0 이상의 시스템에서 활성화됩니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"^]
 . Aggregate의 모든 디스크는 동일한 크기여야 합니다.
 
 

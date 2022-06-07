@@ -123,14 +123,55 @@ Cloud Volumes ONTAP는 Google Cloud Platform 디스크를 _aggregate_로 그룹�
 
 
 
+== 스토리지 VM 제한
+
+일부 구성을 사용하면 Cloud Volumes ONTAP용 SVM(스토리지 VM)을 추가로 생성할 수 있습니다.
+
+이러한 제한은 테스트를 거친 것입니다. 이론적으로는 추가 스토리지 VM을 구성할 수 있지만 이는 지원되지 않습니다.
+
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["추가 스토리지 VM을 생성하는 방법을 알아보십시오"^].
+
+[cols="2*"]
+|===
+| 사용권 유형 | 스토리지 VM 제한 
+
+
+| * Freemium *  a| 
+총 24개의 스토리지 VM ^1^
+
+
+
+| * 용량 기반 PAYGO 또는 BYOL *^2^  a| 
+총 24개의 스토리지 VM ^1^
+
+
+
+| * 노드 기반 BYOL * ^3^  a| 
+총 24개의 스토리지 VM ^1^
+
+
+
+| * 노드 기반 PAYGO *  a| 
+* 1 데이터 제공용 스토리지 VM
+* 재해 복구용 스토리지 VM 1개
+
+
+|===
+. 이러한 24개의 스토리지 VM은 데이터를 제공하거나 DR(재해 복구)용으로 구성할 수 있습니다.
+. 용량 기반 라이센스의 경우, 추가 스토리지 VM에 대한 추가 라이센스 비용이 없지만 스토리지 VM당 최소 용량 비용은 4TiB입니다. 예를 들어 스토리지 VM 2개를 생성하고 각 VM에 2TiB의 용량을 프로비저닝한 경우 총 8TiB가 충전됩니다.
+. 노드 기반 BYOL의 경우, Cloud Volumes ONTAP에서 기본적으로 제공되는 첫 번째 스토리지 VM 외에 각 additional_data-serving_storage VM에 애드온 라이센스가 필요합니다. 스토리지 VM 애드온 라이센스를 얻으려면 어카운트 팀에 문의하십시오.
++
+DR(재해 복구)에 대해 구성하는 스토리지 VM에는 추가 라이센스(무료)가 필요하지 않지만 스토리지 VM 제한에 대해 카운트됩니다. 예를 들어, 데이터 서비스 스토리지 VM 12개와 재해 복구용 스토리지 VM 12개가 구성되어 있는 경우, 한계에 도달하여 추가 스토리지 VM을 생성할 수 없습니다.
+
+
+
+
+
 == 논리적 스토리지 제한입니다
 
 [cols="22,22,56"]
 |===
 | 논리적 스토리지 | 매개 변수 | 제한 
-
-
-| * SVM(스토리지 가상 시스템) * | 최대 Cloud Volumes ONTAP 수(HA 쌍 또는 단일 노드) | 재해 복구에 사용되는 1개의 SVM 및 1개의 대상 SVM 소스 SVM이 중단되었을 경우 데이터 액세스를 위해 대상 SVM을 활성화할 수 있습니다. ^1^ 하나의 데이터 서비스 SVM은 전체 Cloud Volumes ONTAP 시스템(HA 쌍 또는 단일 노드)에 걸쳐 있습니다. 
 
 
 .2+| * 파일 * | 최대 크기 | 16TB 
@@ -139,7 +180,7 @@ Cloud Volumes ONTAP는 Google Cloud Platform 디스크를 _aggregate_로 그룹�
 | 볼륨당 최대 | 볼륨 크기에 따라 다르며 최대 20억 개까지 가능합니다 
 
 
-| FlexClone 볼륨 * | 계층적 복제 깊이 ^2^ | 499 
+| FlexClone 볼륨 * | 계층적 복제 깊이 ^12^ | 499 
 
 
 .3+| * FlexVol 볼륨 * | 노드당 최대 | 500입니다 
@@ -156,14 +197,6 @@ Cloud Volumes ONTAP는 Google Cloud Platform 디스크를 _aggregate_로 그룹�
 
 | Snapshot 복사본 * | FlexVol 볼륨당 최대 | 1,023 
 |===
-참고:
-
-. Cloud Manager는 SVM 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. 또한, 추가 SVM에서 스토리지 관련 작업을 지원하지 않습니다. SVM 재해 복구에 System Manager 또는 CLI를 사용해야 합니다.
-+
-** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 재해 복구 준비 Express 가이드"^]
-** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM 재해 복구 익스프레스 가이드 를 참조하십시오"^]
-
-
 . 계층적 클론 깊이는 단일 FlexVol 볼륨에서 생성할 수 있는 FlexClone 볼륨의 중첩 계층 구조의 최대 깊이입니다.
 
 

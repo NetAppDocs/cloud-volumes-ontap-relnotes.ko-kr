@@ -95,13 +95,11 @@
   <block id="6f4922f45568161a8cdf4ad2299f6d23" category="cell">18</block>
   <block id="d165ee52657df0e131ad67ed84783dfb" category="cell">16^1^</block>
   <block id="77da8ca35e02ab32c9b48e9f632913bf" category="section-title">애그리게이트 제한</block>
-  <block id="b9d1a1e4bd5440efc61b41572ff402ed" category="paragraph">Cloud Volumes ONTAP는 AWS 볼륨을 디스크로 사용하고 이를 _aggregate_로 그룹화합니다. Aggregate는 볼륨에 스토리지를 제공합니다.</block>
   <block id="83f499a540b1323009c200d6f8cc9396" category="cell">매개 변수</block>
   <block id="80d2677cf518f4d04320042f4ea6c146" category="cell">제한</block>
   <block id="82420b01cfee82b0c54b049d0dbfad9f" category="cell">최대 애그리게이트 수입니다</block>
   <block id="84e0bd7c947290d306ef975cf8082911" category="cell">단일 노드: 디스크 한계 HA 쌍과 동일: 노드 ^1^에서 18</block>
   <block id="fb036cbd7d294e0cb30d09908d1a5107" category="cell">최대 애그리게이트 크기입니다</block>
-  <block id="9825b8fbfebdae674007d54a87208654" category="cell">96TiB 물리적 용량^2^</block>
   <block id="c540b9e7edec4adafdaa9dff60f7a893" category="cell">애그리게이트당 디스크 수</block>
   <block id="c2831ba563a5f21bb204f1c1e4a6ef78" category="cell">1-6^3^</block>
   <block id="4ab1bc7e6fe6c19a70cc9470efcb6c1e" category="cell">애그리게이트당 최대 RAID 그룹 수</block>
@@ -261,17 +259,8 @@
   <block id="e1939137c51a8307ff44bee2959f145d" category="cell">256TB의 물리적 용량^2^</block>
   <block id="d5372d02fa2f8d09ddfa9be3500d8847" category="list-text">최대 데이터 애그리게이트 수에는 루트 애그리게이트가 포함되지 않습니다.</block>
   <block id="41a0b1e6c6d31716c7d7b603ce6a4936" category="section-title">논리적 스토리지 제한입니다</block>
-  <block id="73a985be794327e4a037c64d0184774a" category="cell">* SVM(스토리지 가상 시스템) *</block>
-  <block id="835d5536792339ec4a51105123601003" category="cell">최대 Cloud Volumes ONTAP 수(HA 쌍 또는 단일 노드)</block>
-  <block id="b2734f21c300d02359bdc60073cc3bc5" category="cell">재해 복구에 사용되는 1개의 SVM 및 1개의 대상 SVM 소스 SVM이 중단되었을 경우 데이터 액세스를 위해 대상 SVM을 활성화할 수 있습니다. ^1^ 하나의 데이터 서비스 SVM은 전체 Cloud Volumes ONTAP 시스템(HA 쌍 또는 단일 노드)에 걸쳐 있습니다.</block>
   <block id="324f218b8144e744b54eb58e0bf14eea" category="cell">16TB</block>
-  <block id="fa6258f6bacddead986c2cbf9e97e512" category="cell">계층적 복제 깊이 ^2^</block>
   <block id="309524b9e1ef1d7d7d905c7cb1d358e9" category="cell">100TB</block>
-  <block id="f930216066584d74a1d100b4781661f9" category="list-text">Cloud Manager는 SVM 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. 또한, 추가 SVM에서 스토리지 관련 작업을 지원하지 않습니다. SVM 재해 복구에 System Manager 또는 CLI를 사용해야 합니다.</block>
-  <block id="412af2a2404a4e920b18be59197204b0" category="inline-link">SVM 재해 복구 준비 Express 가이드</block>
-  <block id="c15bb50c43eaf0ceb1bc0ce3d7503ebd" category="list-text"><block ref="c15bb50c43eaf0ceb1bc0ce3d7503ebd" category="inline-link-rx"></block></block>
-  <block id="a06e9c241b02eb678d35f19c0eec257f" category="inline-link">SVM 재해 복구 익스프레스 가이드 를 참조하십시오</block>
-  <block id="84e6a974fd77c552b4d54c8a9b0727ab" category="list-text"><block ref="84e6a974fd77c552b4d54c8a9b0727ab" category="inline-link-rx"></block></block>
   <block id="fa082ab1a05e05550971e6e5f583dcfe" category="summary">AWS에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.</block>
   <block id="8bb0da4c260f565e0c8162ea9c2b7caa" category="doc">AWS에서 지원되는 구성</block>
   <block id="7db0f9060b8b2def82346add7b8e89c0" category="section-title">지원되는 노드 수입니다</block>
@@ -299,7 +288,6 @@
   <block id="714ff467ced5dd4ad0cd34ca2d29d911" category="list-text">PAYGO Explore를 제외한 모든 Cloud Volumes ONTAP 구성에서 SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.</block>
   <block id="907c78338365697be8fd8d4a130503c8" category="list-text">처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.</block>
   <block id="36e4aa065725aff22926f2fed53bc3c7" category="section-title">지원되는 디스크 크기입니다</block>
-  <block id="f1ef8a69abb63b240d611c09ea5ddde6" category="paragraph">AWS에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 6개까지 포함할 수 있습니다.</block>
   <block id="afb82c4f80baa4ecca2a2e4e97df3ada" category="cell">범용 SSD(GP3 및 GP2)</block>
   <block id="c50feb3c9ed89b38a1757f8a63ccd0a6" category="cell">프로비저닝된 IOPS SSD(iio1)</block>
   <block id="b097d252160f5ccb21350abbc9a2d37d" category="cell">처리량 최적화 HDD(st1)</block>
@@ -663,7 +651,6 @@
   <block id="514c35ac615c3426962d39f27b71014b" category="paragraph">이 릴리즈에는 Cloud Volumes ONTAP과 관련된 알려진 문제가 없습니다.</block>
   <block id="626a7cbe056796bcb1c158b143866230" category="inline-link">ONTAP 릴리즈 노트</block>
   <block id="398d7dd4fa02e30dc6322ad98eff7d2b" category="paragraph">ONTAP 소프트웨어에 대해 알려진 문제는 에서 찾을 수 있습니다<block ref="13c0668cefb5d13050e1de01793dacbb" category="inline-link-rx"></block>.</block>
-  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
   <block id="da38098873cb3db962a9491ab33ff93d" category="sidebar">릴리스 노트 홈</block>
   <block id="33871b6190a8d5adbe8b15282054766c" category="sidebar">새로운 소식</block>
   <block id="4847e034bb0a55fcbc8a3380d6a3ab80" category="sidebar">설치하고</block>
@@ -689,8 +676,6 @@
   <block id="cc331a0f761602982769cdbb99e71272" category="list-text">재해 복구 SVM은 프로비저닝된 용량에 따라 충전됩니다.</block>
   <block id="84c132b976f487cccd3001ed2c7557f2" category="cell">* 용량 기반 PAYGO 또는 BYOL *^3^</block>
   <block id="15e276b5f20d3f04c4dde66ecf8a249c" category="cell">* 노드 기반 PAYGO *</block>
-  <block id="ee2c4874552f5697a0af1830ee27ae7f" category="summary">이 릴리즈 노트에서는 Cloud Volumes ONTAP 9.11.0의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
-  <block id="2f54a24e27032c204d405a8ab4727fa6" category="doc">Cloud Volumes ONTAP 9.11.0 릴리스 정보</block>
   <block id="207289e471510410b8d11da3001f65d7" category="section-title">자동 애플리케이션 리소스 관리 솔루션을 사용해서는 안 됩니다</block>
   <block id="5f706f3e7b360cd0d02bd068f4ba9afa" category="paragraph">클라우드 공급자의 콘솔에서 Cloud Volumes ONTAP 구성을 변경하면 지원되지 않는 구성이 발생합니다. Cloud Manager에서 생성 및 관리하는 Cloud Volumes ONTAP 리소스에 대한 모든 변경은 시스템 안정성과 Cloud Manager의 시스템 관리 기능에 영향을 줄 수 있습니다.</block>
   <block id="8e85765bc3ce726509dc354633dff4d1" category="list-text">Google Cloud의 ONTAP S3(S3 프로토콜이 Azure 및 AWS에서 지원됨)</block>
@@ -703,27 +688,10 @@
   <block id="51606c7b614cdc7ab9e0489981838dfa" category="paragraph">NetApp이 프라이빗 오퍼를 공유하면 작업 환경을 생성하는 동안 Azure 마켓플레이스에서 구독할 때 연간 계획을 선택할 수 있습니다.</block>
   <block id="d3ef010be2a71bc188b8cf2beb05ac32" category="list-text">Google Cloud에서는 NetApp 세일즈 담당자와 협력하여 연간 계약을 구입해야 합니다. 이 계약은 Google Cloud Marketplace에서 프라이빗 오퍼로 제공됩니다.</block>
   <block id="f96723ecb29e40ca9b9fb042ab6ff4ef" category="paragraph">NetApp이 프라이빗 오퍼를 공유하면 근무 환경을 생성하는 동안 Google Cloud Marketplace에서 가입할 때 연간 계획을 선택할 수 있습니다.</block>
-  <block id="7a84427a5e5e82250a397a979b4a23d9" category="inline-link-macro">AWS의 Cloud Volumes ONTAP 9.11.0 중재자를 위한 고지 사항</block>
-  <block id="1b0f71ebd48e9699818ac954485ecd65" category="list-text"><block ref="1b0f71ebd48e9699818ac954485ecd65" category="inline-link-macro-rx"></block></block>
-  <block id="083726d342ebf9fc4e92168f0e8f0440" category="inline-link-macro">Google Cloud의 Cloud Volumes ONTAP 9.11.0 중재자를 위한 고지 사항</block>
-  <block id="6cee01dc91f9e923f46b91312e8b7929" category="list-text"><block ref="6cee01dc91f9e923f46b91312e8b7929" category="inline-link-macro-rx"></block></block>
-  <block id="c5d699450790178e60948a45fcba6733" category="summary">Cloud Volumes ONTAP 9.11.0에는 새로운 개선 사항이 포함되어 있습니다.</block>
-  <block id="f747db0e9b603a98fe752d35abb43555" category="doc">Cloud Volumes ONTAP 9.11.0의 새로운 기능</block>
-  <block id="21c41da3d84aadd8771c9d5e1db4032e" category="section-title">9.11.0 P1(2022년 5월 2일)</block>
-  <block id="31516c7a0e8dbe8987a899eaa2622897" category="paragraph">Cloud Volumes ONTAP 9.11.0 P1 릴리스는 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. 이 릴리스에는 다음과 같은 향상된 기능이 포함되어 있습니다.</block>
-  <block id="1684c84d61e6741870d756c9a01c5f62" category="section-title">AWS에서 ONTAP S3 지원</block>
-  <block id="8d467a7942b40322f0cf058b3e0cb13c" category="paragraph">이제 AWS의 Cloud Volumes ONTAP에서 S3 오브젝트 스토리지를 제공할 수 있습니다(Microsoft Azure는 이미 지원됩니다). Cloud Volumes ONTAP은 NFS 및 SMB와 같은 기존의 파일 기반 프로토콜 외에도 스케일아웃 스토리지 옵션으로 S3를 지원합니다.</block>
-  <block id="5e02c0dddf5ca2c2a77a3cacc5cfea9b" category="list-text">Cloud Volumes ONTAP를 사용하는 ONTAP S3의 주요 사용 사례는 범용 오브젝트 저장소입니다.</block>
-  <block id="5252476cb34632463947449f62af599b" category="list-text">현재 S3 프로토콜은 Google Cloud의 Cloud Volumes ONTAP에서 지원되지 않습니다.</block>
-  <block id="c5444b69e0d4a498ada01a16f84ab46d" category="list-text">Cloud Manager는 ONTAP S3 기능에 대한 관리 기능을 제공하지 않습니다.</block>
-  <block id="6958464059ef304c59d06fcb948ccafd" category="inline-link">ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오</block>
-  <block id="75081fb4982f7b843e702079b35f0ed4" category="paragraph"><block ref="3fe75f10a35597997861eca633c30fa7" category="inline-link-rx"></block>.</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">이 릴리스 업그레이드에 대한 자세한 내용은 이 노트를 참조하십시오.</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">업그레이드 방법</block>
   <block id="c4d6a904ef528003bf03bc2e65cffd26" category="section-title">지원되는 업그레이드 경로입니다</block>
-  <block id="26317bf7459e73707ee916570832e5d0" category="paragraph">9.10.1 릴리스에서 Cloud Volumes ONTAP 9.11.0으로 업그레이드할 수 있습니다. Cloud Manager에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
   <block id="402e8d971886b1604e4de74c0058dc71" category="section-title">커넥터의 필수 버전입니다</block>
-  <block id="089931e7f88b7a409ed7ad2ba44d8100" category="paragraph">기존 시스템을 9.11.0으로 업그레이드하려면 Cloud Manager Connector에서 버전 3.9.18 이상을 실행해야 합니다.</block>
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">알아 보십시오</block>
   <block id="656d282ec4da3b613132f8e29d6cb90e" category="paragraph">클라우드 공급자 마켓플레이스의 용량제 구독을 통해 30일 무료 평가판을 사용할 수 있습니다. 무료 평가판에 Cloud Volumes ONTAP 및 클라우드 백업이 포함되어 있습니다. 이 평가판은 사용자가 마켓플레이스의 서비스에 가입할 때 시작됩니다.</block>
   <block id="2986f3edb85e34a7556b412028be57fb" category="paragraph">인스턴스 또는 용량 제한은 없습니다. 원하는 만큼 Cloud Volumes ONTAP 시스템을 구축하고 30일 동안 무료로 필요한 용량을 할당할 수 있습니다. 무료 평가판은 30일 후에 자동으로 유료 시간별 구독으로 변환됩니다.</block>
@@ -740,4 +708,69 @@
   <block id="fed5c8246ca485a22abc959eb3025a8c" category="admonition">무료 평가판이 시작될 때, 7일 남았습니다. 1일이 남았을 때, Cloud Manager에서 알림을 받게 됩니다. 예를 들면 다음과 같습니다.<block ref="4c1747a7ecb096dffecedae45404dae8" category="inline-image-macro-rx" type="image"></block></block>
   <block id="451e7fc5df78c19113abdb3f6a0dc54e" category="paragraph">용량 기반 라이센스를 시작하는 방법에 대해 알아보십시오.</block>
   <block id="fdb736034a6801c8a5010a511211a4a7" category="paragraph">Keystone 유연한 구독 시작 방법 알아보기:</block>
+  <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="list-text">다중 관리 검증</block>
+  <block id="88e362071d1f2ba61570f62aacd1c1c5" category="paragraph">Cloud Volumes ONTAP에서 다중 관리 검증을 활성화하면 지원되지 않는 구성이 발생합니다.</block>
+  <block id="8ba657a83ab71e004f50b135f305bacf" category="paragraph"><block ref="4e6a16574fcae9468a780b7adff941e3" category="inline-link-rx"></block>.</block>
+  <block id="2bd90c70a6810dfcb6a428870a127746" category="paragraph">총 24개의 스토리지 VM ^1^</block>
+  <block id="5bec2c66c2254fff818718bf2d9e8c44" category="cell">* 용량 기반 PAYGO 또는 BYOL *^2^</block>
+  <block id="8e612b6b306f120390f4c3bd234f9ce8" category="cell">* 노드 기반 BYOL * ^3^</block>
+  <block id="302f571fec3e23b2236f116e51e46721" category="cell">계층적 복제 깊이 ^12^</block>
+  <block id="dd3a01ec5d4598a3233e196c00eb9493" category="summary">이 릴리스 노트에서는 Cloud Volumes ONTAP 9.11.1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
+  <block id="84da1541cae666ec8e7f781f0d3b6175" category="doc">Cloud Volumes ONTAP 9.11.1 릴리스 정보</block>
+  <block id="caad2a7dc9cfca100a8a4cd9178c5c3c" category="summary">Cloud Volumes ONTAP 9.11.1에는 새로운 개선 사항이 포함되어 있습니다.</block>
+  <block id="a7eac8b4a926da262039a402441599c8" category="doc">Cloud Volumes ONTAP 9.11.1의 새로운 기능</block>
+  <block id="749d592703da3a848a73787c63c1b7b3" category="paragraph">Cloud Volumes ONTAP 9.11.1에는 새로운 개선 사항이 포함되어 있습니다.</block>
+  <block id="b86e6dd31ab5551fadfa63d0a04883ae" category="section-title">9.11.1 RC1(2022년 6월 8일)</block>
+  <block id="39034d90f9ffc3ae3d6bfac5d80a47b0" category="paragraph">Cloud Volumes ONTAP 9.11.1 릴리스 후보 1은 이제 AWS, Azure 및 Google 클라우드에서 사용할 수 있습니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.</block>
+  <block id="0d14c546aac1d41bf632c7d7c3b6bb3d" category="section-title">성능 향상</block>
+  <block id="a98457b4d59ceca5e3d55d0aa4fc5df9" category="paragraph">9.11.1 이상에서 생성된 새 애그리게이트의 읽기 성능이 향상되었습니다.</block>
+  <block id="0d64eb012ac615ef6e2b3a594a3c4138" category="section-title">스토리지 효율성 향상</block>
+  <block id="296c3971e11769dce408108e26b7b844" category="paragraph">9.11.1 릴리즈부터 스토리지 효율성을 위해 활성화된 모든 새로운 볼륨에 온도에 민감한 스토리지 효율성 이라는 새로운 압축 기능이 포함됩니다. 이전 세대 압축 기능은 더 이상 사용되지 않습니다.</block>
+  <block id="105114793b1936be01f86fbb18f18487" category="paragraph">온도에 민감한 스토리지 효율성 데이터 온도 또는 데이터 사용 빈도를 기준으로 데이터를 압축합니다. 자주 사용되지 않는 콜드 데이터 또는 데이터는 압축률이 더 높아 스토리지 효율성이 향상됩니다.</block>
+  <block id="3d8cbce3336f1f7d87369f120127deb3" category="section-title">AWS에서 VPC 공유</block>
+  <block id="098f6f115e8980c5a7c03a40e08f5c54" category="paragraph">Cloud Volumes ONTAP HA 쌍이 VPC 공유를 지원하는 AWS에서 이제 지원됩니다. VPC 공유를 사용하면 서브넷을 다른 AWS 계정과 공유할 수 있습니다. 네트워킹(VPC, 서브넷 및 라우트 테이블)은 VPC 소유자 계정에 상주하고 HA 구성의 EC2 인스턴스는 공유 서브넷을 사용하는 참가자 계정에 상주합니다.</block>
+  <block id="d4b5e68525cac241fcf3cdcaa1a6e3dd" category="inline-link">공유 서브넷에 HA 쌍을 구축하는 방법을 알아보십시오</block>
+  <block id="9d5ffa97252128bf87e1636e1a64a843" category="paragraph"><block ref="9d5ffa97252128bf87e1636e1a64a843" category="inline-link-rx"></block></block>
+  <block id="a83e9f7623076b623810b57914d36eed" category="section-title">새로운 AWS 지역 지원</block>
+  <block id="5eb162472268d73ff725b5895110cecd" category="paragraph">Cloud Volumes ONTAP는 현재 AWS 자카르타 지역(AP-동남아시아-3)에서 지원됩니다.</block>
+  <block id="d1ce20099e22fd96c2217da218a20a9e" category="inline-link">Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다</block>
+  <block id="efb1786cdf88244f9480e15cb039f942" category="paragraph"><block ref="efb1786cdf88244f9480e15cb039f942" category="inline-link-rx"></block></block>
+  <block id="27c27f8e93050339d7c947d496a184e5" category="section-title">새로운 Azure 지역 지원</block>
+  <block id="e9f9c72d103b21187e0da8b94a05a46c" category="paragraph">Cloud Volumes ONTAP는 현재 Azure 브라질 남동부 지역에서 지원됩니다.</block>
+  <block id="c2d4a08230372ee80200724895518d5d" category="section-title">Google Cloud에서 24개의 스토리지 VM 지원</block>
+  <block id="08d621e40bc74d4d91492f0994bd9c34" category="paragraph">현재 24개의 스토리지 VM이 Google Cloud의 Cloud Volumes ONTAP에서 대부분의 구성으로 지원됩니다.</block>
+  <block id="ab9d588372f30d162e50dbbed45980eb" category="inline-link-macro">Google Cloud의 스토리지 VM 제한에 대해 자세히 알아보십시오</block>
+  <block id="c316dc3e5870be1d22b4b83a0f427fad" category="list-text"><block ref="c316dc3e5870be1d22b4b83a0f427fad" category="inline-link-macro-rx"></block></block>
+  <block id="3a7eebf972f838daafe4ea7948002b3d" category="inline-link">Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성하는 방법을 알아보십시오</block>
+  <block id="ca24fa909b4afaad2c6e5b8403afbeaf" category="list-text"><block ref="ca24fa909b4afaad2c6e5b8403afbeaf" category="inline-link-rx"></block></block>
+  <block id="81ad4f0de90ee8a7305d0fd7751df796" category="section-title">새로운 Google Cloud 지역 지원</block>
+  <block id="eb026d13ca31e3456cc201dd04616023" category="paragraph">Cloud Volumes ONTAP HA 쌍이 이제 밀라노(유럽-west8) 지역에서 지원됩니다.</block>
+  <block id="4fe11e69b0c0a0b0a5636aa1f305ab9f" category="section-title">새 스토리지 VM에 대한 LIF 서비스 수정</block>
+  <block id="f6d0586946e555ebb9e4a58ed7cb1074" category="paragraph">이 릴리즈부터 AWS 또는 Azure의 Cloud Volumes ONTAP HA 쌍에서 새 스토리지 VM을 생성하는 경우, 스토리지 VM에 대한 네트워크 서비스 정책을 수정해야 합니다. Cloud Volumes ONTAP가 아웃바운드 관리 연결에 iSCSI LIF를 사용할 수 있도록 하기 때문에 서비스를 수정해야 합니다.</block>
+  <block id="0eb394a663512cb54d223022103a22da" category="paragraph">Cloud Manager API를 사용하면 생성 중에 LIF 서비스가 설정되므로 Google Cloud의 Cloud Volumes ONTAP에서는 LIF 서비스를 수정할 필요가 없습니다.</block>
+  <block id="c2cc97c1c3292912f6ea24f176a9994c" category="paragraph">실행해야 하는 명령은 다음 페이지에서 지정합니다.</block>
+  <block id="819d8ddbe5323dbe85b4d9de1471949d" category="inline-link">AWS에서 추가 스토리지 VM을 생성하는 방법에 대해 알아보십시오</block>
+  <block id="3198e73245d15ad83bd4f291e42a75bf" category="list-text"><block ref="3198e73245d15ad83bd4f291e42a75bf" category="inline-link-rx"></block></block>
+  <block id="69cbc5d49a23bbb40c4dc099f27a5744" category="inline-link">Azure에서 추가 스토리지 VM을 생성하는 방법에 대해 알아보십시오</block>
+  <block id="23858c69a27a236fbe5b07eae57ddda7" category="list-text"><block ref="23858c69a27a236fbe5b07eae57ddda7" category="inline-link-rx"></block></block>
+  <block id="3f9444579360cfadb1f0fd377acfe203" category="section-title">지원되지 않는 새로운 ONTAP 기능입니다</block>
+  <block id="3e684f8279e576b45f0e2d4d989bb161" category="paragraph">ONTAP 9.11.1에 도입된 새로운 다중 관리 검증 기능은 Cloud Volumes ONTAP에서 지원되지 않습니다. Cloud Volumes ONTAP에서 다중 관리 검증을 활성화하면 지원되지 않는 구성이 발생합니다.</block>
+  <block id="2cfb19e929bb9a8001655d21c5a21bc6" category="paragraph">9.11.0 릴리스 및 9.10.1 릴리스에서 Cloud Volumes ONTAP 9.11.1로 업그레이드할 수 있습니다. Cloud Manager에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="37b4327ada554a21f357e50f7ff5495c" category="paragraph">새 Cloud Volumes ONTAP 9.11.1 시스템을 배포하고 기존 시스템을 9.11.1로 업그레이드하려면 Cloud Manager Connector가 버전 3.9.19 이상을 실행해야 합니다.</block>
+  <block id="6fa21a90023c559c7fe8ff0b407c5128" category="paragraph">Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하고 이들을 _aggregate_로 그룹화합니다. Aggregate는 볼륨에 스토리지를 제공합니다.</block>
+  <block id="440729c4473422c5af58047ed61f9c33" category="cell">최대 애그리게이트 크기 ^2^</block>
+  <block id="a204f172aa7caebd3b3b2b9d2ec1e132" category="list-text">96TiB의 물리적 용량</block>
+  <block id="eba85a087985c7150b43d2878dd0c2da" category="list-text">Elastic Volumes^3^에 128TiB의 물리적 용량</block>
+  <block id="b7d71850fd138e6cd477a1887cc244f3" category="cell">애그리게이트당 디스크 ^4^</block>
+  <block id="449daf85c71a9f8eb7c666134b1d9b95" category="list-text">1-6</block>
+  <block id="734bf70b1c522fd659b58c67d2c015e9" category="list-text">1-8 탄성 볼륨 ^3^</block>
+  <block id="4d7bfec0bd52de6919125094b75ca0d4" category="list-text">최대 애그리게이트 크기는 애그리게이트를 구성하는 디스크를 기반으로 합니다. 이 제한에는 데이터 계층화에 사용되는 오브젝트 스토리지가 포함되지 않습니다.</block>
+  <block id="70fb554e00e352dd7da6941d99b53751" category="inline-link">Elastic Volumes 지원에 대해 자세히 알아보십시오</block>
+  <block id="952bf77691b64be6e1f8cbee69dd8112" category="list-text">Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우, 애그리게이트에 최대 8개의 디스크를 포함할 수 있어 최대 128TiB의 용량을 제공합니다. GP3 또는 io1 디스크를 사용하는 경우 Amazon EBS Elastic Volumes 기능은 기본적으로 ON_NEW_Cloud Volumes ONTAP 9.11.0 이상의 시스템에서 활성화됩니다.<block ref="eb2d37c537dc5a49383d4a1aea5db77f" category="inline-link-rx"></block></block>
+  <block id="dc2065e297a9790d182a555ba250dbda" category="cell">노드 기반 BYOL</block>
+  <block id="33dae6103de96581cabc3ad35cefb829" category="inline-link-macro">AWS의 Cloud Volumes ONTAP 9.11.1 중재자를 위한 고지 사항</block>
+  <block id="e595c649a367744544e13f68f54580f9" category="list-text"><block ref="e595c649a367744544e13f68f54580f9" category="inline-link-macro-rx"></block></block>
+  <block id="b50289e78d6a423be932389cf178a958" category="inline-link-macro">Google Cloud의 Cloud Volumes ONTAP 9.11.1 중재자를 위한 고지 사항</block>
+  <block id="c35639ede069036a5d63bb08043fd4f9" category="list-text"><block ref="c35639ede069036a5d63bb08043fd4f9" category="inline-link-macro-rx"></block></block>
+  <block id="3fb5fad778ff400a49097ca0bf0b9754" category="paragraph">AWS에서는 aggregate에 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 하지만 Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우 aggregate에 디스크를 최대 8개까지 포함할 수 있습니다.<block ref="eb2d37c537dc5a49383d4a1aea5db77f" category="inline-link-rx"></block></block>
 </blocks>

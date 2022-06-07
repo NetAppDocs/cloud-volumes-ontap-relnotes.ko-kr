@@ -426,7 +426,7 @@ DR(재해 복구)에 대해 구성하는 스토리지 VM에는 추가 라이센�
 | 볼륨당 최대 | 볼륨 크기에 따라 다르며 최대 20억 개까지 가능합니다 
 
 
-| FlexClone 볼륨 * | 계층적 복제 깊이 ^2^ | 499 
+| FlexClone 볼륨 * | 계층적 복제 깊이 ^1^ | 499 
 
 
 .3+| * FlexVol 볼륨 * | 노드당 최대 | 500입니다 
@@ -443,14 +443,6 @@ DR(재해 복구)에 대해 구성하는 스토리지 VM에는 추가 라이센�
 
 | Snapshot 복사본 * | FlexVol 볼륨당 최대 | 1,023 
 |===
-참고:
-
-. Cloud Manager는 SVM 재해 복구에 대한 설정 또는 오케스트레이션 지원을 제공하지 않습니다. 또한, 추가 SVM에서 스토리지 관련 작업을 지원하지 않습니다. SVM 재해 복구에 System Manager 또는 CLI를 사용해야 합니다.
-+
-** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839856["SVM 재해 복구 준비 Express 가이드"^]
-** https://library.netapp.com/ecm/ecm_get_file/ECMLP2839857["SVM 재해 복구 익스프레스 가이드 를 참조하십시오"^]
-
-
 . 계층적 클론 깊이는 단일 FlexVol 볼륨에서 생성할 수 있는 FlexClone 볼륨의 중첩 계층 구조의 최대 깊이입니다.
 
 

@@ -38,7 +38,7 @@ Cloud Volumes ONTAP은 여러 유형의 EBS 디스크와 데이터 계층화를 
 
 [cols="h,d,d,d,d,d,d"]
 |===
-|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 라이센스 | 용량 기반 라이센스 
+|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 BYOL | 용량 기반 라이센스 
 
 
 | 최대 시스템 용량(디스크 + 객체 스토리지) ^1^ | 500GiB | 2TiB | 10TiB | 368TiB^2^ | 라이센스당 368TiB ^2^ | 2 PiB^2^ 
@@ -64,7 +64,7 @@ Cloud Volumes ONTAP은 여러 유형의 EBS 디스크와 데이터 계층화를 
 
 === 지원되는 디스크 크기입니다
 
-AWS에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 6개까지 포함할 수 있습니다.
+AWS에서는 aggregate에 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 하지만 Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우 aggregate에 디스크를 최대 8개까지 포함할 수 있습니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"^]
 
 [cols="3*"]
 |===
