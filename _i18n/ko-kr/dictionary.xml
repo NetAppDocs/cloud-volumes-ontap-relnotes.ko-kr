@@ -772,6 +772,6 @@
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xLarge</block>
   <block id="bc503c45d950d94391e7685c6585b286" category="cell">m5dn.12xLarge</block>
   <block id="c50e8615eb65e21639a9b12f16b31280" category="list-text">이 릴리즈에서는 C4, M4 및 R4 인스턴스 유형이 새 Cloud Volumes ONTAP 시스템에서 지원되지 않습니다. 그러나 이러한 인스턴스 유형 중 하나에서 실행할 때 시스템을 이 릴리즈로 업그레이드할 수 있으므로 이러한 인스턴스 유형에 대한 디스크 제한은 계속 표시됩니다.</block>
-  <block id="fe133d1f6db8d046e4b328c0d9a967a1" category="paragraph">사용 중인 라이센스 모델에 관계없이 Cloud Volumes ONTAP 시스템의 최대 수는 NetApp 계정당 50개로 제한됩니다.</block>
-  <block id="ae5034ae6657395ba1fc2a16d2c55db3" category="paragraph">a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 8개의 Cloud Volumes ONTAP HA 쌍과 4개의 단일 노드 시스템이 있다면 총 12개의 시스템이 있고 고객 시스템에 38개의 추가 시스템이 있을 것입니다.</block>
+  <block id="3ac6338087c4180b5cbb359584abab3a" category="paragraph">사용 중인 라이센스 모델에 관계없이 Cloud Volumes ONTAP 시스템의 최대 수는 NetApp 계정당 20개로 제한됩니다.</block>
+  <block id="b730a5e05a41eebeb51f5aee7c746386" category="paragraph">a_system_은 HA 쌍 또는 단일 노드 시스템입니다. 예를 들어, 2개의 Cloud Volumes ONTAP HA 쌍과 2개의 단일 노드 시스템이 있다면 총 4개의 시스템이 있고 고객 계정에 16개의 추가 시스템을 위한 공간이 있을 것입니다.</block>
 </blocks>
