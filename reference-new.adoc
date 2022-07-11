@@ -96,6 +96,18 @@ Cloud Manager API를 사용하면 생성 중에 LIF 서비스가 설정되므로
 
 
 
+=== 랜섬웨어 방지
+
+ONTAP의 랜섬웨어 방지 기능은 이제 Cloud Volumes ONTAP에서 지원됩니다. 이 기능은 NAS(NFS 및 SMB) 환경에서 워크로드 분석을 사용하여 랜섬웨어 공격을 나타낼 수 있는 비정상적인 활동을 사전에 감지하여 경고합니다.
+
+https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["안티 랜섬웨어에 대해 자세히 알아보십시오"^]
+
+Cloud Manager는 이 기능에 대한 관리 기능을 제공하지 않습니다. 랜섬웨어 방지 보호를 활성화하려면 System Manager 또는 CLI를 사용해야 합니다.
+
+안티 랜섬웨어는 에서 별도의 사용 사례를 해결합니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-protecting-ransomware.html["Cloud Manager를 통해 지원할 수 있는 랜섬웨어 보호"^]
+
+
+
 == 지원되지 않는 새로운 ONTAP 기능입니다
 
 ONTAP 9.11.1에 도입된 새로운 다중 관리 검증 기능은 Cloud Volumes ONTAP에서 지원되지 않습니다. Cloud Volumes ONTAP에서 다중 관리 검증을 활성화하면 지원되지 않는 구성이 발생합니다.
