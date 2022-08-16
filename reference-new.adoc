@@ -20,6 +20,12 @@ Cloud Volumes ONTAP 9.11.1에는 새로운 개선 사항이 포함되어 있습�
 
 
 
+== 9.11.1 GA(2022년 8월 1일)
+
+Cloud Volumes ONTAP 9.11.1의 GA(General Availability) 릴리스를 이제 사용할 수 있습니다. GA 릴리스에는 버그 수정이 포함되어 있습니다.
+
+
+
 == 9.11.1 RC1(2022년 6월 7일)
 
 Cloud Volumes ONTAP 9.11.1 릴리스 후보 1은 이제 AWS, Azure 및 Google 클라우드에서 사용할 수 있습니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.
@@ -93,18 +99,6 @@ Cloud Manager API를 사용하면 생성 중에 LIF 서비스가 설정되므로
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["AWS에서 추가 스토리지 VM을 생성하는 방법에 대해 알아보십시오"^]
 * https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-azure.html["Azure에서 추가 스토리지 VM을 생성하는 방법에 대해 알아보십시오"^]
 
-
-
-
-=== 랜섬웨어 방지
-
-ONTAP의 랜섬웨어 방지 기능은 이제 Cloud Volumes ONTAP에서 지원됩니다. 이 기능은 NAS(NFS 및 SMB) 환경에서 워크로드 분석을 사용하여 랜섬웨어 공격을 나타낼 수 있는 비정상적인 활동을 사전에 감지하여 경고합니다.
-
-https://docs.netapp.com/us-en/ontap/anti-ransomware/index.html["안티 랜섬웨어에 대해 자세히 알아보십시오"^]
-
-Cloud Manager는 이 기능에 대한 관리 기능을 제공하지 않습니다. 랜섬웨어 방지 보호를 활성화하려면 System Manager 또는 CLI를 사용해야 합니다.
-
-안티 랜섬웨어는 에서 별도의 사용 사례를 해결합니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-protecting-ransomware.html["Cloud Manager를 통해 지원할 수 있는 랜섬웨어 보호"^]
 
 
 

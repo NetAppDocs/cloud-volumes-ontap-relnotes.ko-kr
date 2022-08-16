@@ -687,10 +687,6 @@
   <block id="deb56fb5a824215375b16e72749e2aa3" category="inline-link">이러한 라이센스 옵션에 대해 자세히 알아보십시오</block>
   <block id="f3b3e9858be5dbfaf6c39891db3263a2" category="paragraph"><block ref="f3b3e9858be5dbfaf6c39891db3263a2" category="inline-link-rx"></block></block>
   <block id="346f7f627d1a93bfbf315865554048c6" category="section-title">랜섬웨어 방지</block>
-  <block id="df9ade3904ce4c10cfe2ea1f484d177c" category="paragraph">ONTAP의 랜섬웨어 방지 기능은 이제 Cloud Volumes ONTAP에서 지원됩니다. 이 기능은 NAS(NFS 및 SMB) 환경에서 워크로드 분석을 사용하여 랜섬웨어 공격을 나타낼 수 있는 비정상적인 활동을 사전에 감지하여 경고합니다.</block>
-  <block id="1682a2d73db17506ef748746ae0e5b26" category="inline-link">안티 랜섬웨어에 대해 자세히 알아보십시오</block>
-  <block id="2965efaf6a81d93c812190fdf70e8421" category="paragraph"><block ref="2965efaf6a81d93c812190fdf70e8421" category="inline-link-rx"></block></block>
-  <block id="ce6ffc4c3a796f2c5529a32c31151213" category="paragraph">Cloud Manager는 이 기능에 대한 관리 기능을 제공하지 않습니다. 랜섬웨어 방지 보호를 활성화하려면 System Manager 또는 CLI를 사용해야 합니다.</block>
-  <block id="f710d8a9c5acc6eccad3f0bf89772d55" category="inline-link">Cloud Manager를 통해 지원할 수 있는 랜섬웨어 보호</block>
-  <block id="ef849f76db615e66fabc0f181faeeaa0" category="paragraph">안티 랜섬웨어는 에서 별도의 사용 사례를 해결합니다<block ref="bb3f0e167d3bc03dccb553be56950b92" category="inline-link-rx"></block></block>
+  <block id="f7a595a5b716a220ebf66ec097a076b9" category="section-title">9.11.1 GA(2022년 8월 1일)</block>
+  <block id="841cdf435f69aa307d11070ce78d7160" category="paragraph">Cloud Volumes ONTAP 9.11.1의 GA(General Availability) 릴리스를 이제 사용할 수 있습니다. GA 릴리스에는 버그 수정이 포함되어 있습니다.</block>
 </blocks>
