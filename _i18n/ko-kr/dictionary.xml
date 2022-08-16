@@ -545,8 +545,6 @@
   <block id="7d11aba6c40237104a266be93dc3a00f" category="cell">E64is_v3</block>
   <block id="6b9d51616a5f0637dd2fb237d868c037" category="cell">E80ids_v4</block>
   <block id="9a14c9013ea629276a361bd58d8e1f28" category="admonition">일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도달하기 위해 몇 가지 BYOL 라이센스가 필요합니다. 예를 들어, DS5_v2에서 1.95 PiB에 도달하려면 6개의 BYOL 라이센스가 필요합니다.</block>
-  <block id="7b5a749f9960a67a5125083fa7cf600b" category="cell">928TiB</block>
-  <block id="b08a88e26e7d3629b4e76b499b53a5be" category="cell">1.95PiB</block>
   <block id="84581eec82fbf62be31e4721312910b0" category="cell">L8s_v2</block>
   <block id="c717534327e269958ec86746c88f88bf" category="cell">416TiB</block>
   <block id="82c5a657ae8662e2146ad882dc2b2d0b" category="cell">160TiB</block>
@@ -689,4 +687,5 @@
   <block id="346f7f627d1a93bfbf315865554048c6" category="section-title">랜섬웨어 방지</block>
   <block id="f7a595a5b716a220ebf66ec097a076b9" category="section-title">9.11.1 GA(2022년 8월 1일)</block>
   <block id="841cdf435f69aa307d11070ce78d7160" category="paragraph">Cloud Volumes ONTAP 9.11.1의 GA(General Availability) 릴리스를 이제 사용할 수 있습니다. GA 릴리스에는 버그 수정이 포함되어 있습니다.</block>
+  <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896TiB</block>
 </blocks>

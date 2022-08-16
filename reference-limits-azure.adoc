@@ -113,19 +113,19 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 2+|  | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * 
 
 
-| DS4_v2 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| DS4_v2 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| DS5_v2 | 61 | 368TiB | 368TiB | 1.95PiB | 368TiB x 각 라이센스 
+| DS5_v2 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| DS13_v2 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| DS13_v2 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| DS14_v2 | 61 | 368TiB | 368TiB | 1.95PiB | 368TiB x 각 라이센스 
+| DS14_v2 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| DS15_v2 | 61 | 368TiB | 368TiB | 1.95PiB | 368TiB x 각 라이센스 
+| DS15_v2 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
 | L8s_v2 | 13 | 368TiB | 368TiB | 416TiB | 368TiB x 각 라이센스 
@@ -137,13 +137,13 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 | E8s_v3 | 13 | 368TiB | 368TiB | 416TiB | 368TiB x 각 라이센스 
 
 
-| E32s_v3 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| E32s_v3 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| E48s_v3 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| E48s_v3 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| E64is_v3 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| E64is_v3 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
 | E4ds_v4 | 5 | 160TiB | 368TiB | 160TiB | 368TiB x 각 라이센스 
@@ -152,13 +152,13 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 | E8ds_v4 | 13 | 368TiB | 368TiB | 416TiB | 368TiB x 각 라이센스 
 
 
-| E32ds_v4 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| E32ds_v4 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| E48ds_v4 | 29 | 368TiB | 368TiB | 928TiB | 368TiB x 각 라이센스 
+| E48ds_v4 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 
 
-| E80ids_v4 | 61 | 368TiB | 368TiB | 1.95PiB | 368TiB x 각 라이센스 
+| E80ids_v4 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
 |===
 
 
@@ -169,19 +169,19 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 | VM 크기입니다 | 노드당 MAX Data 디스크 | 디스크만 사용할 경우 최대 시스템 용량 | 디스크 및 데이터 계층화를 통한 최대 시스템 용량 
 
 
-| DS4_v2 | 29 | 928TiB | 2 PiB 
+| DS4_v2 | 29 | 896TiB | 2 PiB 
 
 
-| DS5_v2 | 61 | 1.95PiB | 2 PiB 
+| DS5_v2 | 61 | 896TiB | 2 PiB 
 
 
-| DS13_v2 | 29 | 928TiB | 2 PiB 
+| DS13_v2 | 29 | 896TiB | 2 PiB 
 
 
-| DS14_v2 | 61 | 1.95PiB | 2 PiB 
+| DS14_v2 | 61 | 896TiB | 2 PiB 
 
 
-| DS15_v2 | 61 | 1.95PiB | 2 PiB 
+| DS15_v2 | 61 | 896TiB | 2 PiB 
 
 
 | L8s_v2 | 13 | 416TiB | 2 PiB 
@@ -193,13 +193,13 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 | E8s_v3 | 13 | 416TiB | 2 PiB 
 
 
-| E32s_v3 | 29 | 928TiB | 2 PiB 
+| E32s_v3 | 29 | 896TiB | 2 PiB 
 
 
-| E48s_v3 | 29 | 928TiB | 2 PiB 
+| E48s_v3 | 29 | 896TiB | 2 PiB 
 
 
-| E64is_v3 | 29 | 928TiB | 2 PiB 
+| E64is_v3 | 29 | 896TiB | 2 PiB 
 
 
 | E4ds_v4 | 5 | 160TiB | 2 PiB 
@@ -208,13 +208,13 @@ NOTE: 일부 VM 유형의 경우 아래 나열된 최대 시스템 용량에 도
 | E8ds_v4 | 13 | 416TiB | 2 PiB 
 
 
-| E32ds_v4 | 29 | 928TiB | 2 PiB 
+| E32ds_v4 | 29 | 896TiB | 2 PiB 
 
 
-| E48ds_v4 | 29 | 928TiB | 2 PiB 
+| E48ds_v4 | 29 | 896TiB | 2 PiB 
 
 
-| E80ids_v4 | 61 | 1.95PiB | 2 PiB 
+| E80ids_v4 | 61 | 896TiB | 2 PiB 
 |===
 
 
