@@ -697,4 +697,7 @@
   <block id="70f278cadf665202f3ebb7a682519f5c" category="list-text">단일 노드 시스템은 관리 디스크를 사용하며 디스크당 최대 32TiB입니다. 지원되는 디스크 수는 VM 크기에 따라 다릅니다.</block>
   <block id="c5fa07957eb90c414f1dadcad7da5df6" category="list-text">HA 쌍은 프리미엄 페이지 Blob을 디스크로 사용하며 페이지 blob당 최대 8TiB를 사용합니다. 지원되는 디스크 수는 VM 크기에 따라 다릅니다.</block>
   <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">특정 VM 크기의 단일 노드 시스템에 대해 나열되는 896TiB 디스크 기반 제한은_pECTED_LIMIT입니다.</block>
+  <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP에 대한 고지 사항</block>
+  <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
+  <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
 </blocks>

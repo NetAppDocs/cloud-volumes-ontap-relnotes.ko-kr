@@ -52,4 +52,5 @@ https://www.netapp.com/us/legal/privacypolicy/index.aspx[]
 
 * link:media/notice-aws.pdf["AWS의 Cloud Volumes ONTAP 9.11.1 중재자를 위한 고지 사항"^]
 * link:media/notice-google-cloud.pdf["Google Cloud의 Cloud Volumes ONTAP 9.11.1 중재자를 위한 고지 사항"^]
+* https://docs.netapp.com/us-en/ontap/reference_legal_notices.html#open-source["ONTAP에 대한 고지 사항"^]
 
