@@ -203,7 +203,6 @@
   <block id="b5050f17750ec84285bec219771841c4" category="section-title">Google Private Service Connect 제한 사항</block>
   <block id="9fb3c7aadbb59d428d3c01efb5689f4b" category="inline-link">Google Private Service Connect</block>
   <block id="7af98a0e0cd62cd4ddc103341d51fda2" category="inline-link">Cloud Manager API 엔드포인트</block>
-  <block id="948671a13623cbbc9f65ca511ed257a3" category="paragraph">활용할 수 있습니다<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다<block ref="acf94572d3bfe8bd5bc5166d196eeacc" category="inline-link-rx"></block>.</block>
   <block id="406156e49006d700786c581646d94504" category="paragraph">Cloud Volumes ONTAP의 데이터를 Google 클라우드 스토리지 버킷으로 계층화하는 것은 현재 프라이빗 서비스 Connect에서 지원되지 않습니다.</block>
   <block id="7bb35241d1246d5dc87cb9e61c1efc05" category="summary">이러한 알려진 제한은 Microsoft Azure의 Cloud Volumes ONTAP에만 적용됩니다.</block>
   <block id="2d9da48a9b4a4fd6966adc9c52393b79" category="doc">Azure의 알려진 제한 사항</block>
@@ -700,4 +699,5 @@
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP에 대한 고지 사항</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="7ff191df90fac0fa94ab5c2b5101a5e9" category="sidebar">모든 Cloud Manager 설명서</block>
+  <block id="da934d10ecc6d50a861d9470630d4989" category="paragraph">활용할 수 있습니다<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다<block ref="c291f5ab92cbab017e6f29ee8a0edb54" category="inline-link-rx"></block>.</block>
 </blocks>

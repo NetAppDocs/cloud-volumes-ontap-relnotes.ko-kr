@@ -28,6 +28,6 @@ https://cloud.google.com/vpc/docs/packet-mirroring["패킷 미러링"^] Cloud Vo
 
 == Google Private Service Connect 제한 사항
 
-활용할 수 있습니다 https://cloud.google.com/vpc/docs/private-service-connect["Google Private Service Connect"^] Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/reference-networking-cloud-manager.html#outbound-internet-access.html["Cloud Manager API 엔드포인트"^].
+활용할 수 있습니다 https://cloud.google.com/vpc/docs/private-service-connect["Google Private Service Connect"^] Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-creating-connectors-gcp.html#outbound-internet-access["Cloud Manager API 엔드포인트"^].
 
 Cloud Volumes ONTAP의 데이터를 Google 클라우드 스토리지 버킷으로 계층화하는 것은 현재 프라이빗 서비스 Connect에서 지원되지 않습니다.
