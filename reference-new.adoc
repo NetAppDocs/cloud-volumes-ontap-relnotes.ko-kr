@@ -20,6 +20,14 @@ Cloud Volumes ONTAP 9.11.1에는 새로운 개선 사항이 포함되어 있습�
 
 
 
+== 9.11.1 P3(2022년 10월 19일)
+
+버전 3.9.22 이상을 실행하는 커넥터가 있는 경우 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.11.1 P3 패치를 사용할 수 있습니다. Cloud Manager에서 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.11.1P3["P3 패치에서 해결된 버그 목록을 봅니다"] (NetApp Support 사이트 로그인 필요).
+
+
+
 == 9.11.1 GA(2022년 8월 1일)
 
 Cloud Volumes ONTAP 9.11.1의 GA(General Availability) 릴리스를 이제 사용할 수 있습니다. GA 릴리스에는 버그 수정이 포함되어 있습니다.
