@@ -20,11 +20,21 @@ Cloud Volumes ONTAP 9.11.1에는 새로운 개선 사항이 포함되어 있습�
 
 
 
+== C4, M4 및 R4 인스턴스가 더 이상 지원되지 않음(2022년 10월 28일)
+
+AWS에서 C4, M4 및 R4 EC2 인스턴스 유형은 더 이상 Cloud Volumes ONTAP에서 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 시스템이 있는 경우 C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경해야 합니다.
+
+link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경하는 방법에 대해 알아보십시오"^].
+
+을 참조하십시오 link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["NetApp 지원"^] 이러한 인스턴스 유형의 가용성 및 지원에 대한 자세한 내용을 보려면 를 참조하십시오.
+
+
+
 == 9.11.1 P3(2022년 10월 19일)
 
 버전 3.9.22 이상을 실행하는 커넥터가 있는 경우 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.11.1 P3 패치를 사용할 수 있습니다. Cloud Manager에서 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
 
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.11.1P3["P3 패치에서 해결된 버그 목록을 봅니다"] (NetApp Support 사이트 로그인 필요).
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.11.1P3["P3 패치에서 해결된 버그 목록을 봅니다"^] (NetApp Support 사이트 로그인 필요).
 
 
 
@@ -150,11 +160,3 @@ TIP: Connector의 자동 업그레이드는 기본적으로 활성화되어 있�
 * 단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.
 * HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.
 
-
-
-
-=== C4, M4 및 R4 인스턴스 유형
-
-9.8 릴리스, C4, M4 및 R4 인스턴스 유형부터 새로운 Cloud Volumes ONTAP 시스템에서는 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 Cloud Volumes ONTAP 시스템이 있는 경우에도 이 릴리즈로 업그레이드할 수 있습니다.
-
-C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경하는 것이 좋습니다.
