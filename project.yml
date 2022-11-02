@@ -126,6 +126,6 @@ homepage:
     - title: 클라우드 웨비나
       url: https://cloud.netapp.com/events
 product-family:
-  name: Cloud Manager
+  name: BlueXP
   repo: cloud-manager-family
-  sidebar_label: 모든 Cloud Manager 설명서
+  sidebar_label: 모든 BlueXP 설명서
