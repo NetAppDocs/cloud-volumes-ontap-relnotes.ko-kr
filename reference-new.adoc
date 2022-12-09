@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.11.1에는 새로운 개선 사항이 포함되어 있습니다. 
+summary: Cloud Volumes ONTAP 9.12.1에는 새로운 개선 사항이 포함되어 있습니다. 
 ---
-= Cloud Volumes ONTAP 9.11.1의 새로운 기능
+= Cloud Volumes ONTAP 9.12.1의 새로운 기능
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,9 +14,66 @@ summary: Cloud Volumes ONTAP 9.11.1에는 새로운 개선 사항이 포함되�
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.11.1에는 새로운 개선 사항이 포함되어 있습니다.
+Cloud Volumes ONTAP 9.12.1에는 새로운 개선 사항이 포함되어 있습니다.
 
 최신 버전의 BlueXP(이전 Cloud Manager)에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/whats-new.html["BlueXP 릴리스 정보"^] 를 참조하십시오.
+
+
+
+== 9.12.1 RC1(2022년 12월 8일)
+
+Cloud Volumes ONTAP 9.12.1 출시 후보 1은 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.
+
+
+
+=== 지원되는 업그레이드 경로입니다
+
+9.12.0 릴리스 및 9.11.1 릴리스에서 Cloud Volumes ONTAP 9.12.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
+
+
+
+=== 커넥터의 필수 버전입니다
+
+새 Cloud Volumes ONTAP 9.12.1 시스템을 배포하고 기존 시스템을 9.12.1로 업그레이드하려면 BlueXP 커넥터가 버전 3.9.23 이상을 실행해야 합니다.
+
+
+TIP: Connector의 자동 업그레이드는 기본적으로 활성화되어 있으므로 최신 버전을 실행해야 합니다.
+
+
+
+=== GCP의 ONTAP S3 라이센스
+
+ONTAP S3 라이센스는 이제 Google 클라우드 플랫폼에서 버전 9.12.1 이상을 실행하는 신규 및 기존 Cloud Volumes ONTAP 시스템에 포함되어 있습니다.
+
+https://docs.netapp.com/us-en/ontap/object-storage-management/index.html["ONTAP에서 S3 오브젝트 스토리지 서비스를 구성 및 관리하는 방법에 대해 알아보십시오"^]
+
+
+
+=== Cloud Volumes ONTAP에서 NVMe-TCP 지원
+
+Cloud Volumes ONTAP 버전 9.12.1 이상을 사용하는 경우 클라우드 공급자는 NVMe-TCP를 지원합니다. BlueXP는 NVMe-TCP에 대한 관리 기능을 제공하지 않습니다.
+
+ONTAP를 통해 NVMe를 구성하는 방법에 대한 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/ontap/san-admin/configure-svm-nvme-task.html["NVMe용 스토리지 VM을 구성합니다"^].
+
+
+
+=== 공유 관리 디스크를 사용하는 단일 가용성 영역의 Azure HA
+
+이제 공유 관리 디스크 위에서 실행되는 Microsoft Azure LRS(Locally Redundant Storage)를 사용하여 Cloud Volumes ONTAP HA 구성을 배포할 수 있습니다. 로컬 중복 스토리지는 동일한 지역의 단일 데이터 센터 내에서 데이터를 세 번 복제합니다.
+
+HA 구성 아키텍처 및 구성 요소에 대한 자세한 내용은 를 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html["Azure의 고가용성 쌍"^].
+
+Azure에서 단일 가용성 영역에 새로운 HA 쌍을 구축하면 이제 스토리지에 페이지 Blob 대신 LRS 공유 관리 디스크를 사용할 수 있습니다. 작업 환경 마법사에는 변경 사항이 없습니다. 이 새 구성을 사용하려면 단일 가용성 영역을 선택하기만 하면 됩니다. 자세한 내용은 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP HA 쌍 시작"^].
+
+
+
+=== 공유 관리 디스크를 사용하는 여러 가용성 영역의 Azure HA
+
+이제 한 지역 내에 Azure 여러 가용성 영역을 사용하여 Cloud Volumes ONTAP HA 구성을 구축할 수 있습니다. 새로운 구성은 데이터 센터 장애로부터 보호하고 Azure ZRS(Zone-Redundant Storage) 공유 관리 디스크를 사용하여 애플리케이션 가용성을 유지합니다.
+
+HA 구성 아키텍처 및 구성 요소에 대한 자세한 내용은 를 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-ha-azure.html["Azure의 고가용성 쌍"^].
+
+이 새 구성을 사용하려면 을 참조하십시오 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploying-otc-azure.html["Azure에서 Cloud Volumes ONTAP HA 쌍 시작"^].
 
 
 
@@ -27,136 +84,3 @@ AWS에서 C4, M4 및 R4 EC2 인스턴스 유형은 더 이상 Cloud Volumes ONTA
 link:https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-change-ec2-instance.html["Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경하는 방법에 대해 알아보십시오"^].
 
 을 참조하십시오 link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["NetApp 지원"^] 이러한 인스턴스 유형의 가용성 및 지원에 대한 자세한 내용을 보려면 를 참조하십시오.
-
-
-
-== 9.11.1 P3(2022년 10월 19일)
-
-버전 3.9.22 이상을 실행하는 커넥터가 있는 경우 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.11.1 P3 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.11.1P3["P3 패치에서 해결된 버그 목록을 봅니다"^] (NetApp Support 사이트 로그인 필요).
-
-
-
-== 9.11.1 GA(2022년 8월 1일)
-
-Cloud Volumes ONTAP 9.11.1의 GA(General Availability) 릴리스를 이제 사용할 수 있습니다. GA 릴리스에는 버그 수정이 포함되어 있습니다.
-
-
-
-== 9.11.1 RC1(2022년 6월 7일)
-
-Cloud Volumes ONTAP 9.11.1 릴리스 후보 1은 이제 AWS, Azure 및 Google 클라우드에서 사용할 수 있습니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.
-
-
-
-=== 성능 향상
-
-9.11.1 이상에서 생성된 새 애그리게이트의 읽기 성능이 향상되었습니다.
-
-
-
-=== 스토리지 효율성 향상
-
-9.11.1 릴리즈부터 스토리지 효율성을 위해 활성화된 모든 새로운 볼륨에 온도에 민감한 스토리지 효율성 이라는 새로운 압축 기능이 포함됩니다. 이전 세대 압축 기능은 더 이상 사용되지 않습니다.
-
-온도에 민감한 스토리지 효율성 데이터 온도 또는 데이터 사용 빈도를 기준으로 데이터를 압축합니다. 자주 사용되지 않는 콜드 데이터 또는 데이터는 압축률이 더 높아 스토리지 효율성이 향상됩니다.
-
-
-
-=== AWS에서 VPC 공유
-
-Cloud Volumes ONTAP HA 쌍이 VPC 공유를 지원하는 AWS에서 이제 지원됩니다. VPC 공유를 사용하면 서브넷을 다른 AWS 계정과 공유할 수 있습니다. 네트워킹(VPC, 서브넷 및 라우트 테이블)은 VPC 소유자 계정에 상주하고 HA 구성의 EC2 인스턴스는 공유 서브넷을 사용하는 참가자 계정에 상주합니다.
-
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-deploy-aws-shared-vpc.html["공유 서브넷에 HA 쌍을 구축하는 방법을 알아보십시오"^]
-
-
-
-=== 새로운 AWS 지역 지원
-
-Cloud Volumes ONTAP는 현재 AWS 자카르타 지역(AP-동남아시아-3)에서 지원됩니다.
-
-https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
-
-
-
-=== 새로운 Azure 지역 지원
-
-Cloud Volumes ONTAP는 현재 Azure 브라질 남동부 지역에서 지원됩니다.
-
-https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
-
-
-
-=== Google Cloud에서 24개의 스토리지 VM 지원
-
-현재 24개의 스토리지 VM이 Google Cloud의 Cloud Volumes ONTAP에서 대부분의 구성으로 지원됩니다.
-
-* link:reference-limits-gcp.html#storage-vm-limits["Google Cloud의 스토리지 VM 제한에 대해 자세히 알아보십시오"]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-gcp.html["Google Cloud에서 Cloud Volumes ONTAP용 데이터 서비스 스토리지 VM을 생성하는 방법을 알아보십시오"^]
-
-
-
-
-=== 새로운 Google Cloud 지역 지원
-
-Cloud Volumes ONTAP HA 쌍이 이제 밀라노(유럽-west8) 지역에서 지원됩니다.
-
-https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes ONTAP에 대해 지원되는 전체 영역 목록을 봅니다"^]
-
-
-
-=== 새 스토리지 VM에 대한 LIF 서비스 수정
-
-이 릴리즈부터 AWS 또는 Azure의 Cloud Volumes ONTAP HA 쌍에서 새 스토리지 VM을 생성하는 경우, 스토리지 VM에 대한 네트워크 서비스 정책을 수정해야 합니다. Cloud Volumes ONTAP가 아웃바운드 관리 연결에 iSCSI LIF를 사용할 수 있도록 하기 때문에 서비스를 수정해야 합니다.
-
-BluXP API는 생성 중에 LIF 서비스를 설정하므로 Google Cloud의 Cloud Volumes ONTAP에서는 LIF 서비스를 수정할 필요가 없습니다.
-
-실행해야 하는 명령은 다음 페이지에서 지정합니다.
-
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["AWS에서 추가 스토리지 VM을 생성하는 방법에 대해 알아보십시오"^]
-* https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-azure.html["Azure에서 추가 스토리지 VM을 생성하는 방법에 대해 알아보십시오"^]
-
-
-
-
-== 지원되지 않는 새로운 ONTAP 기능입니다
-
-ONTAP 9.11.1에 도입된 새로운 다중 관리 검증 기능은 Cloud Volumes ONTAP에서 지원되지 않습니다. Cloud Volumes ONTAP에서 다중 관리 검증을 활성화하면 지원되지 않는 구성이 발생합니다.
-
-
-
-== 노트 업그레이드
-
-이 릴리스 업그레이드에 대한 자세한 내용은 이 노트를 참조하십시오.
-
-
-
-=== 업그레이드 방법
-
-Cloud Volumes ONTAP 업그레이드는 BlueXP에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
-
-http://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-updating-ontap-cloud.html["BlueXP에서 알림을 받을 때 업그레이드하는 방법에 대해 알아봅니다"^].
-
-
-
-=== 지원되는 업그레이드 경로입니다
-
-9.11.0 릴리스 및 9.10.1 릴리스에서 Cloud Volumes ONTAP 9.11.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
-
-
-
-=== 커넥터의 필수 버전입니다
-
-새 Cloud Volumes ONTAP 9.11.1 시스템을 배포하고 기존 시스템을 9.11.1로 업그레이드하려면 BlueXP 커넥터가 버전 3.9.19 이상을 실행해야 합니다.
-
-
-TIP: Connector의 자동 업그레이드는 기본적으로 활성화되어 있으므로 최신 버전을 실행해야 합니다.
-
-
-
-=== 알아 보십시오
-
-* 단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.
-* HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.
-

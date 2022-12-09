@@ -44,7 +44,6 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * DS13_v2
 * DS14_v2
 * DS15_v2
-* L8s_v2^2^
 * E4s_v3
 * E8s_v3
 * E32s_v3^3^
@@ -55,6 +54,9 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * E32ds_v4^3^
 * E48ds_v4^3^
 * E80ids_v4^3^
+* L8s_v3^2^
+* L16s_v3^2,4^
+* L32s_v3^2,4^
 
  a| 
 * E4s_v3
@@ -65,6 +67,7 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * DS13_v2
 * E8s_v3
 * E8ds_v4^3^
+* L8s_v3^2^
 
  a| 
 * DS5_v2
@@ -83,7 +86,6 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * DS13_v2
 * DS14_v2
 * DS15_v2
-* L8s_v2^2^
 * E4s_v3
 * E8s_v3
 * E32s_v3^3^
@@ -94,6 +96,9 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * E32ds_v4^3^
 * E48ds_v4^3^
 * E80ids_v4^3^
+* L8s_v3^2^
+* L16s_v3^2,4^
+* L32s_v3^2,4^
 
  a| 
 * DS4_v2
@@ -101,7 +106,6 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * DS13_v2
 * DS14_v2
 * DS15_v2
-* L8s_v2^2^
 * E4s_v3
 * E8s_v3
 * E32s_v3^3^
@@ -112,6 +116,9 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 * E32ds_v4^3^
 * E48ds_v4^3^
 * E80ids_v4^3^
+* L8s_v3^2^
+* L16s_v3^2,4^
+* L32s_v3^2,4^
 
 
 
@@ -157,38 +164,29 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 * DS15_v2^1^
 * E8s_v3
 * E48s_v3^1^
-* E8ds_v4^1^
-* E32ds_v4^1^
-* E48ds_v4^1^
-* E80ids_v4^1,2^
+* E8ds_v4^7^
+* E32ds_v4^1,7^
+* E48ds_v4^1,7^
+* E80ids_v4^1,2,7^
+* L16s_v3^1,6,7^
+* L32s_v3^1,6,7^
 
  a| 
 * DS4_v2
 * DS13_v2
-* E8ds_v4^1^
+* E8s_v3
+* E8ds_v4^7^
 
  a| 
 * DS5_v2^1^
 * DS14_v2^1^
 * DS15_v2^1^
-* E8s_v3
 * E48s_v3^1^
-* E32ds_v4^1^
-* E48ds_v4^1^
-* E80ids_v4^1,2^
-
- a| 
-* DS4_v2
-* DS5_v2^1^
-* DS13_v2
-* DS14_v2^1^
-* DS15_v2^1^
-* E8s_v3
-* E48s_v3^1^
-* E8ds_v4^1^
-* E32ds_v4^1^
-* E48ds_v4^1^
-* E80ids_v4^1,2^
+* E32ds_v4^1,7^
+* E48ds_v4^1,7^
+* E80ids_v4^1,2,7^
+* L16s_v3^1,6,7^
+* L32s_v3^1,6,7^
 
  a| 
 * DS4_v2
@@ -198,15 +196,32 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 * DS15_v2^1^
 * E8s_v3
 * E48s_v3^1^
-* E8ds_v4^1^
-* E32ds_v4^1^
-* E48ds_v4^1^
-* E80ids_v4^1,2^
+* E8ds_v4^7^
+* E32ds_v4^1,7^
+* E48ds_v4^1,7^
+* E80ids_v4^1,2,7^
+* L16s_v3^1,6,7^
+* L32s_v3^1,6,7^
+
+ a| 
+* DS4_v2
+* DS5_v2^1^
+* DS13_v2
+* DS14_v2^1^
+* DS15_v2^1^
+* E8s_v3
+* E48s_v3^1^
+* E8ds_v4^7^
+* E32ds_v4^1,7^
+* E48ds_v4^1,7^
+* E80ids_v4^1,2,7^
+* L16s_v3^1,6,7^
+* L32s_v3^1,6,7^
 
 
 
 
-| 지원되는 디스크 유형입니다 5+| 프리미엄 페이지 Blob 
+| 지원되는 디스크 유형입니다 5+| 관리형 디스크 
 |===
 참고:
 
@@ -215,6 +230,8 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 . PAYGO Explore는 Azure의 HA 쌍에서 지원되지 않습니다.
 . Azure 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
 . Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 VM 인스턴스 유형을 사용하는 솔루션은 지원되지 않습니다.
+. 이러한 VM은 관리되는 디스크 위에서 실행을 지원할 수 있습니다.
+. 이러한 VM 유형은 공유 관리 디스크 구축에만 지원됩니다. 모든 새로운 HA 구축에서는 공유 관리 디스크를 사용했습니다. 이전에는 페이지 Blob이 사용되었습니다.
 
 
 
@@ -269,11 +286,15 @@ Azure에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 12
 
 === HA 쌍
 
-HA 쌍에서는 프리미엄 페이지 Blob을 사용합니다. 지원되는 디스크 크기는 다음과 같습니다.
+HA 쌍은 관리형 디스크를 사용합니다. (페이지 Blob은 9.12.1 릴리즈 전에 구축된 HA 쌍으로 지원됩니다.)
+
+지원되는 디스크 크기는 다음과 같습니다.
 
 * 500GiB
 * 1TiB
 * 2TiB
 * 4TiB
 * 8TiB
+* 16TiB(관리 디스크만 해당)
+* 32TiB(관리되는 디스크만 해당)
 

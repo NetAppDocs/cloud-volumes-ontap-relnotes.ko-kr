@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations-azure.html 
-keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, nfsv3 
+keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache 
 summary: 이러한 알려진 제한은 Microsoft Azure의 Cloud Volumes ONTAP에만 적용됩니다. 
 ---
 = Azure의 알려진 제한 사항
@@ -20,7 +20,7 @@ Microsoft Azure의 Cloud Volumes ONTAP에는 다음과 같은 알려진 제한 �
 
 == Flash Cache 제한
 
-Standard_L8s_v2 VM 유형에는 Cloud Volumes ONTAP이 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache에 대한 다음 제한 사항에 유의하십시오.
+일부 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 있습니다. Flash Cache에 대한 다음 제한 사항에 유의하십시오.
 
 * Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.
 +
