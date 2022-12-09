@@ -36,9 +36,3 @@ BlueXP에서 볼륨을 생성할 때 스토리지 효율성을 선택하지 않�
 일부 지역에서는 HA 쌍이 지원되지 않습니다.
 
 https://cloud.netapp.com/cloud-volumes-global-regions["지원되는 Azure 지역 목록을 봅니다"^].
-
-
-
-== CSP 파트너는 선불 종량제(Pay-as-you-go)을 사용할 수 없습니다
-
-Microsoft 클라우드 솔루션 공급자(CSP) 파트너인 경우 CSP 파트너는 선불 종량제 구독을 사용할 수 없으므로 Cloud Volumes ONTAP Explore, Standard 또는 Premium을 배포할 수 없습니다. 라이센스를 구입하고 Cloud Volumes ONTAP BYOL을 구축해야 합니다.
