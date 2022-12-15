@@ -598,7 +598,6 @@
   <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">특정 VM 크기의 단일 노드 시스템에 대해 나열되는 896TiB 디스크 기반 제한은_pECTED_LIMIT입니다.</block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP에 대한 고지 사항</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
-  <block id="e7a585efb4ff7fae4274ad6c7457c7c6" category="section-title">C4, M4 및 R4 인스턴스가 더 이상 지원되지 않음(2022년 10월 28일)</block>
   <block id="45468834981b77e3d08a5c6457436141" category="paragraph">AWS에서 C4, M4 및 R4 EC2 인스턴스 유형은 더 이상 Cloud Volumes ONTAP에서 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 시스템이 있는 경우 C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경해야 합니다.</block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경하는 방법에 대해 알아보십시오</block>
   <block id="f072eddf76dc8c19f3d32a7263fe7931" category="paragraph"><block ref="37cca4b92d12a1904a84ee04c60f6ada" category="inline-link-macro-rx"></block>.</block>
@@ -685,11 +684,22 @@
   <block id="f27b112d1527e5f29f0e8f510d779a5e" category="doc">Cloud Volumes ONTAP 9.12.1 릴리스 정보</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">AWS의 HA 시스템에서 미러링된 데이터는 용량 제한에 따라 계산됩니까?</block>
   <block id="39b49fbe12f6121fd761513c05ddba97" category="paragraph">일부 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 있습니다. Flash Cache에 대한 다음 제한 사항에 유의하십시오.</block>
-  <block id="e096a8fca5da32609fbb1d7798b0348e" category="paragraph">9.11.1 릴리스에서 Cloud Volumes ONTAP 9.12.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="0612637a826e0e5aac35661a09778188" category="paragraph">새 Cloud Volumes ONTAP 9.12.1 시스템을 배포하고 기존 시스템을 9.12.1로 업그레이드하려면 BlueXP 커넥터가 버전 3.9.24 이상을 실행해야 합니다.</block>
   <block id="f5aba93322e5fd0767b7e9fa839610f1" category="inline-link-macro">AWS의 Cloud Volumes ONTAP 9.12.1 중재자를 위한 고지 사항</block>
   <block id="a4a2a5bddea7236f27b0a01d377e37a6" category="list-text"><block ref="a4a2a5bddea7236f27b0a01d377e37a6" category="inline-link-macro-rx"></block></block>
   <block id="278ce444bf386e0c416c2eb85c339022" category="inline-link-macro">Google Cloud의 Cloud Volumes ONTAP 9.12.1 중재자를 위한 고지 사항</block>
   <block id="653a50044a773ecda2e2e9ec6736699c" category="list-text"><block ref="653a50044a773ecda2e2e9ec6736699c" category="inline-link-macro-rx"></block></block>
   <block id="16b3ee4e5301a5f3f5b55816b3906b83" category="summary">이 릴리즈 노트에서는 Cloud Volumes ONTAP 9.12.1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
+  <block id="f59964eb1e1669da7d916b7e136c88bd" category="list-text">m6id.32xLarge</block>
+  <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">노트 업그레이드</block>
+  <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">이 릴리스 업그레이드에 대한 자세한 내용은 이 노트를 참조하십시오.</block>
+  <block id="b78b1188c7979365981f7c88049f9366" category="section-title">업그레이드 방법</block>
+  <block id="c716eebe2519c2ba4a2e109b59dd8b13" category="inline-link">BlueXP에서 알림을 받을 때 업그레이드하는 방법에 대해 알아봅니다</block>
+  <block id="bd4bd858d3e1a85d30586455b3e9daf2" category="paragraph"><block ref="6a49825bad49c3be284ac7a237bc2a26" category="inline-link-rx"></block>.</block>
+  <block id="69166f59e44b2f0714ce3c4f044faf17" category="paragraph">9.12.0 및 9.11.1 릴리스에서 Cloud Volumes ONTAP 9.12.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
+  <block id="75026846c1403e202a52bdb027762fbb" category="section-title">알아 보십시오</block>
+  <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.</block>
+  <block id="00795e3f043d0bab791590ffc0257204" category="list-text">HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.</block>
+  <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">C4, M4 및 R4 인스턴스는 더 이상 지원되지 않습니다</block>
+  <block id="e19784a5420512b2876c7b24680652b5" category="cell">40,000개</block>
 </blocks>
