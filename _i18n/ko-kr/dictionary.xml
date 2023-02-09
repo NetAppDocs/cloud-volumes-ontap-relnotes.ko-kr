@@ -642,7 +642,6 @@
   <block id="68367d4408e943b9268a7a6d4314fb0a" category="inline-link-macro">Azure에서 Cloud Volumes ONTAP HA 쌍 시작</block>
   <block id="bb0d42e6fed6d85c4ddc5b2d8c94e08b" category="paragraph">Azure에서 단일 가용성 영역에 새로운 HA 쌍을 구축하면 이제 스토리지에 페이지 Blob 대신 LRS 공유 관리 디스크를 사용할 수 있습니다. 작업 환경 마법사에는 변경 사항이 없습니다. 이 새 구성을 사용하려면 단일 가용성 영역을 선택하기만 하면 됩니다. 자세한 내용은 을 참조하십시오 <block ref="74ff11371741a9669ba3ff027e13cdfb" category="inline-link-macro-rx"></block>.</block>
   <block id="adacae0ffd14e727a49e7808c807ce42" category="section-title">공유 관리 디스크를 사용하는 여러 가용성 영역의 Azure HA</block>
-  <block id="bfcf5935583a46f9d5f7f5ad4fa31baf" category="paragraph">이제 한 지역 내에 Azure 여러 가용성 영역을 사용하여 Cloud Volumes ONTAP HA 구성을 구축할 수 있습니다. 새로운 구성은 데이터 센터 장애로부터 보호하고 Azure ZRS(Zone-Redundant Storage) 공유 관리 디스크를 사용하여 애플리케이션 가용성을 유지합니다.</block>
   <block id="5f04b8451f48f03e36e44aea747e0a8b" category="paragraph">이 새 구성을 사용하려면 을 참조하십시오 <block ref="74ff11371741a9669ba3ff027e13cdfb" category="inline-link-macro-rx"></block>.</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3^2^</block>
   <block id="6f487c8743b08c743167da3781c42f57" category="list-text">L16s_v3^2,4^</block>
@@ -706,4 +705,9 @@
   <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">이러한 VM 유형은 공유 관리 디스크에서 실행되는 단일 가용성 영역 구성의 HA 쌍에만 지원됩니다.</block>
   <block id="7502ea8e5d477af63195f04d6179ca92" category="list-text">이러한 VM 유형은 단일 가용성 영역의 HA 쌍과 공유 관리 디스크에서 실행되는 여러 가용성 영역 구성에 대해 지원됩니다.</block>
   <block id="6c895f204de5d4dd4a02c2926e76c998" category="list-text">이러한 VM 유형은 Cloud Volumes ONTAP 9.11.1 이전 버전에서만 지원됩니다.</block>
+  <block id="b3d2b2f33046bc452ceeba660d878f97" category="section-title">9.12.1 GA(2023년 2월 9일)</block>
+  <block id="d7ad70132837e18b99685763f8db95f2" category="paragraph">Cloud Volumes ONTAP 9.12.1의 GA(General Availability) 릴리스는 현재 AWS, Azure 및 Google 클라우드에서 사용할 수 있습니다. GA 릴리스에는 버그 수정이 포함되어 있습니다.</block>
+  <block id="901f48339d9d297cd3f32a0be361c057" category="paragraph">이제 한 지역 내에 Azure 여러 가용성 영역을 사용하여 Cloud Volumes ONTAP HA 구성을 구축할 수 있습니다. 새로운 구성은 데이터 센터 장애로부터 보호하고 Azure ZRS(Zone-Redundant Storage) 공유 관리 디스크를 사용하여 애플리케이션 가용성을 유지합니다. 이 기능은 현재 미국 서부 2, 서유럽, 북유럽 및 프랑스 중부 지역에서만 사용할 수 있습니다.</block>
+  <block id="967b9ba2107b00338e92f6eb93ca99d8" category="inline-link-macro">Microsoft Azure 설명서.</block>
+  <block id="0d66ef11df7c9797df8b9cf7f638438a" category="paragraph">관리되는 디스크의 영역 중복 스토리지에 대한 자세한 내용은 을 참조하십시오 <block ref="cc9f7b6977bd94adf51c6f83282634a2" category="inline-link-macro-rx"></block></block>
 </blocks>
