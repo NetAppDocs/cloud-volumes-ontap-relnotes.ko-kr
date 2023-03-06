@@ -2,10 +2,10 @@
 layout: astra 
 sidebar: sidebar 
 permalink: index.html 
-lead: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.12.1. 
-summary: 이 릴리즈 노트에서는 Cloud Volumes ONTAP 9.12.1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다. 
+lead: These release notes describe new features, limitations, and known issues for Cloud Volumes ONTAP 9.13.0. 
+summary: 이 릴리즈 노트에서는 Cloud Volumes ONTAP 9.13.0의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다. 
 ---
-= Cloud Volumes ONTAP 9.12.1 릴리스 정보
+= Cloud Volumes ONTAP 9.13.0 릴리스 정보
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 

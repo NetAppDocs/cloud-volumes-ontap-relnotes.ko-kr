@@ -106,7 +106,6 @@ SnapManager 서버당 라이센스는 Cloud Volumes ONTAP에서 지원됩니다.
 +
 Cloud Volumes ONTAP에서 다중 관리 검증을 활성화하면 지원되지 않는 구성이 발생합니다.
 
-* Google Cloud의 ONTAP S3(S3 프로토콜이 Azure 및 AWS에서 지원됨)
 * RAID4, RAID-DP, RAID-TEC(RAID0 지원)
 * 서비스 프로세서
 * SnapLock 규정 준수 및 엔터프라이즈 모드(클라우드 WORM만 지원)
