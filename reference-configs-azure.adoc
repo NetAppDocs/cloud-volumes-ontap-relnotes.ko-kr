@@ -128,7 +128,7 @@ Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 �
 참고:
 
 . PAYGO Explore에서는 Azure Blob 저장소에 대한 데이터 계층화가 지원되지 않습니다.
-. 이 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
+. 이 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
 . 이러한 VM 유형은 을 사용합니다 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["울트라급 SSD"^] VNVRAM의 경우, 더 나은 쓰기 성능을 제공합니다.
 +
 새 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형을 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 예를 들어, E8ds_v4에서 E8s_v3으로 변경할 수는 없지만 두 VM 유형 모두 Ultra SSD를 사용하므로 E8ds_v4에서 E32ds_v4로 변경할 수 있습니다.
@@ -243,8 +243,8 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 * E32ds_v4^1,4^
 * E48ds_v4^1,4^
 * E80ids_v4^1,2,4^
-* L16s_v3^1,3^
-* L32s_v3^1,3^
+* L16s_v3^1,3,5^
+* L32s_v3^1,3,5^
 
  a| 
 * E8ds_v4^4^
@@ -253,24 +253,24 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 * E32ds_v4^1,4^
 * E48ds_v4^1,4^
 * E80ids_v4^1,2,4^
-* L16s_v3^1,3^
-* L32s_v3^1,3^
+* L16s_v3^1,3,5^
+* L32s_v3^1,3,5^
 
  a| 
 * E8ds_v4^4^
 * E32ds_v4^1,4^
 * E48ds_v4^1,4^
 * E80ids_v4^1,2,4^
-* L16s_v3^1,3^
-* L32s_v3^1,3^
+* L16s_v3^1,3,5^
+* L32s_v3^1,3,5^
 
  a| 
 * E8ds_v4^4^
 * E32ds_v4^1,4^
 * E48ds_v4^1,4^
 * E80ids_v4^1,2,4^
-* L16s_v3^1,3^
-* L32s_v3^1,3^
+* L16s_v3^1,3,5^
+* L32s_v3^1,3,5^
 
 
 
@@ -283,6 +283,7 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 . 이 VM은 Azure 유지 관리 제어가 필요한 경우에만 권장됩니다. 더 높은 가격 책정으로 인해 다른 사용 사례에는 권장되지 않습니다.
 . 이러한 VM 유형은 공유 관리 디스크에서 실행되는 단일 가용성 영역 구성의 HA 쌍에만 지원됩니다.
 . 이러한 VM 유형은 단일 가용성 영역의 HA 쌍과 공유 관리 디스크에서 실행되는 여러 가용성 영역 구성에 대해 지원됩니다.
+. 이 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
 
 
 
