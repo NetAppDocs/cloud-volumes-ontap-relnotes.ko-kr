@@ -60,6 +60,8 @@ sidebar:
     url: "/index.html"
   - title: 새로운 소식
     url: "/reference-new.html"
+  - title: 기타 버전
+    url: "/reference-other-versions.html"
   - title: 라이센스 개요
     url: "/concept-licensing.html"
   - title: 지원되는 구성
