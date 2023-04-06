@@ -37,19 +37,6 @@ NOTE: WAFL 파일 시스템의 ONTAP 정합성 보장 지점에서 데이터 정
 
 
 
-== 중국 지역 지원
-
-Cloud Volumes ONTAP는 중국 지역에서 다음과 같이 지원됩니다.
-
-* Cloud Volumes ONTAP 9.6은 AWS 중국 지역에서 지원됩니다.
-* 단일 노드 시스템이 지원됩니다.
-* NetApp에서 직접 구매한 라이센스가 지원됩니다.
-
-
-다른 모든 위치, 버전, 구성 및 라이센스는 지원되지 않습니다.
-
-
-
 == Cloud Volumes ONTAP는 예약된 VM 인스턴스 및 주문형 VM 인스턴스를 지원합니다
 
 Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 유형의 VM 인스턴스는 지원되지 않습니다.
