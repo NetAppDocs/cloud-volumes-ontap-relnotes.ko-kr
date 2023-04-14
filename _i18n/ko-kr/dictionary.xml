@@ -414,12 +414,6 @@
   <block id="71674eaa07f12640df0ea0be77ecd9ac" category="inline-link">Cloud Backup Service를 사용하여 ONTAP 데이터를 백업 및 복원하는 방법에 대해 알아보십시오</block>
   <block id="e81db3857b1943249df996fe0b3ed679" category="paragraph"><block ref="935fff627382fb455a98804a9e37d559" category="inline-link-rx"></block>.</block>
   <block id="3d880dec2575e676954faf6a6a218972" category="admonition">WAFL 파일 시스템의 ONTAP 정합성 보장 지점에서 데이터 정합성 보장 확인 WAFL만 ONTAP 파일 시스템을 정지하여 충돌 시에도 정합성이 보장되는 백업을 수행할 수 있습니다.</block>
-  <block id="d302a39827e370146d2861389e98e60c" category="section-title">중국 지역 지원</block>
-  <block id="da059bd73f7531380888607adbbd03aa" category="paragraph">Cloud Volumes ONTAP는 중국 지역에서 다음과 같이 지원됩니다.</block>
-  <block id="cbf02fb0cb394b4b19fb0788f9b62554" category="list-text">Cloud Volumes ONTAP 9.6은 AWS 중국 지역에서 지원됩니다.</block>
-  <block id="fcf30aaa0348521d4d4752992c9db378" category="list-text">단일 노드 시스템이 지원됩니다.</block>
-  <block id="80a79e3e92d4834ae8746d205e83c105" category="list-text">NetApp에서 직접 구매한 라이센스가 지원됩니다.</block>
-  <block id="a5a1e4029969159a5f8fdeddd3fb7e1b" category="paragraph">다른 모든 위치, 버전, 구성 및 라이센스는 지원되지 않습니다.</block>
   <block id="38220a2514a2fcb218be440c035b4175" category="section-title">Cloud Volumes ONTAP는 예약된 VM 인스턴스 및 주문형 VM 인스턴스를 지원합니다</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 유형의 VM 인스턴스는 지원되지 않습니다.</block>
   <block id="f9492a63b4f60679d003c1e9c0ebbb18" category="paragraph">자동 애플리케이션 리소스 관리 솔루션은 Cloud Volumes ONTAP 시스템을 관리해서는 안 됩니다. 이렇게 하면 지원되지 않는 구성이 변경될 수 있습니다. 예를 들어, 솔루션은 Cloud Volumes ONTAP를 지원되지 않는 VM 인스턴스 유형으로 변경할 수 있습니다.</block>
@@ -611,7 +605,6 @@
   <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">BlueXP 릴리스 정보</block>
   <block id="7b266e39bb1d33ceb7866245509e3615" category="paragraph">최신 버전의 BlueXP(이전 Cloud Manager)에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오<block ref="6872c7556ed1cb501f7ddf52354e86ee" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP API 엔드포인트</block>
-  <block id="e86e72989c257fb5c6ba8da24c2c7c48" category="paragraph">활용할 수 있습니다<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다<block ref="85f106dabc925307c90ceeec8d21a18f" category="inline-link-rx"></block>.</block>
   <block id="40aa449308d0af16355f19e61ffe344b" category="paragraph">아니요, 그렇지 않습니다. HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 Google Cloud에서 장애가 발생할 경우 데이터를 사용할 수 있습니다. 예를 들어 노드 A에서 8TB 디스크를 구입한 경우 BlueXP는 미러링된 데이터에 사용되는 노드 B에도 8TB 디스크를 할당합니다. 16TB의 용량을 프로비저닝했지만 라이센스 제한에 대해 8TB만 계산합니다.</block>
   <block id="07daff7fe86cfb582b0c246d7cefb754" category="list-text">단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다. 배포 도중 또는 이후에 BlueXP에서 빠른 쓰기 속도를 활성화할 수 있습니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 배포 도중 또는 이후에 BlueXP에서 빠른 쓰기 속도를 활성화할 수 있습니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
@@ -710,4 +703,5 @@
   <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">이러한 VM은 Cloud Volumes ONTAP 9.11.1 이전 버전에서만 지원됩니다. 이러한 VM 유형을 사용하면 기존 페이지 볼륨 배포를 Cloud Volumes ONTAP 9.11.1에서 9.12.1로 업그레이드할 수 있습니다. Cloud Volumes ONTAP 9.12.1 이상에서는 새 페이지 BLOB 배포를 수행할 수 없습니다.</block>
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">Google Cloud에서 실행 중인 Cloud Volumes ONTAP HA 쌍에서 스토리지의 작동 방식에 대해 알아보십시오</block>
   <block id="e14f9eb0a41dc045a4d5568d18e8170e" category="paragraph"><block ref="50d9731ce0bfc8e3757cc819b5895c1f" category="inline-link-rx"></block>.</block>
+  <block id="1201140e917505446359a76c53a69515" category="paragraph">활용할 수 있습니다<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다<block ref="c007aa246e3c48e1ccfa24499d50b4d8" category="inline-link-rx"></block>.</block>
 </blocks>
