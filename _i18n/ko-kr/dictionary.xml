@@ -613,8 +613,6 @@
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">HA 쌍의 경우, 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">HA 쌍의 경우, 미러링된 데이터가 라이센스 용량 제한에 대해 계산됩니까?</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3^2^</block>
-  <block id="6f487c8743b08c743167da3781c42f57" category="list-text">L16s_v3^2,4^</block>
-  <block id="2b5c34a51aff2e04df61ba2f74efb07e" category="list-text">L32s_v3^2,4^</block>
   <block id="b869cbdadaa9844d32c24de3f4db3242" category="cell">관리형 디스크</block>
   <block id="bdebc137cea9fa36d51bbecef44687cc" category="paragraph">HA 쌍은 관리형 디스크를 사용합니다. (페이지 Blob은 9.12.1 릴리즈 전에 구축된 HA 쌍으로 지원됩니다.)</block>
   <block id="2c5ad1776ac4cf950a5e0576f35bf111" category="paragraph">지원되는 디스크 크기는 다음과 같습니다.</block>
@@ -704,4 +702,6 @@
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">Google Cloud에서 실행 중인 Cloud Volumes ONTAP HA 쌍에서 스토리지의 작동 방식에 대해 알아보십시오</block>
   <block id="e14f9eb0a41dc045a4d5568d18e8170e" category="paragraph"><block ref="50d9731ce0bfc8e3757cc819b5895c1f" category="inline-link-rx"></block>.</block>
   <block id="1201140e917505446359a76c53a69515" category="paragraph">활용할 수 있습니다<block ref="e066b15eeebd4e6d571fd7dd588f94f7" category="inline-link-rx"></block> Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다<block ref="c007aa246e3c48e1ccfa24499d50b4d8" category="inline-link-rx"></block>.</block>
+  <block id="1b604734bf53595ed7c7d204bb25e549" category="list-text">L16s_v3^2^</block>
+  <block id="645c4fc55b2cf93995a9e487870102f5" category="list-text">L32s_v3^2^</block>
 </blocks>
