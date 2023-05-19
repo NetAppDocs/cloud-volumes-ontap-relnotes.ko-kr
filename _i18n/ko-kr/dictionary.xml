@@ -306,7 +306,6 @@
   <block id="a59ad4f9735c6c90fea48ef6e88441ac" category="cell">c5n.9xLarge</block>
   <block id="26657d5ff9020d2abefe558796b99584" category="cell">96</block>
   <block id="2d3e51e89d3f05d2abe99df631cb0b4c" category="cell">C5A.12xLarge</block>
-  <block id="1688c903113006683515d0a4aabfc6d1" category="cell">48^4^</block>
   <block id="c5349a9d783e985390617543cf910af4" category="cell">c5.18xLarge</block>
   <block id="0a09c8844ba8f0936c20bd791130d6b6" category="cell">144</block>
   <block id="99a85ba98f759e2af5b37706147521a4" category="cell">19,000명</block>
@@ -327,7 +326,6 @@
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">쓰기 속도 선택에 대해 자세히 알아보세요</block>
   <block id="ecaae8a00365bc31bac2a2e1afa5c71d" category="list-text">Cloud Volumes ONTAP는 HA Pair를 사용할 경우 대부분의 인스턴스 유형에서 빠른 쓰기 속도를 지원합니다. 단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="8e6a2ebba2f4ad1a560224744383ef97" category="list-text">r5.12xLarge 인스턴스 유형은 지원 가능성의 알려진 제한 사항이 있습니다. 패닉이 발생하여 노드가 예기치 않게 재부팅되는 경우 시스템에서 문제 해결에 사용되는 핵심 파일을 수집하지 못하고 문제의 근본 원인을 해결하지 못할 수 있습니다. 고객은 위험 및 제한된 지원 약관에 동의하며 이 조건이 발생할 경우 모든 지원 책임을 집니다. 이 제한은 새로 구축된 HA 쌍과 9.8에서 업그레이드된 HA 쌍에 영향을 미칩니다. 새로 구축된 단일 노드 시스템에는 이러한 제한이 적용되지 않습니다.</block>
-  <block id="f18904153dfcf72e0d6ca5f227644b87" category="list-text">이러한 EC2 인스턴스 유형은 48개 이상의 vCPU를 지원하지만 Cloud Volumes ONTAP는 최대 48개의 vCPU를 지원합니다.</block>
   <block id="9de28fbf6817cd511eb799f9575b611d" category="list-text">EC2 인스턴스 유형을 선택하면 해당 인스턴스가 공유 인스턴스인지 전용 인스턴스인지 지정할 수 있습니다.</block>
   <block id="afea36f2c9999a231c58b7e9dcf3b16e" category="list-text">Cloud Volumes ONTAP는 예약된 EC2 인스턴스 또는 주문형 EC2 인스턴스에서 실행할 수 있습니다. 다른 인스턴스 유형을 사용하는 솔루션은 지원되지 않습니다.</block>
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">지원 지역</block>
@@ -704,4 +702,6 @@
   <block id="468539119bbdc1adf73b917e2900aee4" category="inline-link">BlueXP 백업 및 복구를 사용하여 ONTAP 데이터를 백업하고 복원하는 방법에 대해 알아보십시오</block>
   <block id="97f2669f2be89519b70ab300a23d78bf" category="paragraph"><block ref="dd0e067e6a9ee59d9a054d0786a54cd0" category="inline-link-rx"></block>.</block>
   <block id="619c180e46c9dec776a0347d35298e14" category="paragraph">최신 버전의 BlueXP에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오<block ref="6872c7556ed1cb501f7ddf52354e86ee" category="inline-link-rx"></block> 를 참조하십시오.</block>
+  <block id="f5d86d667fcde1b9fc5b1c45e55d135e" category="cell">64^4^</block>
+  <block id="5ce58b1e3bfddca3ae7d5a13676224ff" category="list-text">이러한 EC2 인스턴스 유형은 64개 이상의 vCPU를 지원하지만 Cloud Volumes ONTAP는 최대 64개의 vCPU만 지원합니다.</block>
 </blocks>
