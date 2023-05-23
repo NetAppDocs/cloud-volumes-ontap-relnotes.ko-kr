@@ -24,7 +24,7 @@ Cloud Volumes ONTAP 시스템의 최대 시스템 용량은 라이센스에 따�
 
 NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 부여된 용량 제한에 도달하면 BlueXP에서 필요한 작업 메시지를 표시하고 더 이상 디스크를 추가할 수 없습니다.
 
-일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다 https://["비활성 데이터를 오브젝트 스토리지로 계층화"^]. 자세한 내용은 아래의 용량 및 디스크 제한을 참조하십시오.
+일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. 자세한 내용은 아래의 용량 및 디스크 제한을 참조하십시오.
 
 [cols="25,75"]
 |===
@@ -88,7 +88,7 @@ Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하고 이들을 _aggreg
 
 . HA 2노드에서 두 노드 모두에 18개의 애그리게이트를 생성할 수 없습니다. 그렇게 할 경우 데이터 디스크 제한이 초과되기 때문입니다.
 . 최대 애그리게이트 크기는 애그리게이트를 구성하는 디스크를 기반으로 합니다. 이 제한에는 데이터 계층화에 사용되는 오브젝트 스토리지가 포함되지 않습니다.
-. Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우, 애그리게이트에 최대 8개의 디스크를 포함할 수 있어 최대 128TiB의 용량을 제공합니다. GP3 또는 io1 디스크를 사용하는 경우 Amazon EBS Elastic Volumes 기능은 기본적으로 ON_NEW_Cloud Volumes ONTAP 9.11.0 이상의 시스템에서 활성화됩니다. https://["Elastic Volumes 지원에 대해 자세히 알아보십시오"^]
+. Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우, 애그리게이트에 최대 8개의 디스크를 포함할 수 있어 최대 128TiB의 용량을 제공합니다. GP3 또는 io1 디스크를 사용하는 경우 Amazon EBS Elastic Volumes 기능은 기본적으로 ON_NEW_Cloud Volumes ONTAP 9.11.0 이상의 시스템에서 활성화됩니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-aws-elastic-volumes.html["Elastic Volumes 지원에 대해 자세히 알아보십시오"^]
 . Aggregate의 모든 디스크는 동일한 크기여야 합니다.
 
 
@@ -112,7 +112,7 @@ Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하고 이들을 _aggreg
 
 === 용량 기반 라이센스 제한
 
-용량 기반 라이센스 패키지를 사용하는 Cloud Volumes ONTAP 시스템에는 다음과 같은 디스크 제한 사항이 적용됩니다. https://["Cloud Volumes ONTAP 라이센스 옵션에 대해 자세히 알아보십시오"^]
+용량 기반 라이센스 패키지를 사용하는 Cloud Volumes ONTAP 시스템에는 다음과 같은 디스크 제한 사항이 적용됩니다. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["Cloud Volumes ONTAP 라이센스 옵션에 대해 자세히 알아보십시오"^]
 
 
 
@@ -164,7 +164,7 @@ Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하고 이들을 _aggreg
 
 * 노드 기반 라이센스를 사용하는 경우 Cloud Volumes ONTAP BYOL 시스템에 여러 노드 기반 라이센스를 구매하여 368TiB 이상의 용량을 할당할 수 있습니다.
 +
-단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 https://["비활성 데이터를 오브젝트 스토리지로 계층화"^]. https://["Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"^].
+단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-manage-node-licenses.html["Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"^].
 
 
 
@@ -268,7 +268,7 @@ Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하고 이들을 _aggreg
 
 일부 구성을 사용하면 Cloud Volumes ONTAP용 SVM(스토리지 VM)을 추가로 생성할 수 있습니다.
 
-https://["추가 스토리지 VM을 생성하는 방법을 알아보십시오"^].
+https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/task-managing-svms-aws.html["추가 스토리지 VM을 생성하는 방법을 알아보십시오"^].
 
 [cols="40,60"]
 |===

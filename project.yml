@@ -53,7 +53,7 @@ settings:
   - name: ONTAP 클라우드
     url: "/cloud-volumes-ontap-93-relnotes"
     version-number: '9.3'
-  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr
+  langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
   - title: 릴리스 노트 홈

@@ -20,7 +20,7 @@ summary: 알려진 제한 사항은 이 제품 릴리스에서 지원하지 않�
 
 == 패킷 미러링의 제한
 
-https://["패킷 미러링"^] Cloud Volumes ONTAP를 구축하는 Google Cloud VPC에서 비활성화되어야 합니다.
+https://cloud.google.com/vpc/docs/packet-mirroring["패킷 미러링"^] Cloud Volumes ONTAP를 구축하는 Google Cloud VPC에서 비활성화되어야 합니다.
 
 패킷 미러링이 활성화된 경우 Cloud Volumes ONTAP가 제대로 작동하지 않습니다.
 
@@ -28,6 +28,6 @@ https://["패킷 미러링"^] Cloud Volumes ONTAP를 구축하는 Google Cloud V
 
 == Google Private Service Connect 제한 사항
 
-활용할 수 있습니다 https://["Google Private Service Connect"^] Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다 https://["BlueXP API 엔드포인트"^].
+활용할 수 있습니다 https://cloud.google.com/vpc/docs/private-service-connect["Google Private Service Connect"^] Cloud Volumes ONTAP를 구축할 VPC 내에서 트래픽을 필요한 로 전달하는 DNS 레코드를 구현해야 합니다 https://docs.netapp.com/us-en/cloud-manager-setup-admin/task-quick-start-connector-google.html["BlueXP API 엔드포인트"^].
 
 Cloud Volumes ONTAP의 데이터를 Google 클라우드 스토리지 버킷으로 계층화하는 것은 현재 프라이빗 서비스 Connect에서 지원되지 않습니다.
