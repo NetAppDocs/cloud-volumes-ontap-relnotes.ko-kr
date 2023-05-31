@@ -34,4 +34,4 @@ Cloud Volumes ONTAP은 다양한 라이센스 옵션을 제공하므로 요구�
 
 이전 by-node 라이센스 모델은 이미 라이선스를 구입했거나 현재 마켓플레이스 서브스크립션을 보유하고 있는 기존 고객에게도 계속 사용할 수 있습니다.
 
-https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/concept-licensing.html["이러한 라이센스 옵션에 대해 자세히 알아보십시오"^]
+https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-licensing.html["이러한 라이센스 옵션에 대해 자세히 알아보십시오"^]
