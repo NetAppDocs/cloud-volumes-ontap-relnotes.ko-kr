@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.13.0에는 새로운 향상 기능이 포함되어 있습니다. 
+summary: Cloud Volumes ONTAP 9.13.1 에는 새로운 향상 기능이 포함되어 있습니다. 
 ---
-= Cloud Volumes ONTAP 9.13.0의 새로운 기능
+= Cloud Volumes ONTAP 9.13.1 의 새로운 기능
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,43 +14,15 @@ summary: Cloud Volumes ONTAP 9.13.0에는 새로운 향상 기능이 포함되�
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.13.0에는 새로운 개선 사항이 포함되어 있습니다.
+Cloud Volumes ONTAP 9.13.1 에는 새로운 개선 사항이 포함되어 있습니다.
 
 최신 버전의 BlueXP에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP 릴리스 정보"^] 를 참조하십시오.
 
 
 
-== 9.13.0 GA(2023년 3월 5일)
+== 9.13.1 RC1(2023년 6월 26일)
 
-Cloud Volumes ONTAP 9.13.0의 GA(General Availability) 릴리즈는 이제 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.
-
-
-
-=== Google Cloud의 Flash Cache 및 빠른 쓰기 속도
-
-Cloud Volumes ONTAP 9.13.0 릴리즈의 일부 인스턴스에서 Flash Cache, 높은 쓰기 속도 및 높은 MTU(최대 전송 단위)를 8,896바이트로 지원할 수 있습니다.
-
-에 대해 자세히 알아보십시오 link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud의 라이센스에 의해 지원되는 구성"^].
-
-
-
-=== Google Cloud에서 이미지 검증
-
-Google Cloud를 통해 내보낸 Cloud Volumes ONTAP 이미지 파일의 서명을 확인하는 향상된 보안 기능을 사용할 수 있습니다.
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-gcp-image-verification.html["Google Cloud 이미지 검증에 대해 자세히 알아보십시오"^].
-
-
-
-=== Google Cloud의 새로운 인스턴스 지원
-
-Freemium, PAYGO Premium, 노드 기반 BYOL, 용량 기반 라이센스는 이제 Cloud Volumes ONTAP 단일 노드 및 Google Cloud의 고가용성 구축에 두 가지 새로운 인스턴스 유형을 지원합니다.
-
-* N2-표준-48
-* N2-표준-64
-
-
-link:https://docs.netapp.com/us-en/cloud-volumes-ontap-relnotes/reference-configs-gcp.html["Google Cloud에서 지원되는 구성에 대해 자세히 알아보십시오"^].
+Cloud Volumes ONTAP 9.13.1 출시 후보 1은 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. 이 릴리스에는 다음 기능이 포함되어 있습니다.
 
 
 
@@ -70,13 +42,13 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === 지원되는 업그레이드 경로입니다
 
-9.12.1 릴리즈에서 Cloud Volumes ONTAP 9.13.0으로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
+9.12.1 및 9.13.0 릴리스에서 Cloud Volumes ONTAP 9.13.1 로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
 
 
 
 === 커넥터의 필수 버전입니다
 
-새 Cloud Volumes ONTAP 9.13.0 시스템을 배포하고 기존 시스템을 9.13.0으로 업그레이드하려면 BlueXP Connector가 버전 3.9.26 이상을 실행해야 합니다.
+새로운 Cloud Volumes ONTAP 9.13.1 시스템을 배포하고 기존 시스템을 9.13.1 버전으로 업그레이드하려면 BlueXP 커넥터 버전이 3.9.26 이상이어야 합니다.
 
 
 TIP: Connector의 자동 업그레이드는 기본적으로 활성화되어 있으므로 최신 버전을 실행해야 합니다.
