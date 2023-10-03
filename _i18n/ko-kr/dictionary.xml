@@ -506,8 +506,6 @@
   <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 커뮤니티</block>
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
-  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="sidebar">Cloud Volumes ONTAP</block>
-  <block id="dea335c9c6f638eb584011e253ad6ca1" category="sidebar">ONTAP 클라우드</block>
   <block id="84c132b976f487cccd3001ed2c7557f2" category="cell">* 용량 기반 PAYGO 또는 BYOL *^3^</block>
   <block id="15e276b5f20d3f04c4dde66ecf8a249c" category="cell">* 노드 기반 PAYGO *</block>
   <block id="c4d6a904ef528003bf03bc2e65cffd26" category="section-title">지원되는 업그레이드 경로입니다</block>
@@ -575,7 +573,6 @@
   <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">BlueXP 릴리스 정보</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP API 엔드포인트</block>
   <block id="40aa449308d0af16355f19e61ffe344b" category="paragraph">아니요, 그렇지 않습니다. HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 Google Cloud에서 장애가 발생할 경우 데이터를 사용할 수 있습니다. 예를 들어 노드 A에서 8TB 디스크를 구입한 경우 BlueXP는 미러링된 데이터에 사용되는 노드 B에도 8TB 디스크를 할당합니다. 16TB의 용량을 프로비저닝했지만 라이센스 제한에 대해 8TB만 계산합니다.</block>
-  <block id="7a45e6298bb69116e2c6db653fb88884" category="sidebar">모든 BlueXP 설명서</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP 블로그</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">HA 쌍의 경우, 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">HA 쌍의 경우, 미러링된 데이터가 라이센스 용량 제한에 대해 계산됩니까?</block>
@@ -604,10 +601,6 @@
   <block id="561a766e0af8bbc565f3cd929c900d16" category="example-title">BYOL: 공유 관리 디스크를 사용하는 다중 가용성 영역 구성의 HA 쌍</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">AWS의 HA 시스템에서 미러링된 데이터는 용량 제한에 따라 계산됩니까?</block>
   <block id="39b49fbe12f6121fd761513c05ddba97" category="paragraph">일부 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 있습니다. Flash Cache에 대한 다음 제한 사항에 유의하십시오.</block>
-  <block id="f5aba93322e5fd0767b7e9fa839610f1" category="inline-link-macro">AWS의 Cloud Volumes ONTAP 9.12.1 중재자를 위한 고지 사항</block>
-  <block id="a4a2a5bddea7236f27b0a01d377e37a6" category="list-text"><block ref="a4a2a5bddea7236f27b0a01d377e37a6" category="inline-link-macro-rx"></block></block>
-  <block id="278ce444bf386e0c416c2eb85c339022" category="inline-link-macro">Google Cloud의 Cloud Volumes ONTAP 9.12.1 중재자를 위한 고지 사항</block>
-  <block id="653a50044a773ecda2e2e9ec6736699c" category="list-text"><block ref="653a50044a773ecda2e2e9ec6736699c" category="inline-link-macro-rx"></block></block>
   <block id="f59964eb1e1669da7d916b7e136c88bd" category="list-text">m6id.32xLarge</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">노트 업그레이드</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">이 릴리스 업그레이드에 대한 자세한 내용은 이 노트를 참조하십시오.</block>
@@ -665,23 +658,12 @@
   <block id="3959237302934c658e49cff52293a2a5" category="list-text">이 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다.<block ref="b6abeaa384c5670d0721bcc6323011fc" category="inline-link-rx"></block>.</block>
   <block id="9655d27d34aaf491a4183d57c0530647" category="list-text">단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다. 배포 도중 또는 이후에 BlueXP에서 빠른 쓰기 속도를 활성화할 수 있습니다.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
   <block id="44ed637222e5d571deff68351343db0d" category="list-text">Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 배포 도중 또는 이후에 BlueXP에서 빠른 쓰기 속도를 활성화할 수 있습니다.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
-  <block id="7e250845f86eeaaaf4e55296f483f4ee" category="summary">Cloud Volumes ONTAP 9.13.1 에는 새로운 향상 기능이 포함되어 있습니다.</block>
-  <block id="59d68d1abaff04001d7f138b569d66a1" category="doc">Cloud Volumes ONTAP 9.13.1 의 새로운 기능</block>
-  <block id="0775e0f9165c68236ce80a5eeaf622d2" category="paragraph">Cloud Volumes ONTAP 9.13.1 에는 새로운 개선 사항이 포함되어 있습니다.</block>
-  <block id="9c8c9e4dac5a2be78e81d66cbffd75af" category="section-title">9.13.1 RC1(2023년 6월 26일)</block>
-  <block id="9a8603c7a44b001d1d10919fc28a94cc" category="paragraph">9.12.1 및 9.13.0 릴리스에서 Cloud Volumes ONTAP 9.13.1 로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
-  <block id="15a36f3b57148762c2209c3b7df4f648" category="paragraph">새로운 Cloud Volumes ONTAP 9.13.1 시스템을 배포하고 기존 시스템을 9.13.1 버전으로 업그레이드하려면 BlueXP 커넥터 버전이 3.9.26 이상이어야 합니다.</block>
-  <block id="b07f6144410a8635e8ae505b186322a5" category="summary">이 릴리즈 노트에서는 Cloud Volumes ONTAP 9.13.1 의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
-  <block id="a69b1618b78e74242413945e92315e51" category="doc">Cloud Volumes ONTAP 9.13.1 릴리스 정보</block>
   <block id="5f47eaf30741e1b189cb3927920a050e" category="list-text">L48s_v3^2^</block>
   <block id="5d77e4246523d19041d8aaab83469a88" category="list-text">L64s_v3^2^</block>
   <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3^1,4,5^</block>
   <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3^1,4,5^</block>
-  <block id="808eec7c541e73ef6110de5392ddc8b5" category="paragraph">Cloud Volumes ONTAP 9.13.1 출시 후보 1은 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다.</block>
   <block id="8363a389e0c602867cfdadb32a0bb680" category="cell">균형 잡힌 영구 디스크^4^, 성능(SSD) 영구 디스크^4^, 표준(HDD) 영구 디스크.</block>
   <block id="3ef8b2478ab52b4e7c7dd18d32c5bf06" category="list-text">균형 잡힌 영구 디스크 및 성능(SSD) 영구 디스크를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.</block>
-  <block id="3265c73fa992103b2a4f8d03470586ac" category="section-title">9.13.1 GA(2023년 7월 26일)</block>
-  <block id="b5d2ebb75a812f3d5c8fc5e62ce5a672" category="paragraph">Cloud Volumes ONTAP 9.13.1 의 일반 가용성 릴리스는 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다.</block>
   <block id="52009bb7ee17227f566cd26a02caee56" category="inline-link-macro"><block ref="52009bb7ee17227f566cd26a02caee56" category="inline-link-rx"></block></block>
   <block id="a1a9afcf552a769c282769271829889a" category="paragraph"><block ref="a1a9afcf552a769c282769271829889a" category="inline-link-macro-rx"></block></block>
   <block id="f99aa604031e5049799e73b5c3748a98" category="inline-link-macro"><block ref="f99aa604031e5049799e73b5c3748a98" category="inline-link-rx"></block></block>
@@ -695,4 +677,21 @@
   <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 1,4,5</block>
   <block id="c7316b16841dc002d14d45c38a750287" category="cell">L48s_v3를 참조하십시오</block>
   <block id="b9f4aa39433f5232d4ce50f2a9a3c403" category="cell">L64s_v3을 참조하십시오</block>
+  <block id="17ed68bac4a851f70f23adb17408c559" category="summary">Cloud Volumes ONTAP 9.14.0에는 새로운 개선 사항이 포함되어 있습니다.</block>
+  <block id="2f9a9e2e9643d34c7f7f1936f399ae83" category="doc">Cloud Volumes ONTAP 9.14.0의 새로운 기능</block>
+  <block id="831c51dbf72b967842c4f8c35b68775a" category="paragraph">Cloud Volumes ONTAP 9.14.0에는 새로운 개선 사항이 포함되어 있습니다.</block>
+  <block id="054019ec227eca9ca771ad54dc96be1d" category="section-title">9.14.0(2023년 9월 29일)</block>
+  <block id="23fccc87959a2c4683bbaf760d6391f9" category="paragraph">Cloud Volumes ONTAP 9.14.0의 GA(General Availability) 릴리즈는 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.</block>
+  <block id="e8cc4fb6a76ec45c4753f6fa889f1a55" category="section-title">Azure에서 SnapMirror 트래픽 분리</block>
+  <block id="7c1a4429723a32e5741845cf6c26964d" category="paragraph">이제 SnapMirror 복제 트래픽을 데이터와 관리 트래픽에서 분리할 수 있습니다. 이 새로운 기능을 사용하면 데이터 및 관리 트래픽에 사용되는 기존 서브넷으로 라우팅할 수 없는 추가 서브넷을 활용하여 SnapMirror 복제 트래픽을 분리할 수 있습니다.</block>
+  <block id="fc24325d1a2e9e1bafd6f254f53818cc" category="inline-link-macro">Azure에서 SnapMirror 트래픽을 분리합니다</block>
+  <block id="af7ed382ad038fd00a8e8cd85149ee8f" category="paragraph">에 대해 자세히 알아보십시오 <block ref="c2e17ab17ee4e8b3c5063ff09339d01c" category="inline-link-macro-rx"></block>.</block>
+  <block id="de12dfc5ec75a2eca151fb8bd975bf68" category="paragraph">9.13.1 릴리스에서 Cloud Volumes ONTAP 9.14.0으로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
+  <block id="cb6034e9fe897f10028a1cffdb218a93" category="paragraph">BlueXP Connector가 새로운 Cloud Volumes ONTAP 9.14.0 시스템을 구축하고 기존 시스템을 9.14.0으로 업그레이드하려면 버전 3.9.27 이상을 실행해야 합니다.</block>
+  <block id="83855cac4cd9fe299365bd61fece6bb1" category="inline-link-macro">AWS의 Cloud Volumes ONTAP 9.14.0 중재자를 위한 고지 사항</block>
+  <block id="d3c10a06f4967c50eb334c137f0fea04" category="list-text"><block ref="d3c10a06f4967c50eb334c137f0fea04" category="inline-link-macro-rx"></block></block>
+  <block id="372c9b488802576d68e99603944c4566" category="inline-link-macro">Google Cloud의 Cloud Volumes ONTAP 9.14.0 중재자를 위한 고지 사항</block>
+  <block id="ade4280527084cf81b8c35333fab8226" category="list-text"><block ref="ade4280527084cf81b8c35333fab8226" category="inline-link-macro-rx"></block></block>
+  <block id="373d3eec6a8460edd6d29008332349e5" category="summary">본 릴리즈 노트에서는 Cloud Volumes ONTAP 9.14.0의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
+  <block id="c3264a0692eaa18730a5ddad32b43884" category="doc">Cloud Volumes ONTAP 9.14.0 릴리스 정보</block>
 </blocks>
