@@ -578,8 +578,6 @@
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">HA 쌍의 경우, 미러링된 데이터가 라이센스 용량 제한에 대해 계산됩니까?</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3^2^</block>
   <block id="b869cbdadaa9844d32c24de3f4db3242" category="cell">관리형 디스크</block>
-  <block id="bdebc137cea9fa36d51bbecef44687cc" category="paragraph">HA 쌍은 관리형 디스크를 사용합니다. (페이지 Blob은 9.12.1 릴리즈 전에 구축된 HA 쌍으로 지원됩니다.)</block>
-  <block id="2c5ad1776ac4cf950a5e0576f35bf111" category="paragraph">지원되는 디스크 크기는 다음과 같습니다.</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">자동 애플리케이션 리소스 관리 솔루션을 사용해서는 안 됩니다</block>
   <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">HA의 경우 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="2d7789be6e6e477491f790d5a3ea60b3" category="cell">단일 노드의 384TiB 물리적 용량^2^352TiB 단일 노드의 물리적 용량 PAYGO 96TiB의 HA 쌍 원시 용량 및 페이지 BLOB의 경우 384TiB의 HA 쌍 원시 용량 관리 디스크가 있는 HA 쌍의 경우</block>
@@ -694,4 +692,7 @@
   <block id="ade4280527084cf81b8c35333fab8226" category="list-text"><block ref="ade4280527084cf81b8c35333fab8226" category="inline-link-macro-rx"></block></block>
   <block id="373d3eec6a8460edd6d29008332349e5" category="summary">본 릴리즈 노트에서는 Cloud Volumes ONTAP 9.14.0의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
   <block id="c3264a0692eaa18730a5ddad32b43884" category="doc">Cloud Volumes ONTAP 9.14.0 릴리스 정보</block>
+  <block id="474efe63e96f6b9f1c2d9f2e851888a1" category="paragraph">HA 쌍은 Azure Managed Disks를 사용합니다. 지원되는 디스크 유형 및 크기는 다음과 같습니다.</block>
+  <block id="a5cd8e75bf9d20c9038f3cf45ff950e3" category="paragraph">(페이지 Blob은 9.12.1 릴리즈 전에 구축된 HA 쌍으로 지원됩니다.)</block>
+  <block id="fe77d7482327c65392eb365d35d8bd99" category="paragraph">* 프리미엄 SSD *</block>
 </blocks>
