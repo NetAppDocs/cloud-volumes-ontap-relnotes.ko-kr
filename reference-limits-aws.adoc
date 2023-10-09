@@ -43,7 +43,7 @@ NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 
 | PAYGO 프리미엄 | 368TiB 
 
 
-| 노드 기반 라이센스 | 라이센스당 368TiB입니다 
+| 노드 기반 라이센스 | PiB 2개(여러 개의 라이센스 필요) 
 
 
 | 용량 기반 라이센스 | 2 PiB 
@@ -162,11 +162,9 @@ Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하고 이들을 _aggreg
 
 노드별 Cloud Volumes ONTAP 라이센스를 설정할 수 있는 이전 세대 라이센스 모델인 노드 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템에는 다음과 같은 디스크 제한이 적용됩니다. 기존 고객은 노드 기반 라이센스를 계속 사용할 수 있습니다.
 
-* 노드 기반 라이센스를 사용하는 경우 Cloud Volumes ONTAP BYOL 시스템에 여러 노드 기반 라이센스를 구매하여 368TiB 이상의 용량을 할당할 수 있습니다.
-+
-단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"^].
+Cloud Volumes ONTAP BYOL 단일 노드 또는 HA 쌍 시스템에 대해 노드 기반 라이센스를 여러 개 구매하여 최대 테스트 및 지원 시스템 용량 제한인 2개의 PiB까지 368TiB의 용량을 할당할 수 있습니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"^]. Cloud Volumes ONTAP는 최대 테스트 및 지원되는 시스템 용량인 2 PiB를 지원하지만 2 PiB 제한을 초과하면 지원되지 않는 시스템 구성이 발생합니다.
 
-
+AWS Secret Cloud 및 Top Secret Cloud 지역에서는 Cloud Volumes ONTAP 9.12.1부터 다수의 노드 기반 라이센스 구매를 지원합니다.
 
 
 
@@ -202,14 +200,14 @@ Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하고 이들을 _aggreg
 2+|  | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * 
 
 
-| C5, M5 및 R5 인스턴스 | 21^1^ | 336TiB | 368TiB | 336TiB | 368TiB x 각 라이센스 
+| C5, M5 및 R5 인스턴스 | 21^1^ | 336TiB | 368TiB | 336TiB | 2 PiB 
 
 
  a| 
 * m5dn.24xlarge
 * m6id.32xLarge
 
-| 19^2^ | 304TiB | 368TiB | 304TiB | 368TiB x 각 라이센스 
+| 19^2^ | 304TiB | 368TiB | 304TiB | 2 PiB 
 |===
 . 21개의 데이터 디스크는 Cloud Volumes ONTAP의 _new_deDeployments에 대한 제한입니다. 9.7 이하 버전으로 생성된 시스템을 업그레이드하면 시스템에서 22개의 디스크를 계속 지원합니다. 9.8 릴리즈부터 시작되는 코어 디스크가 추가되었기 때문에 이러한 인스턴스 유형을 사용하는 새 시스템에서는 데이터 디스크가 1개 적게 지원됩니다.
 . 이 인스턴스 유형은 다른 인스턴스 유형보다 더 많은 로컬 NVMe 디스크를 가지고 있으므로 더 적은 수의 데이터 디스크가 지원됩니다.
@@ -249,14 +247,14 @@ Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하고 이들을 _aggreg
 2+|  | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * 
 
 
-| C5, M5 및 R5 인스턴스 | 18^1^ | TiB 288 | 368TiB | TiB 288 | 368TiB x 각 라이센스 
+| C5, M5 및 R5 인스턴스 | 18^1^ | TiB 288 | 368TiB | TiB 288 | 2 PiB 
 
 
  a| 
 * m5dn.24xlarge
 * m6id.32xLarge
 
-| 16^2^ | 256TiB | 368TiB | 256TiB | 368TiB x 각 라이센스 
+| 16^2^ | 256TiB | 368TiB | 256TiB | 2 PiB 
 |===
 . Cloud Volumes ONTAP의 _new_de구축에는 18개의 데이터 디스크가 제한됩니다. 9.7 이전 버전으로 생성된 시스템을 업그레이드하면 시스템에서 계속 19개의 디스크를 지원합니다. 9.8 릴리즈부터 시작되는 코어 디스크가 추가되었기 때문에 이러한 인스턴스 유형을 사용하는 새 시스템에서는 데이터 디스크가 1개 적게 지원됩니다.
 . 이 인스턴스 유형은 다른 인스턴스 유형보다 더 많은 로컬 NVMe 디스크를 가지고 있으므로 더 적은 수의 데이터 디스크가 지원됩니다.

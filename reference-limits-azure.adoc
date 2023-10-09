@@ -41,7 +41,7 @@ NetApp은 시스템 용량 제한을 초과하지 않습니다. 라이센스가 
 | PAYGO 프리미엄 | 368TiB 
 
 
-| 노드 기반 라이센스 | 라이센스당 368TiB입니다 
+| 노드 기반 라이센스 | PiB 2개(여러 개의 라이센스 필요) 
 
 
 | 용량 기반 라이센스 | 2 PiB 
@@ -275,9 +275,7 @@ Cloud Volumes ONTAP는 Azure 스토리지를 디스크로 사용하고 이들을
 
 노드별 Cloud Volumes ONTAP 라이센스를 설정할 수 있는 이전 세대 라이센스 모델인 노드 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템에는 다음과 같은 디스크 제한이 적용됩니다. 기존 고객은 노드 기반 라이센스를 계속 사용할 수 있습니다.
 
-노드 기반 라이센스를 사용하는 경우 Cloud Volumes ONTAP BYOL 시스템에 여러 노드 기반 라이센스를 구매하여 368TiB 이상의 용량을 할당할 수 있습니다.
-
-단일 노드 시스템 또는 HA 쌍에 대해 구매할 수 있는 라이센스 수는 무제한입니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"^].
+Cloud Volumes ONTAP BYOL 단일 노드 또는 HA 쌍 시스템에 대해 노드 기반 라이센스를 여러 개 구매하여 최대 테스트 및 지원 시스템 용량 제한인 2개의 PiB까지 368TiB의 용량을 할당할 수 있습니다. 디스크 제한만으로는 용량 제한에 도달하지 못할 수 있습니다. 를 사용하면 디스크 제한을 초과할 수 있습니다 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-data-tiering.html["비활성 데이터를 오브젝트 스토리지로 계층화"^]. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-manage-node-licenses.html["Cloud Volumes ONTAP에 시스템 라이센스를 추가하는 방법에 대해 알아보십시오"^]. Cloud Volumes ONTAP는 최대 테스트 및 지원되는 시스템 용량인 2 PiB를 지원하지만 2 PiB 제한을 초과하면 지원되지 않는 시스템 구성이 발생합니다.
 
 
 
@@ -331,52 +329,52 @@ Cloud Volumes ONTAP는 Azure 스토리지를 디스크로 사용하고 이들을
 2+|  | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * 
 
 
-| DS4_v2 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| DS4_v2 | 29 | 368TiB | 368TiB | 896TiB | 2 PiB 
 
 
-| DS5_v2 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| DS5_v2 | 61 | 368TiB | 368TiB | 896TiB | 2 PiB 
 
 
-| DS13_v2 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| DS13_v2 | 29 | 368TiB | 368TiB | 896TiB | 2 PiB 
 
 
-| DS14_v2 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| DS14_v2 | 61 | 368TiB | 368TiB | 896TiB | 2 PiB 
 
 
-| DS15_v2 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| DS15_v2 | 61 | 368TiB | 368TiB | 896TiB | 2 PiB 
 
 
-| L8s_v2 | 13 | 368TiB | 368TiB | 416TiB | 368TiB x 각 라이센스 
+| L8s_v2 | 13 | 368TiB | 368TiB | 416TiB | 2 PiB 
 
 
-| E4s_v3 | 5 | 160TiB | 368TiB | 160TiB | 368TiB x 각 라이센스 
+| E4s_v3 | 5 | 160TiB | 368TiB | 160TiB | 2 PiB 
 
 
-| E8s_v3 | 13 | 368TiB | 368TiB | 416TiB | 368TiB x 각 라이센스 
+| E8s_v3 | 13 | 368TiB | 368TiB | 416TiB | 2 PiB 
 
 
-| E32s_v3 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| E32s_v3 | 29 | 368TiB | 368TiB | 896TiB | 2 PiB 
 
 
-| E48s_v3 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| E48s_v3 | 29 | 368TiB | 368TiB | 896TiB | 2 PiB 
 
 
-| E64is_v3 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| E64is_v3 | 29 | 368TiB | 368TiB | 896TiB | 2 PiB 
 
 
-| E4ds_v4 | 5 | 160TiB | 368TiB | 160TiB | 368TiB x 각 라이센스 
+| E4ds_v4 | 5 | 160TiB | 368TiB | 160TiB | 2 PiB 
 
 
-| E8ds_v4 | 13 | 368TiB | 368TiB | 416TiB | 368TiB x 각 라이센스 
+| E8ds_v4 | 13 | 368TiB | 368TiB | 416TiB | 2 PiB 
 
 
-| E32ds_v4 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| E32ds_v4 | 29 | 368TiB | 368TiB | 896TiB | 2 PiB 
 
 
-| E48ds_v4 | 29 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| E48ds_v4 | 29 | 368TiB | 368TiB | 896TiB | 2 PiB 
 
 
-| E80ids_v4 | 61 | 368TiB | 368TiB | 896TiB | 368TiB x 각 라이센스 
+| E80ids_v4 | 61 | 368TiB | 368TiB | 896TiB | 2 PiB 
 |===
 ====
 
@@ -445,37 +443,37 @@ HA 쌍에는 두 가지 구성 유형, 즉 페이지 BLOB와 여러 가용성 �
 2+|  | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * 
 
 
-| DS4_v2 | 29 | 232TiB | 368TiB | 232TiB | 368TiB x 각 라이센스 
+| DS4_v2 | 29 | 232TiB | 368TiB | 232TiB | 2 PiB 
 
 
-| DS5_v2 | 61 | 368TiB | 368TiB | 488TiB | 368TiB x 각 라이센스 
+| DS5_v2 | 61 | 368TiB | 368TiB | 488TiB | 2 PiB 
 
 
-| DS13_v2 | 29 | 232TiB | 368TiB | 232TiB | 368TiB x 각 라이센스 
+| DS13_v2 | 29 | 232TiB | 368TiB | 232TiB | 2 PiB 
 
 
-| DS14_v2 | 61 | 368TiB | 368TiB | 488TiB | 368TiB x 각 라이센스 
+| DS14_v2 | 61 | 368TiB | 368TiB | 488TiB | 2 PiB 
 
 
-| DS15_v2 | 61 | 368TiB | 368TiB | 488TiB | 368TiB x 각 라이센스 
+| DS15_v2 | 61 | 368TiB | 368TiB | 488TiB | 2 PiB 
 
 
-| E8s_v3 | 13 | 104TiB | 368TiB | 104TiB | 368TiB x 각 라이센스 
+| E8s_v3 | 13 | 104TiB | 368TiB | 104TiB | 2 PiB 
 
 
-| E48s_v3 | 29 | 232TiB | 368TiB | 232TiB | 368TiB x 각 라이센스 
+| E48s_v3 | 29 | 232TiB | 368TiB | 232TiB | 2 PiB 
 
 
-| E8ds_v4 | 13 | 104TiB | 368TiB | 104TiB | 368TiB x 각 라이센스 
+| E8ds_v4 | 13 | 104TiB | 368TiB | 104TiB | 2 PiB 
 
 
-| E32ds_v4 | 29 | 232TiB | 368TiB | 232TiB | 368TiB x 각 라이센스 
+| E32ds_v4 | 29 | 232TiB | 368TiB | 232TiB | 2 PiB 
 
 
-| E48ds_v4 | 29 | 232TiB | 368TiB | 232TiB | 368TiB x 각 라이센스 
+| E48ds_v4 | 29 | 232TiB | 368TiB | 232TiB | 2 PiB 
 
 
-| E80ids_v4 | 61 | 368TiB | 368TiB | 488TiB | 368TiB x 각 라이센스 
+| E80ids_v4 | 61 | 368TiB | 368TiB | 488TiB | 2 PiB 
 |===
 ====
 .BYOL: 공유 관리 디스크를 사용하는 다중 가용성 영역 구성의 HA 쌍
@@ -489,16 +487,16 @@ HA 쌍에는 두 가지 구성 유형, 즉 페이지 BLOB와 여러 가용성 �
 2+|  | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * | * 디스크만 사용 * | * 디스크 + 데이터 계층화 * 
 
 
-| E8ds_v4 | 12 | 368TiB | 368TiB | 368TiB | 368TiB x 각 라이센스 
+| E8ds_v4 | 12 | 368TiB | 368TiB | 368TiB | 2 PiB 
 
 
-| E32ds_v4 | 28 | 368TiB | 368TiB | 368TiB | 368TiB x 각 라이센스 
+| E32ds_v4 | 28 | 368TiB | 368TiB | 368TiB | 2 PiB 
 
 
-| E48ds_v4 | 28 | 368TiB | 368TiB | 368TiB | 368TiB x 각 라이센스 
+| E48ds_v4 | 28 | 368TiB | 368TiB | 368TiB | 2 PiB 
 
 
-| E80ids_v4 | 28 | 368TiB | 368TiB | 368TiB | 368TiB x 각 라이센스 
+| E80ids_v4 | 28 | 368TiB | 368TiB | 368TiB | 2 PiB 
 |===
 ====
 
