@@ -20,6 +20,14 @@ Cloud Volumes ONTAP 9.14.0에는 새로운 개선 사항이 포함되어 있습�
 
 
 
+== 9.14.0 P1(2023년 11월 10일)
+
+3.9.27 이상을 실행하는 커넥터가 있는 경우 이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP 9.14.0 P1 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.14.0P1["P1 패치에서 수정된 버그 목록을 봅니다"^] (NetApp Support 사이트 로그인 필요).
+
+
+
 == 9.14.0(2023년 9월 29일)
 
 Cloud Volumes ONTAP 9.14.0의 GA(General Availability) 릴리즈는 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.

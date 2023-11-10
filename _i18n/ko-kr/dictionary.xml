@@ -706,4 +706,8 @@
   <block id="540e57f70019c3eb8d7fb999259fd473" category="cell">페이지 Blob</block>
   <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 배포 도중 또는 이후에 BlueXP에서 빠른 쓰기 속도를 활성화할 수 있습니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">이러한 VM은 Cloud Volumes ONTAP 9.11.1 이전 버전에서만 지원됩니다. 이러한 VM 유형을 사용하면 기존 페이지 볼륨 배포를 Cloud Volumes ONTAP 9.11.1에서 9.12.1로 업그레이드할 수 있습니다. Cloud Volumes ONTAP 9.12.1 이상에서는 새 페이지 BLOB 배포를 수행할 수 없습니다.</block>
+  <block id="146025031e411527ef6984b6118e640f" category="section-title">9.14.0 P1(2023년 11월 10일)</block>
+  <block id="fc8e613001b912e569b768ab8df19f0a" category="paragraph">3.9.27 이상을 실행하는 커넥터가 있는 경우 이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP 9.14.0 P1 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">P1 패치에서 수정된 버그 목록을 봅니다</block>
+  <block id="f9297806abdec62aa803240bcecddc81" category="paragraph"><block ref="f2b4b5c16e7f6ca0207f7436ffc92a53" category="inline-link-macro-rx"></block> (NetApp Support 사이트 로그인 필요).</block>
 </blocks>
