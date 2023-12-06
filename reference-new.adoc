@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.14.0에는 새로운 개선 사항이 포함되어 있습니다. 
+summary: Cloud Volumes ONTAP 9.14.1에는 새로운 개선 사항이 포함되어 있습니다. 
 ---
-= Cloud Volumes ONTAP 9.14.0의 새로운 기능
+= Cloud Volumes ONTAP 9.14.1의 새로운 기능
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,31 +14,15 @@ summary: Cloud Volumes ONTAP 9.14.0에는 새로운 개선 사항이 포함되�
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.14.0에는 새로운 개선 사항이 포함되어 있습니다.
+Cloud Volumes ONTAP 9.14.1에는 새로운 개선 사항이 포함되어 있습니다.
 
 최신 버전의 BlueXP에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP 릴리스 정보"^] 를 참조하십시오.
 
 
 
-== 9.14.0 P1(2023년 11월 10일)
+== 9.14.1 RC1(2023년 12월 6일)
 
-3.9.27 이상을 실행하는 커넥터가 있는 경우 이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP 9.14.0 P1 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.14.0P1["P1 패치에서 수정된 버그 목록을 봅니다"^] (NetApp Support 사이트 로그인 필요).
-
-
-
-== 9.14.0(2023년 9월 29일)
-
-Cloud Volumes ONTAP 9.14.0의 GA(General Availability) 릴리즈는 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.
-
-
-
-=== Azure에서 SnapMirror 트래픽 분리
-
-이제 SnapMirror 복제 트래픽을 데이터와 관리 트래픽에서 분리할 수 있습니다. 이 새로운 기능을 사용하면 데이터 및 관리 트래픽에 사용되는 기존 서브넷으로 라우팅할 수 없는 추가 서브넷을 활용하여 SnapMirror 복제 트래픽을 분리할 수 있습니다.
-
-에 대해 자세히 알아보십시오 link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-segregate-snapmirror-azure.html["Azure에서 SnapMirror 트래픽을 분리합니다"^].
+Cloud Volumes ONTAP 9.14.1의 릴리스 후보 1 은 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다.
 
 
 
@@ -58,13 +42,13 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === 지원되는 업그레이드 경로입니다
 
-9.13.1 릴리스에서 Cloud Volumes ONTAP 9.14.0으로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
+9.13.1 및 9.14.0 릴리스에서 Cloud Volumes ONTAP 9.14.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
 
 
 
 === 커넥터의 필수 버전입니다
 
-BlueXP Connector가 새로운 Cloud Volumes ONTAP 9.14.0 시스템을 구축하고 기존 시스템을 9.14.0으로 업그레이드하려면 버전 3.9.27 이상을 실행해야 합니다.
+BlueXP Connector가 새로운 Cloud Volumes ONTAP 9.14.1 시스템을 구축하고 기존 시스템을 9.14.1로 업그레이드하려면 버전 3.9.27 이상을 실행해야 합니다.
 
 
 TIP: Connector의 자동 업그레이드는 기본적으로 활성화되어 있으므로 최신 버전을 실행해야 합니다.
