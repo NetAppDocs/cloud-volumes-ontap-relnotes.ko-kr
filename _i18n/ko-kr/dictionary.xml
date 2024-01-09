@@ -614,7 +614,6 @@
   <block id="6cddc6e542baa2aaad6e58fdc397ce90" category="list-text">E48ds_v4^1,4^</block>
   <block id="de04224de00bacc811083f3a49af24b0" category="list-text">E80ids_v4^1,2,4^</block>
   <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">이러한 VM 유형은 공유 관리 디스크에서 실행되는 단일 가용성 영역 구성의 HA 쌍에만 지원됩니다.</block>
-  <block id="7502ea8e5d477af63195f04d6179ca92" category="list-text">이러한 VM 유형은 단일 가용성 영역의 HA 쌍과 공유 관리 디스크에서 실행되는 여러 가용성 영역 구성에 대해 지원됩니다.</block>
   <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">N2-표준-48</block>
   <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">N2-표준-64</block>
   <block id="41104125a8a3ef6fe8985ff4df5257be" category="paragraph">AWS에서 C4, M4 및 R4 EC2 인스턴스 유형은 더 이상 Cloud Volumes ONTAP에서 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 시스템이 있는 경우 C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경해야 합니다. 인스턴스 유형을 변경하기 전에는 이 릴리즈로 업그레이드할 수 없습니다.</block>
@@ -689,10 +688,6 @@
   <block id="540e57f70019c3eb8d7fb999259fd473" category="cell">페이지 Blob</block>
   <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 배포 도중 또는 이후에 BlueXP에서 빠른 쓰기 속도를 활성화할 수 있습니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">이러한 VM은 Cloud Volumes ONTAP 9.11.1 이전 버전에서만 지원됩니다. 이러한 VM 유형을 사용하면 기존 페이지 볼륨 배포를 Cloud Volumes ONTAP 9.11.1에서 9.12.1로 업그레이드할 수 있습니다. Cloud Volumes ONTAP 9.12.1 이상에서는 새 페이지 BLOB 배포를 수행할 수 없습니다.</block>
-  <block id="573ba387c27d105c1e3fd20266d13123" category="list-text">L16s_v3^1,3,5^</block>
-  <block id="2bb521d2d5cea05a3b9b29f1cf232c63" category="list-text">L32s_v3^1,3,5^</block>
-  <block id="6074c6f3226593d830e2700ab7f3f365" category="list-text">L48s_v3 1,3, 5도</block>
-  <block id="1da7ab1581b8dde8d8bbb3d70c613cd5" category="list-text">L64s_v3 1,3, 5</block>
   <block id="fd03e656adaf90d76d9f033d590bdd69" category="summary">본 릴리즈 노트에서는 Cloud Volumes ONTAP 9.14.1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
   <block id="3f93d29b3f8dc957c8b9ced853857b76" category="doc">Cloud Volumes ONTAP 9.14.1 릴리스 정보</block>
   <block id="ac49adbb868ecf707179d04fceda2832" category="summary">Cloud Volumes ONTAP 9.14.1에는 새로운 개선 사항이 포함되어 있습니다.</block>
@@ -702,4 +697,9 @@
   <block id="08c5c3a5955675754c56665896b714d2" category="paragraph">Cloud Volumes ONTAP 9.14.1의 릴리스 후보 1 은 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다.</block>
   <block id="0ba3961acf8d8dd9d18bfabbbbc00cc5" category="paragraph">9.13.1 및 9.14.0 릴리스에서 Cloud Volumes ONTAP 9.14.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="c61efd7d56545088713b3c7d2e07cadd" category="paragraph">BlueXP Connector가 새로운 Cloud Volumes ONTAP 9.14.1 시스템을 구축하고 기존 시스템을 9.14.1로 업그레이드하려면 버전 3.9.27 이상을 실행해야 합니다.</block>
+  <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3^1,4,5^</block>
+  <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3^1,4,5^</block>
+  <block id="2bf4a4b22f921c225f089ec2954ee9e8" category="list-text">L48s_v3 1,4, 5도</block>
+  <block id="c130660d20dd5cec8fbf6045fb61af08" category="list-text">L64s_v3 1,4,5</block>
+  <block id="885a1d815cf042f25bd0893361642b6e" category="list-text">이러한 VM 유형은 단일 가용성 영역의 HA 쌍과 공유 관리 디스크에서 실행되는 여러 가용성 영역 구성에 대해 지원됩니다. LS_v3 VM 유형의 경우 여러 가용 영역 지원은 ONTAP 버전 9.13.1부터 시작합니다.</block>
 </blocks>
