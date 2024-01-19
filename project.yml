@@ -85,46 +85,6 @@ sidebar:
     url: "/reference-provider-integrations.html"
   - title: 법적 고지
     url: "/legal-notices.html"
-homepage:
-  tiles:
-  - title: 시작하십시오
-    links:
-    - title: 새로운 소식
-      url: reference-new.html
-    - title: 라이센스 개요
-      url: concept-licensing.html
-  - title: Amazon Web Services에서 직접 지원합니다
-    links:
-    - title: 지원되는 구성
-      url: reference-configs-aws.html
-    - title: 보관 제한
-      url: reference-limits-aws.html
-    - title: 제한 사항
-      url: reference-limitations-aws.html
-  - title: Google 클라우드
-    links:
-    - title: 지원되는 구성
-      url: reference-configs-gcp.html
-    - title: 보관 제한
-      url: reference-limits-gcp.html
-    - title: 제한 사항
-      url: reference-limitations-gcp.html
-  - title: Microsoft Azure를 참조하십시오
-    links:
-    - title: 지원되는 구성
-      url: reference-configs-azure.html
-    - title: 보관 제한
-      url: reference-limits-azure.html
-    - title: 제한 사항
-      url: reference-limitations-azure.html
-  - title: 블로그 커뮤니티
-    links:
-    - title: NetApp 커뮤니티
-      url: https://community.netapp.com/t5/Cloud-Data-Services/ct-p/CDS
-    - title: BlueXP 블로그
-      url: https://cloud.netapp.com/blog
-    - title: 클라우드 웨비나
-      url: https://cloud.netapp.com/events
 product-family:
   name: BlueXP
   repo: bluexp-family
