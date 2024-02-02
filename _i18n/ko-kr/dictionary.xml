@@ -711,4 +711,6 @@
   <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5(1)</block>
   <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5(1)</block>
   <block id="c3e43237d47ac4f8f0c184c56276c958" category="list-text">이러한 VM 유형은 단일 가용성 영역의 HA 쌍과 공유 관리 디스크에서 실행되는 여러 가용성 영역 구성에 대해 지원됩니다. LS_v3 VM 유형의 경우 여러 가용 영역 지원은 ONTAP 버전 9.13.1부터 시작합니다. EDS_v5 VM 유형의 경우 여러 가용 영역 지원은 ONTAP 버전 9.14.1 RC1부터 시작합니다.</block>
+  <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5(3)</block>
+  <block id="6c390ecab52e3e5345764abdf66b4a13" category="list-text">E20ds_v5(1)</block>
 </blocks>
