@@ -38,10 +38,10 @@ Cloud Volumes ONTAP은 여러 유형의 EBS 디스크와 데이터 계층화를 
 
 [cols="h,d,d,d,d,d,d"]
 |===
-|  | 프리모늄 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 BYOL | 용량 기반 라이센스 
+|  | 프리모늄 | 용량 기반 라이센스 | PAYGO 탐색 | PAYGO 표준 | PAYGO 프리미엄 | 노드 기반 BYOL 
 
 
-| 최대 시스템 용량(디스크 + 객체 스토리지) ^1^ | 500GiB | 2TiB | 10TiB | 368TiB^2^ | 라이센스당 368TiB ^2^ | 2 PiB^2^ 
+| 최대 시스템 용량(디스크 + 객체 스토리지) ^1^ | 500GiB | 2 PiB^2^ | 2TiB | 10TiB | 368TiB^2^ | 라이센스당 368TiB ^2^ 
 
 
 | 지원되는 디스크 유형입니다  a| 

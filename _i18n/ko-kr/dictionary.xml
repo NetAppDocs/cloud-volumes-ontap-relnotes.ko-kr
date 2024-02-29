@@ -198,7 +198,6 @@
   <block id="5f807342ab46838a576d3111827add1c" category="cell">2TB(Explore에서 데이터 계층화가 지원되지 않음)</block>
   <block id="1191f788083da9194f8eef9400d10898" category="cell">10TB</block>
   <block id="86eaddcad9cef8a014b014a3ad2afb9c" category="cell">368TB</block>
-  <block id="38797647ee0806ca5a6dba902f03f6e0" category="cell">라이센스당 368TB</block>
   <block id="ce5ee1bd79a3fbc4ee9fee207a94ef54" category="paragraph">용량 제한은 전체 HA 쌍에 대한 것입니다. 노드 단위로 표시되지 않습니다. 예를 들어, Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TB의 용량을 가질 수 있습니다.</block>
   <block id="466cd90b62b5da75ee4bd662add41e7f" category="section-title">디스크 및 계층화 제한</block>
   <block id="08fca9107919e2a3190d5edc75ce7c61" category="cell">최대 데이터 디스크 수</block>
@@ -346,7 +345,6 @@
   <block id="c334038ed8a782403ae705a8de1f584b" category="section-title">라이센스에 의해 지원되는 구성</block>
   <block id="9f1dc929787c1a2d05667987a87c083b" category="paragraph">Cloud Volumes ONTAP는 Azure에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 지원하는 고가용성(HA) 노드 쌍으로 제공됩니다.</block>
   <block id="078325cc35a9c8c9290e445f32bd1855" category="section-title">단일 노드 시스템</block>
-  <block id="c817f6adbd40857622b1c5875284dccf" category="paragraph">Azure에서 Cloud Volumes ONTAP를 단일 노드 시스템으로 구축할 때 다음 구성 중에서 선택할 수 있습니다.</block>
   <block id="e02cfa40e076b3e2d41b29974af36f06" category="cell">최대 시스템 용량(디스크 + 오브젝트 스토리지)</block>
   <block id="4493785e0b2d5a6ea8c24204ebf19dc5" category="cell">2TiB^1^</block>
   <block id="333cde16cf112bb117788fe2729a875c" category="cell">지원되는 가상 머신 유형입니다</block>
@@ -420,7 +418,6 @@
   <block id="cc85911ae6bc3b2540142e310528310b" category="admonition">Connector의 자동 업그레이드는 기본적으로 활성화되어 있으므로 최신 버전을 실행해야 합니다.</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="doc">Google Cloud에서 지원되는 구성</block>
-  <block id="0c11951245f2ef7895ea0fc514386d6e" category="paragraph">Cloud Volumes ONTAP는 Google Cloud Platform에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 지원하는 고가용성(HA) 노드 쌍으로 지원됩니다.</block>
   <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">단일 노드 시스템을 HA 쌍으로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 쌍 간에 전환하려면 새 시스템을 구축하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.</block>
   <block id="8c0495bb0212f48146ab592de8a205d9" category="cell">2TB^2^</block>
   <block id="c217f1a10b2c84178d69b991f9ca2a8d" category="cell">지원되는 시스템 유형 ^3^</block>
@@ -434,7 +431,6 @@
   <block id="b4c4a8c75337dc28089aec3e79ae943c" category="list-text">PAYGO Explore에서는 Google Cloud Storage에 대한 데이터 계층화가 지원되지 않습니다.</block>
   <block id="46e869bc0f7a5fcdc09df010e1f48b25" category="list-text">CUSTOM-4-16384 시스템 유형은 새로운 Cloud Volumes ONTAP 시스템에서 더 이상 지원되지 않습니다.</block>
   <block id="0e3cb01898d99d0091e2a6f5a7572390" category="paragraph">이 기계 유형에서 실행 중인 기존 시스템이 있는 경우 계속 사용할 수 있지만 n2-standard-4 기계 유형으로 전환하는 것이 좋습니다.</block>
-  <block id="7093754c2bc2f151c7deef337385971a" category="list-text">Google Cloud Platform 지역 지원은 를 참조하십시오<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="d29bff99e1f1d5529824e9017672d630" category="paragraph">Google Cloud에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 지원되는 디스크 크기는 다음과 같습니다.</block>
   <block id="dcfebc6fbca2c5316f55c914e6593d2d" category="list-text">100GB</block>
   <block id="70f79b00cb7649d94d473895d6c540d2" category="list-text">1TB</block>
@@ -705,12 +701,20 @@
   <block id="24dbf97d0023e83cab10de240d1d2054" category="list-text">E32ds_v5 (영어</block>
   <block id="b911e2432937ce8e1c8ac00664872f8b" category="list-text">E48ds_v5 (영어</block>
   <block id="6f223a60d36f80343c253128f00e82ce" category="list-text">E64ds_v5 (영어</block>
-  <block id="b29992b09572a94f43a61f1b5fd810e9" category="paragraph">새 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형을 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 반대로 다른 VM 유형을 사용하여 Cloud Volumes ONTAP를 구축한 경우 VNVRAM용 Ultra SSD를 사용하는 VM 유형으로 변경할 수 없습니다.</block>
   <block id="c0cc08e6c7e64a5531dd51afd8a3ed6e" category="list-text">(영어) - YouTube</block>
   <block id="e002cc59f5a826e5838dde797b6a9f2b" category="list-text">E32ds_v5(1)</block>
   <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5(1)</block>
   <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5(1)</block>
   <block id="c3e43237d47ac4f8f0c184c56276c958" category="list-text">이러한 VM 유형은 단일 가용성 영역의 HA 쌍과 공유 관리 디스크에서 실행되는 여러 가용성 영역 구성에 대해 지원됩니다. LS_v3 VM 유형의 경우 여러 가용 영역 지원은 ONTAP 버전 9.13.1부터 시작합니다. EDS_v5 VM 유형의 경우 여러 가용 영역 지원은 ONTAP 버전 9.14.1 RC1부터 시작합니다.</block>
-  <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5(3)</block>
   <block id="6c390ecab52e3e5345764abdf66b4a13" category="list-text">E20ds_v5(1)</block>
+  <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">Cloud Volumes ONTAP는 Google Cloud에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 위한 고가용성(HA) 노드 쌍으로 사용할 수 있습니다.</block>
+  <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">용량 기반 라이센스</block>
+  <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="cell">최적화</block>
+  <block id="82fc13b1b2688039a14feb2fc8785cad" category="cell">용량 기반 라이센스(Essentials, Professional 및 Edge Cache)</block>
+  <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">노드 기반 라이센스</block>
+  <block id="b338d2a3e5b2fa0602cf93fe49c51138" category="paragraph">Google Cloud 지역 지원은 을 참조하십시오<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
+  <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">Cloud Volumes ONTAP를 Azure에서 단일 노드 시스템으로 구축할 때 다음과 같은 용량 기반 또는 노드 기반 라이센스 구성 중에서 선택할 수 있습니다.</block>
+  <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">새 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형을 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 예를 들어, E8ds_v4에서 E8s_v3으로 변경할 수는 없지만 두 VM 유형 모두 Ultra SSD를 사용하므로 E8ds_v4에서 E32ds_v4로 변경할 수 있습니다.</block>
+  <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">반대로 다른 VM 유형을 사용하여 Cloud Volumes ONTAP를 구축한 경우 VNVRAM용 Ultra SSD를 사용하는 VM 유형으로 변경할 수 없습니다. 예를 들어, E8s_v3에서 E8ds_v4로 변경할 수 없습니다.</block>
+  <block id="5063d3259058d90bbca06465957626d7" category="list-text">SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.</block>
 </blocks>
