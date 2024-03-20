@@ -387,7 +387,6 @@
   <block id="6678cc30386be959db340cbdd54ecbda" category="section-title">클라우드 공급자 스냅샷은 백업 및 복구 계획에 사용할 수 없습니다</block>
   <block id="f6fdc425c22fbe91b4cd43c5702c7923" category="paragraph">Cloud Volumes ONTAP 데이터에 대한 백업 및 복구 계획에 클라우드 공급자의 스냅샷을 사용하면 안 됩니다. 항상 ONTAP 스냅샷 복사본 또는 타사 백업 솔루션을 사용하여 Cloud Volumes ONTAP에 호스팅된 데이터를 백업 및 복원해야 합니다.</block>
   <block id="3d880dec2575e676954faf6a6a218972" category="admonition">WAFL 파일 시스템의 ONTAP 정합성 보장 지점에서 데이터 정합성 보장 확인 WAFL만 ONTAP 파일 시스템을 정지하여 충돌 시에도 정합성이 보장되는 백업을 수행할 수 있습니다.</block>
-  <block id="38220a2514a2fcb218be440c035b4175" category="section-title">Cloud Volumes ONTAP는 예약된 VM 인스턴스 및 주문형 VM 인스턴스를 지원합니다</block>
   <block id="8ce602039d8c7d53c95e1f62b1d83ef0" category="paragraph">Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또는 주문형 VM 인스턴스에서 실행될 수 있습니다. 다른 유형의 VM 인스턴스는 지원되지 않습니다.</block>
   <block id="f9492a63b4f60679d003c1e9c0ebbb18" category="paragraph">자동 애플리케이션 리소스 관리 솔루션은 Cloud Volumes ONTAP 시스템을 관리해서는 안 됩니다. 이렇게 하면 지원되지 않는 구성이 변경될 수 있습니다. 예를 들어, 솔루션은 Cloud Volumes ONTAP를 지원되지 않는 VM 인스턴스 유형으로 변경할 수 있습니다.</block>
   <block id="cbc4bd981852b46f0fbf6e6a6d4ed5af" category="section-title">Cloud Volumes ONTAP 배포는 클라우드 공급자의 콘솔에서 수정할 수 없습니다</block>
@@ -718,4 +717,7 @@
   <block id="d1558822f85e59c70aa33c6ac2678132" category="section-title">9.14.1 GA(2024년 3월 5일)</block>
   <block id="10715dcbdc97f5e0e1debf8bac3a4ba4" category="paragraph">Cloud Volumes ONTAP 9.14.1 GA 릴리즈는 현재 AWS, Azure 및 Google Cloud에서 사용 가능합니다.</block>
   <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5(3)</block>
+  <block id="c077185ce5ae625437649ce1dbad7a15" category="section-title">Cloud Volumes ONTAP는 예약 및 온디맨드 VM 인스턴스만 지원합니다</block>
+  <block id="876f1172cd6d0607aa7ef915b2e202b5" category="section-title">타사 에이전트 및 내선 번호의 제한 사항</block>
+  <block id="605271a7347a8df6508582f58efcf1ef" category="paragraph">타사 에이전트 및 VM 확장은 Cloud Volumes ONTAP 가상 머신 인스턴스에서 지원되지 않습니다.</block>
 </blocks>
