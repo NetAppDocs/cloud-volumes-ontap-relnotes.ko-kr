@@ -720,4 +720,12 @@
   <block id="c077185ce5ae625437649ce1dbad7a15" category="section-title">Cloud Volumes ONTAP는 예약 및 온디맨드 VM 인스턴스만 지원합니다</block>
   <block id="876f1172cd6d0607aa7ef915b2e202b5" category="section-title">타사 에이전트 및 내선 번호의 제한 사항</block>
   <block id="605271a7347a8df6508582f58efcf1ef" category="paragraph">타사 에이전트 및 VM 확장은 Cloud Volumes ONTAP 가상 머신 인스턴스에서 지원되지 않습니다.</block>
+  <block id="be11c74c1dd7f307bb80183a90dc2067" category="sidebar">시작하십시오</block>
+  <block id="6beccc67ff905f7da0b29dece26b0485" category="sidebar">Amazon Web Services에서 직접 지원합니다</block>
+  <block id="e646e16bee8b32e6ea29e30d01970a6c" category="sidebar">제한 사항</block>
+  <block id="1668ca1bd914c1d847f23b491319ac91" category="sidebar">Microsoft Azure를 참조하십시오</block>
+  <block id="813011e2103649bb71f124adedcc10ea" category="sidebar">블로그 및 커뮤니티</block>
+  <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
+  <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP 블로그</block>
+  <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
 </blocks>
