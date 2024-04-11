@@ -88,6 +88,9 @@ Cloud Volumes ONTAP 업그레이드는 BlueXP에서 완료해야 합니다. Syst
 클라우드 공급자의 콘솔에서 Cloud Volumes ONTAP 구성을 변경하면 지원되지 않는 구성이 발생합니다. BlueXP에서 생성 및 관리하는 Cloud Volumes ONTAP 리소스에 대한 모든 변경 사항은 시스템 안정성과 BlueXP의 시스템 관리 능력에 영향을 줄 수 있습니다.
 
 
+NOTE: 초기 배포 후 Cloud Volumes ONTAP 리소스에 사용되는 Azure 구독 이름의 수정이 지원됩니다.
+
+
 
 == 디스크와 애그리게이트는 BlueXP에서 관리해야 합니다
 

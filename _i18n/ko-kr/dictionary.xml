@@ -732,4 +732,5 @@
   <block id="569a9a2a6db2c8239fa51b37ad08f488" category="paragraph">이제 모든 클라우드 공급자를 위해 Cloud Volumes ONTAP에서 9.14.1 P1 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link">P1 패치에서 수정된 버그 목록을 봅니다</block>
   <block id="62715934d07ed630b9c606bc666abad5" category="paragraph"><block ref="ae4674889e9a15806f2ba04f7b499642" category="inline-link-rx"></block> (NetApp Support 사이트 로그인 필요).</block>
+  <block id="43556f17551d900e8a2cd6d933da722d" category="admonition">초기 배포 후 Cloud Volumes ONTAP 리소스에 사용되는 Azure 구독 이름의 수정이 지원됩니다.</block>
 </blocks>
