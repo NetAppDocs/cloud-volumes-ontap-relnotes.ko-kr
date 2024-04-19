@@ -20,6 +20,14 @@ Cloud Volumes ONTAP 9.14.1에는 새로운 개선 사항이 포함되어 있습�
 
 
 
+== 9.14.1 P2 (2024년 4월 18일)
+
+이제 모든 클라우드 공급자를 위해 Cloud Volumes ONTAP에서 9.14.1 P2 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
+
+https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.14.1P2["P2 패치에서 수정된 버그 목록을 봅니다"^] (NetApp Support 사이트 로그인 필요).
+
+
+
 == 9.14.1 P1(2024년 4월 1일)
 
 이제 모든 클라우드 공급자를 위해 Cloud Volumes ONTAP에서 9.14.1 P1 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
