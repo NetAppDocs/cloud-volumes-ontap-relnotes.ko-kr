@@ -232,7 +232,6 @@
   <block id="6e9a8a2df40afea5890a6ea81b2df2b2" category="cell">라이센스당 368TiB ^2^</block>
   <block id="71235138fc0c3fda4c8fc946f34c4367" category="cell">2 PiB^2^</block>
   <block id="3e7433721426ddc5bb6007a1f480b7e0" category="cell">지원되는 디스크 유형입니다</block>
-  <block id="da09d8bd3eb91a9179d69cbb9fe34907" category="list-text">범용 SSD(GP3 및 GP2)^3^</block>
   <block id="6cd4ae2aba2a092cf2052266e4fcdc94" category="list-text">프로비저닝된 IOPS SSD (i1)^3^</block>
   <block id="320a1bc96a642b93ac47eb0838fbf1ff" category="list-text">처리량 최적화 HDD(st1)^4^</block>
   <block id="1f742543feb3ee22b577a40afbb960a2" category="cell">S3로 콜드 데이터 계층화</block>
@@ -264,27 +263,21 @@
   <block id="f851d5567887464712f1cbde0c7c70db" category="cell">EBS 대역폭(Mbps)</block>
   <block id="885c7ba30dea785406ff04e1995c0cef" category="cell">빠른 쓰기 속도 ^2^</block>
   <block id="4144774af30f71c8fc794c50d0a2a85e" category="cell">* 기타 라이센스 * 를 탐색하십시오</block>
-  <block id="af5930828f5a5fb8d4c21928b5ccdd0d" category="cell">m5.xlarge</block>
   <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4</block>
   <block id="c74d97b01eae257e44aa9d5bade97baf" category="cell">16</block>
   <block id="940d46ce8af31c99727566b6b6529db7" category="cell">최대 10개까지 가능합니다</block>
   <block id="3b1fce8d4128e9484676e12056c94fd7" category="cell">최대 4,750</block>
   <block id="24fd5ed21b125319b3c7c4825a764b66" category="cell">지원(단일 노드만 해당)</block>
   <block id="b47f486130ec0322b29fe8cf873eda99" category="cell">* 표준 또는 기타 라이센스 *</block>
-  <block id="e1369dc9aee5f7165363f55d10884546" category="cell">R5.xLarge</block>
   <block id="1ffd24563a8ba078752a34d474e1f403" category="cell">m5a.2xLarge</block>
   <block id="c9f0f895fb98ab9159f51fd0297e236d" category="cell">8</block>
   <block id="c82994e8dd530a69b81d79cb4e505f09" category="cell">최대 2,880</block>
-  <block id="fdb9b168c2139e67e282db861cf21967" category="cell">m5.2xLarge</block>
   <block id="ed0336aa4dbbeed8e48332f1f7a834b6" category="cell">* Premium 또는 기타 라이센스 *</block>
   <block id="3755b8d0a0506aff1de991cab29e9205" category="cell">m5n.2xLarge</block>
   <block id="a21bb08ff7c4cfeeef06cb3b4bcbc0a1" category="cell">최대 25</block>
-  <block id="859e8cd8d7a83d36983b0e9860a11e84" category="cell">r5.2xLarge</block>
   <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
   <block id="779e6562c3768b528bec3198ecdd790e" category="cell">r5d.2xLarge</block>
-  <block id="55b122095d7b69d814bc6849b383e4df" category="cell">c5d.4xLarge</block>
   <block id="97a5ba2ab2869def9595028833dfa605" category="cell">4,570</block>
-  <block id="6124944413e19a98a7cefa988e91f90e" category="cell">m5.4xLarge</block>
   <block id="f778f69b84929a5c80bb4590373a7119" category="cell">4,750</block>
   <block id="3bf5113b1c70942177a6ee64a8200ded" category="cell">m5d.8xLarge</block>
   <block id="28a48803c3f0a20888e6791904e3baa8" category="cell">6,800</block>
@@ -751,4 +744,15 @@
   <block id="1da7ab1581b8dde8d8bbb3d70c613cd5" category="list-text">L64s_v3 1,3, 5</block>
   <block id="9df1366281b2311753bea9dc8a7cc627" category="list-text">다수의 가용 영역 지원은 ONTAP 버전 9.13.1부터 시작합니다.</block>
   <block id="6d8cc94524c51a3f77860bbede84b136" category="list-text">ONTAP 버전 9.14.1 RC1부터 다수의 가용 영역 지원이 시작됩니다.</block>
+  <block id="219b3478863d340e2f74f743c7d41011" category="list-text">범용 SSD(GP3 및 GP2</block>
+  <block id="1b711587bb6cb30c16a9cdb6e5216a57" category="list-text">AWS 로컬 영역은 GP2(General Purpose SSD) 디스크 유형만 지원합니다.</block>
+  <block id="5f5ab830f312b366e90a01041e1aedca" category="cell">M5.xlarge(대형) 6</block>
+  <block id="6bfe086862809cf64cd507fa55b90a47" category="cell">R5.xlarge(6도</block>
+  <block id="39bce1e4c62e073845823cfaa75353ee" category="cell">m5.2xlarge(대형) 6</block>
+  <block id="1daf8852093393eddb2a0375368cd424" category="cell">R5.2xlarge(대형) 6</block>
+  <block id="112890879693861f10abb1dff5a8168e" category="cell">C5d.4xlarge(6도</block>
+  <block id="db71cf30c589b91cc71cbd78dda531cb" category="cell">M5.4x대형 6도</block>
+  <block id="5eaba9c26c7009842affe7562eb137d3" category="inline-link-macro">로컬 영역에서 지원되는 EC2 인스턴스 유형에 대한 최신 정보와 전체 세부 정보는 AWS를 참조하십시오</block>
+  <block id="0b1bcd721d49fbe0a3ff4bd80dfcd83f" category="list-text">AWS 로컬 영역은 크기가 xlarge에서 4xlarge인 EC2 인스턴스 유형 제품군에서 지원됩니다(M5, C5, C5d, R5 및 R5d). <block ref="3d9029b658475a88eed4e09e15fa8cce" category="inline-link-macro-rx"></block>.</block>
+  <block id="4133f4256c016927cb270503c43adeb6" category="paragraph">AWS 로컬 영역에서 이러한 인스턴스 유형에서는 빠른 쓰기 속도가 지원되지 않습니다.</block>
 </blocks>
