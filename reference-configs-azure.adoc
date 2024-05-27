@@ -381,38 +381,38 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 
 
 | 지원되는 가상 머신 유형입니다  a| 
-* E8ds_v4^4^
-* E32ds_v4^1,4^
-* E48ds_v4^1,4^
-* E80ids_v4^1,2,4^
-* E8ds_v5 를 참조하십시오
-* E20ds_v5(1)
-* E32ds_v5(1)
-* E48ds_v5(1)
-* E64ds_v5(1)
-* L16s_v3^1,4,5^
-* L32s_v3^1,4,5^
-* L48s_v3 1,4, 5도
-* L64s_v3 1,4,5
+* E8ds_v4
+* E32ds_v4(1)
+* E48ds_v4(1)
+* E80ids_v4^1,2^
+* 8도_v5도
+* E20ds_v5 1,4
+* E32ds_v5 1,4
+* E48ds_v5(1,4)
+* E64ds_v5(1,4)
+* L16s_v3^1,3,5^
+* L32s_v3^1,3,5^
+* L48s_v3 1,3, 5도
+* L64s_v3 1,3, 5
 
  a| 
-* E8ds_v4^3^
-* E8ds_v5 를 참조하십시오
+* E8ds_v4
+* 8도_v5도
 
  a| 
-* E8ds_v4^4^
-* E32ds_v4^1,4^
-* E48ds_v4^1,4^
-* E80ids_v4^1,2,4^
-* E8ds_v5 를 참조하십시오
-* E20ds_v5(1)
-* E32ds_v5(1)
-* E48ds_v5(1)
-* E64ds_v5(1)
-* L16s_v3^1,4,5^
-* L32s_v3^1,4,5^
-* L48s_v3 1,4, 5도
-* L64s_v3 1,4,5
+* E8ds_v4
+* E32ds_v4(1)
+* E48ds_v4(1)
+* E80ids_v4^1,2^
+* 8도_v5도
+* E20ds_v5 1,4
+* E32ds_v5 1,4
+* E48ds_v5(1,4)
+* E64ds_v5(1,4)
+* L16s_v3^1,3,5^
+* L32s_v3^1,3,5^
+* L48s_v3 1,3, 5도
+* L64s_v3 1,3, 5
 
 
 |===
@@ -420,8 +420,8 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 
 . Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 배포 도중 또는 이후에 BlueXP에서 빠른 쓰기 속도를 활성화할 수 있습니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-write-speed.html["쓰기 속도 선택에 대해 자세히 알아보세요"^].
 . 이 VM은 Azure 유지 관리 제어가 필요한 경우에만 권장됩니다. 더 높은 가격 책정으로 인해 다른 사용 사례에는 권장되지 않습니다.
-. 이러한 VM 유형은 공유 관리 디스크에서 실행되는 단일 가용성 영역 구성의 HA 쌍에만 지원됩니다.
-. 이러한 VM 유형은 단일 가용성 영역의 HA 쌍과 공유 관리 디스크에서 실행되는 여러 가용성 영역 구성에 대해 지원됩니다. LS_v3 VM 유형의 경우 여러 가용 영역 지원은 ONTAP 버전 9.13.1부터 시작합니다. EDS_v5 VM 유형의 경우 여러 가용 영역 지원은 ONTAP 버전 9.14.1 RC1부터 시작합니다.
+. 다수의 가용 영역 지원은 ONTAP 버전 9.13.1부터 시작합니다.
+. ONTAP 버전 9.14.1 RC1부터 다수의 가용 영역 지원이 시작됩니다.
 . 이 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
 
 
