@@ -407,7 +407,6 @@
   <block id="47518ea66849dbbe24f40b9d9b33f828" category="list-text">E8ds_v4</block>
   <block id="88a30f177822761a0b89ce7abd88a305" category="list-text">E32ds_v4</block>
   <block id="958e5e8b2dc959cc24ae1182052f1b03" category="list-text">E48ds_v4</block>
-  <block id="cc85911ae6bc3b2540142e310528310b" category="admonition">Connector의 자동 업그레이드는 기본적으로 활성화되어 있으므로 최신 버전을 실행해야 합니다.</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.</block>
   <block id="9e931b1cee40a7346d1f06dd6a75ba8e" category="doc">Google Cloud에서 지원되는 구성</block>
   <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">단일 노드 시스템을 HA 쌍으로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 쌍 간에 전환하려면 새 시스템을 구축하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.</block>
@@ -484,7 +483,6 @@
   <block id="84c132b976f487cccd3001ed2c7557f2" category="cell">* 용량 기반 PAYGO 또는 BYOL *^3^</block>
   <block id="15e276b5f20d3f04c4dde66ecf8a249c" category="cell">* 노드 기반 PAYGO *</block>
   <block id="c4d6a904ef528003bf03bc2e65cffd26" category="section-title">지원되는 업그레이드 경로입니다</block>
-  <block id="402e8d971886b1604e4de74c0058dc71" category="section-title">커넥터의 필수 버전입니다</block>
   <block id="79561dd1a4e00a3e05c0d892a01e77bf" category="list-text">N2-표준-16</block>
   <block id="cb93ad4589e6e6834d2627d2ef8c8456" category="list-text">다중 관리 검증</block>
   <block id="88e362071d1f2ba61570f62aacd1c1c5" category="paragraph">Cloud Volumes ONTAP에서 다중 관리 검증을 활성화하면 지원되지 않는 구성이 발생합니다.</block>
@@ -662,15 +660,6 @@
   <block id="540e57f70019c3eb8d7fb999259fd473" category="cell">페이지 Blob</block>
   <block id="6098d03c49b315476cd9c4d4eb330395" category="list-text">Cloud Volumes ONTAP는 HA 쌍을 사용하는 경우 이러한 VM 유형의 빠른 쓰기 속도를 지원합니다. 배포 도중 또는 이후에 BlueXP에서 빠른 쓰기 속도를 활성화할 수 있습니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>.</block>
   <block id="bcc4564bd7fc660f5dd5b39219b9775f" category="list-text">이러한 VM은 Cloud Volumes ONTAP 9.11.1 이전 버전에서만 지원됩니다. 이러한 VM 유형을 사용하면 기존 페이지 볼륨 배포를 Cloud Volumes ONTAP 9.11.1에서 9.12.1로 업그레이드할 수 있습니다. Cloud Volumes ONTAP 9.12.1 이상에서는 새 페이지 BLOB 배포를 수행할 수 없습니다.</block>
-  <block id="fd03e656adaf90d76d9f033d590bdd69" category="summary">본 릴리즈 노트에서는 Cloud Volumes ONTAP 9.14.1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
-  <block id="3f93d29b3f8dc957c8b9ced853857b76" category="doc">Cloud Volumes ONTAP 9.14.1 릴리스 정보</block>
-  <block id="ac49adbb868ecf707179d04fceda2832" category="summary">Cloud Volumes ONTAP 9.14.1에는 새로운 개선 사항이 포함되어 있습니다.</block>
-  <block id="6fd75df88e7a8fb6a734b8841088b891" category="doc">Cloud Volumes ONTAP 9.14.1의 새로운 기능</block>
-  <block id="8e6d22a522445e96c6b1493b0bb48d22" category="paragraph">Cloud Volumes ONTAP 9.14.1에는 새로운 개선 사항이 포함되어 있습니다.</block>
-  <block id="a5cb6650acb9d98dcbbf608aa3a4fba0" category="section-title">9.14.1 RC1(2023년 12월 6일)</block>
-  <block id="08c5c3a5955675754c56665896b714d2" category="paragraph">Cloud Volumes ONTAP 9.14.1의 릴리스 후보 1 은 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다.</block>
-  <block id="0ba3961acf8d8dd9d18bfabbbbc00cc5" category="paragraph">9.13.1 및 9.14.0 릴리스에서 Cloud Volumes ONTAP 9.14.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
-  <block id="c61efd7d56545088713b3c7d2e07cadd" category="paragraph">BlueXP Connector가 새로운 Cloud Volumes ONTAP 9.14.1 시스템을 구축하고 기존 시스템을 9.14.1로 업그레이드하려면 버전 3.9.27 이상을 실행해야 합니다.</block>
   <block id="f8f16d462023635d23922013c582281d" category="list-text">L16s_v3^1,4,5^</block>
   <block id="5c5847596a7ce3d290253dfcdcfc153c" category="list-text">L32s_v3^1,4,5^</block>
   <block id="2bf4a4b22f921c225f089ec2954ee9e8" category="list-text">L48s_v3 1,4, 5도</block>
@@ -707,8 +696,6 @@
   <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">새 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형을 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 예를 들어, E8ds_v4에서 E8s_v3으로 변경할 수는 없지만 두 VM 유형 모두 Ultra SSD를 사용하므로 E8ds_v4에서 E32ds_v4로 변경할 수 있습니다.</block>
   <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">반대로 다른 VM 유형을 사용하여 Cloud Volumes ONTAP를 구축한 경우 VNVRAM용 Ultra SSD를 사용하는 VM 유형으로 변경할 수 없습니다. 예를 들어, E8s_v3에서 E8ds_v4로 변경할 수 없습니다.</block>
   <block id="5063d3259058d90bbca06465957626d7" category="list-text">SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.</block>
-  <block id="d1558822f85e59c70aa33c6ac2678132" category="section-title">9.14.1 GA(2024년 3월 5일)</block>
-  <block id="10715dcbdc97f5e0e1debf8bac3a4ba4" category="paragraph">Cloud Volumes ONTAP 9.14.1 GA 릴리즈는 현재 AWS, Azure 및 Google Cloud에서 사용 가능합니다.</block>
   <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5(3)</block>
   <block id="c077185ce5ae625437649ce1dbad7a15" category="section-title">Cloud Volumes ONTAP는 예약 및 온디맨드 VM 인스턴스만 지원합니다</block>
   <block id="876f1172cd6d0607aa7ef915b2e202b5" category="section-title">타사 에이전트 및 내선 번호의 제한 사항</block>
@@ -721,15 +708,7 @@
   <block id="dd490b81914dd945601e442a41cb4222" category="sidebar">NetApp 커뮤니티</block>
   <block id="bd5465eb0e8cf8f303aee7ea9420c8b1" category="sidebar">BlueXP 블로그</block>
   <block id="ad203e818e0c9d7f42f1c260b33875f3" category="sidebar">클라우드 웨비나</block>
-  <block id="aaab5cb712b0e4d29126565b92a93c7e" category="section-title">9.14.1 P1(2024년 4월 1일)</block>
-  <block id="569a9a2a6db2c8239fa51b37ad08f488" category="paragraph">이제 모든 클라우드 공급자를 위해 Cloud Volumes ONTAP에서 9.14.1 P1 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
-  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link">P1 패치에서 수정된 버그 목록을 봅니다</block>
-  <block id="62715934d07ed630b9c606bc666abad5" category="paragraph"><block ref="ae4674889e9a15806f2ba04f7b499642" category="inline-link-rx"></block> (NetApp Support 사이트 로그인 필요).</block>
   <block id="43556f17551d900e8a2cd6d933da722d" category="admonition">초기 배포 후 Cloud Volumes ONTAP 리소스에 사용되는 Azure 구독 이름의 수정이 지원됩니다.</block>
-  <block id="09c468ad8c70fae44d482bf0d2aa0f97" category="section-title">9.14.1 P2 (2024년 4월 18일)</block>
-  <block id="595490a543bba780b40f8b48736870a0" category="paragraph">이제 모든 클라우드 공급자를 위해 Cloud Volumes ONTAP에서 9.14.1 P2 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
-  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link">P2 패치에서 수정된 버그 목록을 봅니다</block>
-  <block id="fe80ff34632bdc174d0d3a2e265b5e0c" category="paragraph"><block ref="25faf8057d466be20595f224ab406816" category="inline-link-rx"></block> (NetApp Support 사이트 로그인 필요).</block>
   <block id="5d47d15bb6c95cde595a22f670bc8cdf" category="list-text">E32ds_v4(1)</block>
   <block id="a9161f4d77d799baa3a3dc4cfeaefca3" category="list-text">E48ds_v4(1)</block>
   <block id="4e1b6146fa2cb1efc8bff10f1cf7e93c" category="list-text">E80ids_v4^1,2^</block>
@@ -755,4 +734,22 @@
   <block id="5eaba9c26c7009842affe7562eb137d3" category="inline-link-macro">로컬 영역에서 지원되는 EC2 인스턴스 유형에 대한 최신 정보와 전체 세부 정보는 AWS를 참조하십시오</block>
   <block id="0b1bcd721d49fbe0a3ff4bd80dfcd83f" category="list-text">AWS 로컬 영역은 크기가 xlarge에서 4xlarge인 EC2 인스턴스 유형 제품군에서 지원됩니다(M5, C5, C5d, R5 및 R5d). <block ref="3d9029b658475a88eed4e09e15fa8cce" category="inline-link-macro-rx"></block>.</block>
   <block id="4133f4256c016927cb270503c43adeb6" category="paragraph">AWS 로컬 영역에서 이러한 인스턴스 유형에서는 빠른 쓰기 속도가 지원되지 않습니다.</block>
+  <block id="910e1bdd6baebdae0421711258065197" category="admonition">Azure의 기존 Cloud Volumes ONTAP HA 페이지 BLOB 배포와 함께 다음 구성을 사용할 수 있습니다. 새 배포에는 페이지 Blob이 지원되지 않습니다.</block>
+  <block id="c7fba39244cea9bed6ebdf20c533b1ec" category="summary">Cloud Volumes ONTAP 9.15.0에는 새로운 개선 사항이 포함되어 있습니다.</block>
+  <block id="08801b736495375cdbb6bcb3a1212883" category="doc">Cloud Volumes ONTAP 9.15.0의 새로운 기능</block>
+  <block id="92910f0385055eeb4ce1fb8f6cab0845" category="paragraph">Cloud Volumes ONTAP 9.15.0에는 새로운 개선 사항이 포함되어 있습니다.</block>
+  <block id="275f84b2f13f6be7ad2b4bcf479ba8b2" category="section-title">9.15.0 P1(2024년 6월 10일)</block>
+  <block id="9245869e5fee8bd2bb00d26ef6cbb8d0" category="paragraph">Cloud Volumes ONTAP 9.15.0 P1은 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. P1 버전은 배포 및 업그레이드에 사용할 수 있습니다.</block>
+  <block id="8b41c40998a7affc19c72d81b0d005da" category="paragraph">이 릴리스에는 새로운 기능과 향상된 기능이 포함되어 있습니다.</block>
+  <block id="a4400979defd36b9aabb5e7db96ad29b" category="section-title">Azure에서 이미지 확인</block>
+  <block id="a27a8bf2f715cc5e3614b0faa5cf0a9d" category="paragraph">이제 Azure를 통해 내보낸 Cloud Volumes ONTAP 이미지 파일의 서명을 확인할 수 있는 향상된 보안 기능을 사용할 수 있습니다.</block>
+  <block id="b8abb7c7caaa735ae906cc2808f5f968" category="inline-link-macro">Azure 이미지 검증에 대해 자세히 알아보십시오</block>
+  <block id="99e39190aff1f0a0b65999be97e8be06" category="paragraph">자세한 내용은 을 참조하십시오 <block ref="cf7f85437fd22de8906b5dfc23f9072e" category="inline-link-macro-rx"></block>.</block>
+  <block id="0c617f2eafd2c49f96214ff1591f9e72" category="section-title">새로운 고가용성 쌍 구축에 Azure 페이지 Blob이 더 이상 지원되지 않습니다</block>
+  <block id="78791f347f204b6cdb496be6a39521d3" category="paragraph">Cloud Volumes ONTAP 9.15.0 P1부터 Azure 페이지 Blob은 새로운 고가용성 쌍 구축에 더 이상 지원되지 않습니다. 현재 기존 고가용성 페어 배포에서 Azure 페이지 Blob을 사용 중인 경우 Edsv4 시리즈 VM 및 Edsv5 시리즈 VM에서 새로운 VM 인스턴스 유형으로 마이그레이션할 수 있습니다.</block>
+  <block id="11c433da09cca9cd7d57ed81e1cd6310" category="inline-link-macro">Azure에서 지원되는 구성에 대해 자세히 알아보십시오</block>
+  <block id="32fc2dbe6ce23818c00cefccab1d6097" category="paragraph"><block ref="ecdad61fcd8abefb7dbc2e5c682b6e1d" category="inline-link-macro-rx"></block>.</block>
+  <block id="af9688d5cde98d7a041489576710fac7" category="paragraph">9.14.1 릴리스에서 Cloud Volumes ONTAP 9.15.0으로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
+  <block id="8e47e9575e2300fd877f61160058d7c0" category="sidebar">본 릴리즈 노트에서는 Cloud Volumes ONTAP 9.15.0의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
+  <block id="3aecd779578c661d895e83c1e9e7274c" category="sidebar">Cloud Volumes ONTAP 9.15.0 릴리스 정보</block>
 </blocks>

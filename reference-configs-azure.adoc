@@ -231,6 +231,9 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 
 ==== 페이지 blob과 HA 쌍
 
+
+NOTE: Azure의 기존 Cloud Volumes ONTAP HA 페이지 BLOB 배포와 함께 다음 구성을 사용할 수 있습니다. 새 배포에는 페이지 Blob이 지원되지 않습니다.
+
 [role="tabbed-block"]
 ====
 .용량 기반 라이센스
