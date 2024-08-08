@@ -752,4 +752,8 @@
   <block id="8e47e9575e2300fd877f61160058d7c0" category="sidebar">본 릴리즈 노트에서는 Cloud Volumes ONTAP 9.15.0의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
   <block id="3aecd779578c661d895e83c1e9e7274c" category="sidebar">Cloud Volumes ONTAP 9.15.0 릴리스 정보</block>
   <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">아래 표에 표시된 대역폭 은 각 인스턴스 유형에 대해 문서화된 AWS 제한과 일치합니다. 이러한 제한은 Cloud Volumes ONTAP이 제공할 수 있는 것과 완전히 일치하지는 않습니다. 예상 성능은 을<block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="4ae87c63691b9744168b73d7af816a77" category="section-title">9.15.0 P2(2024년 8월 8일)</block>
+  <block id="301c7c8cfee4f653db163dd0917e061c" category="paragraph">이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.0 P2 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link">P2 패치에서 수정된 버그 목록을 봅니다</block>
+  <block id="3fc252ec43144c8dd78602ca6c7fe60e" category="paragraph"><block ref="75f3c2aa534462e69fc54717adcc7a98" category="inline-link-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
 </blocks>
