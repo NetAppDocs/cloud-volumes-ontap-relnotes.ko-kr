@@ -40,7 +40,7 @@ Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또�
 --
 [cols="h,d,d,d"]
 |===
-|  | 프리모늄 | 최적화 | 용량 기반 라이센스(Essentials, Professional 및 Edge Cache) 
+|  | 프리모늄 | 최적화 | 용량 기반 라이센스(Essentials 및 Professional) 
 
 
 | 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 500GiB | 2 PiB | 2 PiB 
@@ -121,6 +121,9 @@ Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또�
 
 . PAYGO Explore에서는 Azure Blob 저장소에 대한 데이터 계층화가 지원되지 않습니다.
 . 이 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-flash-cache.html["자세한 정보"^].
++
+Azure에서 Flash Cache를 구성하는 데 필요한 최소 ONTAP 버전은 9.13.1 GA입니다.
+
 . 이러한 VM 유형은 을 사용합니다 https://docs.microsoft.com/en-us/azure/virtual-machines/windows/disks-enable-ultra-ssd["울트라급 SSD"^] VNVRAM의 경우, 더 나은 쓰기 성능을 제공합니다.
 +
 새 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형을 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 예를 들어, E8ds_v4에서 E8s_v3으로 변경할 수는 없지만 두 VM 유형 모두 Ultra SSD를 사용하므로 E8ds_v4에서 E32ds_v4로 변경할 수 있습니다.
@@ -240,7 +243,7 @@ NOTE: Azure의 기존 Cloud Volumes ONTAP HA 페이지 BLOB 배포와 함께 다
 --
 [cols="h,d,d,d"]
 |===
-|  | 프리모늄 | 최적화 | 용량 기반 라이센스(Essentials, Professional 및 Edge Cache) 
+|  | 프리모늄 | 최적화 | 용량 기반 라이센스(Essentials 및 Professional) 
 
 
 | 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 500GiB | 2 PiB | 2 PiB 
@@ -377,7 +380,7 @@ Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 
 --
 [cols="h,d,d,d"]
 |===
-|  | 프리모늄 | 최적화 | 용량 기반 라이센스(Essentials, Professional 및 Edge Cache) 
+|  | 프리모늄 | 최적화 | 용량 기반 라이센스(Essentials 및 Professional) 
 
 
 | 최대 시스템 용량(디스크 + 오브젝트 스토리지) | 500GiB | 2 PiB | 2 PiB 

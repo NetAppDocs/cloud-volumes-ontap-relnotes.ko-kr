@@ -20,13 +20,9 @@ Microsoft Azure의 Cloud Volumes ONTAP에는 다음과 같은 알려진 제한 �
 
 == Flash Cache 제한
 
-일부 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 있습니다. Flash Cache에 대한 다음 제한 사항에 유의하십시오.
+Cloud Volumes ONTAP은 일부 VM 유형에서 로컬 NVMe 스토리지를 _ Flash Cache _ 로 사용합니다. 이 제한 사항에 유의하십시오.
 
-* Cloud Volumes ONTAP 9.12.0까지 Flash Cache 성능 향상을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다. Cloud Volumes ONTAP 9.12.1을 배포하거나 업그레이드할 때 압축을 비활성화할 필요가 없습니다.
-+
-BlueXP에서 볼륨을 생성할 때 스토리지 효율성을 선택하지 않거나 볼륨을 생성한 후 생성할 수 있습니다 http://docs.netapp.com/ontap-9/topic/com.netapp.doc.dot-cm-vsmg/GUID-8508A4CB-DB43-4D0D-97EB-859F58B29054.html["CLI를 사용하여 데이터 압축을 비활성화합니다"^].
-
-* 재부팅 후 캐시 재가기는 Cloud Volumes ONTAP에서 지원되지 않습니다.
+* 재부팅 후 캐시 다시 가기는 지원되지 않습니다.
 
 
 

@@ -568,7 +568,6 @@
   <block id="6367723c5abb9a6de038561ba69ed33f" category="example-title">BYOL: 페이지 Blob을 사용하는 단일 가용성 영역의 HA 쌍</block>
   <block id="561a766e0af8bbc565f3cd929c900d16" category="example-title">BYOL: 공유 관리 디스크를 사용하는 다중 가용성 영역 구성의 HA 쌍</block>
   <block id="fc9a388cd18c69244f22554de6f0d544" category="paragraph-title">AWS의 HA 시스템에서 미러링된 데이터는 용량 제한에 따라 계산됩니까?</block>
-  <block id="39b49fbe12f6121fd761513c05ddba97" category="paragraph">일부 VM 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 있습니다. Flash Cache에 대한 다음 제한 사항에 유의하십시오.</block>
   <block id="f59964eb1e1669da7d916b7e136c88bd" category="list-text">m6id.32xLarge</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">노트 업그레이드</block>
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">이 릴리스 업그레이드에 대한 자세한 내용은 이 노트를 참조하십시오.</block>
@@ -688,7 +687,6 @@
   <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">Cloud Volumes ONTAP는 Google Cloud에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 위한 고가용성(HA) 노드 쌍으로 사용할 수 있습니다.</block>
   <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">용량 기반 라이센스</block>
   <block id="6e539d2ea7d82ed0e31c450e64ff8c04" category="cell">최적화</block>
-  <block id="82fc13b1b2688039a14feb2fc8785cad" category="cell">용량 기반 라이센스(Essentials, Professional 및 Edge Cache)</block>
   <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">노드 기반 라이센스</block>
   <block id="b338d2a3e5b2fa0602cf93fe49c51138" category="paragraph">Google Cloud 지역 지원은 을 참조하십시오<block ref="2b6a522631c3b3b8afac5466195e108a" category="inline-link-rx"></block>.</block>
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">Cloud Volumes ONTAP를 Azure에서 단일 노드 시스템으로 구축할 때 다음과 같은 용량 기반 또는 노드 기반 라이센스 구성 중에서 선택할 수 있습니다.</block>
@@ -756,4 +754,9 @@
   <block id="301c7c8cfee4f653db163dd0917e061c" category="paragraph">이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.0 P2 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link">P2 패치에서 수정된 버그 목록을 봅니다</block>
   <block id="3fc252ec43144c8dd78602ca6c7fe60e" category="paragraph"><block ref="75f3c2aa534462e69fc54717adcc7a98" category="inline-link-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
+  <block id="32d6fe93ba69b4395a45277c1885f29f" category="cell">용량 기반 라이센스(Essentials 및 Professional)</block>
+  <block id="7ac4ad805c5f62c422ac040e484787d7" category="paragraph">Azure에서 Flash Cache를 구성하는 데 필요한 최소 ONTAP 버전은 9.13.1 GA입니다.</block>
+  <block id="fb68df6302dcf52c3640cda14ef6c3e2" category="list-text">Cloud Volumes ONTAP 9.13.0, _Flash Cache_, 빠른 쓰기 속도 및 8,896바이트의 더 높은 MTU(최대 전송 단위)부터 다음 HA 쌍 배포 인스턴스에 사용할 수 있습니다.</block>
+  <block id="0ef515bdf91048074b68adb0d7ce587e" category="paragraph">Cloud Volumes ONTAP은 일부 VM 유형에서 로컬 NVMe 스토리지를 _ Flash Cache _ 로 사용합니다. 이 제한 사항에 유의하십시오.</block>
+  <block id="7616922b4f9b85f327fb9c04518fc90f" category="list-text">재부팅 후 캐시 다시 가기는 지원되지 않습니다.</block>
 </blocks>
