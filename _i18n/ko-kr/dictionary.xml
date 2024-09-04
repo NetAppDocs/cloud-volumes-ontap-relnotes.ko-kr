@@ -738,35 +738,40 @@
   <block id="c225bb599d95ae48865f5a5a99751d6d" category="inline-link-macro">Google Cloud의 Cloud Volumes ONTAP 9.15.1 중재자를 위한 고지 사항</block>
   <block id="8d3eb6c7422d9d7fe8285d43bec57d37" category="list-text"><block ref="8d3eb6c7422d9d7fe8285d43bec57d37" category="inline-link-macro-rx"></block></block>
   <block id="3feaeead4352aa22a5e23895ca44ad6f" category="cell">Standard HDD Managed Disks, Standard SSD Managed Disks, Premium SSD Managed Disks, Premium SSD v2 Managed Disks.</block>
-  <block id="f34e593f4dda0ab627f7a62029e82a1a" category="paragraph">새 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형을 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 예를 들어, E8ds_v4에서 E8s_v3으로 변경할 수는 없지만 두 VM 유형 모두 Ultra SSD를 사용하므로 E8ds_v4에서 E32ds_v4로 변경할 수 있습니다. 마찬가지로 새 Cloud Volumes ONTAP 시스템을 구축할 때 VM 유형을 프리미엄 SSD v2 관리 디스크를 지원하지 않는 것으로 변경할 수 없습니다.</block>
   <block id="fbd5af992908b9931b0ae311f285c7d5" category="summary">Cloud Volumes ONTAP 9.15.1 에는 새로운 향상 기능이 포함되어 있습니다.</block>
   <block id="83a60efee029f00eebfd929bdfd93b02" category="doc">Cloud Volumes ONTAP 9.15.1 의 새로운 기능</block>
   <block id="b4c1aa9082f0d8e4483e610ea5ab6d33" category="paragraph">Cloud Volumes ONTAP 9.15.1 에는 새로운 개선 사항이 포함되어 있습니다.</block>
   <block id="aa4ce9e7e0e2db885cfae0432f23eb02" category="section-title">9.15.1 GA(2024년 8월 22일)</block>
-  <block id="776ca3f689b01a1c056067512185cd34" category="paragraph">Cloud Volumes ONTAP 9.15.1 GA는 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. GA 버전은 배포 및 업그레이드에 사용할 수 있습니다. 이 릴리즈에는 다음과 같은 새로운 기능과 향상된 기능이 포함되어 있습니다.</block>
   <block id="bc7175e423f6e0afd8f8a6b587844b59" category="section-title">Azure에서 Premium SSD v2 Managed Disks 지원</block>
   <block id="5b0ca394a998f1788658ece8c00dd5d2" category="paragraph">Premium SSD v2 Managed Disks가 이제 Azure 기반 Cloud Volumes ONTAP 시스템에서 지원됩니다. Premium SSD Managed Disks에 비해 이러한 프리미엄 디스크는 단일 노드와 HA(고가용성) 쌍 모두에서 더 저렴한 비용으로 더 높은 성능과 더 짧은 지연 시간을 제공합니다. 다른 관리형 디스크와 마찬가지로 최대 디스크 크기는 32TiB입니다. Premium SSD v2 Managed Disks의 성능(용량, 처리량, IOPS)을 구성할 수 있으므로 워크로드 효율성을 높이는 동시에 변화하는 성능 요구 사항을 충족할 수 있습니다.</block>
   <block id="20bb913d178725401e1f129f9cd78e9e" category="inline-link">Azure 스토리지에 대해 알아보십시오</block>
-  <block id="0c9b033761741e7095a8d1bfb0da6304" category="paragraph"><block ref="b59c69fce966b6ba60a6774d4343de96" category="inline-link-rx"></block>..</block>
   <block id="892d55f6f43d490c5ac28471f96de68a" category="section-title">Azure에서 단일 가용 영역에 HA 쌍을 배포합니다</block>
-  <block id="47682b8a4aabe64f4b0715a6d6c5b431" category="paragraph">Cloud Volumes ONTAP 9.15.1부터 Azure의 AZ(단일 가용 영역)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이전의 비 영역 배포와 달리 Cloud Volumes ONTAP 9.15.1은 유연한 조정 모드에서 Microsoft Virtual Machine Scale Set을 사용하여 동일한 AZ 내에 별도의 장애 도메인을 포함한 모든 리소스를 배포하여 최적의 가용성을 보장합니다.</block>
-  <block id="38dcec2e270a003b76d28db7df9fcbb3" category="inline-link">Azure의 고가용성 쌍에 대해 알아보십시오</block>
-  <block id="ad079f1950bcd6f1dc9b0da6c93caa11" category="paragraph"><block ref="f518cf6fbcbc18f0f69e2270304a3bb9" category="inline-link-rx"></block>..</block>
   <block id="5f6ae050f79947b402a5730d141e65ee" category="section-title">가상 머신 지원 확장 세트를 통해 모든 Azure HA 유형을 통합합니다</block>
-  <block id="85cf8a29d1fb742b8feb4e50d776436e" category="paragraph">Cloud Volumes ONTAP 9.15.1은 가상 머신 확장 세트를 Azure에서 유연한 오케스트레이션 모드로 활용하여 고가용성(HA) 쌍을 위해 단일 가용 영역에 VM(가상 머신) 인스턴스를 구축합니다.</block>
-  <block id="b368f302cd95fd657c5b89ae6ed7d352" category="paragraph">이 배포 모드는 기본적으로 Premium SSD v2 Managed Disks를 사용합니다. 다음 조건이 충족될 경우 HA 모드, Pageblob, LRS(Local-Redundant Storage), ZRS(Zone-Redundant Storage) 또는 Multi-zonal 및 LRS Zonal(Single AZ)의 모든 유형을 다룹니다.</block>
   <block id="6326d313b843fff1d57ed50ec7c000f1" category="list-text">Cloud Volumes ONTAP 버전은 9.15.1 이상입니다.</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure 웹 사이트: 지역별 제품</block>
-  <block id="fd7c8b210845b6835720e8398b335dce" category="list-text">이 지역에서는 유연한 조정 모드에서 가상 머신 스케일 세트를 지원합니다. 지원되는 지역에 대한 자세한 내용은 을<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="6aa5f36ae7ac4ee786cacf13cbbb981f" category="list-text">한 지역에서 선택한 영역은 유연한 조정 모드에서 가상 머신 스케일 세트를 지원합니다.</block>
-  <block id="c785b61f2bfc2a0a28110dd4da201a48" category="list-text">이 구독은 Microsoft<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block> 기능에 대해 등록되었습니다.</block>
   <block id="68367d4408e943b9268a7a6d4314fb0a" category="inline-link">Azure에서 Cloud Volumes ONTAP HA 쌍 시작</block>
-  <block id="e9e34ff3ab97c79b3c316c17375f6ff1" category="inline-link">단일 가용 영역에 대해 VMOrchestrator ZonalMultiFD를 사용하도록 설정합니다</block>
-  <block id="67d86fb895fd2dadf6a098a0d4cbcf84" category="paragraph">자세한<block ref="21ec87e6eb67935050d7d05994bd62be" category="inline-link-rx"></block> 내용은 및 을<block ref="800e13b1242ee8997b4b8c600fd26f10" category="inline-link-rx"></block> 참조하십시오.</block>
-  <block id="6ed999af427a3e626f879a4018500deb" category="paragraph">이러한 기준 중 하나라도 충족되지 않으면 이전의 LRS 비영역 배치가 적용됩니다.</block>
   <block id="8587098b07c4e4a23dccafd754dbc676" category="section-title">업그레이드 참고 사항.</block>
   <block id="a30c58b20b60e5ffb9d932cee170af9a" category="paragraph">9.15.0 및 9.14.1 릴리스에서 Cloud Volumes ONTAP 9.15.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="8679be60a45e6f155a93161b9a8c5d43" category="sidebar">본 릴리즈 노트에서는 Cloud Volumes ONTAP 1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
   <block id="c32d4655f35315d6cd7ab368b1f0a6de" category="sidebar">Cloud Volumes ONTAP 9.15.1 릴리스 정보</block>
   <block id="9b74e463f9eba3d7b2490736bd408da0" category="sidebar">본 릴리즈 노트에서는 Cloud Volumes ONTAP 9.15.1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
+  <block id="28440751cbe2a16368822f02f298a2f4" category="inline-link">공유 관리 디스크를 사용하는 HA 단일 가용성 영역 구성</block>
+  <block id="e2a0553d4c47017042ca1689993f9c8b" category="paragraph">새 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형을 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 예를 들어, E8ds_v4에서 E8s_v3으로 변경할 수는 없지만 두 VM 유형 모두 Ultra SSD를 사용하므로 E8ds_v4에서 E32ds_v4로 변경할 수 있습니다. 마찬가지로 새 Cloud Volumes ONTAP 시스템을 구축할 때 VM 유형을 프리미엄 SSD v2 관리 디스크를 지원하지 않는 것으로 변경할 수 없습니다. Premium SSD v2 Managed Disks에서 지원되는 구성에 대한 자세한 내용은 을 참조하십시오<block ref="6fd1548aedf3667cd5a4b1b43bc16181" category="inline-link-rx"></block>.</block>
+  <block id="9d85572128910a61c3211c3fcb021921" category="section-title">9.15.1 P1(2024년 9월 3일)</block>
+  <block id="0af97325f311859f8c8335d28a3d334c" category="paragraph">이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P1 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">P1 패치에서 수정된 버그 목록을 봅니다</block>
+  <block id="26913715f6472de0e1115ad17f6b6bc8" category="paragraph"><block ref="0551aa4e2b5bd361ee5fdb2414ba928f" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
+  <block id="dfb5c8ec2223bd8a6413a4362da62637" category="paragraph">Cloud Volumes ONTAP 9.15.1 GA는 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. GA 버전은 배포 및 업그레이드에 사용할 수 있습니다.</block>
+  <block id="3e6d47920aca39db44843a3add6a6655" category="paragraph">이 릴리스에는 Azure에 대한 다음과 같은 기능 및 개선 사항이 포함되어 있습니다. 이 새로운 기능을 지원하는 특정 구성에 대한 자세한 내용은 아래 내용을 참조하십시오.</block>
+  <block id="1aa9c656bf03d8824495d5c1ad3b6bda" category="paragraph"><block ref="b89aaee931541f273298fee7632a9cbf" category="inline-link-rx"></block>..</block>
+  <block id="80b122992ec0ea80dc356ea01fdddcb4" category="paragraph">Cloud Volumes ONTAP 9.15.1부터 Azure의 AZ(단일 가용 영역)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이전의 비 영역 배포와 달리 Cloud Volumes ONTAP 9.15.1은 유연한 조정 모드에서 Microsoft Virtual Machine Scale Set을 사용하여 동일한 AZ 내에 별도의 장애 도메인을 포함한 모든 리소스를 배포하여 최적의 가용성을 보장합니다. 이 배포 모드는 기본적으로 다음 조건이 충족될 때 Premium SSD v2 Managed Disks를 사용합니다.</block>
+  <block id="3d58e19a0ad059c068ea94850f7f07b3" category="list-text">선택한 지역 및 영역은 Premium SSD v2 Managed Disks를 지원합니다. 지원되는 지역에 대한 자세한 내용은 을 <block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block>참조하십시오. 추가 방법은 을<block ref="21ec87e6eb67935050d7d05994bd62be" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="ba9b674ef918293b2811c2896cb57927" category="inline-link">단일 가용 영역에 대해 VMOrchestrator ZonalMultiFD를 사용하도록 설정하는 방법에 대해 알아보십시오</block>
+  <block id="ddcdfb16338cb24a868b379c7937a3f9" category="list-text">이 구독은 Microsoft<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block> 기능에 대해 등록되었습니다. <block ref="37dbbe0007aba28a7312f0bdc995d21b" category="inline-link-rx"></block>..</block>
+  <block id="4c948eb331f4d29ab3fd543fd04028c3" category="paragraph">이러한 조건 중 하나라도 충족되지 않으면 LRS(Local-Redundant Storage)에 대한 이전의 Non-zonal 배포 모드가 적용됩니다.</block>
+  <block id="569a86e1494e035e7de656acda258ef0" category="paragraph">Cloud Volumes ONTAP 9.15.1은 가상 머신 확장 세트를 Azure에서 유연한 오케스트레이션 모드로 활용하여 고가용성(HA) 쌍을 위해 단일 가용 영역에 VM(가상 머신) 인스턴스를 구축합니다. HA 모드, Pageblob, LRS, ZRS(zone-redundant storage) 또는 Multi-zonal, LRS zonal(single AZ)의 모든 기능을 포함합니다.</block>
+  <block id="fcb7516396bf1d9722f3e765d3004427" category="inline-link">Microsoft Azure 설명서: Virtual Machine Scale Sets 설명서</block>
+  <block id="b4273b358a9e522bb090b6bbb65e080f" category="list-text"><block ref="b4273b358a9e522bb090b6bbb65e080f" category="inline-link-rx"></block></block>
+  <block id="0bd904c1b3763b65f2cc9d002f6a74e1" category="inline-link">Azure의 고가용성 쌍에 대해 알아보십시오</block>
+  <block id="0a60745fecbc79115b1e58a81d31e5cf" category="list-text"><block ref="80b3c96e29f809092ae7660c3123c5c7" category="inline-link-rx"></block>..</block>
 </blocks>
