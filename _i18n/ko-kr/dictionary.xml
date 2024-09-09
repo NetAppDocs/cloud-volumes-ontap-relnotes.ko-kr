@@ -733,10 +733,6 @@
   <block id="fb68df6302dcf52c3640cda14ef6c3e2" category="list-text">Cloud Volumes ONTAP 9.13.0, _Flash Cache_, 빠른 쓰기 속도 및 8,896바이트의 더 높은 MTU(최대 전송 단위)부터 다음 HA 쌍 배포 인스턴스에 사용할 수 있습니다.</block>
   <block id="0ef515bdf91048074b68adb0d7ce587e" category="paragraph">Cloud Volumes ONTAP은 일부 VM 유형에서 로컬 NVMe 스토리지를 _ Flash Cache _ 로 사용합니다. 이 제한 사항에 유의하십시오.</block>
   <block id="7616922b4f9b85f327fb9c04518fc90f" category="list-text">재부팅 후 캐시 다시 가기는 지원되지 않습니다.</block>
-  <block id="957c86bd7e2943f4f2bea59ca801e935" category="inline-link-macro">AWS의 Cloud Volumes ONTAP 9.15.1 중재자를 위한 고지 사항</block>
-  <block id="ae067c922d91788650ee1d5ddf600801" category="list-text"><block ref="ae067c922d91788650ee1d5ddf600801" category="inline-link-macro-rx"></block></block>
-  <block id="c225bb599d95ae48865f5a5a99751d6d" category="inline-link-macro">Google Cloud의 Cloud Volumes ONTAP 9.15.1 중재자를 위한 고지 사항</block>
-  <block id="8d3eb6c7422d9d7fe8285d43bec57d37" category="list-text"><block ref="8d3eb6c7422d9d7fe8285d43bec57d37" category="inline-link-macro-rx"></block></block>
   <block id="3feaeead4352aa22a5e23895ca44ad6f" category="cell">Standard HDD Managed Disks, Standard SSD Managed Disks, Premium SSD Managed Disks, Premium SSD v2 Managed Disks.</block>
   <block id="fbd5af992908b9931b0ae311f285c7d5" category="summary">Cloud Volumes ONTAP 9.15.1 에는 새로운 향상 기능이 포함되어 있습니다.</block>
   <block id="83a60efee029f00eebfd929bdfd93b02" category="doc">Cloud Volumes ONTAP 9.15.1 의 새로운 기능</block>
@@ -769,9 +765,11 @@
   <block id="ba9b674ef918293b2811c2896cb57927" category="inline-link">단일 가용 영역에 대해 VMOrchestrator ZonalMultiFD를 사용하도록 설정하는 방법에 대해 알아보십시오</block>
   <block id="ddcdfb16338cb24a868b379c7937a3f9" category="list-text">이 구독은 Microsoft<block ref="fdfb47698b60e554acc8cff3a6065992" prefix=" " category="inline-code"></block> 기능에 대해 등록되었습니다. <block ref="37dbbe0007aba28a7312f0bdc995d21b" category="inline-link-rx"></block>..</block>
   <block id="4c948eb331f4d29ab3fd543fd04028c3" category="paragraph">이러한 조건 중 하나라도 충족되지 않으면 LRS(Local-Redundant Storage)에 대한 이전의 Non-zonal 배포 모드가 적용됩니다.</block>
-  <block id="569a86e1494e035e7de656acda258ef0" category="paragraph">Cloud Volumes ONTAP 9.15.1은 가상 머신 확장 세트를 Azure에서 유연한 오케스트레이션 모드로 활용하여 고가용성(HA) 쌍을 위해 단일 가용 영역에 VM(가상 머신) 인스턴스를 구축합니다. HA 모드, Pageblob, LRS, ZRS(zone-redundant storage) 또는 Multi-zonal, LRS zonal(single AZ)의 모든 기능을 포함합니다.</block>
   <block id="fcb7516396bf1d9722f3e765d3004427" category="inline-link">Microsoft Azure 설명서: Virtual Machine Scale Sets 설명서</block>
   <block id="b4273b358a9e522bb090b6bbb65e080f" category="list-text"><block ref="b4273b358a9e522bb090b6bbb65e080f" category="inline-link-rx"></block></block>
   <block id="0bd904c1b3763b65f2cc9d002f6a74e1" category="inline-link">Azure의 고가용성 쌍에 대해 알아보십시오</block>
   <block id="0a60745fecbc79115b1e58a81d31e5cf" category="list-text"><block ref="80b3c96e29f809092ae7660c3123c5c7" category="inline-link-rx"></block>..</block>
+  <block id="524d94964962cd77e130e880d66b6c97" category="inline-link-macro">Cloud Volumes ONTAP 9.15.1에 대한 고지 사항</block>
+  <block id="69b9c8f99d9f922a1b39668eb1ca9f2d" category="list-text"><block ref="69b9c8f99d9f922a1b39668eb1ca9f2d" category="inline-link-macro-rx"></block></block>
+  <block id="2e87e8a578558ca3febcb42e546e1af4" category="paragraph">Cloud Volumes ONTAP 9.15.1은 가상 머신 확장 세트를 Azure에서 유연한 오케스트레이션 모드로 활용하여 고가용성(HA) 쌍을 위해 단일 가용 영역에 VM(가상 머신) 인스턴스를 구축합니다. HA 모드, 페이지 Blob, LRS, ZRS(zone-redundant storage) 또는 다중 영역 및 LRS 영역(단일 AZ)의 모든 기능을 포함합니다.</block>
 </blocks>
