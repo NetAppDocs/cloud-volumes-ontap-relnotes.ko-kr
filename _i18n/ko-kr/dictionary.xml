@@ -772,4 +772,8 @@
   <block id="524d94964962cd77e130e880d66b6c97" category="inline-link-macro">Cloud Volumes ONTAP 9.15.1에 대한 고지 사항</block>
   <block id="69b9c8f99d9f922a1b39668eb1ca9f2d" category="list-text"><block ref="69b9c8f99d9f922a1b39668eb1ca9f2d" category="inline-link-macro-rx"></block></block>
   <block id="2e87e8a578558ca3febcb42e546e1af4" category="paragraph">Cloud Volumes ONTAP 9.15.1은 가상 머신 확장 세트를 Azure에서 유연한 오케스트레이션 모드로 활용하여 고가용성(HA) 쌍을 위해 단일 가용 영역에 VM(가상 머신) 인스턴스를 구축합니다. HA 모드, 페이지 Blob, LRS, ZRS(zone-redundant storage) 또는 다중 영역 및 LRS 영역(단일 AZ)의 모든 기능을 포함합니다.</block>
+  <block id="a05cf03e897f4068b5177ef70c7cf347" category="section-title">9.15.1 P2(2024년 10월 14일)</block>
+  <block id="8d4440801f529fd94fa4b15d11c84ac0" category="paragraph">이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P2 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">P2 패치에서 수정된 버그 목록을 봅니다</block>
+  <block id="46a5c1839a6c9667da9a201d204a30d8" category="paragraph"><block ref="8043c70c5f9f22a2d553b5b35821b45f" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
 </blocks>
