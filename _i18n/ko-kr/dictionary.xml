@@ -226,7 +226,6 @@
   <block id="721f444864f7f20b038565facc11ed77" category="paragraph">Cloud Volumes ONTAP은 여러 유형의 EBS 디스크와 데이터 계층화를 위한 S3 오브젝트 스토리지를 지원합니다. 최대 스토리지 용량은 선택한 라이센스에 따라 결정됩니다.</block>
   <block id="e17c7f98af970809162c4395474988ad" category="section-title">라이센스별 스토리지 지원</block>
   <block id="c5a27c05ad608efda7a7a192ee480209" category="paragraph">각 라이센스는 다른 최대 시스템 용량을 지원합니다. 최대 시스템 용량에는 디스크 기반 스토리지와 데이터 계층화에 사용되는 오브젝트 스토리지가 포함됩니다. NetApp은 이 제한을 초과하지 않습니다.</block>
-  <block id="2a3273b13e4da5a861913a955ede7809" category="cell">최대 시스템 용량(디스크 + 객체 스토리지) ^1^</block>
   <block id="7916f32f06eaabdf61df576419c0c138" category="cell">2TiB</block>
   <block id="705c8901d15869a7116491b156af6fbe" category="cell">368TiB^2^</block>
   <block id="6e9a8a2df40afea5890a6ea81b2df2b2" category="cell">라이센스당 368TiB ^2^</block>
@@ -743,9 +742,7 @@
   <block id="6326d313b843fff1d57ed50ec7c000f1" category="list-text">Cloud Volumes ONTAP 버전은 9.15.1 이상입니다.</block>
   <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure 웹 사이트: 지역별 제품</block>
   <block id="68367d4408e943b9268a7a6d4314fb0a" category="inline-link">Azure에서 Cloud Volumes ONTAP HA 쌍 시작</block>
-  <block id="8587098b07c4e4a23dccafd754dbc676" category="section-title">업그레이드 참고 사항.</block>
   <block id="a30c58b20b60e5ffb9d932cee170af9a" category="paragraph">9.15.0 및 9.14.1 릴리스에서 Cloud Volumes ONTAP 9.15.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
-  <block id="8679be60a45e6f155a93161b9a8c5d43" category="sidebar">본 릴리즈 노트에서는 Cloud Volumes ONTAP 1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
   <block id="c32d4655f35315d6cd7ab368b1f0a6de" category="sidebar">Cloud Volumes ONTAP 9.15.1 릴리스 정보</block>
   <block id="9b74e463f9eba3d7b2490736bd408da0" category="sidebar">본 릴리즈 노트에서는 Cloud Volumes ONTAP 9.15.1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
   <block id="28440751cbe2a16368822f02f298a2f4" category="inline-link">공유 관리 디스크를 사용하는 HA 단일 가용성 영역 구성</block>
@@ -784,4 +781,9 @@
   <block id="c3e5d9aa8817ef74e74e8cd55f39570f" category="paragraph">이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P3 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
   <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">P3 패치에서 수정된 버그 목록을 봅니다</block>
   <block id="fae48ca93c7d21429a4d9efb8dbde929" category="paragraph"><block ref="03a97087fa51b558b394583b2ec67707" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
+  <block id="29aaeb333a41db01888c537148053c70" category="paragraph">* 최대 시스템 용량 * (디스크 + 오브젝트 스토리지</block>
+  <block id="06cf24f6f7b06cb3d2778a1a70e9ff2f" category="paragraph">* 지원되는 디스크 유형 *</block>
+  <block id="17943cfde2a5e23c7925dc95a8dde6a4" category="paragraph">* S3로 콜드 데이터 계층화 *</block>
+  <block id="640897782baa10cc7d259d38d703b275" category="list-text">SSD를 All Cloud Volumes ONTAP 구성과 함께 사용할 경우 향상된 쓰기 성능이 지원됩니다.</block>
+  <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">노트 업그레이드</block>
 </blocks>
