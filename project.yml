@@ -1,6 +1,6 @@
 ---
 settings:
-  name: Cloud Volumes ONTAP release notes
+  name: Cloud Volumes ONTAP
   platform: cloud
   internal:
     pdf_enabled: true
@@ -51,7 +51,7 @@ settings:
   langs: ko-kr,us-en,ja-jp,zh-cn,zh-tw,de-de,es-es,fr-fr,it-it
 sidebar:
   entries:
-  - title: 릴리스 노트 홈
+  - title: Cloud Volumes ONTAP 9.15.1 릴리스 정보
     url: "/index.html"
   - title: 새로운 소식
     url: "/reference-new.html"

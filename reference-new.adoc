@@ -20,6 +20,14 @@ Cloud Volumes ONTAP 9.15.1 에는 새로운 개선 사항이 포함되어 있습
 
 
 
+== 9.15.1 P4(2024년 11월 25일)
+
+이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P4 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P4["P4 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
+
+
+
 == 9.15.1 P3(2024년 10월 29일)
 
 이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P3 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
@@ -80,6 +88,16 @@ Cloud Volumes ONTAP 9.15.1은 가상 머신 확장 세트를 Azure에서 유연�
 * https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure 설명서: Virtual Machine Scale Sets 설명서"^]
 * https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["Azure의 고가용성 쌍에 대해 알아보십시오"^]..
 
+
+
+
+=== FlexCache 후기입 지원
+
+Cloud Volumes ONTAP 9.15.1부터 FlexCache Write-Back은 캐시에서 쓰는 대체 모드로 지원됩니다.
+
+이 기능에 대한 자세한 내용은 ONTAP 설명서를 https://docs.netapp.com/us-en/ontap/flexcache-writeback/flexcache-write-back-overview.html["FlexCache 후기입 개요"^]참조하십시오.
+
+BlueXP 에서 FlexCache 볼륨을 관리하는 방법에 대한 자세한 내용은 를 https://docs.netapp.com/us-en/bluexp-volume-caching/index.html["BlueXP  볼륨 캐싱 문서"^]참조하십시오.
 
 
 
