@@ -808,4 +808,12 @@
   <block id="22bbad4e1cc44662dc7478520e4f0e07" category="list-text">Google 클라우드 스토리지로의 데이터 계층화는 PAYGO Explore에서 지원되지 않습니다.</block>
   <block id="9c6d70371c04fac1c5b3babc1c1a755e" category="list-text">BlueXP 에서 Cloud Volumes ONTAP의 새 인스턴스를 Google Cloud에 배포할 때 N1 시리즈 시스템을 더 이상 선택할 수 없습니다. n1 시리즈 머신은 기존 시스템에서만 유지되고 지원됩니다. Cloud Volumes ONTAP의 새로운 배포는 9.8 릴리스부터 Google Cloud에서만 지원됩니다. Cloud Volumes ONTAP 9.8 이상과 호환되는 n2 시리즈 기계로 전환하는 것이 좋습니다. 그러나 n1 시리즈 시스템은 API를 통해 수행되는 새로운 구축 환경에서 사용할 수 있습니다.</block>
   <block id="31269d00cd277adf90f42f882afbd293" category="list-text">향상된 쓰기 성능은 균형 있는 영구 디스크와 성능(SSD) 영구 디스크를 사용할 때 활성화됩니다.</block>
+  <block id="ae1d06c72e1d3684dc2b0784b447f8bb" category="section-title">9.15.1 P6(2025년 1월 20일)</block>
+  <block id="e685687a0700868820f260439fea454f" category="paragraph">이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P6 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="4d90d21642c7222312363da000d7409f" category="inline-link-macro">P6 패치에서 수정된 버그 목록을 봅니다</block>
+  <block id="6dab4a75e78f4da6ffbd02ad6871cda1" category="paragraph"><block ref="6c7645cce7e25bc9b23c20eb84477db8" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
+  <block id="1f3004ca828e883c15cacfbf9150d29e" category="section-title">9.15.1 P5(2025년 1월 20일)</block>
+  <block id="65e2877203eeb473a40f78bda7e6d3b4" category="paragraph">이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P5 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="e890150484086859b9a5078abe9c6f20" category="inline-link-macro">P5 패치에서 수정된 버그 목록을 봅니다</block>
+  <block id="294d0a8af93eae96d1bba19b5a5f69c4" category="paragraph"><block ref="df0857167980a53ee1e89853022218d5" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
 </blocks>
