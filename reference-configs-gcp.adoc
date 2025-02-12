@@ -184,4 +184,4 @@ Google Cloud에서는 aggregate에 동일한 유형과 크기의 디스크를 �
 
 == 지원 지역
 
-Google Cloud 지역 지원은 을 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+Google Cloud 지역 지원은 을 참조하십시오 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].

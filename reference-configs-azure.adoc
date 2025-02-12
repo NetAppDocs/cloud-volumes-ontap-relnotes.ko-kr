@@ -566,4 +566,4 @@ HA 쌍은 Azure Managed Disks를 사용합니다. 지원되는 디스크 유형 
 
 == 지원 지역
 
-Azure 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+Azure 지역 지원에 대해서는 을 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^]참조하십시오.

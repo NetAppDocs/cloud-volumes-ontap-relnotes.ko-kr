@@ -256,4 +256,4 @@ AWS 로컬 영역에서 이러한 인스턴스 유형에서는 빠른 쓰기 속
 
 == 지원 지역
 
-AWS 지역 지원은 를 참조하십시오 https://cloud.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
+AWS 지역 지원에 대해서는 을 참조하십시오 https://bluexp.netapp.com/cloud-volumes-global-regions["Cloud Volumes 글로벌 지역"^].
