@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.15.1 에는 새로운 향상 기능이 포함되어 있습니다. 
+summary: Cloud Volumes ONTAP 9.16.1 에는 새로운 향상 기능이 포함되어 있습니다. 
 ---
-= Cloud Volumes ONTAP 9.15.1 의 새로운 기능
+= Cloud Volumes ONTAP 9.16.1 의 새로운 기능
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,106 +14,15 @@ summary: Cloud Volumes ONTAP 9.15.1 에는 새로운 향상 기능이 포함되�
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.15.1 에는 새로운 개선 사항이 포함되어 있습니다.
+Cloud Volumes ONTAP 9.16.1 에는 새로운 개선 사항이 포함되어 있습니다.
 
 최신 버전의 BlueXP에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP 릴리스 정보"^] 를 참조하십시오.
 
 
 
-== 9.15.1 P6(2025년 1월 20일)
+== 9.16.1 GA(2025년 3월 6일)
 
-이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P6 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P6["P6 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
-
-
-
-== 9.15.1 P5(2025년 1월 20일)
-
-이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P5 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P5["P5 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
-
-
-
-== 9.15.1 P4(2024년 11월 25일)
-
-이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P4 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P4["P4 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
-
-
-
-== 9.15.1 P3(2024년 10월 29일)
-
-이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P3 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P3["P3 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
-
-
-
-== 9.15.1 P2(2024년 10월 14일)
-
-이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P2 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P2["P2 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
-
-
-
-== 9.15.1 P1(2024년 9월 3일)
-
-이제 모든 클라우드 공급자에 대해 Cloud Volumes ONTAP에서 9.15.1 P1 패치를 사용할 수 있습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.15.1P1["P1 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
-
-
-
-== 9.15.1 GA(2024년 8월 22일)
-
-Cloud Volumes ONTAP 9.15.1 GA는 현재 AWS, Azure 및 Google Cloud에서 사용할 수 있습니다. GA 버전은 배포 및 업그레이드에 사용할 수 있습니다.
-
-이 릴리스에는 Azure에 대한 다음과 같은 기능 및 개선 사항이 포함되어 있습니다. 이 새로운 기능을 지원하는 특정 구성에 대한 자세한 내용은 아래 내용을 참조하십시오.
-
-
-
-=== Azure에서 Premium SSD v2 Managed Disks 지원
-
-Premium SSD v2 Managed Disks가 이제 Azure 기반 Cloud Volumes ONTAP 시스템에서 지원됩니다. Premium SSD Managed Disks에 비해 이러한 프리미엄 디스크는 단일 노드와 HA(고가용성) 쌍 모두에서 더 저렴한 비용으로 더 높은 성능과 더 짧은 지연 시간을 제공합니다. 다른 관리형 디스크와 마찬가지로 최대 디스크 크기는 32TiB입니다. Premium SSD v2 Managed Disks의 성능(용량, 처리량, IOPS)을 구성할 수 있으므로 워크로드 효율성을 높이는 동시에 변화하는 성능 요구 사항을 충족할 수 있습니다.
-
-https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-storage.html#azure-storage["Azure 스토리지에 대해 알아보십시오"^]..
-
-
-
-=== Azure에서 단일 가용 영역에 HA 쌍을 배포합니다
-
-Cloud Volumes ONTAP 9.15.1부터 Azure의 AZ(단일 가용 영역)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이전의 비 영역 배포와 달리 Cloud Volumes ONTAP 9.15.1은 유연한 조정 모드에서 Microsoft Virtual Machine Scale Set을 사용하여 동일한 AZ 내에 별도의 장애 도메인을 포함한 모든 리소스를 배포하여 최적의 가용성을 보장합니다. 이 배포 모드는 기본적으로 다음 조건이 충족될 때 Premium SSD v2 Managed Disks를 사용합니다.
-
-* Cloud Volumes ONTAP 버전은 9.15.1 이상입니다.
-* 선택한 지역 및 영역은 Premium SSD v2 Managed Disks를 지원합니다. 지원되는 지역에 대한 자세한 내용은 을  https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure 웹 사이트: 지역별 제품"^]참조하십시오. 추가 방법은 을 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-deploying-otc-azure.html#launching-a-cloud-volumes-ontap-ha-pair-in-azure["Azure에서 Cloud Volumes ONTAP HA 쌍 시작"^]참조하십시오.
-* 이 구독은 Microsoft `Microsoft.Compute/VMOrchestratorZonalMultiFD` 기능에 대해 등록되었습니다. https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-saz-feature.html["단일 가용 영역에 대해 VMOrchestrator ZonalMultiFD를 사용하도록 설정하는 방법에 대해 알아보십시오"^]..
-
-
-이러한 조건 중 하나라도 충족되지 않으면 LRS(Local-Redundant Storage)에 대한 이전의 Non-zonal 배포 모드가 적용됩니다.
-
-
-
-=== 가상 머신 지원 확장 세트를 통해 모든 Azure HA 유형을 통합합니다
-
-Cloud Volumes ONTAP 9.15.1은 가상 머신 확장 세트를 Azure에서 유연한 오케스트레이션 모드로 활용하여 고가용성(HA) 쌍을 위해 단일 가용 영역에 VM(가상 머신) 인스턴스를 구축합니다. HA 모드, 페이지 Blob, LRS, ZRS(zone-redundant storage) 또는 다중 영역 및 LRS 영역(단일 AZ)의 모든 기능을 포함합니다.
-
-* https://learn.microsoft.com/en-us/azure/virtual-machine-scale-sets/["Microsoft Azure 설명서: Virtual Machine Scale Sets 설명서"^]
-* https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/concept-ha-azure.html["Azure의 고가용성 쌍에 대해 알아보십시오"^]..
-
-
-
-
-=== FlexCache 후기입 지원
-
-Cloud Volumes ONTAP 9.15.1부터 FlexCache Write-Back은 캐시에서 쓰는 대체 모드로 지원됩니다.
-
-이 기능에 대한 자세한 내용은 ONTAP 설명서를 https://docs.netapp.com/us-en/ontap/flexcache-writeback/flexcache-write-back-overview.html["FlexCache 후기입 개요"^]참조하십시오.
-
-BlueXP 에서 FlexCache 볼륨을 관리하는 방법에 대한 자세한 내용은 를 https://docs.netapp.com/us-en/bluexp-volume-caching/index.html["BlueXP  볼륨 캐싱 문서"^]참조하십시오.
+이제 Cloud Volumes ONTAP 9.16.1 일반 가용성 릴리즈를 Azure와 Google Cloud에서 배포 및 업그레이드할 때 사용할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다.
 
 
 
@@ -133,14 +42,17 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === 지원되는 업그레이드 경로입니다
 
-9.15.0 및 9.14.1 릴리스에서 Cloud Volumes ONTAP 9.15.1로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
+Azure 및 Google Cloud의 9.15.1 릴리즈에서 Cloud Volumes ONTAP 9.16.1 GA로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
+
+
+NOTE: AWS의 경우 이 업그레이드에 대한 메시지가 표시되지 않습니다. Cloud Volumes ONTAP 9.16.1 GA로의 업그레이드는 AWS에서 지원되지 않습니다.
 
 
 
 === 알아 보십시오
 
 * 단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.
-* HA 2노드 업그레이드는 무중단으로 I/O를 업그레이드할 수 있으며 이 무중단 업그레이드 프로세스 중에 각 노드가 동시 업그레이드되어 클라이언트에 I/O를 계속 제공합니다.
+* HA 쌍 업그레이드는 무중단으로 수행되며 I/O가 중단되지 않습니다. 이러한 무중단 업그레이드 프로세스 중에는 각 노드가 동시에 업그레이드되어 클라이언트에 입출력을 계속 제공합니다.
 
 
 
