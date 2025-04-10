@@ -4,7 +4,7 @@ permalink: concept-licensing.html
 keywords: freemium, professional, essential, licensing, licenses, cloud volumes ontap charging, cloud volumes ontap licenses, cloud volumes ontap licensing, cvo licenses, cvo licensing, byol, bring your own license, paygo, pay as you go 
 summary: Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구 사항에 맞는 구성을 선택할 수 있습니다. 
 ---
-= Cloud Volumes ONTAP에 대한 라이센싱입니다
+= Cloud Volumes ONTAP 라이센스 개요
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
