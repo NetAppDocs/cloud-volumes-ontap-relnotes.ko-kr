@@ -773,4 +773,12 @@
   <block id="f2642484d82ac71ab617437045e56b35" category="doc">Google Cloud의 Cloud Volumes ONTAP에 대한 스토리지 제한</block>
   <block id="0d965f3057c75408feddc192acd12da8" category="doc">Cloud Volumes ONTAP 클라우드 공급자와 협업할 수 있습니다</block>
   <block id="6e9c766eb64d674ed321c13842973979" category="paragraph">NetApp이 클라우드 공급자와 협력하여 잠재적인 문제를 해결하는 방법에 대해 알아보십시오.</block>
+  <block id="26207601cd717bed61f9a69941108f87" category="section-title">9.16.1 P2(2025년 4월 17일)</block>
+  <block id="c4792f112f7f491e5d7e61fba2f33329" category="paragraph">이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P2 패치를 배포하고 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">P2 패치에서 수정된 버그 목록을 봅니다</block>
+  <block id="448f9263b6e5828ecbede3a8f78d17eb" category="paragraph"><block ref="6454149a5f999950d701a0bf861b958d" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
+  <block id="008c5c510153b3136387ddcd33bc112c" category="section-title">9.16.1 P1(2025년 4월 17일)</block>
+  <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P1 패치를 배포 및 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">P1 패치에서 수정된 버그 목록을 봅니다</block>
+  <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
 </blocks>
