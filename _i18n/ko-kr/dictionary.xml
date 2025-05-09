@@ -184,8 +184,6 @@
   <block id="406156e49006d700786c581646d94504" category="paragraph">Cloud Volumes ONTAP의 데이터를 Google 클라우드 스토리지 버킷으로 계층화하는 것은 현재 프라이빗 서비스 Connect에서 지원되지 않습니다.</block>
   <block id="7bb35241d1246d5dc87cb9e61c1efc05" category="summary">이러한 알려진 제한은 Microsoft Azure의 Cloud Volumes ONTAP에만 적용됩니다.</block>
   <block id="4e9780ecc95f5dbfb27e64e3ded5cd85" category="paragraph">Microsoft Azure의 Cloud Volumes ONTAP에는 다음과 같은 알려진 제한 사항이 있습니다. 또한 반드시 검토하십시오 <block ref="edcf15b4d9d7d1e018ccca7ce112dd3e" category="inline-link-macro-rx"></block>.</block>
-  <block id="0066e8873a17823db601b98ebbc37dd2" category="section-title">HA 제한 사항</block>
-  <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">일부 지역에서는 HA 쌍이 지원되지 않습니다.</block>
   <block id="d91c9372e1fdf74d651217f1a36e518b" category="inline-link">지원되는 Azure 지역 목록을 봅니다</block>
   <block id="5520e32d61a58dff51fc6730939c3baf" category="summary">Cloud Volumes ONTAP은 안정적인 운영을 제공하기 위해 Google Cloud에서 스토리지 구성 제한을 가지고 있습니다. 최상의 성능을 위해 시스템을 최대 값으로 구성하지 마십시오.</block>
   <block id="47a5e6e39f64ff5d5dfb25da1aa3f3f2" category="cell">500GB</block>
@@ -781,4 +779,10 @@
   <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P1 패치를 배포 및 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">P1 패치에서 수정된 버그 목록을 봅니다</block>
   <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
+  <block id="77d9dd558dce394d624e008a5015c43e" category="section-title">고가용성 구축의 제한사항</block>
+  <block id="47e6c824f3fe7a0a707fd6f94c2b0d5e" category="paragraph">일부 지역에서는 고가용성(HA) 쌍이 지원되지 않습니다.</block>
+  <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">단일 가용 영역에서 HA 구축의 제한 사항</block>
+  <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Azure에서 단일 가용 영역에 HA 쌍을 구축합니다</block>
+  <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">Cloud Volumes ONTAP 9.15.1부터 Azure의 AZ(단일 가용 영역)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이 기능을 지원하는 기준에 대한 자세한 내용은 을<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block>참조하십시오.</block>
+  <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Cloud Volumes ONTAP 버전이 9.15.1 이전 버전이거나 이러한 조건이 충족되지 않으면 가용성 집합을 사용하는 이전 배포 모델이 적용됩니다. 이 제한은 HA 구성에만 적용됩니다.</block>
 </blocks>
