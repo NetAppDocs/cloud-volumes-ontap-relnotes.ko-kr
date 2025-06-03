@@ -78,13 +78,3 @@ NOTE: AWS의 경우 이 업그레이드에 대한 메시지가 표시되지 않�
 * 단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.
 * HA 쌍 업그레이드는 무중단으로 수행되며 I/O가 중단되지 않습니다. 이러한 무중단 업그레이드 프로세스 중에는 각 노드가 동시에 업그레이드되어 클라이언트에 입출력을 계속 제공합니다.
 
-
-
-
-=== C4, M4 및 R4 인스턴스는 더 이상 지원되지 않습니다
-
-AWS에서 C4, M4 및 R4 EC2 인스턴스 유형은 더 이상 Cloud Volumes ONTAP에서 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 시스템이 있는 경우 C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경해야 합니다. 인스턴스 유형을 변경하기 전에는 이 릴리즈로 업그레이드할 수 없습니다.
-
-link:https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-change-ec2-instance.html["Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경하는 방법에 대해 알아보십시오"^].
-
-을 참조하십시오 link:https://mysupport.netapp.com/info/communications/ECMLP2880231.html["NetApp 지원"^] 이러한 인스턴스 유형의 가용성 및 지원에 대한 자세한 내용을 보려면 를 참조하십시오.

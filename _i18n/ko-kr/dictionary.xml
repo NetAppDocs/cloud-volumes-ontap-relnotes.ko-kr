@@ -499,8 +499,6 @@
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP에 대한 고지 사항</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경하는 방법에 대해 알아보십시오</block>
-  <block id="09ea0908fbfc4cde85bf416e35dc55c8" category="inline-link-macro">NetApp 지원</block>
-  <block id="0b55c70d5652d8fe1f5ddc75633eaa95" category="paragraph">을 참조하십시오 <block ref="0bcfd67fb2b966e3378fbf640ee81a22" category="inline-link-macro-rx"></block> 이러한 인스턴스 유형의 가용성 및 지원에 대한 자세한 내용을 보려면 를 참조하십시오.</block>
   <block id="fd1f8e9df9f2971a09de148f57ee5ce0" category="section-title">소프트웨어 업데이트는 BlueXP에서 완료해야 합니다</block>
   <block id="c6925d752394e325c0b435137fbe997c" category="paragraph">Cloud Volumes ONTAP 업그레이드는 BlueXP에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.</block>
   <block id="93931e849ddff0b1178bc9a719400883" category="paragraph">클라우드 공급자의 콘솔에서 Cloud Volumes ONTAP 구성을 변경하면 지원되지 않는 구성이 발생합니다. BlueXP에서 생성 및 관리하는 Cloud Volumes ONTAP 리소스에 대한 모든 변경 사항은 시스템 안정성과 BlueXP의 시스템 관리 능력에 영향을 줄 수 있습니다.</block>
@@ -555,7 +553,6 @@
   <block id="72e0d2497593ac6a5fdc024537224aed" category="list-text">이러한 VM 유형은 공유 관리 디스크에서 실행되는 단일 가용성 영역 구성의 HA 쌍에만 지원됩니다.</block>
   <block id="33031b274bf5d81fbfbd69c1f2ea39a2" category="list-text">N2-표준-48</block>
   <block id="7c347fcea29ffaea485ee6128a9d7a06" category="list-text">N2-표준-64</block>
-  <block id="41104125a8a3ef6fe8985ff4df5257be" category="paragraph">AWS에서 C4, M4 및 R4 EC2 인스턴스 유형은 더 이상 Cloud Volumes ONTAP에서 지원되지 않습니다. C4, M4 또는 R4 인스턴스 유형에서 실행 중인 기존 시스템이 있는 경우 C5, M5 또는 R5 인스턴스 제품군의 인스턴스 유형으로 변경해야 합니다. 인스턴스 유형을 변경하기 전에는 이 릴리즈로 업그레이드할 수 없습니다.</block>
   <block id="8e8865183ac138d80e1eac90bc023d09" category="list-text">Cloud Volumes ONTAP 소프트웨어 버전 9.13.0,_Flash Cache_, 고속 쓰기 속도 및 8,896바이트의 더 높은 MTU(최대 전송 단위)를 사용하여 다음의 HA 쌍 구축 인스턴스를 사용할 수 있습니다.</block>
   <block id="f23467ff8f84fc95ca2baa4b362c7865" category="inline-link">Google Cloud에서 HA 쌍 시작</block>
   <block id="13a86b4a06586a14808c627b883e338d" category="admonition">_Flash Cache_, 높은 쓰기 모드 및 8,896의 MTU는 기능별로 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다.</block>
@@ -789,4 +786,25 @@
   <block id="79d2490a076742db13fbcc8f0776a458" category="paragraph">이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P3 패치를 배포 및 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
   <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">P3 패치에서 수정된 버그 목록을 봅니다</block>
   <block id="4beb9f52d4c281cb89fd47e4aaa780cf" category="paragraph"><block ref="77df283c529cda018d08e767dda3eebd" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
+  <block id="fbb17e3b93a1070f3de5e45b66842d95" category="list-text">AWS 로컬 영역의 Cloud Volumes ONTAP 구성은 GP2(General Purpose SSD) 디스크 유형만 지원합니다. AWS 로컬 영역의 Cloud Volumes ONTAP에서는 다른 디스크 유형이 지원되지 않습니다.</block>
+  <block id="f051f95f393c93123644b448ca3165c0" category="paragraph">Cloud Volumes ONTAP은 더 이상 AWS에서 c4, m4, r4 EC2 인스턴스 유형을 지원하지 않습니다. 시스템이 c4, m4 또는 r4 인스턴스에서 실행되는 경우 c5, m5 또는 r5 인스턴스로 변경하세요. 인스턴스 유형을 변경하기 전에는 이 릴리즈로 업그레이드할 수 없습니다.</block>
+  <block id="2f8299f876158db323c08455b12b585a" category="paragraph">자세한 내용은 다음을 참조하십시오.</block>
+  <block id="304f5226697d03123fa4611d02bf8546" category="inline-link">지식 기반(KB) 문서: AWS Xen CVO 인스턴스를 Nitro KVM으로 변환</block>
+  <block id="0dc3c417fc362585e0e7b3798f00b8bb" category="list-text"><block ref="0dc3c417fc362585e0e7b3798f00b8bb" category="inline-link-rx"></block></block>
+  <block id="b5dc3ce37b75c52be2427ecee207d24f" category="inline-link">KB 문서: 디스크 수 오류로 인해 인스턴스 유형을 r4에서 r5로 변경할 수 없습니다.</block>
+  <block id="9ed042e52baa279a92fcf5c7a432ecf5" category="list-text"><block ref="9ed042e52baa279a92fcf5c7a432ecf5" category="inline-link-rx"></block></block>
+  <block id="ee47ffaac80894c9307ca443c334cf79" category="inline-link-macro">이러한 인스턴스 유형에 대한 가용성 및 지원 종료에 대해 자세히 알아보세요.</block>
+  <block id="c0857a6c0ade184c3afe7f293fc01755" category="list-text"><block ref="c0857a6c0ade184c3afe7f293fc01755" category="inline-link-macro-rx"></block></block>
+  <block id="f9f7c1c9687f8f087477f0ae4cac6b45" category="inline-link">Microsoft Azure 설명서</block>
+  <block id="e2f4ab859b01d65da06c213f94a69131" category="paragraph">지원되는 인스턴스 사양은 다음을 참조하세요. <block ref="84495d3a9882d3bd6b6590d973db25e5" category="inline-link-rx"></block> .</block>
+  <block id="5639612d2f12168c8a83a7d9f034340d" category="inline-link">Azure(단일 노드)</block>
+  <block id="88e2312354057a90322664c2df9708ae" category="list-text">^4^ 단일 노드 배포에서 지원되는 디스크 유형에 대한 정보는 다음을 참조하세요. <block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block> . 단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다. 구축하는 동안이나 그 후 언제든지 BlueXP 에서 높은 쓰기 속도를 설정할 수 있습니다.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.. SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.</block>
+  <block id="9116d248ecfb6241ae0ac82e933291a7" category="cell">지원되는 디스크 유형 ^6^</block>
+  <block id="70ed196a226ad517ee4fecdca325036d" category="inline-link">Azure(HA 쌍,</block>
+  <block id="129a14de9bbb8e2dc343a37a19f5ea3d" category="list-text">HA 배포에 지원되는 단일 및 다중 가용성 영역에 대한 디스크 유형에 대한 정보는 다음을 참조하세요. <block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block> .</block>
+  <block id="7ec816bcf3858e037c57a46bfa8643ba" category="paragraph">특정 머신 유형에 대한 자세한 내용은 Google Cloud 문서를 참조하세요.</block>
+  <block id="7f53645b2b3a6e77999ceeea01208792" category="inline-link">n1 시리즈 일반용 기계 유형</block>
+  <block id="b10cf18ba66c2ae046931259e614fe81" category="list-text"><block ref="b10cf18ba66c2ae046931259e614fe81" category="inline-link-rx"></block></block>
+  <block id="d59a55e5a766d0a45a73ef03504c6b5b" category="inline-link">N2 시리즈 일반용 기계 유형</block>
+  <block id="0ab6f9218085a410dabf81dbe7da1b1a" category="list-text"><block ref="0ab6f9218085a410dabf81dbe7da1b1a" category="inline-link-rx"></block></block>
 </blocks>

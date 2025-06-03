@@ -164,6 +164,12 @@ NOTE: _Flash Cache_, 높은 쓰기 모드 및 8,896의 MTU는 기능별로 다�
 
 --
 ====
+특정 머신 유형에 대한 자세한 내용은 Google Cloud 문서를 참조하세요.
+
+* https://cloud.google.com/compute/docs/general-purpose-machines#n1_machines["n1 시리즈 일반용 기계 유형"^]
+* https://cloud.google.com/compute/docs/general-purpose-machines#n2_series["N2 시리즈 일반용 기계 유형"^]
+
+
 
 
 == 지원되는 디스크 크기입니다
