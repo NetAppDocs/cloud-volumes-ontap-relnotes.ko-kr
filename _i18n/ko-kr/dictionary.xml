@@ -815,5 +815,6 @@
   <block id="4e2d7e12a50a6543c1e295c672343668" category="cell">최적화된 ^4^</block>
   <block id="dd47c5ffc608943bbe951c1bc249e4a3" category="inline-link">Cloud Volumes ONTAP의 새로운 기능</block>
   <block id="6d0094db764c8adadbabb02e37cfc44d" category="admonition">_Flash Cache_, 높은 쓰기 모드 및 8,896의 MTU는 기능별로 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. . ^4^ 2025년 7월 1일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Google Cloud 마켓플레이스에서 PAYGO(Pay-as-you-go) 구독을 구매하거나 갱신할 수 없습니다. 자세한 내용은 을<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block>참조하십시오.</block>
-  <block id="3cf421bc57be614ba02e4f59f34859a2" category="paragraph">Cloud Volumes ONTAP Azure 가상 머신(VM) 확장을 지원하지 않습니다. VM 확장은 작업 지연을 유발하기 때문입니다. Cloud Volumes ONTAP 배포 후 BlueXP VM 확장을 주기적으로 비활성화합니다. 작업 환경에 이러한 확장을 설치한 경우 Microsoft Azure 지원팀에 문의하여 비활성화하거나 삭제하십시오.</block>
+  <block id="1eb96c178e7f735868c3e0db46da5177" category="paragraph">Cloud Volumes ONTAP Azure 가상 머신(VM) 확장 프로그램을 지원하지 않습니다. 이는 BlueXP 관리 작업에 영향을 미치기 때문입니다. BlueXP 배포 과정에서 VM에 확장 프로그램이 설치되는 것을 차단합니다. 기존 Cloud Volumes ONTAP VM에 확장 프로그램이 이미 설치되어 있는 경우, NetApp Microsoft Azure 지원팀에 문의하여 제거할 것을 강력히 권장합니다.</block>
+  <block id="816bcc0866a6fd49370b7a416001b4e9" category="paragraph">2025년 7월 14일부터 NetApp Cloud Volumes ONTAP VM에서 VM 확장이 감지되면 BlueXP 에서 알림을 보내고 이메일을 보냅니다.</block>
 </blocks>
