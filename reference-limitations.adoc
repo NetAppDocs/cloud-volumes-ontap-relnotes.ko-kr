@@ -44,6 +44,10 @@ Cloud Volumes ONTAP에서 다중 관리 검증을 활성화하면 지원되지 �
 * SnapLock 규정 준수 및 엔터프라이즈 모드(클라우드 WORM만 지원)
 * SnapMirror Synchronous
 * VLAN
+* SMB 지속적 가용성(CA)
++
+https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Availability_CA_Shares["지속적으로 이용 가능한 SMB 주식"^] 중단 없는 운영에는 지원되지 않습니다.
+
 
 
 

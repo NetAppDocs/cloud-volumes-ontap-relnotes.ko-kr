@@ -310,7 +310,6 @@
   <block id="eb43b40e67fff3351b74b6f875e497b9" category="paragraph">Microsoft는 Cloud Volumes ONTAP VM에 영향을 줄 수 있는 Azure VM(가상 머신) 인프라의 유지보수 이벤트를 예약하고 프로그래밍 방식으로 알립니다. 이러한 이벤트는 유지 보수 기간 15분 전에 발표됩니다.</block>
   <block id="5e486cb2e38fc7f03f038af21eb3cdb9" category="paragraph">Cloud Volumes ONTAP HA(고가용성) 쌍에서는 유지 관리 이벤트에 대한 특별한 처리가 지원됩니다. 애플리케이션 상태를 유지하기 위해 사전 예방 테이크오버 를 수행하여 안정성을 우선으로 결정합니다. 15초 이상의 연결이 끊어지면 페일오버 기능이 비활성화됩니다.</block>
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">유지보수 윈도우가 공지되면 타겟 노드의 파트너 노드가 테이크오버 수행 유지 관리가 완료되면 반환이 시작됩니다. 반환 후 HA 쌍이 정상 상태로 돌아올 것으로 예상됩니다. 이렇게 하지 않으면 NetApp Support에 문의하십시오. 유지보수 이벤트는 한 번에 HA 쌍 내의 VM 중 하나를 대상으로 하며, 일반적으로 두 노드는 비교적 짧은 기간 동안 타겟으로 합니다.</block>
-  <block id="1355c3042f61af06b4a61506de6e8ad1" category="paragraph">Cloud Volumes ONTAP에서 지속적으로 사용할 수 없는 CIFS 공유를 사용하는 CIFS/SMB 클라이언트는 인수 발생 시, 그리고 세션에서 사용하는 aggregate가 다시 애그리게이트의 홈 노드로 제공되면 모두 세션이 손실됩니다. 이는 CIFS/SMB 프로토콜 자체에 의해 적용되는 제한 사항입니다. 고객은 Takeover 및 Giveback에서 발생할 수 있는 문제를 방지하기 위해 타사 제품을 사용할 수 있습니다. 자세한 내용은 NetApp Support에 문의하십시오.</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
   <block id="6016a2b341113bf496b719905398ecd2" category="section-title">저작권</block>
@@ -817,4 +816,9 @@
   <block id="6d0094db764c8adadbabb02e37cfc44d" category="admonition">_Flash Cache_, 높은 쓰기 모드 및 8,896의 MTU는 기능별로 다르며 구성된 인스턴스 내에서 개별적으로 비활성화할 수 없습니다. . ^4^ 2025년 7월 1일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Google Cloud 마켓플레이스에서 PAYGO(Pay-as-you-go) 구독을 구매하거나 갱신할 수 없습니다. 자세한 내용은 을<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="1eb96c178e7f735868c3e0db46da5177" category="paragraph">Cloud Volumes ONTAP Azure 가상 머신(VM) 확장 프로그램을 지원하지 않습니다. 이는 BlueXP 관리 작업에 영향을 미치기 때문입니다. BlueXP 배포 과정에서 VM에 확장 프로그램이 설치되는 것을 차단합니다. 기존 Cloud Volumes ONTAP VM에 확장 프로그램이 이미 설치되어 있는 경우, NetApp Microsoft Azure 지원팀에 문의하여 제거할 것을 강력히 권장합니다.</block>
   <block id="816bcc0866a6fd49370b7a416001b4e9" category="paragraph">2025년 7월 14일부터 NetApp Cloud Volumes ONTAP VM에서 VM 확장이 감지되면 BlueXP 에서 알림을 보내고 이메일을 보냅니다.</block>
+  <block id="48a1881670db273e8743aa5bc3c47be1" category="list-text">SMB 지속적 가용성(CA)</block>
+  <block id="66f1432987337e84ca83c5bdf6848b9e" category="inline-link">지속적으로 이용 가능한 SMB 주식</block>
+  <block id="b469f24f7b40dd39d564f20b26834f51" category="paragraph"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block> 중단 없는 운영에는 지원되지 않습니다.</block>
+  <block id="a658c03927efcbcb7170fb429c8a9408" category="paragraph">Cloud Volumes ONTAP 비연속 사용 가능 CIFS 공유를 사용하는 CIFS/SMB 클라이언트는 세션 인계가 발생할 때와 세션에서 사용 중인 집계가 집계의 홈 노드로 반환될 때 세션 손실을 경험하게 됩니다. 이는 CIFS/SMB 프로토콜 자체의 제한 사항입니다. 승인된 타사 제품을 사용하면 인계 및 반환으로 인한 문제를 방지할 수 있습니다. 추가 지원이 필요하면 NetApp 지원팀에 문의하십시오.</block>
+  <block id="c04ba4ba4463685b70d448688626a589" category="admonition"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block> 중단 없는 작업은 Cloud Volumes ONTAP 에서 지원되지 않습니다.</block>
 </blocks>
