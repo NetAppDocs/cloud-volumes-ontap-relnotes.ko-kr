@@ -821,4 +821,8 @@
   <block id="b469f24f7b40dd39d564f20b26834f51" category="paragraph"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block> 중단 없는 운영에는 지원되지 않습니다.</block>
   <block id="a658c03927efcbcb7170fb429c8a9408" category="paragraph">Cloud Volumes ONTAP 비연속 사용 가능 CIFS 공유를 사용하는 CIFS/SMB 클라이언트는 세션 인계가 발생할 때와 세션에서 사용 중인 집계가 집계의 홈 노드로 반환될 때 세션 손실을 경험하게 됩니다. 이는 CIFS/SMB 프로토콜 자체의 제한 사항입니다. 승인된 타사 제품을 사용하면 인계 및 반환으로 인한 문제를 방지할 수 있습니다. 추가 지원이 필요하면 NetApp 지원팀에 문의하십시오.</block>
   <block id="c04ba4ba4463685b70d448688626a589" category="admonition"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block> 중단 없는 작업은 Cloud Volumes ONTAP 에서 지원되지 않습니다.</block>
+  <block id="804568356abbd917c2b16399c1d74469" category="section-title">9.16.1 P5(2025년 7월 28일)</block>
+  <block id="b18cddec63bbac4d331412b33193f19d" category="paragraph">이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP 에 9.16.1 P5 패치를 배포하고 업그레이드할 수 있습니다. 하지만 이 버전은 AWS에서는 배포 및 업그레이드할 수 없습니다. BlueXP 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="e890150484086859b9a5078abe9c6f20" category="inline-link-macro">P5 패치에서 수정된 버그 목록을 확인하세요</block>
+  <block id="594276b7568f8909a2e4145873978b46" category="paragraph"><block ref="be3338d2845a087c634560014a857fc0" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인이 필요합니다).</block>
 </blocks>
