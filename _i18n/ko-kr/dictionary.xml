@@ -78,7 +78,6 @@
   <block id="4ab1bc7e6fe6c19a70cc9470efcb6c1e" category="cell">애그리게이트당 최대 RAID 그룹 수</block>
   <block id="c4ca4238a0b923820dcc509a6f75849b" category="cell">1</block>
   <block id="2a01d572b1447155c310cabafac3fae9" category="paragraph">참고:</block>
-  <block id="fa1fa971d1018dcdfc6e158b981c33cb" category="list-text">HA 2노드에서 두 노드 모두에 18개의 애그리게이트를 생성할 수 없습니다. 그렇게 할 경우 데이터 디스크 제한이 초과되기 때문입니다.</block>
   <block id="a870388a8127cdf99988ab2766dc4972" category="list-text">애그리게이트 용량 한도는 애그리게이트를 구성하는 디스크를 기준으로 합니다. 이 제한에는 데이터 계층화에 사용되는 오브젝트 스토리지가 포함되지 않습니다.</block>
   <block id="a40e4d3ab198f5d9c9e23e409e7abae3" category="list-text">Aggregate의 모든 디스크는 동일한 크기여야 합니다.</block>
   <block id="a95e3bd264855a83a2c90be11b509673" category="section-title">스토리지 VM 제한</block>
@@ -220,7 +219,6 @@
   <block id="7916f32f06eaabdf61df576419c0c138" category="cell">2TiB</block>
   <block id="705c8901d15869a7116491b156af6fbe" category="cell">368TiB^2^</block>
   <block id="6e9a8a2df40afea5890a6ea81b2df2b2" category="cell">라이센스당 368TiB ^2^</block>
-  <block id="71235138fc0c3fda4c8fc946f34c4367" category="cell">2 PiB^2^</block>
   <block id="3e7433721426ddc5bb6007a1f480b7e0" category="cell">지원되는 디스크 유형입니다</block>
   <block id="6cd4ae2aba2a092cf2052266e4fcdc94" category="list-text">프로비저닝된 IOPS SSD (i1)^3^</block>
   <block id="320a1bc96a642b93ac47eb0838fbf1ff" category="list-text">처리량 최적화 HDD(st1)^4^</block>
@@ -421,7 +419,6 @@
   <block id="40b796d47ecd5587aabc0ea65d661911" category="cell">최대 애그리게이트 크기 ^1^</block>
   <block id="fd09e7b7125ae29e623561a2b5d68449" category="cell">1-12^3^</block>
   <block id="e2f4de94176ab48a70e3d04c548660fd" category="list-text">노드 기반 라이센스를 사용하는 경우 384TiB에 도달하려면 2개의 BYOL 라이센스가 필요합니다.</block>
-  <block id="73cbcc5508ae5bff313fecfcc6e16834" category="paragraph">이러한 제한은 테스트를 거친 것입니다. 이론적으로는 추가 스토리지 VM을 구성할 수 있지만 이는 지원되지 않습니다.</block>
   <block id="f732decff3cb02f88745e152cc078819" category="list-text">각 스토리지 VM은 최대 3개의 LIF를 가질 수 있으며, 여기서 2개의 LIF는 데이터 LIF이고 1개는 SVM 관리 LIF입니다.</block>
   <block id="e70747c71702cdc100bd5f592ed452be" category="summary">Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구 사항에 맞는 구성을 선택할 수 있습니다.</block>
   <block id="8efc36afc2e7202a9c9bda00b8e8a75d" category="section-title">라이센스 개요</block>
@@ -465,7 +462,6 @@
   <block id="b7d71850fd138e6cd477a1887cc244f3" category="cell">애그리게이트당 디스크 ^4^</block>
   <block id="449daf85c71a9f8eb7c666134b1d9b95" category="list-text">1-6</block>
   <block id="734bf70b1c522fd659b58c67d2c015e9" category="list-text">1-8 탄성 볼륨 ^3^</block>
-  <block id="4d7bfec0bd52de6919125094b75ca0d4" category="list-text">최대 애그리게이트 크기는 애그리게이트를 구성하는 디스크를 기반으로 합니다. 이 제한에는 데이터 계층화에 사용되는 오브젝트 스토리지가 포함되지 않습니다.</block>
   <block id="70fb554e00e352dd7da6941d99b53751" category="inline-link">Elastic Volumes 지원에 대해 자세히 알아보십시오</block>
   <block id="dc2065e297a9790d182a555ba250dbda" category="cell">노드 기반 BYOL</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xLarge</block>
@@ -481,17 +477,13 @@
   <block id="e7caa46d6e70a5b96752b4644b9f1527" category="paragraph">이 제한에는 부팅 디스크 및 루트 디스크가 포함되지 않습니다.</block>
   <block id="e8ea7579109541b8654ac77df6ec5b21" category="list-text">디스크를 단독으로 사용하거나 디스크 및 콜드 데이터 계층화를 오브젝트 스토리지에 사용할 경우 최대 시스템 용량이 표시됩니다.</block>
   <block id="dd81441aed81dac4d773ef1291a64e00" category="list-text">Cloud Volumes ONTAP는 EBS 볼륨을 디스크로 사용하며 최대 디스크 크기는 16TiB입니다.</block>
-  <block id="6f55661d86c0b385d8b362ed90701d0d" category="section-title">용량 기반 라이센스 제한</block>
   <block id="54fe37b73954e37cae21db9bbd66c952" category="inline-link">Cloud Volumes ONTAP 라이센스 옵션에 대해 자세히 알아보십시오</block>
   <block id="5aabc9069557be7e4aeff466605cbc75" category="section-title">단일 노드</block>
-  <block id="6c3b49ddb811c2d88edee86163680009" category="section-title">노드 기반 라이센스의 제한</block>
   <block id="d017aa906544a3348ee35d75ebb10b72" category="paragraph">노드별 Cloud Volumes ONTAP 라이센스를 설정할 수 있는 이전 세대 라이센스 모델인 노드 기반 라이센스를 사용하는 Cloud Volumes ONTAP 시스템에는 다음과 같은 디스크 제한이 적용됩니다. 기존 고객은 노드 기반 라이센스를 계속 사용할 수 있습니다.</block>
   <block id="fff4bb20e652c529e2e22e76e56ed9b5" category="section-title">PAYGO Premium이 포함된 단일 노드</block>
   <block id="a9698a2172c5fcc72b7ecd7910403955" category="section-title">BYOL, 단일 노드</block>
   <block id="9dbb7f356b08de585f6ddbe523e4a8d8" category="section-title">PAYGO Premium과 HA 쌍</block>
   <block id="1bc398eeb632d3ea2f565d86881775d8" category="section-title">BYOL의 HA 쌍</block>
-  <block id="8839c374fd950d105b5836c5400c37e3" category="paragraph">용량 제한은 사용하는 VM 크기와 단일 노드 시스템을 사용하는지 HA 쌍을 사용하는지에 따라 다릅니다.</block>
-  <block id="10e6e33e8d7a64d70c731d40ea252ed8" category="paragraph">다음 노트는 아래 표에 표시되는 숫자에 대한 세부 정보를 제공합니다.</block>
   <block id="bbeef84c33f1676ea87c5c7f476795e6" category="paragraph">이 제한에는 루트 디스크, 코어 디스크 및 VNVRAM이 포함되지 않습니다.</block>
   <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">특정 VM 크기의 단일 노드 시스템에 대해 나열되는 896TiB 디스크 기반 제한은_pECTED_LIMIT입니다.</block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP에 대한 고지 사항</block>
@@ -509,7 +501,6 @@
   <block id="30749b02bc62d931d770e6c719254e7b" category="list-text">BlueXP 인터페이스는 Standard 및 BYOL:n1-highmem-4에 대해 지원되는 추가 시스템 유형을 보여 줍니다. 그러나 이 기계 유형은 생산 환경에 사용할 수 없습니다. 특정 연구소 환경에서만 사용할 수 있도록 만들었습니다.</block>
   <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">BlueXP 릴리스 정보</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP API 엔드포인트</block>
-  <block id="40aa449308d0af16355f19e61ffe344b" category="paragraph">아니요, 그렇지 않습니다. HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 Google Cloud에서 장애가 발생할 경우 데이터를 사용할 수 있습니다. 예를 들어 노드 A에서 8TB 디스크를 구입한 경우 BlueXP는 미러링된 데이터에 사용되는 노드 B에도 8TB 디스크를 할당합니다. 16TB의 용량을 프로비저닝했지만 라이센스 제한에 대해 8TB만 계산합니다.</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">HA 쌍의 경우, 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">HA 쌍의 경우, 미러링된 데이터가 라이센스 용량 제한에 대해 계산됩니까?</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3^2^</block>
@@ -576,7 +567,6 @@
   <block id="81a074db33c6f62838933c92142f16d6" category="paragraph"><block ref="f969ecf664fae2f86e88c525c7dd7acf" category="inline-link-rx"></block>.</block>
   <block id="70a8e1fb7e815dcae7d43566ab0db1e7" category="paragraph"><block ref="45c029924054162202773bd86e09b271" category="inline-link-rx"></block>.</block>
   <block id="a990fdc46668be8e7f963c8df127bbe8" category="paragraph">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 자세한 내용은 아래의 용량 및 디스크 제한을 참조하십시오.</block>
-  <block id="100e0e5b58741c034dadba013998e8b8" category="list-text">Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우, 애그리게이트에 최대 8개의 디스크를 포함할 수 있어 최대 128TiB의 용량을 제공합니다. GP3 또는 io1 디스크를 사용하는 경우 Amazon EBS Elastic Volumes 기능은 기본적으로 ON_NEW_Cloud Volumes ONTAP 9.11.0 이상의 시스템에서 활성화됩니다.<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
   <block id="c0ad13124302d4d047c0f916a6418182" category="paragraph"><block ref="cc3941262f254d1055804ecddca39dec" category="inline-link-rx"></block>.</block>
   <block id="4bdb15bfe1bad472d818dc31e8f53185" category="paragraph">최신 버전의 BlueXP에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오<block ref="c7887e85c6060ae2594d873a0f2ae025" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="a92c2d98e174fb58a9af451a8c3413f9" category="paragraph"><block ref="8271d50d033781f1596acf863334de58" category="inline-link-macro-rx"></block>.</block>
@@ -812,8 +802,6 @@
   <block id="549504876cb29a5866aca5cf3802fe6d" category="list-text">^4^ 이러한 VM 유형은 공유 관리 디스크에서 실행되는 단일 가용성 영역과 여러 가용성 영역 구성의 HA 쌍에서 지원됩니다. LS_v3 VM 유형의 경우 여러 가용 영역 지원은 ONTAP 버전 9.13.1부터 시작합니다. EDS_v5 VM 유형의 경우 여러 가용 영역 지원은 ONTAP 버전 9.14.1 RC1부터 시작합니다.</block>
   <block id="4e2d7e12a50a6543c1e295c672343668" category="cell">최적화된 ^4^</block>
   <block id="dd47c5ffc608943bbe951c1bc249e4a3" category="inline-link">Cloud Volumes ONTAP의 새로운 기능</block>
-  <block id="1eb96c178e7f735868c3e0db46da5177" category="paragraph">Cloud Volumes ONTAP Azure 가상 머신(VM) 확장 프로그램을 지원하지 않습니다. 이는 BlueXP 관리 작업에 영향을 미치기 때문입니다. BlueXP 배포 과정에서 VM에 확장 프로그램이 설치되는 것을 차단합니다. 기존 Cloud Volumes ONTAP VM에 확장 프로그램이 이미 설치되어 있는 경우, NetApp Microsoft Azure 지원팀에 문의하여 제거할 것을 강력히 권장합니다.</block>
-  <block id="816bcc0866a6fd49370b7a416001b4e9" category="paragraph">2025년 7월 14일부터 NetApp Cloud Volumes ONTAP VM에서 VM 확장이 감지되면 BlueXP 에서 알림을 보내고 이메일을 보냅니다.</block>
   <block id="48a1881670db273e8743aa5bc3c47be1" category="list-text">SMB 지속적 가용성(CA)</block>
   <block id="66f1432987337e84ca83c5bdf6848b9e" category="inline-link">지속적으로 이용 가능한 SMB 주식</block>
   <block id="b469f24f7b40dd39d564f20b26834f51" category="paragraph"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block> 중단 없는 운영에는 지원되지 않습니다.</block>
@@ -830,4 +818,41 @@
   <block id="004557d03a688223801f3c9351c02ee9" category="cell">최적화된 ^7^</block>
   <block id="8642a53dd7d0662eb87089fce9268665" category="list-text">^7^ 2025년 8월 11일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Azure Marketplace에서 PAYGO(종량제) 구독을 구매하거나 갱신할 수 없습니다. 자세한 내용은 다음을 참조하세요. <block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block> .</block>
   <block id="a11297aa85d33243a4a5a316eb075590" category="list-text">^4^ 2025년 8월 11일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Google Cloud 마켓플레이스에서 PAYGO(Pay-as-you-go) 구독을 구매하거나 갱신할 수 없습니다.  자세한 내용은 다음을 참조하세요.<block ref="1080c8772df7208f65fb600e0d40b155" category="inline-link-rx"></block> .</block>
+  <block id="8d051a62e2d203f6829d7d7282bfaad2" category="inline-link">FabricPool 모범 사례</block>
+  <block id="1fa61fc2f5b77b2d0fa94849b6af3dbb" category="paragraph">용량 기반 라이선싱을 통해 각 Cloud Volumes ONTAP 시스템은 개체 스토리지에 대한 계층화를 지원합니다.  전체 계층형 용량은 클라우드 제공자의 버킷 한도까지 확장될 수 있습니다.  라이센스에는 용량 제한이 부과되지 않지만 다음을 따라야 합니다.<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block> 계층화를 구성하고 관리할 때 최적의 성능, 안정성 및 비용 효율성을 보장합니다.</block>
+  <block id="847e3ee04fb8abbb4d0d1afa56101a04" category="cell">유연한 ^2^</block>
+  <block id="fe70a2c1423d8dc6d93d9ed56139eace" category="inline-link">Azure VM 관리 확장을 Cloud Volume ONTAP 에 설치할 수 있나요?</block>
+  <block id="9afd5f64e8e4dee128f7ec6ba0028fe0" category="paragraph">Cloud Volumes ONTAP BlueXP 관리 작업에 영향을 미치기 때문에 Azure 가상 머신(VM) 확장을 지원하지 않습니다.  배포하는 동안 BlueXP VM에 어떤 확장 프로그램도 설치되지 않도록 방지합니다.  기존 Cloud Volumes ONTAP VM에 확장 기능이 이미 설치되어 있는 경우 Microsoft Azure 지원팀에 문의하여 제거하세요.  지침은 지식 기반(KB) 문서를 참조하세요.<block ref="6d01312163294b91508e568dd491d345" category="inline-link-rx"></block></block>
+  <block id="18a9f864fef2d6af1e02766d38585370" category="paragraph">2025년 7월 14일부터 NetApp Cloud Volumes ONTAP VM에서 VM 확장이 감지되면 이메일을 보내고 BlueXP 에서 알려줍니다.</block>
+  <block id="3c95fa05a59cc1bbea5cd04255c3878b" category="paragraph">최대 시스템 용량에는 디스크 기반 스토리지와 데이터 계층화에 사용되는 개체 스토리지가 포함됩니다.</block>
+  <block id="11df62ebd9af6aec3766ffa2d277d960" category="paragraph-title">용량 기반 라이선스에 대한 용량 제한</block>
+  <block id="df710f89ebb9e663bd3d66607a0bf413" category="inline-link">AWS 문서</block>
+  <block id="42118bfa7201ec0bae6a7c55dc56387e" category="paragraph">용량 기반 라이선싱을 통해 각 Cloud Volumes ONTAP 시스템은 개체 스토리지에 대한 계층화를 지원합니다.  전체 계층형 용량은 클라우드 제공자의 버킷 한도까지 확장될 수 있습니다.  라이센스에는 용량 제한이 부과되지 않지만 다음을 따라야 합니다.<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block> 계층화를 구성하고 관리할 때 최적의 성능, 안정성 및 비용 효율성을 보장합니다. 를 참조하세요 <block ref="699cd23bd03b9a62b6e7a9fe25109bb3" category="inline-link-rx"></block> 자세한 내용은.</block>
+  <block id="e292aa024fbf164ca3da18861c8d1fed" category="list-text">다른 라이센스 유형에 대한 용량 제한</block>
+  <block id="22827129a19cf89772bdcf4690c2a33d" category="paragraph">용량 제한은 HA 쌍 전체에 적용됩니다.  노드당이 아닙니다.  예를 들어, 프리미엄 라이선스는 두 노드에서 최대 368TiB를 허용합니다.</block>
+  <block id="776260409d15e3bf4b8b6b05b0472c1c" category="list-text">HA 쌍의 두 노드 모두에 18개의 집계를 만들 수 없습니다. 그렇게 하면 데이터 디스크 한도를 초과하게 됩니다.</block>
+  <block id="967a34cae0dcd075fa74b42dcc7efab4" category="list-text">최대 집계 크기는 디스크에 따라 달라지며 데이터 계층화에 사용하는 개체 스토리지는 포함되지 않습니다.</block>
+  <block id="7fa1f86184c7f330217fb3596f2aa10a" category="list-text">Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우 집계에는 최대 8개의 디스크가 포함될 수 있으며, 이는 최대 128TiB의 용량을 제공합니다.  기본적으로 Cloud Volumes ONTAP 9.11.0 이상 시스템에서는 gp3 또는 io1 디스크를 사용할 때 Amazon EBS Elastic Volumes가 활성화됩니다.<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
+  <block id="1c5d4d5b3df2ab67b0a0577f6853b0fe" category="section-title">용량 기반 라이선싱의 다양한 배포 모드에 대한 제한</block>
+  <block id="34076b805502c0cfbcd6caea2f061842" category="admonition">단일 노드 및 HA 구성에 대한 최대 시스템 용량 및 데이터 계층화 용량 제한은 다음을 참조하세요.<block ref="23480a14d285390e1b7e1d67acd7bce6" category="inline-xref-macro-rx"></block> .</block>
+  <block id="323a2487b0d5c474f2b87eb189cd77eb" category="section-title">노드 기반 라이선싱의 다양한 배포 모드에 대한 제한 사항</block>
+  <block id="b1b103b3711ab75fd78baf8544303a02" category="paragraph">NetApp 시스템 용량 제한을 초과하는 것을 지원하지 않습니다.  라이센스된 용량 한도에 도달하면 BlueXP 조치가 필요하다는 메시지를 표시하고 더 이상 디스크를 추가할 수 없도록 차단합니다.</block>
+  <block id="6b209360b200c08a554735be2c77d1ca" category="inline-link">관리 디스크에 대한 Azure 설명서</block>
+  <block id="531b133840ee35cf5193230121ea7443" category="inline-link">Blob 저장소에 대한 Azure 설명서</block>
+  <block id="0277f6faf50443f930d676caf5df530b" category="paragraph">용량 기반 라이선싱을 통해 각 Cloud Volumes ONTAP 시스템은 개체 스토리지에 대한 계층화를 지원합니다.  전체 계층형 용량은 클라우드 제공자의 버킷 한도까지 확장될 수 있습니다.  라이센스에는 용량 제한이 부과되지 않지만 다음을 따라야 합니다.<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block> 계층화를 구성하고 관리할 때 최적의 성능, 안정성 및 비용 효율성을 보장합니다.  를 참조하세요<block ref="c5c853b91015c45f4e626225eb89092f" category="inline-link-rx"></block> 그리고<block ref="6782e281e8536503245f524b6778618f" category="inline-link-rx"></block> .</block>
+  <block id="9e1048f957212fa3c5348c90108fadb2" category="paragraph">용량 제한은 VM 크기와 시스템 유형(단일 노드 또는 HA 쌍)에 따라 다릅니다.</block>
+  <block id="27ec94bf72bfeade6e3be4da773bf774" category="paragraph">아래의 주석은 표의 숫자를 설명합니다.</block>
+  <block id="b0e0c6760d9a4298c0d0582142ffe301" category="list-text">디스크만 사용할 경우와 디스크와 콜드 데이터 티어링을 객체 스토리지에 사용할 경우 최대 시스템 용량을 확인할 수 있습니다.</block>
+  <block id="b4a5fb3f789f6d08047f81ea8e4e92e9" category="paragraph">다음 디스크 제한은 용량 기반 라이선스 패키지를 사용하는 Cloud Volumes ONTAP 시스템에 적용됩니다.<block ref="360eefdcdd22adda63e8597e9466029a" category="inline-link-rx"></block> .</block>
+  <block id="d29b6be74fc4db7d655ea399e5f3cac6" category="admonition">단일 노드, 페이지 블롭이 있는 단일 가용성 영역의 HA 쌍, 공유 관리 디스크가 있는 단일 및 여러 가용성 영역의 HA 쌍에 대한 최대 시스템 용량 및 데이터 계층화 용량 제한은 다음을 참조하십시오.<block ref="7184709fc91b33a5dc1db3aa29bb38fb" category="inline-xref-macro-rx"></block> .</block>
+  <block id="9cb96726e4839703596eada3cf290aef" category="paragraph">다음 디스크 제한은 노드 기반 라이선싱을 사용하는 Cloud Volumes ONTAP 시스템에 적용됩니다.  노드 기반 라이선싱은 노드별로 Cloud Volumes ONTAP 대한 라이선스를 부여할 수 있는 이전 세대 모델입니다.  기존 고객에게는 노드 기반 라이선싱이 계속 제공됩니다.</block>
+  <block id="224fd3d6c6aee1a82004220bae5e00cd" category="paragraph">Cloud Volumes ONTAP BYOL 단일 노드 또는 HA 쌍 시스템에 대해 여러 개의 노드 기반 라이선스를 구매하여 최대 테스트 및 지원되는 시스템 용량 한도인 2PiB까지 368TiB 이상의 용량을 할당할 수 있습니다.  디스크 제한으로 인해 디스크만 사용하여 용량 제한에 도달하지 못할 수도 있습니다.  디스크 한도를 초과할 수 있습니다.<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block> .<block ref="ca37ce4dde5616ef242d545490c7e6ee" category="inline-link-rx"></block> .  Cloud Volumes ONTAP 테스트 및 지원되는 최대 시스템 용량인 2PiB까지 지원하며, 2PiB 제한을 초과하면 지원되지 않는 시스템 구성이 발생합니다.</block>
+  <block id="ca27ff02499591810bfa3b09a74798e4" category="paragraph">이는 테스트된 한계입니다.  추가 스토리지 VM을 설정하는 것은 지원되지 않습니다.</block>
+  <block id="c2011c8b617d4ddd742579058df5db85" category="paragraph">재해 복구(DR)용 스토리지 VM에는 추가 라이선스가 필요하지 않지만 스토리지 VM 한도에 포함됩니다.  예를 들어, 데이터 제공 VM이 12개, DR 스토리지 VM이 12개 있는 경우 한도에 도달하여 더 이상 생성할 수 없습니다.</block>
+  <block id="b0cd7667098b2a3439c52ba1f9334faa" category="inline-link">Google Cloud 문서</block>
+  <block id="414b69410d05f51016375822b14c44e4" category="paragraph">용량 기반 라이선싱을 통해 각 Cloud Volumes ONTAP 시스템은 개체 스토리지에 대한 계층화를 지원합니다.  전체 계층형 용량은 클라우드 제공자의 버킷 한도까지 확장될 수 있습니다.  라이센스에는 용량 제한이 부과되지 않지만 다음을 따라야 합니다.<block ref="c6ca22161b60218024eaf899637cc82e" category="inline-link-rx"></block> 계층화를 구성하고 관리할 때 최적의 성능, 안정성 및 비용 효율성을 보장합니다. 를 참조하세요 <block ref="2e0002153e48bc718fd2af4b8dbc37d1" category="inline-link-rx"></block> 자세한 내용은.</block>
+  <block id="39e993539dff7e47f9e560fd13c210ca" category="paragraph">아니, 그렇지 않아요.  HA 쌍의 데이터는 노드 간에 동기적으로 미러링되므로 Google Cloud에 장애가 발생하더라도 데이터를 사용할 수 있습니다.  예를 들어, 노드 A에서 8TB 디스크를 구매하는 경우 BlueXP 미러링된 데이터에 사용되는 노드 B에도 8TB 디스크를 할당합니다.  16TB의 용량이 설정되어 있지만, 라이선스 한도에는 8TB만 포함됩니다.</block>
+  <block id="8d9a423778ca04c9c66a4f1fa8312b7e" category="list-text">집계를 구성하는 디스크는 집계 용량 한도를 결정합니다.  이 한도에는 데이터 계층화에 사용되는 개체 스토리지는 포함되지 않습니다.</block>
+  <block id="821ffb366b34e93755978fef81bc940d" category="paragraph">이는 테스트된 한계입니다.  추가 스토리지 VM을 구성하는 것은 지원되지 않습니다.</block>
+  <block id="16283ebc943b0f7f5ee08013f7f4e52c" category="list-text">노드 기반 BYOL의 경우, 기본적으로 Cloud Volumes ONTAP 과 함께 제공되는 첫 번째 스토리지 VM 외에 추가 _데이터 제공_ 스토리지 VM이 하나 더 필요할 때마다 애드온 라이선스가 필요합니다.  스토리지 VM 추가 라이선스를 받으려면 계정 팀에 문의하세요.</block>
 </blocks>
