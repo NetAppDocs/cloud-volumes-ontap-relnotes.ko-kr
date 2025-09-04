@@ -2,9 +2,9 @@
 sidebar: sidebar 
 permalink: reference-new.html 
 keywords: 'what"s new, new, features, release notes, enhancements' 
-summary: Cloud Volumes ONTAP 9.16.1 에는 새로운 향상 기능이 포함되어 있습니다. 
+summary: Cloud Volumes ONTAP 9.17.1에는 새로운 기능이 추가되었습니다. 
 ---
-= Cloud Volumes ONTAP 9.16.1 의 새로운 기능
+= Cloud Volumes ONTAP 9.17.1의 새로운 기능
 :hardbreaks:
 :allow-uri-read: 
 :nofooter: 
@@ -14,55 +14,13 @@ summary: Cloud Volumes ONTAP 9.16.1 에는 새로운 향상 기능이 포함되�
 
 
 [role="lead"]
-Cloud Volumes ONTAP 9.16.1 에는 새로운 개선 사항이 포함되어 있습니다.
-
-최신 버전의 BlueXP에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오 https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/whats-new.html["BlueXP 릴리스 정보"^] 를 참조하십시오.
+Cloud Volumes ONTAP 9.17.1은 Azure와 Google Cloud에서 배포 및 업그레이드할 수 있습니다.
 
 
 
-== 9.16.1 P5(2025년 7월 28일)
+== 9.17.1 RC1(2025년 9월 4일)
 
-이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP 에 9.16.1 P5 패치를 배포하고 업그레이드할 수 있습니다. 하지만 이 버전은 AWS에서는 배포 및 업그레이드할 수 없습니다. BlueXP 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P5["P5 패치에서 수정된 버그 목록을 확인하세요"^] (NetApp 지원 사이트에 로그인이 필요합니다).
-
-
-
-== 9.16.1 P4(2025년 7월 8일)
-
-이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P4 패치를 배포 및 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P4["P4 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
-
-
-
-== 9.16.1 P3(2025년 5월 29일)
-
-이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P3 패치를 배포 및 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P3["P3 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
-
-
-
-== 9.16.1 P2(2025년 4월 17일)
-
-이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P2 패치를 배포하고 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P2["P2 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
-
-
-
-== 9.16.1 P1(2025년 4월 17일)
-
-이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P1 패치를 배포 및 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.
-
-link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.16.1P1["P1 패치에서 수정된 버그 목록을 봅니다"^] (NetApp 지원 사이트에 로그인 필요).
-
-
-
-== 9.16.1 GA(2025년 3월 6일)
-
-이제 Cloud Volumes ONTAP 9.16.1 일반 가용성 릴리즈를 Azure와 Google Cloud에서 배포 및 업그레이드할 때 사용할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다.
+이제 Cloud Volumes ONTAP 9.17.1 릴리스 후보 1을 사용하여 Azure 및 Google Cloud에 배포하고 업그레이드할 수 있습니다. 하지만 이 버전은 AWS에서는 배포 및 업그레이드할 수 없습니다.
 
 
 
@@ -82,10 +40,10 @@ link:http://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-updating-ontap
 
 === 지원되는 업그레이드 경로입니다
 
-Azure 및 Google Cloud의 9.15.1 릴리즈에서 Cloud Volumes ONTAP 9.16.1 GA로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.
+Azure 및 Google Cloud의 9.16.1 릴리스에서 Cloud Volumes ONTAP 9.17.1 RC1로 업그레이드할 수 있습니다.  BlueXP 적격 Cloud Volumes ONTAP 시스템을 이 릴리스로 업그레이드하라는 메시지를 표시합니다.
 
 
-NOTE: AWS의 경우 이 업그레이드에 대한 메시지가 표시되지 않습니다. Cloud Volumes ONTAP 9.16.1 GA로의 업그레이드는 AWS에서 지원되지 않습니다.
+NOTE: AWS의 경우 이 업그레이드에 대한 메시지가 표시되지 않습니다.  AWS에서는 Cloud Volumes ONTAP 9.17.1 RC1로의 업그레이드가 지원되지 않습니다.
 
 
 

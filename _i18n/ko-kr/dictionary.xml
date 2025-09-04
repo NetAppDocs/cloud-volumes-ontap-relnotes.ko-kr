@@ -499,7 +499,6 @@
   <block id="59f715c959b1702bb88d03230a637982" category="paragraph">아니요, 그렇지 않습니다. AWS HA 쌍의 데이터는 노드 간에 동기식으로 미러링되므로 장애 발생 시 데이터를 사용할 수 있습니다. 예를 들어 노드 A에서 8TiB 디스크를 구입한 경우 BlueXP에서는 미러링된 데이터에 사용되는 노드 B에 8TiB 디스크도 할당합니다. 16TiB의 용량을 프로비저닝한 경우 라이센스 제한에서 8TiB만 가능합니다.</block>
   <block id="846a4ecea919427b6111365c125ada6f" category="list-text">이 열에 나열된 번호에는 기본적으로 BlueXP에서 생성되는 초기 스토리지 VM이 포함됩니다. 예를 들어, 이 열에 24가 표시되면 총 24개의 스토리지 VM을 추가로 23개 생성할 수 있음을 의미합니다.</block>
   <block id="30749b02bc62d931d770e6c719254e7b" category="list-text">BlueXP 인터페이스는 Standard 및 BYOL:n1-highmem-4에 대해 지원되는 추가 시스템 유형을 보여 줍니다. 그러나 이 기계 유형은 생산 환경에 사용할 수 없습니다. 특정 연구소 환경에서만 사용할 수 있도록 만들었습니다.</block>
-  <block id="9889b7a9df56580016f59ccd942fb1d1" category="inline-link">BlueXP 릴리스 정보</block>
   <block id="fde45fa5cd70a93e88151b83aa348f12" category="inline-link">BlueXP API 엔드포인트</block>
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">HA 쌍의 경우, 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">HA 쌍의 경우, 미러링된 데이터가 라이센스 용량 제한에 대해 계산됩니까?</block>
@@ -568,7 +567,6 @@
   <block id="70a8e1fb7e815dcae7d43566ab0db1e7" category="paragraph"><block ref="45c029924054162202773bd86e09b271" category="inline-link-rx"></block>.</block>
   <block id="a990fdc46668be8e7f963c8df127bbe8" category="paragraph">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 자세한 내용은 아래의 용량 및 디스크 제한을 참조하십시오.</block>
   <block id="c0ad13124302d4d047c0f916a6418182" category="paragraph"><block ref="cc3941262f254d1055804ecddca39dec" category="inline-link-rx"></block>.</block>
-  <block id="4bdb15bfe1bad472d818dc31e8f53185" category="paragraph">최신 버전의 BlueXP에는 추가 기능 및 향상된 기능이 도입되었습니다. 를 참조하십시오<block ref="c7887e85c6060ae2594d873a0f2ae025" category="inline-link-rx"></block> 를 참조하십시오.</block>
   <block id="a92c2d98e174fb58a9af451a8c3413f9" category="paragraph"><block ref="8271d50d033781f1596acf863334de58" category="inline-link-macro-rx"></block>.</block>
   <block id="34b2f4eab827285a262b1781e672e882" category="paragraph"><block ref="3f0e03f473a215943c109dc7746cdb60" category="inline-link-macro-rx"></block>.</block>
   <block id="5f47eaf30741e1b189cb3927920a050e" category="list-text">L48s_v3^2^</block>
@@ -718,19 +716,7 @@
   <block id="f0de068c81c765820aca0fa8fe017396" category="paragraph">Azure 지역 지원에 대해서는 을<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="9b986795dc6a434c7339bfecbd5e5c8b" category="paragraph">Google Cloud 지역 지원은 을 참조하십시오<block ref="e55b14db85f4d4837890e415926626e0" category="inline-link-rx"></block>.</block>
   <block id="d798d4963d0ac509a1bda5483d9b9a52" category="paragraph"><block ref="5a94f18247116693735ff13d8eeaa964" category="inline-link-rx"></block>..</block>
-  <block id="1c182fc8eafc7e652c5e3a7cea77ae91" category="inline-link-macro">Cloud Volumes ONTAP 9.16.1에 대한 고지 사항</block>
-  <block id="f7087a9aa590270aa7eb0bf5d5eda74b" category="list-text"><block ref="f7087a9aa590270aa7eb0bf5d5eda74b" category="inline-link-macro-rx"></block></block>
-  <block id="6000586891d4341a74a8eb5979a68d8a" category="summary">Cloud Volumes ONTAP 9.16.1 에는 새로운 향상 기능이 포함되어 있습니다.</block>
-  <block id="0d90329231a911346776f18bdb9fe1d9" category="doc">Cloud Volumes ONTAP 9.16.1 의 새로운 기능</block>
-  <block id="401876f2194826845d51d17f3f6e4236" category="paragraph">Cloud Volumes ONTAP 9.16.1 에는 새로운 개선 사항이 포함되어 있습니다.</block>
-  <block id="5c34e70965e9144b3d44955edb1b5d5e" category="section-title">9.16.1 GA(2025년 3월 6일)</block>
-  <block id="2bb6251babdc5f589145b9c5611ca36d" category="paragraph">이제 Cloud Volumes ONTAP 9.16.1 일반 가용성 릴리즈를 Azure와 Google Cloud에서 배포 및 업그레이드할 때 사용할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다.</block>
-  <block id="25e5ddb54eebfa8e5f1383c46695e645" category="paragraph">Azure 및 Google Cloud의 9.15.1 릴리즈에서 Cloud Volumes ONTAP 9.16.1 GA로 업그레이드할 수 있습니다. BlueXP에서 해당 Cloud Volumes ONTAP 시스템을 이 릴리즈로 업그레이드하라는 메시지가 표시됩니다.</block>
-  <block id="0966109eb7f93cf95b69fc9bfb21fb7f" category="admonition">AWS의 경우 이 업그레이드에 대한 메시지가 표시되지 않습니다. Cloud Volumes ONTAP 9.16.1 GA로의 업그레이드는 AWS에서 지원되지 않습니다.</block>
   <block id="2dc71138ad7976e187566f7ce79883cc" category="list-text">HA 쌍 업그레이드는 무중단으로 수행되며 I/O가 중단되지 않습니다. 이러한 무중단 업그레이드 프로세스 중에는 각 노드가 동시에 업그레이드되어 클라이언트에 입출력을 계속 제공합니다.</block>
-  <block id="2da6ea8a8da761338b986437b7c763e3" category="sidebar">본 릴리즈 노트에서는 Cloud Volumes ONTAP 9.16.1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
-  <block id="5be79231089884d51ddb2bec45163e7f" category="sidebar">Cloud Volumes ONTAP 9.16.1 릴리스 정보</block>
-  <block id="adf61d35044cf1717f8515aac5ebf98f" category="sidebar">Cloud Volumes ONTAP 9.16.1 릴리스 정보</block>
   <block id="071315f659ff3eed03e994aa4f772449" category="doc">Cloud Volumes ONTAP 라이센스 개요</block>
   <block id="d4f1750ecbae7aeb8e4608c6adadf1b3" category="doc">AWS에서 Cloud Volumes ONTAP에 지원되는 구성입니다</block>
   <block id="906e9645769246d4a98e725adf188964" category="list-text">AWS 로컬 영역의 Cloud Volumes ONTAP 구성은 GP2(General Purpose SSD) 디스크 유형만 지원합니다.</block>
@@ -746,24 +732,12 @@
   <block id="f2642484d82ac71ab617437045e56b35" category="doc">Google Cloud의 Cloud Volumes ONTAP에 대한 스토리지 제한</block>
   <block id="0d965f3057c75408feddc192acd12da8" category="doc">Cloud Volumes ONTAP 클라우드 공급자와 협업할 수 있습니다</block>
   <block id="6e9c766eb64d674ed321c13842973979" category="paragraph">NetApp이 클라우드 공급자와 협력하여 잠재적인 문제를 해결하는 방법에 대해 알아보십시오.</block>
-  <block id="26207601cd717bed61f9a69941108f87" category="section-title">9.16.1 P2(2025년 4월 17일)</block>
-  <block id="c4792f112f7f491e5d7e61fba2f33329" category="paragraph">이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P2 패치를 배포하고 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
-  <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">P2 패치에서 수정된 버그 목록을 봅니다</block>
-  <block id="448f9263b6e5828ecbede3a8f78d17eb" category="paragraph"><block ref="6454149a5f999950d701a0bf861b958d" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
-  <block id="008c5c510153b3136387ddcd33bc112c" category="section-title">9.16.1 P1(2025년 4월 17일)</block>
-  <block id="3b3592b54b76bb5d60a585ffacea4e61" category="paragraph">이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P1 패치를 배포 및 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
-  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">P1 패치에서 수정된 버그 목록을 봅니다</block>
-  <block id="664e6349e84880f6407173721fad810a" category="paragraph"><block ref="e1914bcb543b75972205a0cc76dbb433" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
   <block id="77d9dd558dce394d624e008a5015c43e" category="section-title">고가용성 구축의 제한사항</block>
   <block id="47e6c824f3fe7a0a707fd6f94c2b0d5e" category="paragraph">일부 지역에서는 고가용성(HA) 쌍이 지원되지 않습니다.</block>
   <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">단일 가용 영역에서 HA 구축의 제한 사항</block>
   <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Azure에서 단일 가용 영역에 HA 쌍을 구축합니다</block>
   <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">Cloud Volumes ONTAP 9.15.1부터 Azure의 AZ(단일 가용 영역)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이 기능을 지원하는 기준에 대한 자세한 내용은 을<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Cloud Volumes ONTAP 버전이 9.15.1 이전 버전이거나 이러한 조건이 충족되지 않으면 가용성 집합을 사용하는 이전 배포 모델이 적용됩니다. 이 제한은 HA 구성에만 적용됩니다.</block>
-  <block id="2b0112a3fe8db72b28cea3e10ddba401" category="section-title">9.16.1 P3(2025년 5월 29일)</block>
-  <block id="79d2490a076742db13fbcc8f0776a458" category="paragraph">이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P3 패치를 배포 및 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
-  <block id="4c7cf73669136d536c96ca7317eb5ceb" category="inline-link-macro">P3 패치에서 수정된 버그 목록을 봅니다</block>
-  <block id="4beb9f52d4c281cb89fd47e4aaa780cf" category="paragraph"><block ref="77df283c529cda018d08e767dda3eebd" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
   <block id="fbb17e3b93a1070f3de5e45b66842d95" category="list-text">AWS 로컬 영역의 Cloud Volumes ONTAP 구성은 GP2(General Purpose SSD) 디스크 유형만 지원합니다. AWS 로컬 영역의 Cloud Volumes ONTAP에서는 다른 디스크 유형이 지원되지 않습니다.</block>
   <block id="f051f95f393c93123644b448ca3165c0" category="paragraph">Cloud Volumes ONTAP은 더 이상 AWS에서 c4, m4, r4 EC2 인스턴스 유형을 지원하지 않습니다. 시스템이 c4, m4 또는 r4 인스턴스에서 실행되는 경우 c5, m5 또는 r5 인스턴스로 변경하세요. 인스턴스 유형을 변경하기 전에는 이 릴리즈로 업그레이드할 수 없습니다.</block>
   <block id="2f8299f876158db323c08455b12b585a" category="paragraph">자세한 내용은 다음을 참조하십시오.</block>
@@ -784,10 +758,6 @@
   <block id="b10cf18ba66c2ae046931259e614fe81" category="list-text"><block ref="b10cf18ba66c2ae046931259e614fe81" category="inline-link-rx"></block></block>
   <block id="d59a55e5a766d0a45a73ef03504c6b5b" category="inline-link">N2 시리즈 일반용 기계 유형</block>
   <block id="0ab6f9218085a410dabf81dbe7da1b1a" category="list-text"><block ref="0ab6f9218085a410dabf81dbe7da1b1a" category="inline-link-rx"></block></block>
-  <block id="63b64193e993dd2f6062619d953aeb95" category="section-title">9.16.1 P4(2025년 7월 8일)</block>
-  <block id="c40872b813fc8acca04c5e909c600b0c" category="paragraph">이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP용 9.16.1 P4 패치를 배포 및 업그레이드할 수 있습니다. 그러나 AWS에서는 이 버전을 배포 및 업그레이드할 수 없습니다. BlueXP는 기존 시스템을 이 패치 릴리즈로 업그레이드하라는 메시지를 표시합니다.</block>
-  <block id="cae74b75cb879fa6011c4bc1e9acafed" category="inline-link-macro">P4 패치에서 수정된 버그 목록을 봅니다</block>
-  <block id="0a8093de16aa3f6ac64c7b6c07e3a0e9" category="paragraph"><block ref="4287819b7b6c3d729049717a25b7809c" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인 필요).</block>
   <block id="313e5c6346ba30bdb749b42654c60b9e" category="list-text">^1^ Cloud Volumes ONTAP HA 쌍을 사용할 때 이러한 VM 유형에 대해 높은 쓰기 속도를 지원합니다. 구축하는 동안이나 그 후 언제든지 BlueXP 에서 높은 쓰기 속도를 설정할 수 있습니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block>..</block>
   <block id="7a44fe38188ff958cad09ce844759662" category="list-text">^2^ 이 VM은 Azure 유지 관리 제어가 필요한 경우에만 권장됩니다. 더 높은 가격 책정으로 인해 다른 사용 사례에는 권장되지 않습니다.</block>
   <block id="7b78f11572d7f890feb55bd86cdbee51" category="list-text">^3^ 이러한 VM은 Cloud Volumes ONTAP 9.11.1 또는 이전 버전의 배포에서만 지원됩니다. 이러한 VM 유형을 사용하면 기존 페이지 볼륨 배포를 Cloud Volumes ONTAP 9.11.1에서 9.12.1로 업그레이드할 수 있습니다. Cloud Volumes ONTAP 9.12.1 이상에서는 새 페이지 BLOB 배포를 수행할 수 없습니다.</block>
@@ -806,10 +776,6 @@
   <block id="b469f24f7b40dd39d564f20b26834f51" category="paragraph"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block> 중단 없는 운영에는 지원되지 않습니다.</block>
   <block id="a658c03927efcbcb7170fb429c8a9408" category="paragraph">Cloud Volumes ONTAP 비연속 사용 가능 CIFS 공유를 사용하는 CIFS/SMB 클라이언트는 세션 인계가 발생할 때와 세션에서 사용 중인 집계가 집계의 홈 노드로 반환될 때 세션 손실을 경험하게 됩니다. 이는 CIFS/SMB 프로토콜 자체의 제한 사항입니다. 승인된 타사 제품을 사용하면 인계 및 반환으로 인한 문제를 방지할 수 있습니다. 추가 지원이 필요하면 NetApp 지원팀에 문의하십시오.</block>
   <block id="c04ba4ba4463685b70d448688626a589" category="admonition"><block ref="8c32a537fad73fe139f927507d338c47" category="inline-link-rx"></block> 중단 없는 작업은 Cloud Volumes ONTAP 에서 지원되지 않습니다.</block>
-  <block id="804568356abbd917c2b16399c1d74469" category="section-title">9.16.1 P5(2025년 7월 28일)</block>
-  <block id="b18cddec63bbac4d331412b33193f19d" category="paragraph">이제 Azure 및 Google Cloud에서 Cloud Volumes ONTAP 에 9.16.1 P5 패치를 배포하고 업그레이드할 수 있습니다. 하지만 이 버전은 AWS에서는 배포 및 업그레이드할 수 없습니다. BlueXP 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지를 표시합니다.</block>
-  <block id="e890150484086859b9a5078abe9c6f20" category="inline-link-macro">P5 패치에서 수정된 버그 목록을 확인하세요</block>
-  <block id="594276b7568f8909a2e4145873978b46" category="paragraph"><block ref="be3338d2845a087c634560014a857fc0" category="inline-link-macro-rx"></block> (NetApp 지원 사이트에 로그인이 필요합니다).</block>
   <block id="849836109f5a7c7779b41aa322a0b75f" category="cell">최적화됨 ^5^</block>
   <block id="9def883103b7b964dcbb0993e3f8a065" category="inline-link">최적화된 라이선스의 사용 가능 기간이 종료되었습니다.</block>
   <block id="84f2cfe539c789603fba39917f99f628" category="list-text">^5^ 2025년 8월 11일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Azure Marketplace에서 PAYGO(종량제) 구독을 구매하거나 갱신할 수 없습니다. 자세한 내용은 다음을 참조하세요. <block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> .</block>
@@ -857,4 +823,16 @@
   <block id="d894dfdb1bbb11ae0641d7c6e97d92e2" category="cell">프리미엄 SSD 관리 디스크 또는 프리미엄 SSD v2 관리 디스크.</block>
   <block id="09c6a071fdfa0f65318d9e3e960e825e" category="list-text">^6^ HA 배포를 위한 시스템 데이터의 내부 디스크에 대한 정보는 단일 및 다중 가용성 영역을 참조하십시오.<block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block> .</block>
   <block id="42762fecca2ab07cc92a3d950f2052c9" category="list-text">^7^ 2025년 8월 11일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Azure Marketplace에서 PAYGO(종량제) 구독을 구매하거나 갱신할 수 없습니다.<block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> .</block>
+  <block id="be666ea41d284101ddfda886424c2d07" category="inline-link-macro">Cloud Volumes ONTAP 9.17.1에 대한 공지</block>
+  <block id="5d400a6226e85167dbd60b61421128ef" category="list-text"><block ref="5d400a6226e85167dbd60b61421128ef" category="inline-link-macro-rx"></block></block>
+  <block id="6076bde119ef4c539333767fd60b037b" category="summary">Cloud Volumes ONTAP 9.17.1에는 새로운 기능이 추가되었습니다.</block>
+  <block id="35e59ce342eaf6b146f59a2ec17b5019" category="doc">Cloud Volumes ONTAP 9.17.1의 새로운 기능</block>
+  <block id="c9636b1359c39d947689e7d7030a3876" category="paragraph">Cloud Volumes ONTAP 9.17.1은 Azure와 Google Cloud에서 배포 및 업그레이드할 수 있습니다.</block>
+  <block id="db3cc6b5ebbff132de6d6986ec232460" category="section-title">9.17.1 RC1(2025년 9월 4일)</block>
+  <block id="8d9a14656b6d91eecabf8d5f9a39888c" category="paragraph">이제 Cloud Volumes ONTAP 9.17.1 릴리스 후보 1을 사용하여 Azure 및 Google Cloud에 배포하고 업그레이드할 수 있습니다. 하지만 이 버전은 AWS에서는 배포 및 업그레이드할 수 없습니다.</block>
+  <block id="1dc5d2150ca63e1eb180153cd4fd3848" category="paragraph">Azure 및 Google Cloud의 9.16.1 릴리스에서 Cloud Volumes ONTAP 9.17.1 RC1로 업그레이드할 수 있습니다.  BlueXP 적격 Cloud Volumes ONTAP 시스템을 이 릴리스로 업그레이드하라는 메시지를 표시합니다.</block>
+  <block id="a925267cf1e3f473e26af9a1c7e069bd" category="admonition">AWS의 경우 이 업그레이드에 대한 메시지가 표시되지 않습니다.  AWS에서는 Cloud Volumes ONTAP 9.17.1 RC1로의 업그레이드가 지원되지 않습니다.</block>
+  <block id="1be92e36c3e9ca47e988acc51bde4499" category="sidebar">이 릴리스 노트에서는 Cloud Volumes ONTAP 9.17.1의 새로운 기능, 제한 사항 및 알려진 문제점을 설명합니다.</block>
+  <block id="4cf5c8db7f505fa308225ecc9355e4d5" category="sidebar">Cloud Volumes ONTAP 9.17.1 릴리스 노트</block>
+  <block id="003bdd8b041b75252a40e81df0fa7067" category="sidebar">Cloud Volumes ONTAP 9.17.1 릴리스 노트</block>
 </blocks>
