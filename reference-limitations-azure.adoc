@@ -1,7 +1,7 @@
 ---
 sidebar: sidebar 
 permalink: reference-limitations-azure.html 
-keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache 
+keywords: limitations, ha, azure, pay-as-you-go, paygo, cloud solution provider, vm, flash cache; limitations in HA deployment in MAZ, SAZ, multiple availability xone, single availability zone Azure CVO, PSSDv2, premium SSD v2 limitation in CVO, flash cache limitation in CVO 
 summary: 이러한 알려진 제한은 Microsoft Azure의 Cloud Volumes ONTAP에만 적용됩니다. 
 ---
 = Azure의 Cloud Volumes ONTAP에 대한 알려진 제한 사항입니다
@@ -26,6 +26,34 @@ Cloud Volumes ONTAP BlueXP 관리 작업에 영향을 미치기 때문에 Azure 
 
 
 
+== HA 구성에 대한 프리미엄 SSD v2 디스크 제한 사항
+
+프리미엄 SSD v2 관리 디스크에는 Azure의 고가용성(HA) 배포에 대한 다음과 같은 제한 사항이 있습니다.
+
+* 비구역 지역의 HA 배포에서는 지원되지 않습니다.
+* 여러 가용성 영역에 걸친 HA 배포에서는 지원되지 않습니다.
+* 단일 가용성 영역 내에 배포된 HA 구성에서만 지원됩니다.
+
+
+Cloud Volumes ONTAP HA 구성에서 Premium SSD v2 Managed Disks를 사용하려면 다음 요구 사항을 충족해야 합니다.
+
+* Cloud Volumes ONTAP 버전은 9.15.1 이상입니다.
+* HA 배포는 Azure 단일 가용성 영역에 이루어집니다.
+* 선택한 지역과 구역에서는 Premium SSD v2 Managed Disks를 지원합니다.  지원되는 지역에 대한 정보는 다음을 참조하세요. https://azure.microsoft.com/en-us/explore/global-infrastructure/products-by-region/["Microsoft Azure 웹사이트: 지역별 사용 가능한 제품"^] .
+
+
+자세한 내용은 다음을 참조하세요.  https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#support-for-premium-ssd-v2-managed-disks-in-azure["Azure에서 Premium SSD v2 관리 디스크 지원"^] .
+
+
+
+== 단일 가용 영역에서 HA 구축의 제한 사항
+
+Cloud Volumes ONTAP 9.15.1부터 Azure의 단일 가용성 영역(AZ)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이 기능을 지원하는 기준에 대한 정보는 다음을 참조하세요. https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-in-azure["Azure에서 단일 가용 영역에 HA 쌍을 구축합니다"^] .
+
+Cloud Volumes ONTAP 버전이 9.15.1 이전 버전이거나 이러한 조건이 충족되지 않으면 가용성 집합을 사용하는 이전 배포 모델이 적용됩니다. 이 제한은 HA 구성에만 적용됩니다.
+
+
+
 == Flash Cache 제한
 
 Cloud Volumes ONTAP은 일부 VM 유형에서 로컬 NVMe 스토리지를 _ Flash Cache _ 로 사용합니다. 이 제한 사항에 유의하십시오.
@@ -35,16 +63,8 @@ Cloud Volumes ONTAP은 일부 VM 유형에서 로컬 NVMe 스토리지를 _ Flas
 
 
 
-== 고가용성 구축의 제한사항
+== HA 배포의 제한 사항
 
-일부 지역에서는 고가용성(HA) 쌍이 지원되지 않습니다.
+일부 지역에서는 HA 쌍이 지원되지 않습니다.
 
 https://bluexp.netapp.com/cloud-volumes-global-regions["지원되는 Azure 지역 목록을 봅니다"^]..
-
-
-
-== 단일 가용 영역에서 HA 구축의 제한 사항
-
-Cloud Volumes ONTAP 9.15.1부터 Azure의 AZ(단일 가용 영역)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이 기능을 지원하는 기준에 대한 자세한 내용은 을 https://docs.netapp.com/us-en/cloud-volumes-ontap-9151-relnotes/reference-new.html#deploy-ha-pairs-in-single-availability-zones-on-azure["Azure에서 단일 가용 영역에 HA 쌍을 구축합니다"^]참조하십시오.
-
-Cloud Volumes ONTAP 버전이 9.15.1 이전 버전이거나 이러한 조건이 충족되지 않으면 가용성 집합을 사용하는 이전 배포 모델이 적용됩니다. 이 제한은 HA 구성에만 적용됩니다.

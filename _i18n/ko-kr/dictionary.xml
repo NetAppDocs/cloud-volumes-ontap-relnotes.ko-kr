@@ -732,11 +732,8 @@
   <block id="f2642484d82ac71ab617437045e56b35" category="doc">Google Cloud의 Cloud Volumes ONTAP에 대한 스토리지 제한</block>
   <block id="0d965f3057c75408feddc192acd12da8" category="doc">Cloud Volumes ONTAP 클라우드 공급자와 협업할 수 있습니다</block>
   <block id="6e9c766eb64d674ed321c13842973979" category="paragraph">NetApp이 클라우드 공급자와 협력하여 잠재적인 문제를 해결하는 방법에 대해 알아보십시오.</block>
-  <block id="77d9dd558dce394d624e008a5015c43e" category="section-title">고가용성 구축의 제한사항</block>
-  <block id="47e6c824f3fe7a0a707fd6f94c2b0d5e" category="paragraph">일부 지역에서는 고가용성(HA) 쌍이 지원되지 않습니다.</block>
   <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">단일 가용 영역에서 HA 구축의 제한 사항</block>
   <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Azure에서 단일 가용 영역에 HA 쌍을 구축합니다</block>
-  <block id="d8bb5ee8ceb2ff0c0fd5de1a5d8db6ea" category="paragraph">Cloud Volumes ONTAP 9.15.1부터 Azure의 AZ(단일 가용 영역)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이 기능을 지원하는 기준에 대한 자세한 내용은 을<block ref="70422bd689a7303399dff3dd5e571c65" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Cloud Volumes ONTAP 버전이 9.15.1 이전 버전이거나 이러한 조건이 충족되지 않으면 가용성 집합을 사용하는 이전 배포 모델이 적용됩니다. 이 제한은 HA 구성에만 적용됩니다.</block>
   <block id="fbb17e3b93a1070f3de5e45b66842d95" category="list-text">AWS 로컬 영역의 Cloud Volumes ONTAP 구성은 GP2(General Purpose SSD) 디스크 유형만 지원합니다. AWS 로컬 영역의 Cloud Volumes ONTAP에서는 다른 디스크 유형이 지원되지 않습니다.</block>
   <block id="f051f95f393c93123644b448ca3165c0" category="paragraph">Cloud Volumes ONTAP은 더 이상 AWS에서 c4, m4, r4 EC2 인스턴스 유형을 지원하지 않습니다. 시스템이 c4, m4 또는 r4 인스턴스에서 실행되는 경우 c5, m5 또는 r5 인스턴스로 변경하세요. 인스턴스 유형을 변경하기 전에는 이 릴리즈로 업그레이드할 수 없습니다.</block>
@@ -835,4 +832,19 @@
   <block id="1be92e36c3e9ca47e988acc51bde4499" category="sidebar">이 릴리스 노트에서는 Cloud Volumes ONTAP 9.17.1의 새로운 기능, 제한 사항 및 알려진 문제점을 설명합니다.</block>
   <block id="4cf5c8db7f505fa308225ecc9355e4d5" category="sidebar">Cloud Volumes ONTAP 9.17.1 릴리스 노트</block>
   <block id="003bdd8b041b75252a40e81df0fa7067" category="sidebar">Cloud Volumes ONTAP 9.17.1 릴리스 노트</block>
+  <block id="7662ffdf9f88ef8d3503c5a47332d185" category="section-title">HA 구성에 대한 프리미엄 SSD v2 디스크 제한 사항</block>
+  <block id="628be05f52730d9bc1ff4a25a8803b9f" category="paragraph">프리미엄 SSD v2 관리 디스크에는 Azure의 고가용성(HA) 배포에 대한 다음과 같은 제한 사항이 있습니다.</block>
+  <block id="c393fdd1e5323cfc775d4d2f67c6ee3c" category="list-text">비구역 지역의 HA 배포에서는 지원되지 않습니다.</block>
+  <block id="a1a6ff52f4f044bbb48a8b6e32faefee" category="list-text">여러 가용성 영역에 걸친 HA 배포에서는 지원되지 않습니다.</block>
+  <block id="57deebd91c1b4f79fe1ace5075015908" category="list-text">단일 가용성 영역 내에 배포된 HA 구성에서만 지원됩니다.</block>
+  <block id="026daacd5fe0a67d4cbbccda5dc168d4" category="paragraph">Cloud Volumes ONTAP HA 구성에서 Premium SSD v2 Managed Disks를 사용하려면 다음 요구 사항을 충족해야 합니다.</block>
+  <block id="6a1350d029dd7fa7f1741f50e36f86ab" category="list-text">Cloud Volumes ONTAP 버전은 9.15.1 이상입니다.</block>
+  <block id="ceb986bf3d3490c0ed01497de9d5d2be" category="list-text">HA 배포는 Azure 단일 가용성 영역에 이루어집니다.</block>
+  <block id="840f8de5c9f54f772062c77429778e38" category="inline-link">Microsoft Azure 웹사이트: 지역별 사용 가능한 제품</block>
+  <block id="b6a84b78c406cfef42bd6862aa774c74" category="list-text">선택한 지역과 구역에서는 Premium SSD v2 Managed Disks를 지원합니다.  지원되는 지역에 대한 정보는 다음을 참조하세요.<block ref="4cad7f2a2d9c49229b747bad0a9e56da" category="inline-link-rx"></block> .</block>
+  <block id="0dc254fad1832eb1cdccc5261264b7ef" category="inline-link">Azure에서 Premium SSD v2 관리 디스크 지원</block>
+  <block id="59e0d21b78c6b5234e43ce7e3f97f417" category="paragraph">자세한 내용은 다음을 참조하세요. <block ref="8eeec6c9a71de31b434ae927dfa55f28" category="inline-link-rx"></block> .</block>
+  <block id="17f65eba8f584b7ce968f1741f49a63d" category="paragraph">Cloud Volumes ONTAP 9.15.1부터 Azure의 단일 가용성 영역(AZ)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이 기능을 지원하는 기준에 대한 정보는 다음을 참조하세요.<block ref="49b9d02c37364ae9681ce7a59d4d9548" category="inline-link-rx"></block> .</block>
+  <block id="ed5b1d9ebcc8b8d189007ac8c9494846" category="section-title">HA 배포의 제한 사항</block>
+  <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">일부 지역에서는 HA 쌍이 지원되지 않습니다.</block>
 </blocks>
