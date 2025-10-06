@@ -62,7 +62,7 @@ https://kb.netapp.com/on-prem/ontap/da/NAS/NAS-KBs/What_are_SMB_Continuous_Avail
 
 Cloud Volumes ONTAP 데이터에 대한 백업 및 복구 계획에 클라우드 공급자의 스냅샷을 사용하면 안 됩니다. 항상 ONTAP 스냅샷 복사본 또는 타사 백업 솔루션을 사용하여 Cloud Volumes ONTAP에 호스팅된 데이터를 백업 및 복원해야 합니다.
 
-https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["BlueXP 백업 및 복구를 사용하여 ONTAP 데이터를 백업하고 복원하는 방법에 대해 알아보십시오"^].
+https://docs.netapp.com/us-en/bluexp-backup-recovery/concept-backup-to-cloud.html["NetApp Backup and Recovery를 사용하여 ONTAP 데이터를 백업하고 복원하는 방법을 알아보세요."^] .
 
 
 NOTE: WAFL 파일 시스템의 ONTAP 정합성 보장 지점에서 데이터 정합성 보장 확인 WAFL만 ONTAP 파일 시스템을 정지하여 충돌 시에도 정합성이 보장되는 백업을 수행할 수 있습니다.
@@ -81,24 +81,24 @@ Cloud Volumes ONTAP는 클라우드 공급자의 예약된 VM 인스턴스 또�
 
 
 
-== 소프트웨어 업데이트는 BlueXP에서 완료해야 합니다
+== 소프트웨어 업데이트는 NetApp 콘솔에서 완료해야 합니다.
 
-Cloud Volumes ONTAP 업그레이드는 BlueXP에서 완료해야 합니다. System Manager 또는 CLI를 사용하여 Cloud Volumes ONTAP를 업그레이드해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 줄 수 있습니다.
+Cloud Volumes ONTAP 업그레이드는 NetApp 콘솔에서 완료해야 합니다. System Manager나 CLI를 사용하여 Cloud Volumes ONTAP 업그레이드해서는 안 됩니다. 그렇게 하면 시스템 안정성에 영향을 미칠 수 있습니다.
 
 
 
 == Cloud Volumes ONTAP 배포는 클라우드 공급자의 콘솔에서 수정할 수 없습니다
 
-클라우드 공급자의 콘솔에서 Cloud Volumes ONTAP 구성을 변경하면 지원되지 않는 구성이 발생합니다. BlueXP에서 생성 및 관리하는 Cloud Volumes ONTAP 리소스에 대한 모든 변경 사항은 시스템 안정성과 BlueXP의 시스템 관리 능력에 영향을 줄 수 있습니다.
+클라우드 공급자의 콘솔에서 Cloud Volumes ONTAP 구성을 변경하면 지원되지 않는 구성이 발생합니다. 콘솔이 생성하고 관리하는 Cloud Volumes ONTAP 리소스에 대한 변경 사항은 시스템 안정성과 콘솔이 시스템을 관리하는 능력에 영향을 미칠 수 있습니다.
 
 
 NOTE: 초기 배포 후 Cloud Volumes ONTAP 리소스에 사용되는 Azure 구독 이름의 수정이 지원됩니다.
 
 
 
-== 디스크와 애그리게이트는 BlueXP에서 관리해야 합니다
+== 디스크와 집계는 콘솔에서 관리해야 합니다.
 
-모든 디스크와 애그리게이트는 BlueXP에서 직접 생성 및 삭제해야 합니다. 다른 관리 도구에서 이러한 작업을 수행해서는 안 됩니다. 이렇게 하면 시스템 안정성에 영향을 주고 향후 디스크를 추가할 수 없도록 하며 중복 클라우드 공급자 비용을 생성할 수 있습니다.
+모든 디스크와 집계는 콘솔에서 직접 만들고 삭제해야 합니다. 다른 관리 도구에서는 이러한 작업을 수행해서는 안 됩니다. 그렇게 하면 시스템 안정성에 영향을 미치고, 나중에 디스크를 추가하는 기능을 방해할 수 있으며, 잠재적으로 중복된 클라우드 공급자 수수료가 발생할 수 있습니다.
 
 
 

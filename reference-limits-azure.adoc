@@ -22,7 +22,7 @@ Cloud Volumes ONTAP는 안정적인 운영을 제공하기 위해 스토리지 �
 
 Cloud Volumes ONTAP 시스템의 최대 시스템 용량은 라이센스에 따라 결정됩니다. 최대 시스템 용량에는 디스크 기반 스토리지와 데이터 계층화에 사용되는 오브젝트 스토리지가 포함됩니다.
 
-NetApp 시스템 용량 제한을 초과하는 것을 지원하지 않습니다.  라이센스된 용량 한도에 도달하면 BlueXP 조치가 필요하다는 메시지를 표시하고 더 이상 디스크를 추가할 수 없도록 차단합니다.
+NetApp 시스템 용량 제한을 초과하는 것을 지원하지 않습니다. 라이센스된 용량 한도에 도달하면 NetApp 콘솔에 작업 필요 메시지가 표시되고 디스크를 더 추가할 수 없습니다.
 
 .용량 기반 라이선스에 대한 용량 제한
 용량 기반 라이선싱을 통해 각 Cloud Volumes ONTAP 시스템은 개체 스토리지에 대한 계층화를 지원합니다.  전체 계층형 용량은 클라우드 제공자의 버킷 한도까지 확장될 수 있습니다.  라이센스에는 용량 제한이 부과되지 않지만 다음을 따라야 합니다. https://www.netapp.com/pdf.html?item=/media/17239-tr-4598.pdf["FabricPool 모범 사례"^] 계층화를 구성하고 관리할 때 최적의 성능, 안정성 및 비용 효율성을 보장합니다.  를 참조하세요 https://learn.microsoft.com/en-us/azure/storage/common/scalability-targets-standard-account["관리 디스크에 대한 Azure 설명서"^] 그리고 https://learn.microsoft.com/en-us/azure/storage/blobs/scalability-targets["Blob 저장소에 대한 Azure 설명서"^] .
@@ -697,8 +697,8 @@ https://docs.netapp.com/us-en/bluexp-cloud-volumes-ontap/task-managing-svms-azur
 . ONTAP 9.12.1P2부터 128TB가 제한됩니다. ONTAP 9.11.1 이하 버전에서는 16TB로 제한됩니다.
 . 최대 300TiB의 FlexVol 볼륨 생성은 다음 툴 및 최소 버전을 사용할 수 있습니다.
 +
-** Cloud Volumes ONTAP 9.12.1 P2 및 9.13.0 P2부터 시작하는 System Manager 및 ONTAP CLI
-** BlueXP는 Cloud Volumes ONTAP 9.13.1부터 시작됩니다
+** Cloud Volumes ONTAP 9.12.1 P2 및 9.13.0 P2부터 시작하는 시스템 관리자 및 ONTAP CLI
+** Cloud Volumes ONTAP 9.13.1부터 시작
 
 
 
