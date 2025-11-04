@@ -16,6 +16,16 @@ summary: Cloud Volumes ONTAP 9.17.1에는 새로운 기능이 추가되었습니
 [role="lead"]
 Cloud Volumes ONTAP 9.17.1은 Azure와 Google Cloud에서 배포 및 업그레이드할 수 있습니다.
 
+NetApp Console 의 최신 버전에서는 추가 기능과 향상된 기능도 도입되었습니다. 자세한 내용은 새로운 내용을 참조하세요. https://docs.netapp.com/us-en/storage-management-cloud-volumes-ontap/whats-new.html["Cloud Volumes ONTAP"^] 콘솔에서 관리됩니다.
+
+
+
+== 9.17.1 P1(2025년 11월 4일)
+
+이제 Cloud Volumes ONTAP 9.17.1 P1 패치를 Azure와 Google Cloud에 배포하고 업그레이드할 수 있습니다. 하지만 이 버전은 AWS에서는 배포 및 업그레이드할 수 없습니다. 콘솔에서는 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지가 표시됩니다.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P1["P1 패치에서 수정된 버그 목록을 확인하세요"^](NetApp 지원 사이트에 로그인이 필요합니다).
+
 
 
 == 9.17.1 RC1(2025년 9월 4일)

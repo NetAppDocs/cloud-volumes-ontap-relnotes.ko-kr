@@ -460,7 +460,6 @@
   <block id="eba85a087985c7150b43d2878dd0c2da" category="list-text">Elastic Volumes^3^에 128TiB의 물리적 용량</block>
   <block id="b7d71850fd138e6cd477a1887cc244f3" category="cell">애그리게이트당 디스크 ^4^</block>
   <block id="449daf85c71a9f8eb7c666134b1d9b95" category="list-text">1-6</block>
-  <block id="734bf70b1c522fd659b58c67d2c015e9" category="list-text">1-8 탄성 볼륨 ^3^</block>
   <block id="70fb554e00e352dd7da6941d99b53751" category="inline-link">Elastic Volumes 지원에 대해 자세히 알아보십시오</block>
   <block id="dc2065e297a9790d182a555ba250dbda" category="cell">노드 기반 BYOL</block>
   <block id="75b66e0b3cef735ea985bd79ab9601e2" category="cell">m5dn.4xLarge</block>
@@ -849,4 +848,12 @@
   <block id="ec7fa7e95a261dd6d86a889d93e8e7fd" category="paragraph">Azure 및 Google Cloud의 9.16.1 릴리스에서 Cloud Volumes ONTAP 9.17.1 RC1로 업그레이드할 수 있습니다. 콘솔에서는 적격 Cloud Volumes ONTAP 시스템을 이 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp 콘솔</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp 데이터 서비스</block>
+  <block id="8217e312ff09919418aea279cfd2ad1b" category="list-text">탄력적 볼륨이 있는 4개 또는 8개 ^3^</block>
+  <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
+  <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
+  <block id="5d1eb95c23458b15c13fe46f408728aa" category="paragraph">NetApp Console 의 최신 버전에서는 추가 기능과 향상된 기능도 도입되었습니다. 자세한 내용은 새로운 내용을 참조하세요.<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block> 콘솔에서 관리됩니다.</block>
+  <block id="86de323bb8011aa153a28e1ec6251441" category="section-title">9.17.1 P1(2025년 11월 4일)</block>
+  <block id="8027200a53fea356fb83667e546c5730" category="paragraph">이제 Cloud Volumes ONTAP 9.17.1 P1 패치를 Azure와 Google Cloud에 배포하고 업그레이드할 수 있습니다. 하지만 이 버전은 AWS에서는 배포 및 업그레이드할 수 없습니다. 콘솔에서는 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">P1 패치에서 수정된 버그 목록을 확인하세요</block>
+  <block id="eea79595a199aeba235c28ddf7c6a513" category="paragraph"><block ref="429dec56698d9248dce2c6adf256ffe7" category="inline-link-macro-rx"></block>(NetApp 지원 사이트에 로그인이 필요합니다).</block>
 </blocks>
