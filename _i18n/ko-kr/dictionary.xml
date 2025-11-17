@@ -792,10 +792,7 @@
   <block id="5d400a6226e85167dbd60b61421128ef" category="list-text"><block ref="5d400a6226e85167dbd60b61421128ef" category="inline-link-macro-rx"></block></block>
   <block id="6076bde119ef4c539333767fd60b037b" category="summary">Cloud Volumes ONTAP 9.17.1에는 새로운 기능이 추가되었습니다.</block>
   <block id="35e59ce342eaf6b146f59a2ec17b5019" category="doc">Cloud Volumes ONTAP 9.17.1의 새로운 기능</block>
-  <block id="c9636b1359c39d947689e7d7030a3876" category="paragraph">Cloud Volumes ONTAP 9.17.1은 Azure와 Google Cloud에서 배포 및 업그레이드할 수 있습니다.</block>
   <block id="db3cc6b5ebbff132de6d6986ec232460" category="section-title">9.17.1 RC1(2025년 9월 4일)</block>
-  <block id="8d9a14656b6d91eecabf8d5f9a39888c" category="paragraph">이제 Cloud Volumes ONTAP 9.17.1 릴리스 후보 1을 사용하여 Azure 및 Google Cloud에 배포하고 업그레이드할 수 있습니다. 하지만 이 버전은 AWS에서는 배포 및 업그레이드할 수 없습니다.</block>
-  <block id="a925267cf1e3f473e26af9a1c7e069bd" category="admonition">AWS의 경우 이 업그레이드에 대한 메시지가 표시되지 않습니다.  AWS에서는 Cloud Volumes ONTAP 9.17.1 RC1로의 업그레이드가 지원되지 않습니다.</block>
   <block id="1be92e36c3e9ca47e988acc51bde4499" category="sidebar">이 릴리스 노트에서는 Cloud Volumes ONTAP 9.17.1의 새로운 기능, 제한 사항 및 알려진 문제점을 설명합니다.</block>
   <block id="4cf5c8db7f505fa308225ecc9355e4d5" category="sidebar">Cloud Volumes ONTAP 9.17.1 릴리스 노트</block>
   <block id="003bdd8b041b75252a40e81df0fa7067" category="sidebar">Cloud Volumes ONTAP 9.17.1 릴리스 노트</block>
@@ -845,15 +842,19 @@
   <block id="26a761fa26c9fc375a164034ff206aca" category="paragraph">아니, 그렇지 않아요. HA 쌍의 데이터는 노드 간에 동기적으로 미러링되므로 Google Cloud에 장애가 발생하더라도 데이터를 사용할 수 있습니다. 예를 들어, 노드 A에서 8TB 디스크를 구매하는 경우 콘솔은 미러링된 데이터에 사용되는 노드 B에도 8TB 디스크를 할당합니다. 16TB의 용량이 설정되어 있지만, 라이선스 한도에는 8TB만 포함됩니다.</block>
   <block id="1d3b6bcaa662fb815c64aec0bffd0aa5" category="inline-link-macro">콘솔에서 알림을 받을 때 업그레이드하는 방법을 알아보세요.</block>
   <block id="c1c95a79ba017a924aa27e6d62ce3148" category="paragraph"><block ref="96dd1055c54322c16d3691cb1f44b801" category="inline-link-macro-rx"></block> .</block>
-  <block id="ec7fa7e95a261dd6d86a889d93e8e7fd" category="paragraph">Azure 및 Google Cloud의 9.16.1 릴리스에서 Cloud Volumes ONTAP 9.17.1 RC1로 업그레이드할 수 있습니다. 콘솔에서는 적격 Cloud Volumes ONTAP 시스템을 이 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="3c031b939f6ec312ee601d021e7a6644" category="sidebar">NetApp 콘솔</block>
   <block id="cc58d3a9b2264c4fd8cb1d3f61b90bdc" category="sidebar">NetApp 데이터 서비스</block>
   <block id="8217e312ff09919418aea279cfd2ad1b" category="list-text">탄력적 볼륨이 있는 4개 또는 8개 ^3^</block>
   <block id="c81e728d9d4c2f636f067f89cc14862c" category="cell">2</block>
   <block id="117bdbda976fe8b3212bc3b6327a0a1b" category="inline-link">Cloud Volumes ONTAP</block>
-  <block id="5d1eb95c23458b15c13fe46f408728aa" category="paragraph">NetApp Console 의 최신 버전에서는 추가 기능과 향상된 기능도 도입되었습니다. 자세한 내용은 새로운 내용을 참조하세요.<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block> 콘솔에서 관리됩니다.</block>
   <block id="86de323bb8011aa153a28e1ec6251441" category="section-title">9.17.1 P1(2025년 11월 4일)</block>
-  <block id="8027200a53fea356fb83667e546c5730" category="paragraph">이제 Cloud Volumes ONTAP 9.17.1 P1 패치를 Azure와 Google Cloud에 배포하고 업그레이드할 수 있습니다. 하지만 이 버전은 AWS에서는 배포 및 업그레이드할 수 없습니다. 콘솔에서는 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">P1 패치에서 수정된 버그 목록을 확인하세요</block>
   <block id="eea79595a199aeba235c28ddf7c6a513" category="paragraph"><block ref="429dec56698d9248dce2c6adf256ffe7" category="inline-link-macro-rx"></block>(NetApp 지원 사이트에 로그인이 필요합니다).</block>
+  <block id="ecf15dfab4d665bf128d1e2206f73a60" category="paragraph">Cloud Volumes ONTAP 9.17.1에는 새로운 기능이 추가되었습니다.</block>
+  <block id="efb171bcd8d21c30ceeb8df57557cce9" category="paragraph">NetApp Console 의 최신 버전에는 새로운 Cloud Volumes ONTAP 기능도 도입되었습니다. 자세한 내용은 새로운 내용을 참조하세요.<block ref="56e5ce972271b4b4616ecc1db39a9778" category="inline-link-rx"></block> 콘솔에서 관리됩니다.</block>
+  <block id="6fb051256b243143bc0b276db97f7c41" category="paragraph">이제 Cloud Volumes ONTAP 9.17.1 P1 패치를 AWS, Azure, Google Cloud에 배포하고 업그레이드할 수 있습니다. 콘솔에서는 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
+  <block id="9545c7a855bc88b301687212c3cb35d6" category="paragraph">이제 Cloud Volumes ONTAP 9.17.1 릴리스 후보 1을 사용하여 Azure 및 Google Cloud에 배포하고 업그레이드할 수 있습니다.</block>
+  <block id="8690f53f07f007360e78dc29e5309562" category="admonition">이 버전은 AWS에서 배포 및 업그레이드할 수 없습니다.</block>
+  <block id="57a0ba977b3ce94f8d770dc7f07f0621" category="paragraph">Cloud Volumes ONTAP 업그레이드는 콘솔에서 완료해야 합니다. System Manager나 CLI를 사용하여 Cloud Volumes ONTAP 업그레이드해서는 안 됩니다. 그렇게 하면 시스템 안정성에 영향을 미칠 수 있습니다.</block>
+  <block id="39c7d7fdae3f61f4fd797ff61941cf21" category="paragraph">AWS, Azure, Google Cloud에서 9.16.1 릴리스에서 Cloud Volumes ONTAP 9.17.1로 업그레이드할 수 있습니다.  AWS의 경우 Cloud Volumes ONTAP 9.17.1 P1 이상으로 업그레이드할 수 있습니다.  콘솔에서는 적격 Cloud Volumes ONTAP 시스템을 이 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
 </blocks>
