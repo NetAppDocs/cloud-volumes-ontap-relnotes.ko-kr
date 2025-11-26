@@ -607,8 +607,6 @@
   <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">용량 기반 라이센스</block>
   <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">노드 기반 라이센스</block>
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">Cloud Volumes ONTAP를 Azure에서 단일 노드 시스템으로 구축할 때 다음과 같은 용량 기반 또는 노드 기반 라이센스 구성 중에서 선택할 수 있습니다.</block>
-  <block id="d2f103c82b43ca5f2da33f93d94bde64" category="paragraph">새 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형을 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 예를 들어, E8ds_v4에서 E8s_v3으로 변경할 수는 없지만 두 VM 유형 모두 Ultra SSD를 사용하므로 E8ds_v4에서 E32ds_v4로 변경할 수 있습니다.</block>
-  <block id="c0f95d0d2e06eba7eb0522dabf1c9d76" category="paragraph">반대로 다른 VM 유형을 사용하여 Cloud Volumes ONTAP를 구축한 경우 VNVRAM용 Ultra SSD를 사용하는 VM 유형으로 변경할 수 없습니다. 예를 들어, E8s_v3에서 E8ds_v4로 변경할 수 없습니다.</block>
   <block id="fa399104e53f295813fa209a617a3bfe" category="list-text">E20ds_v5(3)</block>
   <block id="c077185ce5ae625437649ce1dbad7a15" category="section-title">Cloud Volumes ONTAP는 예약 및 온디맨드 VM 인스턴스만 지원합니다</block>
   <block id="876f1172cd6d0607aa7ef915b2e202b5" category="section-title">타사 에이전트 및 내선 번호의 제한 사항</block>
@@ -648,8 +646,6 @@
   <block id="0ef515bdf91048074b68adb0d7ce587e" category="paragraph">Cloud Volumes ONTAP은 일부 VM 유형에서 로컬 NVMe 스토리지를 _ Flash Cache _ 로 사용합니다. 이 제한 사항에 유의하십시오.</block>
   <block id="7616922b4f9b85f327fb9c04518fc90f" category="list-text">재부팅 후 캐시 다시 가기는 지원되지 않습니다.</block>
   <block id="3feaeead4352aa22a5e23895ca44ad6f" category="cell">Standard HDD Managed Disks, Standard SSD Managed Disks, Premium SSD Managed Disks, Premium SSD v2 Managed Disks.</block>
-  <block id="28440751cbe2a16368822f02f298a2f4" category="inline-link">공유 관리 디스크를 사용하는 HA 단일 가용성 영역 구성</block>
-  <block id="e2a0553d4c47017042ca1689993f9c8b" category="paragraph">새 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형을 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 예를 들어, E8ds_v4에서 E8s_v3으로 변경할 수는 없지만 두 VM 유형 모두 Ultra SSD를 사용하므로 E8ds_v4에서 E32ds_v4로 변경할 수 있습니다. 마찬가지로 새 Cloud Volumes ONTAP 시스템을 구축할 때 VM 유형을 프리미엄 SSD v2 관리 디스크를 지원하지 않는 것으로 변경할 수 없습니다. Premium SSD v2 Managed Disks에서 지원되는 구성에 대한 자세한 내용은 을 참조하십시오<block ref="6fd1548aedf3667cd5a4b1b43bc16181" category="inline-link-rx"></block>.</block>
   <block id="e1e1effee5380369716ff955c2de6215" category="cell">지원되는 시스템 유형 ^1^</block>
   <block id="1ea028151d07abb047b4e2f17d215216" category="cell">균형 잡힌 영구 디스크 3, 성능(SSD) 영구 디스크 및 표준(HDD) 영구 디스크.</block>
   <block id="6b145cfa91f7c68c4c0c6f2bf60bcf9d" category="paragraph">CUSTOM-4-16384 시스템 유형은 새로운 Cloud Volumes ONTAP 시스템에서 더 이상 지원되지 않습니다. 이 기계 유형에서 실행 중인 기존 시스템이 있는 경우 계속 사용할 수 있지만 n2-standard-4 기계 유형으로 전환하는 것이 좋습니다.</block>
@@ -786,7 +782,6 @@
   <block id="16283ebc943b0f7f5ee08013f7f4e52c" category="list-text">노드 기반 BYOL의 경우, 기본적으로 Cloud Volumes ONTAP 과 함께 제공되는 첫 번째 스토리지 VM 외에 추가 _데이터 제공_ 스토리지 VM이 하나 더 필요할 때마다 애드온 라이선스가 필요합니다.  스토리지 VM 추가 라이선스를 받으려면 계정 팀에 문의하세요.</block>
   <block id="acdea6c80f3845eb2767234fb04788c2" category="cell">지원되는 데이터 디스크 유형</block>
   <block id="d894dfdb1bbb11ae0641d7c6e97d92e2" category="cell">프리미엄 SSD 관리 디스크 또는 프리미엄 SSD v2 관리 디스크.</block>
-  <block id="09c6a071fdfa0f65318d9e3e960e825e" category="list-text">^6^ HA 배포를 위한 시스템 데이터의 내부 디스크에 대한 정보는 단일 및 다중 가용성 영역을 참조하십시오.<block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block> .</block>
   <block id="42762fecca2ab07cc92a3d950f2052c9" category="list-text">^7^ 2025년 8월 11일부터 Cloud Volumes ONTAP Optimized 라이선스는 더 이상 사용되지 않으며 Azure Marketplace에서 PAYGO(종량제) 구독을 구매하거나 갱신할 수 없습니다.<block ref="43fcd9c2498ef205b9218293a558faae" category="inline-link-rx"></block> .</block>
   <block id="be666ea41d284101ddfda886424c2d07" category="inline-link-macro">Cloud Volumes ONTAP 9.17.1에 대한 공지</block>
   <block id="5d400a6226e85167dbd60b61421128ef" category="list-text"><block ref="5d400a6226e85167dbd60b61421128ef" category="inline-link-macro-rx"></block></block>
@@ -857,4 +852,8 @@
   <block id="8690f53f07f007360e78dc29e5309562" category="admonition">이 버전은 AWS에서 배포 및 업그레이드할 수 없습니다.</block>
   <block id="57a0ba977b3ce94f8d770dc7f07f0621" category="paragraph">Cloud Volumes ONTAP 업그레이드는 콘솔에서 완료해야 합니다. System Manager나 CLI를 사용하여 Cloud Volumes ONTAP 업그레이드해서는 안 됩니다. 그렇게 하면 시스템 안정성에 영향을 미칠 수 있습니다.</block>
   <block id="39c7d7fdae3f61f4fd797ff61941cf21" category="paragraph">AWS, Azure, Google Cloud에서 9.16.1 릴리스에서 Cloud Volumes ONTAP 9.17.1로 업그레이드할 수 있습니다.  AWS의 경우 Cloud Volumes ONTAP 9.17.1 P1 이상으로 업그레이드할 수 있습니다.  콘솔에서는 적격 Cloud Volumes ONTAP 시스템을 이 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
+  <block id="2f3a829bc17b59e7781cb4c84d7fdaac" category="paragraph">새로운 Cloud Volumes ONTAP 시스템을 배포할 때 이러한 VM 유형 중 하나를 선택하면 VNVRAM에 Ultra SSD를 사용하지 않는 다른 VM 유형으로 변경할 수 없습니다. 예를 들어, E8ds_v4에서 E8s_v3로는 변경할 수 없지만, E8ds_v4에서 E32ds_v4로는 변경할 수 있습니다. 두 VM 유형 모두 Ultra SSD를 사용하기 때문입니다. 반대로, 다른 VM 유형을 사용하여 Cloud Volumes ONTAP 배포한 경우 VNVRAM에 Ultra SSD를 사용하는 다른 VM으로 변경할 수 없습니다. 예를 들어, VNVRAM에 Ultra SSD를 사용하지 않는 E8s_v3을 Ultra SSD를 사용하는 E8ds_v4로 변경할 수 없습니다.</block>
+  <block id="15c46c6e8cc3bc71a1f7ac25fd043a38" category="inline-link">기준</block>
+  <block id="b21dfdf1c7842fb2345e529943fe3797" category="paragraph">마찬가지로, 다음 조건을 충족하는 환경에 대해 프리미엄 SSD 관리 디스크를 선택하는 경우<block ref="15bd670ffefc5e29ca2fb072751f55bb" category="inline-link-rx"></block> Premium SSD v2 Managed Disks의 경우 콘솔은 Premium SSD v2 Managed Disks를 자동으로 배포합니다. Premium SSD v1 Managed Disks로 전환할 수 없습니다.</block>
+  <block id="ea848964069f461947feaaafed2ce380" category="list-text">^6^ 다음 조건을 충족하는 환경에 대해 프리미엄 SSD 관리 디스크를 선택하는 경우<block ref="15bd670ffefc5e29ca2fb072751f55bb" category="inline-link-rx"></block> Premium SSD v2 Managed Disks의 경우 콘솔은 Premium SSD v2 Managed Disks를 자동으로 배포합니다. Premium SSD v1 Managed Disks로 전환할 수 없습니다. HA 배포를 위한 시스템 데이터의 내부 디스크에 대한 정보는 단일 및 다중 가용성 영역을 참조하십시오.<block ref="f48956bad241329abf5e1ff5123459dd" category="inline-link-rx"></block>.</block>
 </blocks>
