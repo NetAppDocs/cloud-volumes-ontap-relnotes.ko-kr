@@ -20,6 +20,14 @@ NetApp Console 의 최신 버전에는 새로운 Cloud Volumes ONTAP 기능도 �
 
 
 
+== 9.17.1 P2(2025년 12월 4일)
+
+이제 Cloud Volumes ONTAP 9.17.1 P2 패치를 AWS, Azure 및 Google Cloud에서 업그레이드할 수 있습니다. 콘솔에서는 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지가 표시됩니다.
+
+link:https://mysupport.netapp.com/site/products/all/details/cloud-volumes-ontap/downloads-tab/download/62632/9.17.1P2["P2 패치에서 수정된 버그 목록을 확인하세요"^](NetApp 지원 사이트에 로그인이 필요합니다).
+
+
+
 == 9.17.1 P1(2025년 11월 4일)
 
 이제 Cloud Volumes ONTAP 9.17.1 P1 패치를 AWS, Azure, Google Cloud에 배포하고 업그레이드할 수 있습니다. 콘솔에서는 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지가 표시됩니다.
