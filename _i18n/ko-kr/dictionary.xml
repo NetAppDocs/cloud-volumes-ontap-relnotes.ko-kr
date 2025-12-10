@@ -490,7 +490,6 @@
   <block id="2819feead2b07762a4465189ab8b2f52" category="paragraph-title">HA 쌍의 경우, 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="7093c2c9844cf46dcd5d50c6d596d244" category="paragraph-title">HA 쌍의 경우, 미러링된 데이터가 라이센스 용량 제한에 대해 계산됩니까?</block>
   <block id="9d123a356c832621891a3328c128b78b" category="list-text">L8s_v3^2^</block>
-  <block id="b869cbdadaa9844d32c24de3f4db3242" category="cell">관리형 디스크</block>
   <block id="dbe94f36417009d827f76ccf107bd90c" category="section-title">자동 애플리케이션 리소스 관리 솔루션을 사용해서는 안 됩니다</block>
   <block id="2f9882645b2c32820ad085240bacb763" category="paragraph-title">HA의 경우 노드당 또는 전체 HA 쌍의 라이센스 용량 제한이 있습니까?</block>
   <block id="2d7789be6e6e477491f790d5a3ea60b3" category="cell">단일 노드의 384TiB 물리적 용량^2^352TiB 단일 노드의 물리적 용량 PAYGO 96TiB의 HA 쌍 원시 용량 및 페이지 BLOB의 경우 384TiB의 HA 쌍 원시 용량 관리 디스크가 있는 HA 쌍의 경우</block>
@@ -860,4 +859,16 @@
   <block id="ef472153bbc56318dce19177ac3fa1b4" category="paragraph">이제 Cloud Volumes ONTAP 9.17.1 P2 패치를 AWS, Azure 및 Google Cloud에서 업그레이드할 수 있습니다. 콘솔에서는 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">P2 패치에서 수정된 버그 목록을 확인하세요</block>
   <block id="a40be2bf2d5d6d88cd3370cec7aad194" category="paragraph"><block ref="ac39adedf16f862832f2e839cb1736f3" category="inline-link-macro-rx"></block>(NetApp 지원 사이트에 로그인이 필요합니다).</block>
+  <block id="02fab2cadf45bea30480ac0cf50e7203" category="list-text">E4ds_v6 ^6^</block>
+  <block id="06413994c4aa1a93ecf2981f24ff2396" category="list-text">E20ds_v6 ^6^</block>
+  <block id="10dc072def6ec7e5386a9f5dd3ab2c8a" category="list-text">E32ds_v6 ^6^</block>
+  <block id="2ae3c16964ee90fd940bb8328b5a3663" category="list-text">E48ds_v6 ^6^</block>
+  <block id="92d6fd9aadcde9f296b1479b74c1cf7f" category="list-text">E64ds_v6 ^6^</block>
+  <block id="4bdfb2bd07bacb86cc6544fcf6ff0886" category="inline-link">Azure 설명서: Edsv6 크기 시리즈</block>
+  <block id="92ad9c31e57427cf475ee8d5349fc4b9" category="list-text">^6^ Edsv6 VM 유형은 Cloud Volumes ONTAP 9.17.1 이상 버전의 신규 배포에서 지원됩니다. 기존 배포 환경을 다른 VM 유형(예: Edsv5에서 Edsv6으로)으로 전환할 수는 없습니다. Edsv6 변형 간의 크기 변경(예: E20ds_v6 → E32ds_v6)만 지원됩니다. 이 VM 유형에 대한 자세한 내용은 다음을 참조하십시오.<block ref="45ec24eb73012d89f19225059116e005" category="inline-link-rx"></block>.</block>
+  <block id="56ca123545ff7cba565948f4938058fb" category="list-text">E20ds_v6 ^8^</block>
+  <block id="e697f2679cf554cf428572d7d2257b81" category="list-text">E32ds_v6 ^8^</block>
+  <block id="6fca818cb2b74d72dd8849c2a4e34d2b" category="list-text">E48ds_v6 ^8^</block>
+  <block id="bbc7e0e0269760cbd08e32205763eede" category="list-text">E64ds_v6 ^8^</block>
+  <block id="312c1718d8151f9dd3f53ad516f59210" category="list-text">^8^ Edsv6 VM 유형은 Cloud Volumes ONTAP 9.17.1 이상 버전의 신규 배포에서 지원됩니다. 기존 배포 환경을 다른 VM 유형(예: Edsv5에서 Edsv6으로)으로 전환할 수는 없습니다. Edsv6 변형 간의 크기 변경(예: E20ds_v6 → E32ds_v6)만 지원됩니다. 이 VM 유형에 대한 자세한 내용은 다음을 참조하십시오.<block ref="45ec24eb73012d89f19225059116e005" category="inline-link-rx"></block>.</block>
 </blocks>
