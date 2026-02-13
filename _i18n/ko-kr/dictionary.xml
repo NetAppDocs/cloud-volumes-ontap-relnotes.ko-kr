@@ -191,7 +191,6 @@
   <block id="ce5ee1bd79a3fbc4ee9fee207a94ef54" category="paragraph">용량 제한은 전체 HA 쌍에 대한 것입니다. 노드 단위로 표시되지 않습니다. 예를 들어, Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TB의 용량을 가질 수 있습니다.</block>
   <block id="466cd90b62b5da75ee4bd662add41e7f" category="section-title">디스크 및 계층화 제한</block>
   <block id="08fca9107919e2a3190d5edc75ce7c61" category="cell">최대 데이터 디스크 수</block>
-  <block id="73a5b4e1955745ba2e19b7f891caf5fd" category="list-text">단일 노드 시스템용 124개</block>
   <block id="2b7385ac96adbf2201cf7b11333b798c" category="list-text">HA 쌍에 대한 노드당 123개</block>
   <block id="4b4891ea5a4ccf6a32baf317c31a9391" category="cell">최대 디스크 크기입니다</block>
   <block id="c1edd650c09defc6ca8d0aaf67803ddc" category="cell">64TB</block>
@@ -209,8 +208,6 @@
   <block id="324f218b8144e744b54eb58e0bf14eea" category="cell">16TB</block>
   <block id="fa082ab1a05e05550971e6e5f583dcfe" category="summary">AWS에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.</block>
   <block id="7db0f9060b8b2def82346add7b8e89c0" category="section-title">지원되는 노드 수입니다</block>
-  <block id="a0a1c13507a24083c5a835cbc79ea6c7" category="paragraph">Cloud Volumes ONTAP는 AWS에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 지원하는 고가용성(HA) 노드 쌍으로 제공됩니다.</block>
-  <block id="ffe182d798fac96ff130cb1500052036" category="paragraph">단일 노드 시스템을 HA 쌍으로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 쌍 간에 전환하려면 새 시스템을 구축하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.</block>
   <block id="bff50f1947dbec1e11bc66d60ca0b1d9" category="section-title">지원되는 스토리지</block>
   <block id="721f444864f7f20b038565facc11ed77" category="paragraph">Cloud Volumes ONTAP은 여러 유형의 EBS 디스크와 데이터 계층화를 위한 S3 오브젝트 스토리지를 지원합니다. 최대 스토리지 용량은 선택한 라이센스에 따라 결정됩니다.</block>
   <block id="e17c7f98af970809162c4395474988ad" category="section-title">라이센스별 스토리지 지원</block>
@@ -293,7 +290,6 @@
   <block id="0584ce565c824b7b7f50282d9a19945b" category="cell">384</block>
   <block id="dfeeabb8d703f59f841c2a6e2ed8d240" category="inline-link">Flash Cache에 대해 자세히 알아보십시오</block>
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">쓰기 속도 선택에 대해 자세히 알아보세요</block>
-  <block id="8e6a2ebba2f4ad1a560224744383ef97" category="list-text">r5.12xLarge 인스턴스 유형은 지원 가능성의 알려진 제한 사항이 있습니다. 패닉이 발생하여 노드가 예기치 않게 재부팅되는 경우 시스템에서 문제 해결에 사용되는 핵심 파일을 수집하지 못하고 문제의 근본 원인을 해결하지 못할 수 있습니다. 고객은 위험 및 제한된 지원 약관에 동의하며 이 조건이 발생할 경우 모든 지원 책임을 집니다. 이 제한은 새로 구축된 HA 쌍과 9.8에서 업그레이드된 HA 쌍에 영향을 미칩니다. 새로 구축된 단일 노드 시스템에는 이러한 제한이 적용되지 않습니다.</block>
   <block id="9de28fbf6817cd511eb799f9575b611d" category="list-text">EC2 인스턴스 유형을 선택하면 해당 인스턴스가 공유 인스턴스인지 전용 인스턴스인지 지정할 수 있습니다.</block>
   <block id="afea36f2c9999a231c58b7e9dcf3b16e" category="list-text">Cloud Volumes ONTAP는 예약된 EC2 인스턴스 또는 주문형 EC2 인스턴스에서 실행할 수 있습니다. 다른 인스턴스 유형을 사용하는 솔루션은 지원되지 않습니다.</block>
   <block id="8c4b25218155a1fdb972f4169855d04f" category="section-title">지원 지역</block>
@@ -305,7 +301,6 @@
   <block id="2318ed77a95c79ae448f3b0d0b40414c" category="paragraph">NetApp은 적용 가능한 클라우드 공급자 서비스의 결과일 수 있는 고객 기술 문제에 대해 해당 클라우드 공급자와 연결할 수 있는 툴을 구축했습니다. 그러나 원활한 지원 흐름을 유지하는 가장 좋은 방법은 (i) NetApp 및 해당 클라우드 공급자와 현재 지원 계약을 유지하고 (ii) 기술 문제가 발생하거나 고객이 분명한 설명을 요구하는 경우 NetApp 및 해당 클라우드 제공업체와 공동 에스컬레이션 회의를 조정하는 것입니다 어떤 제품 또는 서비스가 이러한 기술적 문제를 야기하고 있는지 확인합니다.</block>
   <block id="034784053601e78fdb1d3e456d5a7c59" category="section-title">Azure 유지 관리 이벤트입니다</block>
   <block id="eb43b40e67fff3351b74b6f875e497b9" category="paragraph">Microsoft는 Cloud Volumes ONTAP VM에 영향을 줄 수 있는 Azure VM(가상 머신) 인프라의 유지보수 이벤트를 예약하고 프로그래밍 방식으로 알립니다. 이러한 이벤트는 유지 보수 기간 15분 전에 발표됩니다.</block>
-  <block id="5e486cb2e38fc7f03f038af21eb3cdb9" category="paragraph">Cloud Volumes ONTAP HA(고가용성) 쌍에서는 유지 관리 이벤트에 대한 특별한 처리가 지원됩니다. 애플리케이션 상태를 유지하기 위해 사전 예방 테이크오버 를 수행하여 안정성을 우선으로 결정합니다. 15초 이상의 연결이 끊어지면 페일오버 기능이 비활성화됩니다.</block>
   <block id="1222cf807490df82fd7e0146eb6798c1" category="paragraph">유지보수 윈도우가 공지되면 타겟 노드의 파트너 노드가 테이크오버 수행 유지 관리가 완료되면 반환이 시작됩니다. 반환 후 HA 쌍이 정상 상태로 돌아올 것으로 예상됩니다. 이렇게 하지 않으면 NetApp Support에 문의하십시오. 유지보수 이벤트는 한 번에 HA 쌍 내의 VM 중 하나를 대상으로 하며, 일반적으로 두 노드는 비교적 짧은 기간 동안 타겟으로 합니다.</block>
   <block id="e9c44bbfd795a5d63d74c6a77afee70d" category="summary">법적 고지 사항은 저작권 선언, 상표, 특허 등에 대한 액세스를 제공합니다.</block>
   <block id="30d965eef5ba25c6b9998ae38270b43e" category="doc">법적 고지</block>
@@ -319,8 +314,6 @@
   <block id="9b73989307c1975dfa4d5e1581e4afe8" category="paragraph">통지 파일은 NetApp 소프트웨어에 사용된 타사의 저작권 및 라이센스에 대한 정보를 제공합니다.</block>
   <block id="b889869e31827a33530d6fd02141fdb5" category="summary">Azure에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.</block>
   <block id="c334038ed8a782403ae705a8de1f584b" category="section-title">라이센스에 의해 지원되는 구성</block>
-  <block id="9f1dc929787c1a2d05667987a87c083b" category="paragraph">Cloud Volumes ONTAP는 Azure에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 지원하는 고가용성(HA) 노드 쌍으로 제공됩니다.</block>
-  <block id="078325cc35a9c8c9290e445f32bd1855" category="section-title">단일 노드 시스템</block>
   <block id="e02cfa40e076b3e2d41b29974af36f06" category="cell">최대 시스템 용량(디스크 + 오브젝트 스토리지)</block>
   <block id="333cde16cf112bb117788fe2729a875c" category="cell">지원되는 가상 머신 유형입니다</block>
   <block id="83eca86ff243df4e1646a92d7c304973" category="list-text">DS4_v2</block>
@@ -343,7 +336,6 @@
   <block id="b049fcbe8198301adc6bf87634a02845" category="section-title">HA 쌍</block>
   <block id="2eacfdd792ca3ab121472c95654b43ec" category="paragraph">Azure에서 Cloud Volumes ONTAP를 HA 쌍으로 구축할 경우, 다음 구성 중에서 선택할 수 있습니다.</block>
   <block id="88d444d836b2ea3ca342f4cc3a6b2b50" category="paragraph">Azure에서는 aggregate에 동일한 유형과 크기의 디스크를 최대 12개까지 포함할 수 있습니다.</block>
-  <block id="90d1dad6ac7388ba65631ec0b927dabc" category="paragraph">단일 노드 시스템은 Azure 관리 디스크를 사용합니다. 지원되는 디스크 크기는 다음과 같습니다.</block>
   <block id="fac18bfae2384f6eccc3a9779ce41d25" category="cell">Premium SSD를 사용합니다</block>
   <block id="be08eab34bc0f034d51f82767686b3b7" category="cell">Standard SSD를 참조하십시오</block>
   <block id="ef80fe66906aa69c663bc559d808a821" category="cell">표준 HDD</block>
@@ -382,7 +374,6 @@
   <block id="88a30f177822761a0b89ce7abd88a305" category="list-text">E32ds_v4</block>
   <block id="958e5e8b2dc959cc24ae1182052f1b03" category="list-text">E48ds_v4</block>
   <block id="9141535b8d150812f3cded29f090ad8c" category="summary">Google Cloud에서는 여러 Cloud Volumes ONTAP 구성이 지원됩니다.</block>
-  <block id="12fe559ef81ce645ef1aee77885e1827" category="paragraph">단일 노드 시스템을 HA 쌍으로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 쌍 간에 전환하려면 새 시스템을 구축하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.</block>
   <block id="8c0495bb0212f48146ab592de8a205d9" category="cell">2TB^2^</block>
   <block id="c217f1a10b2c84178d69b991f9ca2a8d" category="cell">지원되는 시스템 유형 ^3^</block>
   <block id="88ba83f191bd27de24492d3f347d8add" category="list-text">N2-표준-4</block>
@@ -469,7 +460,6 @@
   <block id="33f66f5b18b24875dca7a81c8f84c5b9" category="cell">896TiB</block>
   <block id="a4a5e7bfb7afd26ff6a225ef7681add9" category="paragraph">아래 표에는 디스크 단독으로, 디스크 및 콜드 데이터를 오브젝트 스토리지로 계층화하는 경우 최대 시스템 용량이 나와 있습니다. 디스크 제한은 사용자 데이터가 포함된 디스크에만 적용됩니다. 제한에는 부팅 디스크, 루트 디스크 또는 NVRAM이 포함되지 않습니다.</block>
   <block id="aa22c87da31d41edeac2ffbad9e7507d" category="cell">라이센스에 따라 다릅니다. 위의 최대 시스템 용량 제한을 참조하십시오.</block>
-  <block id="4309266475af7c71bb88f9be6f8c3940" category="paragraph">용량 제한은 사용하는 EC2 인스턴스 유형 제품군과 단일 노드 시스템을 사용하는지 HA 쌍을 사용하는지에 따라 다릅니다.</block>
   <block id="b1fb395f7c47ced4c12fc74fad2320b5" category="paragraph">다음 노트는 아래 표에 표시되는 숫자에 대한 세부 정보를 제공합니다.</block>
   <block id="3ee4a294c58f9e6c4461dc10d825844c" category="list-text">디스크 제한은 사용자 데이터가 포함된 디스크에만 적용됩니다.</block>
   <block id="e7caa46d6e70a5b96752b4644b9f1527" category="paragraph">이 제한에는 부팅 디스크 및 루트 디스크가 포함되지 않습니다.</block>
@@ -483,7 +473,6 @@
   <block id="9dbb7f356b08de585f6ddbe523e4a8d8" category="section-title">PAYGO Premium과 HA 쌍</block>
   <block id="1bc398eeb632d3ea2f565d86881775d8" category="section-title">BYOL의 HA 쌍</block>
   <block id="bbeef84c33f1676ea87c5c7f476795e6" category="paragraph">이 제한에는 루트 디스크, 코어 디스크 및 VNVRAM이 포함되지 않습니다.</block>
-  <block id="0d5277886c056c697a81cb7ba46178fc" category="list-text">특정 VM 크기의 단일 노드 시스템에 대해 나열되는 896TiB 디스크 기반 제한은_pECTED_LIMIT입니다.</block>
   <block id="8a11b7df22322ab2814174e7745c863f" category="inline-link">ONTAP에 대한 고지 사항</block>
   <block id="a65d010a2b24f9e4a0919b7faf52d022" category="list-text"><block ref="a65d010a2b24f9e4a0919b7faf52d022" category="inline-link-rx"></block></block>
   <block id="6614eabe1ab14f33107830de1efb584a" category="inline-link-macro">Cloud Volumes ONTAP의 EC2 인스턴스 유형을 변경하는 방법에 대해 알아보십시오</block>
@@ -514,7 +503,6 @@
   <block id="dfb01a7b38cba8284269f37f00622809" category="paragraph">이 릴리스 업그레이드에 대한 자세한 내용은 이 노트를 참조하십시오.</block>
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">업그레이드 방법</block>
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">알아 보십시오</block>
-  <block id="9f0f02784feedfa2549a9e3a51cfa315" category="list-text">단일 노드 시스템을 업그레이드하면 시스템이 최대 25분 동안 오프라인 상태로 전환되고 이 동안 I/O가 중단됩니다.</block>
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">C4, M4 및 R4 인스턴스는 더 이상 지원되지 않습니다</block>
   <block id="e19784a5420512b2876c7b24680652b5" category="cell">40,000개</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">Cloud Volumes ONTAP 9.12.0까지 Flash Cache 성능 향상을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다. Cloud Volumes ONTAP 9.12.1을 배포하거나 업그레이드할 때 압축을 비활성화할 필요가 없습니다.</block>
@@ -539,7 +527,6 @@
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>.</block>
   <block id="ca40429b1b07555a35de829b976a6961" category="paragraph">AWS에서는 aggregate에 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 하지만 Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우 aggregate에 디스크를 최대 8개까지 포함할 수 있습니다.<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
   <block id="9df4ca2adcfbf390d35edbeb52928a78" category="list-text">일부 인스턴스 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 있습니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.<block ref="da56a164195bbdee72f1dfc4ea53669d" category="inline-link-rx"></block>.</block>
-  <block id="ce4956d12fe22f1b1243720ce22651e0" category="list-text">Cloud Volumes ONTAP는 HA Pair를 사용할 경우 대부분의 인스턴스 유형에서 빠른 쓰기 속도를 지원합니다. 단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
   <block id="f6dcc1a079544e36390b698b6f59bf4e" category="paragraph">용량 기반 라이센스 패키지를 사용하는 Cloud Volumes ONTAP 시스템에는 다음과 같은 디스크 제한 사항이 적용됩니다.<block ref="360eefdcdd22adda63e8597e9466029a" category="inline-link-rx"></block></block>
   <block id="fc8746b925f8923889b77841242bf054" category="paragraph"><block ref="771bd01d5b66ba0bcb76d734267dc8bb" category="inline-link-rx"></block>.</block>
   <block id="ae90a2e4532cb9b615489b63c36e2383" category="paragraph"><block ref="dca5658ae26fff987979f5de0a83e9fd" category="inline-link-rx"></block>.</block>
@@ -602,7 +589,6 @@
   <block id="c0147218881d0d0fb9dddce993d7c08c" category="list-text">E48ds_v5(1)</block>
   <block id="d071b0d9481cad34966de3c7caf72b29" category="list-text">E64ds_v5(1)</block>
   <block id="6c390ecab52e3e5345764abdf66b4a13" category="list-text">E20ds_v5(1)</block>
-  <block id="ea724697af39ce2b490b5643777ed273" category="paragraph">Cloud Volumes ONTAP는 Google Cloud에서 단일 노드 시스템으로, 내결함성 및 무중단 운영을 위한 고가용성(HA) 노드 쌍으로 사용할 수 있습니다.</block>
   <block id="f52ead6bbf1fb1c871d206603e5a2347" category="open-title">용량 기반 라이센스</block>
   <block id="d56bf07ec8cd4e9f29339d605ffef95c" category="open-title">노드 기반 라이센스</block>
   <block id="bde67b5966889851166e3f5c7b09ff05" category="paragraph">Cloud Volumes ONTAP를 Azure에서 단일 노드 시스템으로 구축할 때 다음과 같은 용량 기반 또는 노드 기반 라이센스 구성 중에서 선택할 수 있습니다.</block>
@@ -797,10 +783,7 @@
   <block id="17f65eba8f584b7ce968f1741f49a63d" category="paragraph">Cloud Volumes ONTAP 9.15.1부터 Azure의 단일 가용성 영역(AZ)에 HA 모드로 가상 머신(VM) 인스턴스를 배포할 수 있습니다. 이 기능을 지원하는 기준에 대한 정보는 다음을 참조하세요.<block ref="49b9d02c37364ae9681ce7a59d4d9548" category="inline-link-rx"></block> .</block>
   <block id="ed5b1d9ebcc8b8d189007ac8c9494846" category="section-title">HA 배포의 제한 사항</block>
   <block id="b1969fa9ebe4dd2003618adb77082978" category="paragraph">일부 지역에서는 HA 쌍이 지원되지 않습니다.</block>
-  <block id="3f994f50a7ba231a5397b2a11497b272" category="list-text">^1^ Azure에서 Cloud Volumes ONTAP 의 새 인스턴스를 배포할 때 NetApp 콘솔에서 DS_v2 및 Es_v3 머신 제품군을 더 이상 선택할 수 없습니다. 이러한 가족은 기존의 오래된 시스템에서만 유지되고 지원됩니다. Cloud Volumes ONTAP 의 새로운 배포는 Azure 9.12.1 릴리스부터 지원됩니다. Cloud Volumes ONTAP 9.12.1 이상과 호환되는 Es_v4 또는 다른 시리즈로 전환하는 것이 좋습니다. 하지만 DS_v2 및 Es_v3 시리즈 머신은 API를 통해 이루어진 새로운 배포에 사용할 수 있습니다.</block>
-  <block id="60ffb33f36dd41ec7837416044ddf175" category="list-text">^4^ 단일 노드 배포에서 지원되는 디스크 유형에 대한 정보는 다음을 참조하세요.<block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block> . 단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다. 배포 중이나 배포 후 언제든지 콘솔에서 높은 쓰기 속도를 활성화할 수 있습니다.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> . SSD를 사용하면 쓰기 성능이 향상됩니다.</block>
   <block id="1b86b14d468d8ed84f5d72f2f7d74d10" category="list-text">^1^ Azure에서 Cloud Volumes ONTAP 의 새 인스턴스를 배포할 때 콘솔에서 DS_v2 및 Es_v3 머신 패밀리를 더 이상 선택할 수 없습니다. 이러한 가족은 기존의 오래된 시스템에서만 유지되고 지원됩니다. Cloud Volumes ONTAP 의 새로운 배포는 Azure 9.12.1 릴리스부터 지원됩니다. Cloud Volumes ONTAP 9.12.1 이상과 호환되는 Es_v4 또는 다른 시리즈로 전환하는 것이 좋습니다. 하지만 DS_v2 및 Es_v3 시리즈 머신은 API를 통해 이루어진 새로운 배포에 사용할 수 있습니다.</block>
-  <block id="532ba8cc24d0d71f06b46f9c976e1a08" category="list-text">^4^ 단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 높은 쓰기 속도가 지원됩니다. 배포 중이나 배포 후 언제든지 콘솔에서 높은 쓰기 속도를 활성화할 수 있습니다.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> . SSD를 사용하면 쓰기 성능이 향상됩니다.</block>
   <block id="63c51e90bb823244bb44fdef3fa111d2" category="list-text">^1^ Cloud Volumes ONTAP HA 쌍을 사용할 때 이러한 VM 유형에 대해 높은 쓰기 속도를 지원합니다. 배포 중이나 배포 후 언제든지 콘솔에서 높은 쓰기 속도를 활성화할 수 있습니다.<block ref="18805b87db41583a67ecc2414d022f2b" category="inline-link-rx"></block> .</block>
   <block id="addbd739f53cc9b7f78ee8946f1edee3" category="list-text">^1^ Cloud Volumes ONTAP HA 쌍을 사용할 때 이러한 VM 유형에 대해 높은 쓰기 속도를 지원합니다. 배포 중이나 배포 후 언제든지 콘솔에서 높은 쓰기 속도를 활성화할 수 있습니다.<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block> .</block>
   <block id="9a12688a6b9775d81793103d67b5e77d" category="list-text">^1^ Google Cloud에서 Cloud Volumes ONTAP 의 새 인스턴스를 배포할 때 NetApp 콘솔에서 n1 시리즈 머신을 더 이상 선택할 수 없습니다. n1 시리즈 머신은 기존의 오래된 시스템에서만 유지 및 지원됩니다. Cloud Volumes ONTAP 의 새로운 배포는 Google Cloud 9.8 릴리스부터만 지원됩니다. Cloud Volumes ONTAP 9.8 이상과 호환되는 n2 시리즈 머신으로 전환하는 것이 좋습니다. 하지만 n1 시리즈 머신은 API를 통해 이루어진 새로운 배포에 사용할 수 있습니다.</block>
@@ -863,4 +846,38 @@
   <block id="7ee7c49a2608d3d31956026fdc3bf833" category="sidebar">본 릴리스 노트는 Cloud Volumes ONTAP 9.18.1의 새로운 기능, 제한 사항 및 알려진 문제에 대해 설명합니다.</block>
   <block id="001b20e35d2188363ca847fd669007f8" category="sidebar">Cloud Volumes ONTAP 9.18.1 릴리스 노트</block>
   <block id="e0b3d5810800c1af83b5753f4a2a2f7e" category="sidebar">Cloud Volumes ONTAP 9.18.1 릴리스 노트</block>
+  <block id="9cb5231fae0fa398b4997a3404e75449" category="paragraph">Cloud Volumes ONTAP는 AWS에서 단일 노드 시스템과 내결함성 및 중단 없는 운영을 위한 고가용성(HA) 노드 쌍으로 제공됩니다.</block>
+  <block id="ef4986bf1cd31453df648c0c88caab37" category="paragraph">단일 노드 시스템을 HA 페어로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 페어 간에 전환하려면 새 시스템을 배포하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.</block>
+  <block id="231fd9de718f42c1c9e89368821092dd" category="open-title">기타 라이선스</block>
+  <block id="eedc677bbd07d9095251c43bc5a4b33d" category="list-text">Cloud Volumes ONTAP는 HA 페어를 사용할 경우 대부분의 인스턴스 유형에서 높은 쓰기 속도를 지원합니다. 단일 노드 시스템을 사용할 경우에는 모든 인스턴스 유형에서 높은 쓰기 속도를 지원합니다<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
+  <block id="d79ae3bafac04fb5a94c065465345b1c" category="list-text">r5.12xlarge 인스턴스 유형에는 지원 가능성과 관련된 알려진 제한 사항이 있습니다. 패닉으로 인해 노드가 예기치 않게 재부팅될 경우 시스템에서 문제 해결 및 근본 원인 파악에 사용되는 코어 파일을 수집하지 못할 수 있습니다. 고객은 위험과 제한된 지원 조건을 수락하며 이러한 상황이 발생할 경우 모든 지원 책임을 부담합니다. 이 제한 사항은 새로 배포된 HA 쌍과 9.8에서 업그레이드된 HA 쌍에 영향을 미칩니다. 이 제한 사항은 새로 배포된 단일 노드 시스템에는 영향을 미치지 않습니다.</block>
+  <block id="4b40cbab0027c4d9d78baf0e5d6fda5d" category="paragraph">Cloud Volumes ONTAP는 Azure에서 단일 노드 시스템과 내결함성 및 중단 없는 운영을 위한 고가용성(HA) 노드 쌍으로 사용할 수 있습니다.</block>
+  <block id="1df33292a2fca2da6ee337f54fc40930" category="section-title">단일 노드 시스템</block>
+  <block id="3b8c3df5626bc43aec26530659b49924" category="list-text">E4bds_v5 ^7^</block>
+  <block id="a5ad09c71ba5e0587c92b30e647007d2" category="list-text">E8bds_v5 ^7^</block>
+  <block id="62f13a38954d80d4731af8cce6ff44ce" category="list-text">E16bds_v5 ^7^</block>
+  <block id="790607e207ea5b72ced99b7b00ab5267" category="list-text">E32bds_v5 ^7^</block>
+  <block id="7c9ea67787bbf71717c6975389d413af" category="list-text">E48bds_v5 ^7^</block>
+  <block id="519405312759dbe64953e3db6bed97a5" category="list-text">E64bds_v5 ^7^</block>
+  <block id="1b6e6ed136dc27160aa24ba7c0aa1fd0" category="list-text">E104ids_v5 ^7^</block>
+  <block id="1884aab981286236b4bcfe85e346c59a" category="list-text">^1^ DSv2 및 Esv3 머신 제품군은 Azure에서 Cloud Volumes ONTAP의 새 인스턴스를 배포할 때 NetApp Console에서 더 이상 선택할 수 없습니다. 이러한 제품군은 기존 시스템에서만 유지 및 지원됩니다. Azure에서 Cloud Volumes ONTAP의 새 배포는 9.12.1 릴리스부터 지원됩니다. Es_v4 또는 Cloud Volumes ONTAP 9.12.1 이상과 호환되는 다른 시리즈로 전환하는 것이 좋습니다. 단, API를 통한 새 배포에서는 DS_v2 및 Es_v3 시리즈 시스템을 사용할 수 있습니다.</block>
+  <block id="54eafc097b7ad6fc619cb7eacb3b3eac" category="list-text">^4^ 단일 노드 배포에서 지원되는 디스크 유형에 대한 자세한 내용은<block ref="5d976ccca41daf11d6b5e395edda488a" category="inline-link-rx"></block>을 참조하십시오. 단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 고속 쓰기가 지원됩니다. 배포 중 또는 배포 후 언제든지 콘솔에서 고속 쓰기를 활성화할 수 있습니다<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>. SSD를 사용하는 경우 향상된 쓰기 성능이 활성화됩니다.</block>
+  <block id="338aa3c87bbe1645a2248b5cdc2e08d7" category="list-text">^7^ Ebdsv5 및 E104ids_v5 VM은 Cloud Volumes ONTAP 9.18.1 이상 버전의 신규 배포 및 업그레이드에 사용할 수 있습니다. 기존의 Edsv4, Edsv5 또는 기타 Ebdsv5 VM 유형을 Ebdsv5로 변경하거나 업그레이드할 수 있습니다. Ebdsv5 또는 Eidsv5 VM을 E104ids_v5로 업그레이드할 수도 있습니다.</block>
+  <block id="bfd11c4f8f3ffe0b82e499f7dc4f9a65" category="list-text">^4^ 단일 노드 시스템을 사용하는 경우 모든 인스턴스 유형에서 고속 쓰기가 지원됩니다. 배포 중 또는 배포 후 언제든지 콘솔에서 고속 쓰기를 활성화할 수 있습니다<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>. SSD를 사용하는 경우 향상된 쓰기 성능이 활성화됩니다.</block>
+  <block id="c15a2dd9239375267b11e9cc0750fde3" category="list-text">E8bds_v5 ^9^</block>
+  <block id="e8d4c23be4f7e5ec7dd2fa499ffe6ac1" category="list-text">E16bds_v5 ^9^</block>
+  <block id="858f6ce34bdf4523d2935c8aec758bc8" category="list-text">E32bds_v5 ^9^</block>
+  <block id="1184562f85d984e07c1bf1c2d17c39b5" category="list-text">E48bds_v5 ^9^</block>
+  <block id="a10a9e62fc438d5cda957750f5be82a2" category="list-text">E64bds_v5 ^9^</block>
+  <block id="22526b360edd5e859e84ac73135c26a8" category="list-text">E104ids_v5 ^9^</block>
+  <block id="b8a35e66cdb2aef61b6d6df1e379eb6d" category="list-text">^9^ Ebdsv5 및 E104ids_v5 VM은 Cloud Volumes ONTAP 9.18.1 이상 버전의 신규 배포 및 업그레이드에 사용할 수 있습니다. 기존의 Edsv4, Edsv5 또는 기타 Ebdsv5 VM 유형을 Ebdsv5로 변경하거나 업그레이드할 수 있습니다. Ebdsv5 또는 Eidsv5 VM을 E104ids_v5로 업그레이드할 수도 있습니다.</block>
+  <block id="2734a588d77e522c61fe0ebc740d82c8" category="list-text">^7^ Ebdsv5 및 E104ids_v5 VM은 Cloud Volumes ONTAP 9.18.1 이상 버전의 신규 배포 및 업그레이드에 사용할 수 있습니다. 기존의 Edsv4, Edsv5 또는 기타 Ebdsv5 VM 유형을 Ebdsv5로 변경하거나 업그레이드할 수 있습니다. Ebdsv5 또는 Eidsv5 VM을 E104ids_v5로 업그레이드할 수도 있습니다.</block>
+  <block id="9c1e913676fba2b8aed76868b26dcc89" category="paragraph">단일 노드 시스템은 Azure Managed Disks를 사용합니다. 지원되는 디스크 크기는 다음과 같습니다.</block>
+  <block id="7da25d0bfd841afbb16233681b5b72ca" category="paragraph">Cloud Volumes ONTAP는 Google Cloud에서 단일 노드 시스템과 내결함성 및 중단 없는 운영을 위한 고가용성(HA) 노드 쌍으로 제공됩니다.</block>
+  <block id="bd45cef377eedc42228cc5c125be0686" category="paragraph">단일 노드 시스템을 HA 쌍으로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 쌍 간에 전환하려면 새 시스템을 배포하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.</block>
+  <block id="d462a208123e3b668b64a11f26085e0c" category="paragraph">용량 제한은 사용하는 EC2 인스턴스 유형 제품군과 단일 노드 시스템 또는 HA 쌍 사용 여부에 따라 다릅니다.</block>
+  <block id="35d763acd264e7f10fbf35d2da58bfe3" category="list-text">특정 VM 크기를 사용하는 단일 노드 시스템에 대해 명시된 896 TiB 디스크 기반 제한은 _테스트된_ 제한입니다.</block>
+  <block id="7996776cc07408b62e3e588c6e576723" category="list-text">단일 노드 시스템의 경우 124</block>
+  <block id="777aa7f6fc6d119be846af0333b88f27" category="list-text">단일 노드 시스템 업그레이드는 최대 25분 동안 시스템을 오프라인 상태로 전환하며, 이 시간 동안 I/O가 중단됩니다.</block>
+  <block id="8cfc1cd76589ea7ff4c1934750bae7e9" category="paragraph">Cloud Volumes ONTAP 고가용성(HA) 쌍에 대해서는 유지 관리 이벤트에 대한 특별 처리가 지원됩니다. 애플리케이션의 안정적인 작동을 유지하기 위해 안정성을 우선시하는 예방적 테이크오버를 수행하며, 15초 이상 연결이 끊어지면 페일오버 기능이 비활성화됩니다.</block>
 </blocks>
