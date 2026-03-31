@@ -908,4 +908,8 @@
   <block id="ed861c7159dd25edfdb3756b850c62c0" category="cell">c3-standard-88</block>
   <block id="95ff4bf55c71eae9f06c5b072249ba20" category="paragraph">Cloud Volumes ONTAP 9.18.1 정식 버전이 이제 Amazon Web Services(AWS), Microsoft Azure 및 Google Cloud에서 배포 및 업그레이드할 수 있습니다.</block>
   <block id="83462a4045d14d58d15d9f74015dd308" category="paragraph">AWS, Azure 및 Google Cloud에서 9.17.1 P1 이상 패치가 적용된 Cloud Volumes ONTAP을 9.18.1로 업그레이드할 수 있습니다. 콘솔에서 업그레이드 대상 Cloud Volumes ONTAP 시스템을 이 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
+  <block id="e819c4410e5eb8f68db481717f672a21" category="section-title">9.18.1 P1 (2026년 3월 31일)</block>
+  <block id="66b93dcdc5716dedd5e7fcf8a6f2c744" category="paragraph">Cloud Volumes ONTAP 9.18.1 P1 패치가 이제 AWS, Azure 및 Google Cloud에 배포 및 업그레이드할 수 있게 되었습니다. Console에서 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
+  <block id="a9380d77cd3c45a5f15f09b231323443" category="inline-link-macro">P1 패치에서 수정된 버그 목록을 확인하십시오</block>
+  <block id="d4e91a63e862afe5d30e173965c6c4a1" category="paragraph"><block ref="eb1c958143bf6120158dde219a58c506" category="inline-link-macro-rx"></block>(NetApp Support Site 로그인 필요).</block>
 </blocks>
