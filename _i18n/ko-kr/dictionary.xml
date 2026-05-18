@@ -352,7 +352,6 @@
   <block id="4d2719ea5599a5bf1a9973d3b247f959" category="section-title">SnapManager 라이센스 제한</block>
   <block id="c91bb6f1740b2a7b3e274deca5e32b94" category="paragraph">SnapManager 서버당 라이센스는 Cloud Volumes ONTAP에서 지원됩니다. 스토리지당 시스템(SnapManager 제품군) 라이센스는 지원되지 않습니다.</block>
   <block id="c3f5fdee9b6adb6eccff2d4c189ead12" category="section-title">지원되지 않는 ONTAP 기능입니다</block>
-  <block id="534cab245a3cc0ececa966044bad6ba2" category="paragraph">다음 기능은 Cloud Volumes ONTAP에서 지원되지 않습니다.</block>
   <block id="a031ea731cd3c4992b7f33bad9f72a00" category="list-text">애그리게이트 레벨 인라인 중복제거</block>
   <block id="98e2e51de88bd2dae78a66fdad91936c" category="list-text">애그리게이트 레벨의 백그라운드 중복제거</block>
   <block id="5873635ff256383dcb0b47a0e49f71b1" category="list-text">디스크 유지보수 센터 를 참조하십시오</block>
@@ -926,4 +925,6 @@
   <block id="3cbfcd6492053f416bf02c99b23b7630" category="paragraph">Cloud Volumes ONTAP 9.18.1 P2 패치가 이제 AWS, Azure 및 Google Cloud에 배포 및 업그레이드할 수 있게 되었습니다. Console에서 기존 시스템을 이 패치 릴리스로 업그레이드하라는 메시지가 표시됩니다.</block>
   <block id="ce5d0c77f167b881391469fc27895727" category="inline-link-macro">P2 패치에서 수정된 버그 목록을 확인하십시오</block>
   <block id="e4005bbac6c9dcfff8a33e8e077a64c7" category="paragraph"><block ref="4f7e8d39f7d7dbd55e211b03ab5cff07" category="inline-link-macro-rx"></block>(NetApp Support Site 로그인 필요).</block>
+  <block id="2f8a4700ca3941a576474070acbc2005" category="paragraph">일부 ONTAP 기능은 Cloud Volumes ONTAP에서 지원되지 않으며, 다음을 포함하되 이에 국한되지 않습니다.</block>
+  <block id="a2733b935845e428d2910b4aedaf426b" category="list-text">암호화를 위한 Onboard Key Manager(OKM)</block>
 </blocks>
