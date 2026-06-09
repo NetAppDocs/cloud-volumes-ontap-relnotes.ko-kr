@@ -35,7 +35,6 @@
   <block id="61dcfaac24363a16e4b318c1317f0309" category="cell">368TiB</block>
   <block id="c88983af55424e5528378f20e3ec805a" category="cell">노드 기반 라이센스</block>
   <block id="7751129b8546a0da65fb379b1cc9c243" category="cell">라이센스당 368TiB입니다</block>
-  <block id="376c581ebe9ec9aa8853377f8538ebbd" category="cell">용량 기반 라이센스</block>
   <block id="9010e525ec80d0fdea3d56191f64ce39" category="cell">2 PiB</block>
   <block id="44007958b04e5e15a25a3ca1ee98abeb" category="paragraph">용량 제한은 전체 HA 쌍에 대한 것입니다. 노드 단위로 표시되지 않습니다. 예를 들어, Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TiB의 용량을 가질 수 있습니다.</block>
   <block id="c029ebf0cab0f40812ebec7c644fef41" category="section-title">EC2 인스턴스별로 디스크 및 계층화가 제한됩니다</block>
@@ -221,10 +220,8 @@
   <block id="1f742543feb3ee22b577a40afbb960a2" category="cell">S3로 콜드 데이터 계층화</block>
   <block id="eaa4dc5078017a5c5bebf383ab6f5124" category="cell">지원</block>
   <block id="aa7f77e663b832d5b0e544c5511e680c" category="cell">지원되지 않습니다</block>
-  <block id="b13356b20cd05f0312d51b60b5736e0f" category="list-text">HA 쌍의 경우 용량 한도는 전체 HA 쌍의 용량입니다. 노드 수에는 적용되지 않습니다. 예를 들어, Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TiB의 용량을 가질 수 있습니다.</block>
   <block id="9cb3b0db1f5a7a0032a165789bcde1dd" category="inline-link-macro">보관 제한</block>
   <block id="714ff467ced5dd4ad0cd34ca2d29d911" category="list-text">PAYGO Explore를 제외한 모든 Cloud Volumes ONTAP 구성에서 SSD를 사용할 경우 향상된 쓰기 성능이 활성화됩니다.</block>
-  <block id="907c78338365697be8fd8d4a130503c8" category="list-text">처리량 최적화 HDD(st1)를 사용하는 경우에는 데이터를 오브젝트 스토리지에 계층화하지 않는 것이 좋습니다.</block>
   <block id="36e4aa065725aff22926f2fed53bc3c7" category="section-title">지원되는 디스크 크기입니다</block>
   <block id="afb82c4f80baa4ecca2a2e4e97df3ada" category="cell">범용 SSD(GP3 및 GP2)</block>
   <block id="c50feb3c9ed89b38a1757f8a63ccd0a6" category="cell">프로비저닝된 IOPS SSD(iio1)</block>
@@ -234,60 +231,26 @@
   <block id="09db5cf9dee1953ac746dd636e0db3e0" category="list-text">4TiB</block>
   <block id="b23de6890dfc4a44067a64513c3d5411" category="list-text">6TiB</block>
   <block id="094077c0211aa5522341d3db94bc6419" category="list-text">8TiB</block>
-  <block id="789f7b372f32412febae7a678005ae71" category="section-title">지원되는 EC2 컴퓨팅</block>
-  <block id="a1834fbcd2847d469ef79f5526dcee65" category="inline-link">EC2 인스턴스 유형에 대한 최신 세부 정보는 AWS를 참조하십시오</block>
-  <block id="98ade5346ada08656e0c7b517b695d0f" category="paragraph">각 Cloud Volumes ONTAP 라이센스는 서로 다른 EC2 인스턴스 유형을 지원합니다. 아래 표에는 지원되는 각 인스턴스 유형에 대한 vCPU, RAM 및 대역폭이 나와 있습니다.<block ref="7fe5ce03f92ccda8dcb0aa0fab836a1f" category="inline-link-rx"></block>.</block>
-  <block id="c7d741925ef81824617c6a2975104e27" category="inline-link">NetApp 기술 보고서 4383: 애플리케이션 워크로드를 포함한 Amazon Web Services의 Cloud Volumes ONTAP 성능 특성</block>
   <block id="4a7243646d30fc1e81eca2df9826cc03" category="cell">지원되는 인스턴스</block>
-  <block id="5d56dbd20d9ee1ab8a722ff12e331953" category="cell">vCPU</block>
-  <block id="e53619c1fe611a51eeeb8d148ba6e532" category="cell">RAM</block>
-  <block id="5a4320e0d1d7864b4d60f96e40d68e02" category="cell">Flash Cache ^1^</block>
-  <block id="e1a9836eca39e3ec1e898f9b217094d4" category="cell">네트워크 대역폭(Gbps)</block>
-  <block id="f851d5567887464712f1cbde0c7c70db" category="cell">EBS 대역폭(Mbps)</block>
-  <block id="885c7ba30dea785406ff04e1995c0cef" category="cell">빠른 쓰기 속도 ^2^</block>
-  <block id="4144774af30f71c8fc794c50d0a2a85e" category="cell">* 기타 라이센스 * 를 탐색하십시오</block>
   <block id="a87ff679a2f3e71d9181a67b7542122c" category="cell">4</block>
   <block id="c74d97b01eae257e44aa9d5bade97baf" category="cell">16</block>
-  <block id="940d46ce8af31c99727566b6b6529db7" category="cell">최대 10개까지 가능합니다</block>
-  <block id="3b1fce8d4128e9484676e12056c94fd7" category="cell">최대 4,750</block>
   <block id="24fd5ed21b125319b3c7c4825a764b66" category="cell">지원(단일 노드만 해당)</block>
-  <block id="b47f486130ec0322b29fe8cf873eda99" category="cell">* 표준 또는 기타 라이센스 *</block>
   <block id="1ffd24563a8ba078752a34d474e1f403" category="cell">m5a.2xLarge</block>
   <block id="c9f0f895fb98ab9159f51fd0297e236d" category="cell">8</block>
-  <block id="c82994e8dd530a69b81d79cb4e505f09" category="cell">최대 2,880</block>
-  <block id="ed0336aa4dbbeed8e48332f1f7a834b6" category="cell">* Premium 또는 기타 라이센스 *</block>
   <block id="3755b8d0a0506aff1de991cab29e9205" category="cell">m5n.2xLarge</block>
-  <block id="a21bb08ff7c4cfeeef06cb3b4bcbc0a1" category="cell">최대 25</block>
-  <block id="ea5d2f1c4608232e07d3aa3d998e5135" category="cell">64</block>
   <block id="779e6562c3768b528bec3198ecdd790e" category="cell">r5d.2xLarge</block>
-  <block id="97a5ba2ab2869def9595028833dfa605" category="cell">4,570</block>
-  <block id="f778f69b84929a5c80bb4590373a7119" category="cell">4,750</block>
   <block id="3bf5113b1c70942177a6ee64a8200ded" category="cell">m5d.8xLarge</block>
-  <block id="28a48803c3f0a20888e6791904e3baa8" category="cell">6,800</block>
   <block id="240c30af8e0d147ae84043d1fc9d1776" category="cell">r5.8xLarge</block>
   <block id="bccfea3b653422d5fd8560cff3483d5b" category="cell">c5.9xLarge</block>
-  <block id="19ca14e7ea6328a42e0eb13d585e4c22" category="cell">36</block>
-  <block id="32bb90e8976aab5298d5da10fe66f21d" category="cell">72</block>
-  <block id="93ebb09c93a802d9a872e5cedf9ba399" category="cell">9,500입니다</block>
   <block id="7f9623c09f1541aea407df05491c9ac4" category="cell">c5d.9xLarge</block>
   <block id="a59ad4f9735c6c90fea48ef6e88441ac" category="cell">c5n.9xLarge</block>
-  <block id="26657d5ff9020d2abefe558796b99584" category="cell">96</block>
   <block id="2d3e51e89d3f05d2abe99df631cb0b4c" category="cell">C5A.12xLarge</block>
   <block id="c5349a9d783e985390617543cf910af4" category="cell">c5.18xLarge</block>
-  <block id="0a09c8844ba8f0936c20bd791130d6b6" category="cell">144</block>
-  <block id="99a85ba98f759e2af5b37706147521a4" category="cell">19,000명</block>
   <block id="754828c9b88626872a73b65943afe305" category="cell">c5d.18xLarge</block>
   <block id="3953e14134095c5c41a5bdde5d817581" category="cell">m5d.12xLarge</block>
-  <block id="642e92efb79421734881b53e1e1b18b6" category="cell">48</block>
-  <block id="58a2fc6ed39fd083f55d4182bf88826d" category="cell">192</block>
   <block id="8bfc3cdc1d0308d0df3f444e6a54e5c0" category="cell">c5n.18xLarge</block>
-  <block id="f899139df5e1059396431415e770c6dd" category="cell">100</block>
   <block id="f5efe0addbdd614da5490e8dfe6205cc" category="cell">m5a.16xLarge</block>
   <block id="36339cdd29b164bf6617e204878be132" category="cell">m5.16xLarge</block>
-  <block id="98f13708210194c475687be6106a3b84" category="cell">20</block>
-  <block id="4a09e412cafbab3b737f40385783c222" category="cell">13,600</block>
-  <block id="0ac094105593f2223af0fadea2d4e6d0" category="cell">r5.12xLarge^3^</block>
-  <block id="0584ce565c824b7b7f50282d9a19945b" category="cell">384</block>
   <block id="dfeeabb8d703f59f841c2a6e2ed8d240" category="inline-link">Flash Cache에 대해 자세히 알아보십시오</block>
   <block id="18ca3c89ae9e8edbe217f2c9b7c6107d" category="inline-link">쓰기 속도 선택에 대해 자세히 알아보세요</block>
   <block id="9de28fbf6817cd511eb799f9575b611d" category="list-text">EC2 인스턴스 유형을 선택하면 해당 인스턴스가 공유 인스턴스인지 전용 인스턴스인지 지정할 수 있습니다.</block>
@@ -503,7 +466,6 @@
   <block id="b78b1188c7979365981f7c88049f9366" category="section-title">업그레이드 방법</block>
   <block id="75026846c1403e202a52bdb027762fbb" category="section-title">알아 보십시오</block>
   <block id="618671ce849d1a8ff524b77c314fe4e2" category="section-title">C4, M4 및 R4 인스턴스는 더 이상 지원되지 않습니다</block>
-  <block id="e19784a5420512b2876c7b24680652b5" category="cell">40,000개</block>
   <block id="4237e167da34ce4cc54b7915a9ee779a" category="list-text">Cloud Volumes ONTAP 9.12.0까지 Flash Cache 성능 향상을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다. Cloud Volumes ONTAP 9.12.1을 배포하거나 업그레이드할 때 압축을 비활성화할 필요가 없습니다.</block>
   <block id="8c41a0d9e980d7223b4ad7585ce70fa2" category="section-title">공유 관리 디스크가 있는 HA 쌍</block>
   <block id="678bba9079ce79c3806a40a1b6306799" category="list-text">E8ds_v4^4^</block>
@@ -517,12 +479,9 @@
   <block id="7b9e5415e02ff7ad5eaae61345740517" category="inline-link">Google Cloud에서 실행 중인 Cloud Volumes ONTAP HA 쌍에서 스토리지의 작동 방식에 대해 알아보십시오</block>
   <block id="1b604734bf53595ed7c7d204bb25e549" category="list-text">L16s_v3^2^</block>
   <block id="645c4fc55b2cf93995a9e487870102f5" category="list-text">L32s_v3^2^</block>
-  <block id="f5d86d667fcde1b9fc5b1c45e55d135e" category="cell">64^4^</block>
-  <block id="5ce58b1e3bfddca3ae7d5a13676224ff" category="list-text">이러한 EC2 인스턴스 유형은 64개 이상의 vCPU를 지원하지만 Cloud Volumes ONTAP는 최대 64개의 vCPU만 지원합니다.</block>
   <block id="c46270a9bdf069bd0e015f7953e02355" category="paragraph"><block ref="c46270a9bdf069bd0e015f7953e02355" category="inline-link-rx"></block></block>
   <block id="79d3c4941fdb49ae08cc30405f716cce" category="list-text">일부 구성에서는 디스크 제한만으로 용량 제한에 도달하지 못합니다. 이 경우 를 통해 용량 제한에 도달할 수 있습니다<block ref="aea0958203307daa433f894622f3e640" category="inline-link-rx"></block>. 디스크 제한에 대한 자세한 내용은 를 참조하십시오 <block ref="71ccaacc6f6c8feca068c7ff1a7b2eb5" category="inline-link-macro-rx"></block>.</block>
   <block id="ca40429b1b07555a35de829b976a6961" category="paragraph">AWS에서는 aggregate에 동일한 크기의 디스크를 최대 6개까지 포함할 수 있습니다. 하지만 Amazon EBS Elastic Volumes 기능을 지원하는 구성이 있는 경우 aggregate에 디스크를 최대 8개까지 포함할 수 있습니다.<block ref="d6d48ea3644fd45f9f7ff8f4c8d4ae57" category="inline-link-rx"></block></block>
-  <block id="9df4ca2adcfbf390d35edbeb52928a78" category="list-text">일부 인스턴스 유형에는 Cloud Volumes ONTAP가 _Flash Cache_로 사용하는 로컬 NVMe 스토리지가 있습니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 비롯한 랜덤 읽기 집약적인 워크로드에 효과적입니다. Flash Cache의 성능 향상 기능을 활용하려면 모든 볼륨에서 압축을 해제해야 합니다.<block ref="da56a164195bbdee72f1dfc4ea53669d" category="inline-link-rx"></block>.</block>
   <block id="f6dcc1a079544e36390b698b6f59bf4e" category="paragraph">용량 기반 라이센스 패키지를 사용하는 Cloud Volumes ONTAP 시스템에는 다음과 같은 디스크 제한 사항이 적용됩니다.<block ref="360eefdcdd22adda63e8597e9466029a" category="inline-link-rx"></block></block>
   <block id="fc8746b925f8923889b77841242bf054" category="paragraph"><block ref="771bd01d5b66ba0bcb76d734267dc8bb" category="inline-link-rx"></block>.</block>
   <block id="ae90a2e4532cb9b615489b63c36e2383" category="paragraph"><block ref="dca5658ae26fff987979f5de0a83e9fd" category="inline-link-rx"></block>.</block>
@@ -610,16 +569,9 @@
   <block id="6074c6f3226593d830e2700ab7f3f365" category="list-text">L48s_v3 1,3, 5도</block>
   <block id="1da7ab1581b8dde8d8bbb3d70c613cd5" category="list-text">L64s_v3 1,3, 5</block>
   <block id="219b3478863d340e2f74f743c7d41011" category="list-text">범용 SSD(GP3 및 GP2</block>
-  <block id="5f5ab830f312b366e90a01041e1aedca" category="cell">M5.xlarge(대형) 6</block>
-  <block id="6bfe086862809cf64cd507fa55b90a47" category="cell">R5.xlarge(6도</block>
-  <block id="39bce1e4c62e073845823cfaa75353ee" category="cell">m5.2xlarge(대형) 6</block>
-  <block id="1daf8852093393eddb2a0375368cd424" category="cell">R5.2xlarge(대형) 6</block>
-  <block id="112890879693861f10abb1dff5a8168e" category="cell">C5d.4xlarge(6도</block>
-  <block id="db71cf30c589b91cc71cbd78dda531cb" category="cell">M5.4x대형 6도</block>
   <block id="5eaba9c26c7009842affe7562eb137d3" category="inline-link-macro">로컬 영역에서 지원되는 EC2 인스턴스 유형에 대한 최신 정보와 전체 세부 정보는 AWS를 참조하십시오</block>
   <block id="0b1bcd721d49fbe0a3ff4bd80dfcd83f" category="list-text">AWS 로컬 영역은 크기가 xlarge에서 4xlarge인 EC2 인스턴스 유형 제품군에서 지원됩니다(M5, C5, C5d, R5 및 R5d). <block ref="3d9029b658475a88eed4e09e15fa8cce" category="inline-link-macro-rx"></block>.</block>
   <block id="4133f4256c016927cb270503c43adeb6" category="paragraph">AWS 로컬 영역에서 이러한 인스턴스 유형에서는 빠른 쓰기 속도가 지원되지 않습니다.</block>
-  <block id="b710bbf07a9ba1fa06f2e6f4e77a42db" category="paragraph">아래 표에 표시된 대역폭 은 각 인스턴스 유형에 대해 문서화된 AWS 제한과 일치합니다. 이러한 제한은 Cloud Volumes ONTAP이 제공할 수 있는 것과 완전히 일치하지는 않습니다. 예상 성능은 을<block ref="c23654021de34c23e6d408104aa3bf49" category="inline-link-rx"></block>참조하십시오.</block>
   <block id="32d6fe93ba69b4395a45277c1885f29f" category="cell">용량 기반 라이센스(Essentials 및 Professional)</block>
   <block id="7ac4ad805c5f62c422ac040e484787d7" category="paragraph">Azure에서 Flash Cache를 구성하는 데 필요한 최소 ONTAP 버전은 9.13.1 GA입니다.</block>
   <block id="0ef515bdf91048074b68adb0d7ce587e" category="paragraph">Cloud Volumes ONTAP은 일부 VM 유형에서 로컬 NVMe 스토리지를 _ Flash Cache _ 로 사용합니다. 이 제한 사항에 유의하십시오.</block>
@@ -628,10 +580,8 @@
   <block id="e1e1effee5380369716ff955c2de6215" category="cell">지원되는 시스템 유형 ^1^</block>
   <block id="1ea028151d07abb047b4e2f17d215216" category="cell">균형 잡힌 영구 디스크 3, 성능(SSD) 영구 디스크 및 표준(HDD) 영구 디스크.</block>
   <block id="6b145cfa91f7c68c4c0c6f2bf60bcf9d" category="paragraph">CUSTOM-4-16384 시스템 유형은 새로운 Cloud Volumes ONTAP 시스템에서 더 이상 지원되지 않습니다. 이 기계 유형에서 실행 중인 기존 시스템이 있는 경우 계속 사용할 수 있지만 n2-standard-4 기계 유형으로 전환하는 것이 좋습니다.</block>
-  <block id="29aaeb333a41db01888c537148053c70" category="paragraph">* 최대 시스템 용량 * (디스크 + 오브젝트 스토리지</block>
   <block id="06cf24f6f7b06cb3d2778a1a70e9ff2f" category="paragraph">* 지원되는 디스크 유형 *</block>
   <block id="17943cfde2a5e23c7925dc95a8dde6a4" category="paragraph">* S3로 콜드 데이터 계층화 *</block>
-  <block id="640897782baa10cc7d259d38d703b275" category="list-text">SSD를 All Cloud Volumes ONTAP 구성과 함께 사용할 경우 향상된 쓰기 성능이 지원됩니다.</block>
   <block id="b5cb41a6703cf18b4cecd5a0817f91cf" category="section-title">노트 업그레이드</block>
   <block id="6b32e99bddf60938239aabe092cb4c16" category="paragraph">Cloud Volumes ONTAP에는 몇 가지 라이센스 옵션이 있습니다. 각 옵션을 사용하여 요구사항에 맞는 소비 모델을 선택할 수 있습니다.</block>
   <block id="27fe4eb3edbaff8f250e2d51f7462681" category="inline-link">패키지</block>
@@ -669,7 +619,6 @@
   <block id="2dc71138ad7976e187566f7ce79883cc" category="list-text">HA 쌍 업그레이드는 무중단으로 수행되며 I/O가 중단되지 않습니다. 이러한 무중단 업그레이드 프로세스 중에는 각 노드가 동시에 업그레이드되어 클라이언트에 입출력을 계속 제공합니다.</block>
   <block id="071315f659ff3eed03e994aa4f772449" category="doc">Cloud Volumes ONTAP 라이센스 개요</block>
   <block id="d4f1750ecbae7aeb8e4608c6adadf1b3" category="doc">AWS에서 Cloud Volumes ONTAP에 지원되는 구성입니다</block>
-  <block id="906e9645769246d4a98e725adf188964" category="list-text">AWS 로컬 영역의 Cloud Volumes ONTAP 구성은 GP2(General Purpose SSD) 디스크 유형만 지원합니다.</block>
   <block id="a09c3a7be8e7dc42776a7b03793d536c" category="doc">Azure에서 Cloud Volumes ONTAP에 대해 지원되는 구성입니다</block>
   <block id="8f4e28604a8893d6adb6f9b81569d19b" category="doc">Google Cloud에서 Cloud Volumes ONTAP에 대해 지원되는 구성입니다</block>
   <block id="581f6b5312764acdc88160c41a391898" category="doc">Cloud Volumes ONTAP의 알려진 문제</block>
@@ -685,9 +634,6 @@
   <block id="e62fa1e447749b7b88523431cfe1cb23" category="section-title">단일 가용 영역에서 HA 구축의 제한 사항</block>
   <block id="76d43d0c7a6d0d101562acb873375c45" category="inline-link">Azure에서 단일 가용 영역에 HA 쌍을 구축합니다</block>
   <block id="4ed7f8d6ce44fa053592b73fcd8be5e3" category="paragraph">Cloud Volumes ONTAP 버전이 9.15.1 이전 버전이거나 이러한 조건이 충족되지 않으면 가용성 집합을 사용하는 이전 배포 모델이 적용됩니다. 이 제한은 HA 구성에만 적용됩니다.</block>
-  <block id="fbb17e3b93a1070f3de5e45b66842d95" category="list-text">AWS 로컬 영역의 Cloud Volumes ONTAP 구성은 GP2(General Purpose SSD) 디스크 유형만 지원합니다. AWS 로컬 영역의 Cloud Volumes ONTAP에서는 다른 디스크 유형이 지원되지 않습니다.</block>
-  <block id="f051f95f393c93123644b448ca3165c0" category="paragraph">Cloud Volumes ONTAP은 더 이상 AWS에서 c4, m4, r4 EC2 인스턴스 유형을 지원하지 않습니다. 시스템이 c4, m4 또는 r4 인스턴스에서 실행되는 경우 c5, m5 또는 r5 인스턴스로 변경하세요. 인스턴스 유형을 변경하기 전에는 이 릴리즈로 업그레이드할 수 없습니다.</block>
-  <block id="2f8299f876158db323c08455b12b585a" category="paragraph">자세한 내용은 다음을 참조하십시오.</block>
   <block id="304f5226697d03123fa4611d02bf8546" category="inline-link">지식 기반(KB) 문서: AWS Xen CVO 인스턴스를 Nitro KVM으로 변환</block>
   <block id="0dc3c417fc362585e0e7b3798f00b8bb" category="list-text"><block ref="0dc3c417fc362585e0e7b3798f00b8bb" category="inline-link-rx"></block></block>
   <block id="b5dc3ce37b75c52be2427ecee207d24f" category="inline-link">KB 문서: 디스크 수 오류로 인해 인스턴스 유형을 r4에서 r5로 변경할 수 없습니다.</block>
@@ -840,7 +786,6 @@
   <block id="9cb5231fae0fa398b4997a3404e75449" category="paragraph">Cloud Volumes ONTAP는 AWS에서 단일 노드 시스템과 내결함성 및 중단 없는 운영을 위한 고가용성(HA) 노드 쌍으로 제공됩니다.</block>
   <block id="ef4986bf1cd31453df648c0c88caab37" category="paragraph">단일 노드 시스템을 HA 페어로 업그레이드하는 것은 지원되지 않습니다. 단일 노드 시스템과 HA 페어 간에 전환하려면 새 시스템을 배포하고 기존 시스템의 데이터를 새 시스템으로 복제해야 합니다.</block>
   <block id="231fd9de718f42c1c9e89368821092dd" category="open-title">기타 라이선스</block>
-  <block id="eedc677bbd07d9095251c43bc5a4b33d" category="list-text">Cloud Volumes ONTAP는 HA 페어를 사용할 경우 대부분의 인스턴스 유형에서 높은 쓰기 속도를 지원합니다. 단일 노드 시스템을 사용할 경우에는 모든 인스턴스 유형에서 높은 쓰기 속도를 지원합니다<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
   <block id="d79ae3bafac04fb5a94c065465345b1c" category="list-text">r5.12xlarge 인스턴스 유형에는 지원 가능성과 관련된 알려진 제한 사항이 있습니다. 패닉으로 인해 노드가 예기치 않게 재부팅될 경우 시스템에서 문제 해결 및 근본 원인 파악에 사용되는 코어 파일을 수집하지 못할 수 있습니다. 고객은 위험과 제한된 지원 조건을 수락하며 이러한 상황이 발생할 경우 모든 지원 책임을 부담합니다. 이 제한 사항은 새로 배포된 HA 쌍과 9.8에서 업그레이드된 HA 쌍에 영향을 미칩니다. 이 제한 사항은 새로 배포된 단일 노드 시스템에는 영향을 미치지 않습니다.</block>
   <block id="4b40cbab0027c4d9d78baf0e5d6fda5d" category="paragraph">Cloud Volumes ONTAP는 Azure에서 단일 노드 시스템과 내결함성 및 중단 없는 운영을 위한 고가용성(HA) 노드 쌍으로 사용할 수 있습니다.</block>
   <block id="1df33292a2fca2da6ee337f54fc40930" category="section-title">단일 노드 시스템</block>
@@ -927,4 +872,90 @@
   <block id="e4005bbac6c9dcfff8a33e8e077a64c7" category="paragraph"><block ref="4f7e8d39f7d7dbd55e211b03ab5cff07" category="inline-link-macro-rx"></block>(NetApp Support Site 로그인 필요).</block>
   <block id="2f8a4700ca3941a576474070acbc2005" category="paragraph">일부 ONTAP 기능은 Cloud Volumes ONTAP에서 지원되지 않으며, 다음을 포함하되 이에 국한되지 않습니다.</block>
   <block id="a2733b935845e428d2910b4aedaf426b" category="list-text">암호화를 위한 Onboard Key Manager(OKM)</block>
+  <block id="81fd9aedd2fba0299b8a468e7058717a" category="inline-link">Amazon EC2 인스턴스 유형</block>
+  <block id="ee4fdec5b1bb1b7bc6f3f136f70bb6fa" category="paragraph">다음 표는 각 라이선스에 대해 지원되는 스토리지 및 EC2 머신 유형 조합을 나열합니다. vCPU, 메모리, 네트워크 대역폭 및 Amazon EBS 대역폭을 포함한 최신 EC2 인스턴스 사양은<block ref="226f24838b262a0eae3391fa5fddf137" category="inline-link-rx"></block>을 참조하십시오.</block>
+  <block id="3eac5cbe998f674de343ab193660c26e" category="paragraph">*최대 시스템 용량* ^1^ (디스크 + 오브젝트 스토리지)</block>
+  <block id="2374c35a1fc87e3bf7446df7d5ec3dc1" category="paragraph">*지원되는 시스템 유형*</block>
+  <block id="4ad3110a60e3a029d7be7c8f4d6f2d81" category="example-title">C5 시리즈</block>
+  <block id="df74b1a95a7c717abe70faa6c9ce6a34" category="list-text">c5.18xlarge ^7^</block>
+  <block id="d437fb4d444786977fee27414fa5a9d2" category="example-title">C5a 시리즈</block>
+  <block id="61cb037d7b847a5f4d73d7064b172778" category="example-title">C5d 시리즈</block>
+  <block id="89446c1a6641092bc1895d9de77cb54a" category="list-text">c5d.4xlarge ^8^</block>
+  <block id="cf32f28f729ea6aa7448abbcd6c65f04" category="list-text">c5d.18xlarge ^7^</block>
+  <block id="22261aaef8bdc324122610c4bead00a4" category="example-title">C5n 시리즈</block>
+  <block id="af376cda8164386f8cf8ef6b557b7408" category="list-text">c5n.18xlarge ^7^</block>
+  <block id="4d54652767c6eddebf292e236334cca3" category="example-title">M5 시리즈</block>
+  <block id="a6b42cd4343c8182a94d4f37a5eb35eb" category="list-text">m5.xlarge ^8^</block>
+  <block id="ded3a7f3156bd2e6e104325e1c52c6ac" category="list-text">m5.2xlarge ^8^</block>
+  <block id="8c22291f40406b86823f832fd8a0ffbc" category="list-text">m5.4xlarge ^8^</block>
+  <block id="d9682ac8bd1648333d6c342be3a903eb" category="example-title">M5a 시리즈</block>
+  <block id="e96ddbffafe22cc7cee70974d6673382" category="example-title">M5d 시리즈</block>
+  <block id="9f38396b394e38135d8e96dcfef18ad5" category="example-title">M5dn 시리즈</block>
+  <block id="95a8f9fe0c977bc18244e46dc873f75e" category="list-text">m5dn.24xlarge ^7^</block>
+  <block id="910fe540353bfa7fd90349b4de4fe09a" category="example-title">M5n 시리즈</block>
+  <block id="622f9975164565a0db26aa39b7ed872a" category="example-title">M6id 시리즈</block>
+  <block id="3316cf447f298770890b342eaffca3fb" category="list-text">m6id.xlarge ^9^</block>
+  <block id="1ab6a5de00c638ce58ed9bd765dd0b5c" category="list-text">m6id.2xlarge ^9^</block>
+  <block id="ac6db1a6fec1559e67bb0edb9025dd52" category="list-text">m6id.4xlarge ^9^</block>
+  <block id="9bf1c46f0703ccb148327435b949d9ce" category="list-text">m6id.8xlarge ^9^</block>
+  <block id="e1de38c1b8c807783b266fe4983af618" category="list-text">m6id.16xlarge ^7,9^</block>
+  <block id="348ee253b148bf2e4e7ef63270ab9ebd" category="list-text">m6id.32xlarge ^7,9^</block>
+  <block id="0a62b1b3d2ab1420b41183ad1be01d72" category="example-title">M6idn 시리즈</block>
+  <block id="be1498be17b8c2939a7d32b2acd07282" category="list-text">m6idn.xlarge ^9^</block>
+  <block id="383abc9d7c1bdb7684e87048763c06bb" category="list-text">m6idn.2xlarge ^9^</block>
+  <block id="e47033db626186ad0d167b4eb175205d" category="list-text">m6idn.4xlarge ^9^</block>
+  <block id="734fa71557674751ea333cfcc73a2de8" category="list-text">m6idn.8xlarge ^9^</block>
+  <block id="4918297550202aa848796a53309a63b0" category="list-text">m6idn.16xlarge ^7,9^</block>
+  <block id="d4ce3985ead5205a19b8b3a3f871159f" category="list-text">m6idn.32xlarge ^9^</block>
+  <block id="e2d1c24325802fe2559a93248380d0c0" category="example-title">R5 시리즈</block>
+  <block id="4e1657b9f47145bbe1465ac877f4a43b" category="list-text">r5.xlarge ^8^</block>
+  <block id="82c13d422fd41922fca03fba5ed8b424" category="list-text">r5.2xlarge ^8^</block>
+  <block id="c843fb1322ca6ec353b8f076ab9c5068" category="list-text">r5.12xlarge ^6^</block>
+  <block id="3642b44406a6e54bbb9204bdceea0c63" category="example-title">R5d 시리즈</block>
+  <block id="dc731aa5a0f3d80dfe6ca0a835e769be" category="list-text">HA 쌍의 경우 용량 제한은 전체 HA 쌍에 적용됩니다. 노드별로 적용되는 것이 아닙니다. 예를 들어 PAYGO Premium 라이센스를 사용하는 경우 두 노드 간에 최대 368TiB의 용량을 사용할 수 있습니다.</block>
+  <block id="34f2ac75114e099ddfd4614a3c3590e1" category="list-text">처리량 최적화 HDD(st1)를 사용하는 경우 오브젝트 스토리지로 데이터를 계층화하는 것은 권장되지 않습니다.</block>
+  <block id="56dfb490d8ac568bcf0cbe0ff5ac0e50" category="list-text">AWS Local Zones의 Cloud Volumes ONTAP 구성에서는 범용 SSD(gp2) 디스크 유형만 지원합니다. AWS Local Zones에서는 다른 디스크 유형이 지원되지 않습니다.</block>
+  <block id="df2afd870740ec05f8f69fac589d0e46" category="list-text">이러한 EC2 인스턴스 유형은 64개 이상의 vCPU를 지원하지만 Cloud Volumes ONTAP는 최대 64개의 vCPU를 지원합니다.</block>
+  <block id="17401787703e038e2e9f91b3a9297ad4" category="list-text">이러한 인스턴스 유형을 사용하려면 ONTAP 9.16.1 GA 이상이 필요합니다.</block>
+  <block id="bdffec98e6d23168e67ec60edb566516" category="cell">지원되는 시스템 유형</block>
+  <block id="d20df58753fbc9c52414524392db7da4" category="section-title">Flash Cache 및 고속 쓰기 속도 지원</block>
+  <block id="f9beb51fa441c2950ee01b34400048ee" category="paragraph">다음 표는 Flash Cache 및 높은 쓰기 속도를 지원하는 EC2 인스턴스 유형을 나타냅니다.</block>
+  <block id="5fbc523d8d2ad241522a15100f23bef2" category="cell">Flash Cache</block>
+  <block id="c7d199adcfee4046f5f5b3e5bd396a3e" category="cell">높은 쓰기 속도</block>
+  <block id="55b122095d7b69d814bc6849b383e4df" category="cell">c5d.4xlarge</block>
+  <block id="af5930828f5a5fb8d4c21928b5ccdd0d" category="cell">m5.xlarge</block>
+  <block id="fdb9b168c2139e67e282db861cf21967" category="cell">m5.2xlarge</block>
+  <block id="6124944413e19a98a7cefa988e91f90e" category="cell">m5.4xlarge</block>
+  <block id="6ea6f3b204b2dff8f0976ff9e2b5ccbe" category="cell">m6id.xlarge</block>
+  <block id="787f0409c3db5385b203630c013a9014" category="cell">지원됨 ^*^</block>
+  <block id="4040d2074406c56786605eb0cabb286f" category="cell">m6id.2xlarge</block>
+  <block id="6dec6db76b4597dec6197b4e512ef5f1" category="cell">m6id.4xlarge</block>
+  <block id="63eb9c5c511b3bec71fa252db49120e3" category="cell">m6id.8xlarge</block>
+  <block id="7e297a6b9bf6316e972a013d22a9fb33" category="cell">m6id.16xlarge</block>
+  <block id="7cb437b5120b3a23edafe4917b4a840e" category="cell">m6idn.xlarge</block>
+  <block id="023ed24892281ff61a48cc442038c3a6" category="cell">m6idn.2xlarge</block>
+  <block id="4967b147e0aef27d43fd878fc99d85f7" category="cell">m6idn.4xlarge</block>
+  <block id="3dc2978d3bf77a8f5655a75c2b4da0b6" category="cell">m6idn.8xlarge</block>
+  <block id="a1ac5f0e90ef55247038b6b57bbefd54" category="cell">m6idn.16xlarge</block>
+  <block id="dd930bd4176145c6159837468ab13dde" category="cell">m6idn.32xlarge</block>
+  <block id="e1369dc9aee5f7165363f55d10884546" category="cell">r5.xlarge</block>
+  <block id="859e8cd8d7a83d36983b0e9860a11e84" category="cell">r5.2xlarge</block>
+  <block id="4a6116f629595cfeff4104820f93ab85" category="cell">r5.12xlarge</block>
+  <block id="351a266866c8a648d5dc30495f392196" category="paragraph">pass:[*] Flash Cache는 m6id.xlarge, m6id.2xlarge, m6idn.xlarge 및 m6idn.2xlarge에서 지원됩니다. 그러나 이러한 인스턴스 유형은 16개 미만의 코어 프로세서를 가지고 있으며 고성능 또는 메모리 집약적인 워크로드에는 권장되지 않습니다. 과부하 시 메모리 제약으로 인해 재시작될 수 있습니다. 이를 방지하려면 코어 개수와 메모리 용량이 더 큰 인스턴스 유형을 사용하십시오.</block>
+  <block id="fe2d8cb96f939a1bb432056954a763b8" category="paragraph">다음 참고 사항은 지원되는 인스턴스 동작 및 배포 옵션에 대한 일반적인 지침을 제공합니다.</block>
+  <block id="6f6137d0b20b902942af04d90a52ff7e" category="list-text">일부 인스턴스 유형에는 Cloud Volumes ONTAP가 Flash Cache로 사용하는 로컬 NVMe 스토리지가 포함됩니다. Flash Cache는 최근에 읽은 사용자 데이터와 NetApp 메타데이터의 실시간 지능형 캐싱을 통해 데이터 액세스 속도를 높입니다. 데이터베이스, 이메일, 파일 서비스를 포함한 랜덤 읽기 집약적 워크로드에 효과적입니다. Flash Cache 성능 향상을 활용하려면 모든 볼륨에서 압축을 비활성화해야 합니다<block ref="da56a164195bbdee72f1dfc4ea53669d" category="inline-link-rx"></block>.</block>
+  <block id="45188ca1f19d6bde820ffb0c36a87bb9" category="list-text">Cloud Volumes ONTAP는 단일 노드 시스템을 사용하는 경우 지원되는 모든 인스턴스 유형에서 고속 쓰기를 지원합니다. HA 쌍을 사용하는 경우 고속 쓰기는 지원되는 인스턴스 유형에서만 지원됩니다<block ref="721fe5ee3bbc3d8295d8615ed77ff9be" category="inline-link-rx"></block>.</block>
+  <block id="fca44ab5df0d2d05c08e1218a248ebb9" category="paragraph">Cloud Volumes ONTAP는 더 이상 AWS의 c4, m4, r4 EC2 인스턴스 유형을 지원하지 않습니다.</block>
+  <block id="befcc93fb12ae5e86952e4037dfbba7c" category="paragraph">시스템이 c4, m4 또는 r4 인스턴스에서 실행 중인 경우, 이번 릴리스로 업그레이드하기 전에 c5, m5 또는 r5 인스턴스로 변경하십시오.</block>
+  <block id="857017ab8aeb5fac4c965258ba0894a6" category="paragraph">자세한 내용은 다음 리소스를 참조하십시오.</block>
+  <block id="30f60d67f457bb040dffde52197a54da" category="section-title">관련 정보</block>
+  <block id="74524c6f5a9f872f5f4089bf0491c318" category="list-text"><block ref="74524c6f5a9f872f5f4089bf0491c318" category="inline-link-rx"></block></block>
+  <block id="8f54b4aa5c8b6ebbbd7b9d377d2916da" category="inline-link">Amazon EC2 M5 인스턴스</block>
+  <block id="642182eaa61146f63105c836930249fa" category="list-text"><block ref="642182eaa61146f63105c836930249fa" category="inline-link-rx"></block></block>
+  <block id="96cfe021a3263d9ffd40df885aa82381" category="inline-link">Amazon EC2 M6i 인스턴스</block>
+  <block id="6592e083b44fb0e105f5011dbcf66cb6" category="list-text"><block ref="6592e083b44fb0e105f5011dbcf66cb6" category="inline-link-rx"></block></block>
+  <block id="cf4e29ea0777598593e5fcb57a63c365" category="inline-link">Amazon EC2 C5 인스턴스</block>
+  <block id="1b976ec3c5a29cc801abf14a5b73d976" category="list-text"><block ref="1b976ec3c5a29cc801abf14a5b73d976" category="inline-link-rx"></block></block>
+  <block id="511ad3b8ad49da139e74e84deac5f108" category="inline-link">Amazon EC2 R5 인스턴스</block>
+  <block id="fc58e772b0e187c9acd0ead80273cfa3" category="list-text"><block ref="fc58e772b0e187c9acd0ead80273cfa3" category="inline-link-rx"></block></block>
 </blocks>
